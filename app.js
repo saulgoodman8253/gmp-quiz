@@ -414,6 +414,14 @@
         el('div', null, el('b', null, '일자'), date),
         el('div', null, el('b', null, '이름'), '')));
 
+    // 같은 정리 블록이 반복되면 처음 나온 문항 번호만 안내
+    const firstNote = new Map();
+    const noteFor = (q, i) => {
+      if (!q.notes) return null;
+      if (firstNote.has(q.notes)) return el('div', { class: 'print-src' }, `📚 교안·강의 정리: ${firstNote.get(q.notes)}번 문항 참고`);
+      firstNote.set(q.notes, i + 1);
+      return el('div', { class: 'print-notes' }, q.notes);
+    };
     const body = items.map((it, i) => el('article', { class: 'print-q' },
       el('p', { class: 'q-text' }, el('span', { class: 'q-num' }, `${i + 1}.`), it.q.question,
         el('span', { class: 'print-tag' }, ` [${it.q.week}${it.q.type ? ' · ' + it.q.type : ''}]`)),
@@ -423,7 +431,8 @@
       kind === 'study' ? el('div', { class: 'print-explain' },
         el('div', null, el('b', null, `정답 ${MARKS[it.correctIndex]}`)),
         it.q.explanation ? el('div', null, it.q.explanation) : null,
-        it.q.source ? el('div', { class: 'print-src' }, `출처: ${it.q.source}`) : null) : null));
+        it.q.source ? el('div', { class: 'print-src' }, `출처: ${it.q.source}`) : null,
+        noteFor(it.q, i)) : null));
 
     const key = kind === 'key' ? el('section', { class: 'print-key' },
       el('h3', null, '정답표'),
@@ -467,12 +476,21 @@
       it.isNew ? el('span', { class: 'tag new' }, '미출제') : null);
   }
 
+  // 교안·강의 정리(접었다 펼 수 있음)
+  function notesBlock(q) {
+    if (!q.notes) return null;
+    return el('details', { class: 'notes' },
+      el('summary', null, '📚 교안·강의 정리 (자세히 보기)'),
+      el('div', { class: 'notes-body' }, q.notes));
+  }
+
   function feedbackBox(it, chosen) {
     const ok = chosen === it.correctIndex;
     return el('div', { class: 'feedback' },
       el('div', { class: `verdict ${ok ? 'ok' : 'bad'}` }, ok ? '⭕ 정답입니다' : `❌ 오답입니다 — 정답 ${MARKS[it.correctIndex]}`),
       it.q.explanation ? el('div', { class: 'explain' }, it.q.explanation) : null,
-      it.q.source ? el('div', { class: 'source' }, it.q.source) : null);
+      it.q.source ? el('div', { class: 'source' }, it.q.source) : null,
+      notesBlock(it.q));
   }
 
   /* ---------- 학습 모드 (한 문제씩) ---------- */
@@ -655,7 +673,8 @@
             '  ·  정답: ', el('span', { class: 'ok' }, MARKS[it.correctIndex])),
           el('div', { class: 'feedback' },
             it.q.explanation ? el('div', { class: 'explain' }, it.q.explanation) : null,
-            it.q.source ? el('div', { class: 'source' }, it.q.source) : null));
+            it.q.source ? el('div', { class: 'source' }, it.q.source) : null,
+            notesBlock(it.q)));
       }));
 
     render(resultCard, actions, recordsSection(), review);

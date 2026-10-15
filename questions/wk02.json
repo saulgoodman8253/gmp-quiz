@@ -15,7 +15,8 @@
       ],
       "answer": 2,
       "explanation": "배양기가 실시간으로 직접 재는 변수는 pH, 온도, 교반, DO 정도다. glucose·lactate·glutamine·ammonia 같은 대사 변수는 샘플링해서 오프라인 분석(chemistry analyzer)을 해야만 알 수 있다.\npH가 떨어지면 glucose 소비 → lactate 축적을 의심하고 샘플 분석으로 확인한다. CO2는 pH를 '낮추는' 가스이므로 반대 조치다.",
-      "source": "WK02 p.46–47 (Offline analysis) · 2주차 녹음 01:14:18, 01:49:48, 02:43:31"
+      "source": "WK02 p.46–47 (Offline analysis) · 2주차 녹음 01:14:18, 01:49:48, 02:43:31",
+      "notes": "[오프라인 분석 항목] (2주차)\n· 세포: VCD(viable cell density), viability(%), cell diameter\n· Chemistry: glucose, glutamine, glutamate, ammonia, lactate, Ca, Na, K\n· Gas: pH, pCO2, pO2 / 그 외 osmolality\n· 샘플링으로만 알 수 있어 디지털 트윈·AI 예측 연구가 진행 중. 데이터 = 초기 조건 + 배양 파라미터 + 대사 파라미터 + 품질 파라미터.\n· 배양 목적(김영태): 무균 전제하에 높은 VCD와 높은 titer(g/L, 항체 약 2~3 g/L).\n(WK02 p.24, 46–47 · 2주차 녹음 01:49:48–01:53:51 · 4주차 녹음 01:20:36)\n\n[배양 CPP와 제어] (2주차)\n· 배양기가 직접·실시간 측정·제어하는 변수: pH, 온도, 교반(rpm), DO. 대사 변수(glucose·lactate·glutamine·ammonia), VCD·viability, 삼투압은 샘플링해야만 안다(하루 1회 이상 샘플링 백).\n· 가스 4종: air·O2 → DO↑, N2 → DO↓, CO2 → pH↓. pH가 떨어지면(보통 lactate 축적) 염기(중탄산나트륨), 오르면 CO2. pH 센서는 백업용 2개, DO가 떨어지면 순산소 자동 공급.\n· 배양기 기능 = 교반(agitation) + 통기(aeration). 샘플링 라인은 하단 포트. seed 배양기를 위층에 두어 중력 이송(세포 스트레스↓, 역류 방지).\n· 문제해결 예: pH 저하 → glucose 소비·lactate 축적 확인.\n(WK02 p.18–22, 46–47 · 2주차 녹음 01:14:18–01:29:52, 01:38:43, 02:43:31)"
     },
     {
       "id": "wk02-002",
@@ -30,7 +31,8 @@
       ],
       "answer": 4,
       "explanation": "tip speed = π × 임펠러 직경 × 회전속도. 회전속도를 초 단위로 바꾸면 120 rpm = 2 rps.\n3.14 × 0.5 m × 2 /s = 3.14 m/s. 188은 rpm을 그대로 넣은 값(π×0.5×120)이다. tip speed는 shear(전단력)의 지표다.",
-      "source": "WK02 p.89 · 2주차 녹음 02:51:48"
+      "source": "WK02 p.89 · 2주차 녹음 02:51:48",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)"
     },
     {
       "id": "wk02-003",
@@ -45,7 +47,8 @@
       ],
       "answer": 1,
       "explanation": "tip speed = π·d·n 이 같아야 하므로 d₁·n₁ = d₂·n₂ → 0.1 × 300 = 0.5 × n₂ → n₂ = 60 rpm.\n스케일이 커질수록 임펠러가 커지므로 같은 shear를 유지하려면 rpm은 낮아진다. 그 결과 혼합·산소 전달이 약해질 수 있어 P/V, kLa도 함께 검토한다.",
-      "source": "WK02 p.86, 89 · 2주차 녹음 02:46:49–02:51:48"
+      "source": "WK02 p.86, 89 · 2주차 녹음 02:46:49–02:51:48",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)"
     },
     {
       "id": "wk02-004",
@@ -60,7 +63,8 @@
       ],
       "answer": 3,
       "explanation": "lag(적응) → log/exponential(더블링, 3~6일째 peak VCD) → stationary(증식≈사멸, 항체 생산 최대, 7~8일 이후) → death(암모니아·lactate 등 독성 축적).\n강의에서는 peak VCD를 높이고 stationary를 잘 유지하는 것이 titer 향상의 핵심이라고 했다.",
-      "source": "WK02 p.34 · 2주차 녹음 02:15:10–02:19:55"
+      "source": "WK02 p.34 · 2주차 녹음 02:15:10–02:19:55",
+      "notes": "[세포 성장 곡선] (2주차)\n· Lag(적응) → Log/Exponential(더블링, 3~6일째 peak VCD) → Stationary(증식≈사멸, 항체 가장 많이 생산, 7~8일) → Death(암모니아·lactate 등 독성 축적).\n· 접종 0.5×10⁶ cells/mL, fed-batch peak 약 3~5×10⁶, 총 약 15일. peak VCD를 2배(1×10⁷)로 올리고 stationary를 줄이면 10일로 단축 → 연간 배치↑.\n· CHO doubling time ≈ 1일 → 5배 희석을 회복하는 데 약 2.3일(log₂5). seed 단계 간격 약 3일, 해동부터 본배양 끝까지 약 한 달.\n· seed 계대는 증식이 왕성한 log phase에서 한다(seed = 복사·붙여넣기, N = 채찍질해 생산).\n· Perfusion은 신선 배지를 계속 넣어 death로 가지 않게 한다.\n(WK02 p.34 · 2주차 녹음 02:15:10–02:19:55 · 4주차 녹음 01:24–01:26:44)"
     },
     {
       "id": "wk02-005",
@@ -75,7 +79,8 @@
       ],
       "answer": 5,
       "explanation": "37 ℃는 성장 모드(glucose 소비·lactate 생성)이고, 32 ℃로 낮추면 세포가 증식 대신 생존 모드로 바뀌어 lactate를 오히려 소비하고 생산·품질에 집중한다.\n생산 배양기(N)에서는 성장보다 항체 생산이 목적이라는 점과 연결된다.",
-      "source": "WK02 p.21 · 2주차 녹음 01:17:34–01:20:55"
+      "source": "WK02 p.21 · 2주차 녹음 01:17:34–01:20:55",
+      "notes": "[Temperature shift] (2주차)\n· 37 ℃ = 성장 모드(glucose 소비·lactate 생성). 32 ℃로 낮추면 증식 대신 생존 모드 → lactate를 오히려 소비, 단백질 품질 향상.\n· 생산 배양기(N)에서는 성장보다 항체 생산에 집중하므로, peak 이후 온도를 낮춘다.\n(WK02 p.21 · 2주차 녹음 01:17:34–01:20:55)\n\n[오프라인 분석 항목] (2주차)\n· 세포: VCD(viable cell density), viability(%), cell diameter\n· Chemistry: glucose, glutamine, glutamate, ammonia, lactate, Ca, Na, K\n· Gas: pH, pCO2, pO2 / 그 외 osmolality\n· 샘플링으로만 알 수 있어 디지털 트윈·AI 예측 연구가 진행 중. 데이터 = 초기 조건 + 배양 파라미터 + 대사 파라미터 + 품질 파라미터.\n· 배양 목적(김영태): 무균 전제하에 높은 VCD와 높은 titer(g/L, 항체 약 2~3 g/L).\n(WK02 p.24, 46–47 · 2주차 녹음 01:49:48–01:53:51 · 4주차 녹음 01:20:36)"
     },
     {
       "id": "wk02-006",
@@ -90,7 +95,8 @@
       ],
       "answer": 2,
       "explanation": "목표 제품 프로파일(QTPP)을 정하고 → 그 품질을 결정하는 핵심 품질 특성(CQA)을 도출 → 위험평가로 CQA에 영향을 주는 핵심 공정 변수(CPP)를 찾고 → DoE로 실험해 → 허용 운전 영역(design space)을 정한다(→ control strategy).",
-      "source": "WK02 p.81, 87 · 2주차 녹음 01:03:49–01:07:03"
+      "source": "WK02 p.81, 87 · 2주차 녹음 01:03:49–01:07:03",
+      "notes": "[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
     },
     {
       "id": "wk02-007",
@@ -105,7 +111,8 @@
       ],
       "answer": 4,
       "explanation": "perfusion = 세포 유지(ATF 등 필터) + 상등액 제거 + 신선 배지 공급 → 고밀도·death phase 지연. 세포까지 함께 빼는 것은 continuous(chemostat) 개념이다.\n'처음부터 가득 채우는' 것은 batch, '절반만 채우고 feed'는 fed-batch 설명이다. 강의에서 'perfusion/연속식은 2천 L 이하만 쓰는 것이 아니다'라고 했다.",
-      "source": "WK02 p.40 · 2주차 녹음 57:00–01:03:37"
+      "source": "WK02 p.40 · 2주차 녹음 57:00–01:03:37",
+      "notes": "[배양 모드]\n· Batch: 처음부터 배지를 가득 채우고 추가 없음(1~2주). 간편하지만 효율↓. 세포주 개발·클론 선별·배지 스크리닝(플라스크 수백 개)에 많이 씀.\n· Fed-batch: 절반 정도 채우고 세포가 북적이면 농축 feed(2~3주, 보통 14~15일). PD 단계부터 사용, COGS 비교에서 여전히 상업 생산의 70% 이상.\n· Perfusion: 세포는 남기고(ATF 등 cell retention device) 상등액만 빼며 신선 배지 공급 → 고밀도, lactate·암모니아 제거, death 지연(3~9주). 1,000 L에서 15회 교환 = 15,000 L 효과. 배지·필터(ATF 약 1억)·정제 부담이 크다.\n· N-1 perfusion: N-1에서 노폐물 제거·고밀도(≥1×10⁶) → N에 고농도 접종. 본배양 fed-batch는 그대로라 major change 아님.\n· ATF: 펌프가 배양액을 빨았다 밀었다 하며 hollow fiber 필터로 상등액만 투과(하루 배양 부피의 1~3배 교환).\n· \"장점만 있는 공정은 없다.\" \"회분식\"이라는 표현 대신 batch/fed-batch/perfusion으로.\n(WK02 p.32–40 · 2주차 녹음 57:00–01:03:37, 02:11:21–02:26:39 · 4주차 녹음 01:27:55–01:31 · WK04(여과) 슬라이드 8)"
     },
     {
       "id": "wk02-008",
@@ -120,7 +127,8 @@
       ],
       "answer": 1,
       "explanation": "N-1 perfusion은 N-1에서 노폐물을 빼고 신선 배지를 줘 세포를 고밀도(≥1×10⁶ cells/mL)로 만든 뒤 본 배양에 접종한다. 그러면 peak VCD가 오르고 배양 기간이 줄어 연간 배치 수가 늘어난다.\n본 배양의 fed-batch 전략은 그대로이므로 major change가 아니고 허가 부담이 작다는 것이 장점이다.",
-      "source": "WK02 p.32, 37–38 · 2주차 녹음 02:21:51"
+      "source": "WK02 p.32, 37–38 · 2주차 녹음 02:21:51",
+      "notes": "[배양 모드]\n· Batch: 처음부터 배지를 가득 채우고 추가 없음(1~2주). 간편하지만 효율↓. 세포주 개발·클론 선별·배지 스크리닝(플라스크 수백 개)에 많이 씀.\n· Fed-batch: 절반 정도 채우고 세포가 북적이면 농축 feed(2~3주, 보통 14~15일). PD 단계부터 사용, COGS 비교에서 여전히 상업 생산의 70% 이상.\n· Perfusion: 세포는 남기고(ATF 등 cell retention device) 상등액만 빼며 신선 배지 공급 → 고밀도, lactate·암모니아 제거, death 지연(3~9주). 1,000 L에서 15회 교환 = 15,000 L 효과. 배지·필터(ATF 약 1억)·정제 부담이 크다.\n· N-1 perfusion: N-1에서 노폐물 제거·고밀도(≥1×10⁶) → N에 고농도 접종. 본배양 fed-batch는 그대로라 major change 아님.\n· ATF: 펌프가 배양액을 빨았다 밀었다 하며 hollow fiber 필터로 상등액만 투과(하루 배양 부피의 1~3배 교환).\n· \"장점만 있는 공정은 없다.\" \"회분식\"이라는 표현 대신 batch/fed-batch/perfusion으로.\n(WK02 p.32–40 · 2주차 녹음 57:00–01:03:37, 02:11:21–02:26:39 · 4주차 녹음 01:27:55–01:31 · WK04(여과) 슬라이드 8)\n\n[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "wk02-009",
@@ -135,7 +143,8 @@
       ],
       "answer": 3,
       "explanation": "ATF는 perfusion의 세포 유지(cell retention) 장치다. 펌프가 양방향으로 흐름을 바꿔 필터 막힘을 줄인다. 하루에 배양 부피의 1~3배를 교환하므로 배지·정제 비용이 크다는 단점도 강의에서 언급했다.",
-      "source": "WK02 p.40 · 2주차 녹음 02:26:39"
+      "source": "WK02 p.40 · 2주차 녹음 02:26:39",
+      "notes": "[배양 모드]\n· Batch: 처음부터 배지를 가득 채우고 추가 없음(1~2주). 간편하지만 효율↓. 세포주 개발·클론 선별·배지 스크리닝(플라스크 수백 개)에 많이 씀.\n· Fed-batch: 절반 정도 채우고 세포가 북적이면 농축 feed(2~3주, 보통 14~15일). PD 단계부터 사용, COGS 비교에서 여전히 상업 생산의 70% 이상.\n· Perfusion: 세포는 남기고(ATF 등 cell retention device) 상등액만 빼며 신선 배지 공급 → 고밀도, lactate·암모니아 제거, death 지연(3~9주). 1,000 L에서 15회 교환 = 15,000 L 효과. 배지·필터(ATF 약 1억)·정제 부담이 크다.\n· N-1 perfusion: N-1에서 노폐물 제거·고밀도(≥1×10⁶) → N에 고농도 접종. 본배양 fed-batch는 그대로라 major change 아님.\n· ATF: 펌프가 배양액을 빨았다 밀었다 하며 hollow fiber 필터로 상등액만 투과(하루 배양 부피의 1~3배 교환).\n· \"장점만 있는 공정은 없다.\" \"회분식\"이라는 표현 대신 batch/fed-batch/perfusion으로.\n(WK02 p.32–40 · 2주차 녹음 57:00–01:03:37, 02:11:21–02:26:39 · 4주차 녹음 01:27:55–01:31 · WK04(여과) 슬라이드 8)\n\n[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "wk02-010",
@@ -150,7 +159,8 @@
       ],
       "answer": 5,
       "explanation": "CO2는 녹아서 탄산을 만들어 pH를 낮춘다(pH↑ → CO2 공급). 반대로 pH가 떨어지면 염기(중탄산나트륨)를 넣는다.\n가스 역할: air·O2 = DO↑, N2 = DO↓, CO2 = pH↓.",
-      "source": "WK02 p.22 · 2주차 녹음 01:26:37–01:29:52, 01:38:43"
+      "source": "WK02 p.22 · 2주차 녹음 01:26:37–01:29:52, 01:38:43",
+      "notes": "[배양 CPP와 제어] (2주차)\n· 배양기가 직접·실시간 측정·제어하는 변수: pH, 온도, 교반(rpm), DO. 대사 변수(glucose·lactate·glutamine·ammonia), VCD·viability, 삼투압은 샘플링해야만 안다(하루 1회 이상 샘플링 백).\n· 가스 4종: air·O2 → DO↑, N2 → DO↓, CO2 → pH↓. pH가 떨어지면(보통 lactate 축적) 염기(중탄산나트륨), 오르면 CO2. pH 센서는 백업용 2개, DO가 떨어지면 순산소 자동 공급.\n· 배양기 기능 = 교반(agitation) + 통기(aeration). 샘플링 라인은 하단 포트. seed 배양기를 위층에 두어 중력 이송(세포 스트레스↓, 역류 방지).\n· 문제해결 예: pH 저하 → glucose 소비·lactate 축적 확인.\n(WK02 p.18–22, 46–47 · 2주차 녹음 01:14:18–01:29:52, 01:38:43, 02:43:31)"
     },
     {
       "id": "wk02-011",
@@ -165,7 +175,8 @@
       ],
       "answer": 2,
       "explanation": "교반 3변수 = mixing time, P/V(가장 많이 사용 – 같은 P/V가 되는 rpm 계산), tip speed.\n통기 3변수 = VVM, vs, kLa(가장 많이 연구). 스케일이 커지면 rpm이 낮아져 산소 전달이 떨어지므로 kLa가 중요하다.",
-      "source": "WK02 p.86–89, 92–93 · 2주차 녹음 02:50:42–02:53:58"
+      "source": "WK02 p.86–89, 92–93 · 2주차 녹음 02:50:42–02:53:58",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)"
     },
     {
       "id": "wk02-012",
@@ -180,7 +191,8 @@
       ],
       "answer": 4,
       "explanation": "OTR(oxygen transfer rate)은 배양기가 물리적으로 산소를 녹여 넣는 속도이고, OUR(oxygen uptake rate)은 세포가 소비하는 속도다. 공급이 소비 이상이어야(OTR ≥ OUR) 산소 제한이 생기지 않는다.\n스케일이 커지면 CO2 stripping이 어려워지고(pCO2↑), 가스를 늘리면 foam이 생겨 design space가 좁아진다.",
-      "source": "WK02 p.95 · 2주차 녹음 02:56:12–02:57:17"
+      "source": "WK02 p.95 · 2주차 녹음 02:56:12–02:57:17",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)"
     },
     {
       "id": "wk02-013",
@@ -195,7 +207,8 @@
       ],
       "answer": 1,
       "explanation": "rpm이 너무 낮으면 섞이지 않아 농도 구배가 생기고, 너무 높으면 shear로 세포가 손상된다. 가스가 너무 적으면 산소가 부족하고, 너무 많으면 foam이 생겨 세포가 죽고 vent filter가 젖을 수 있다.\n그 사이가 운전 가능 범위(design space)이고, 생물은 pH·DO가 계속 변하므로 점이 아니라 '범위'가 필요하다.",
-      "source": "WK02 p.86 · 2주차 녹음 02:46:49–02:50:42, 02:34:59"
+      "source": "WK02 p.86 · 2주차 녹음 02:46:49–02:50:42, 02:34:59",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)\n\n[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
     },
     {
       "id": "wk02-014",
@@ -210,7 +223,8 @@
       ],
       "answer": 3,
       "explanation": "재조합 단백질: 노바백스(SK바이오사이언스 생산) / 바이럴 벡터(아데노바이러스): 아스트라제네카, 스푸트니크 / mRNA: 모더나, 바이오엔텍(R&D)+화이자(생산).\n강의에서는 회사에 가면 먼저 그 회사의 모달리티와 플랫폼을 파악하라고 했다.",
-      "source": "WK02 p.5–6 · 2주차 녹음 04:58–25:09"
+      "source": "WK02 p.5–6 · 2주차 녹음 04:58–25:09",
+      "notes": "[바이오의약품 모달리티·플랫폼] (2주차 하태수 강사)\n· 단백질 기반: 항체·ADC·재조합 효소/단백질/펩타이드 – 현재 캐시카우. 대형 제약사는 항체 플랫폼을 10년 이상 다져 진입 장벽이 높아 ADC가 새 플랫폼으로 매력적.\n· 바이러스 기반: 유전자치료 벡터(AAV·렌티·레트로), 백신(mRNA/pDNA, 아데노바이러스 벡터).\n· 첨단(세포): 유전자변형 세포치료(CAR-T·NK), 줄기세포(MSC·iPSC).\n· 플랫폼 = 서열만 넣으면 최종 제품까지 나오는 정형화된 기술·공정 틀. 코로나 백신: 재조합 단백질(노바백스·SK바이오), 바이럴 벡터(AZ·스푸트니크), mRNA(바이오엔텍 R&D+화이자 생산, 모더나).\n· 숙주: 항체 = CHO(부유·분비), AAV = HEK293에 플라스미드 transfection → 세포 내 생성 → lysis 회수, mRNA = E. coli로 플라스미드 → IVT → LNP 봉입 → −80 ℃.\n· 강사: \"회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라.\"\n(WK02 p.5–13 · 2주차 녹음 04:58–45:22)"
     },
     {
       "id": "wk02-015",
@@ -225,7 +239,8 @@
       ],
       "answer": 5,
       "explanation": "생산 규모에서는 조건을 마음대로 바꿔 시험할 수 없다. 그래서 생산을 대표하는 소형 모델(SDM)에서 온도·교반·pH·DO·삼투압 등의 영향을 DoE로 시험하고, 결과를 다시 scale-up(MS&T: 2 L → 200 L → 15,000 L)에 적용한다.",
-      "source": "WK02 p.18 · 2주차 녹음 01:03:49, 01:34:24–01:37:19"
+      "source": "WK02 p.18 · 2주차 녹음 01:03:49, 01:34:24–01:37:19",
+      "notes": "[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
     },
     {
       "id": "wk02-016",
@@ -240,7 +255,8 @@
       ],
       "answer": 2,
       "explanation": "해동 직후에는 생존율이 낮은(~60%) 경우가 많아, 4~7단계 계대로 회복(99% 이상)시킨 뒤 seed train(예: 120 → 600 → 3,000 → 15,000 L)으로 키운다.\nseed 단계는 오염이 10일 뒤에야 드러날 수 있어 가장 높은 무균 수준으로 다룬다.",
-      "source": "WK02 p.35 · 2주차 녹음 01:08:32, 01:22:34"
+      "source": "WK02 p.35 · 2주차 녹음 01:08:32, 01:22:34",
+      "notes": "[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "wk02-017",
@@ -255,7 +271,8 @@
       ],
       "answer": 4,
       "explanation": "강의 핵심 문장은 '장점만 있는 공정은 없다'였다. perfusion은 고밀도·연속 정제가 장점이지만 배지 사용량, 필터(ATF) 비용, 운영 복잡도라는 단점이 있다. 그래서 fed-batch가 여전히 70% 이상이다.",
-      "source": "WK02 p.40 · 2주차 녹음 57:00, 02:11:21–02:20:52"
+      "source": "WK02 p.40 · 2주차 녹음 57:00, 02:11:21–02:20:52",
+      "notes": "[배양 모드]\n· Batch: 처음부터 배지를 가득 채우고 추가 없음(1~2주). 간편하지만 효율↓. 세포주 개발·클론 선별·배지 스크리닝(플라스크 수백 개)에 많이 씀.\n· Fed-batch: 절반 정도 채우고 세포가 북적이면 농축 feed(2~3주, 보통 14~15일). PD 단계부터 사용, COGS 비교에서 여전히 상업 생산의 70% 이상.\n· Perfusion: 세포는 남기고(ATF 등 cell retention device) 상등액만 빼며 신선 배지 공급 → 고밀도, lactate·암모니아 제거, death 지연(3~9주). 1,000 L에서 15회 교환 = 15,000 L 효과. 배지·필터(ATF 약 1억)·정제 부담이 크다.\n· N-1 perfusion: N-1에서 노폐물 제거·고밀도(≥1×10⁶) → N에 고농도 접종. 본배양 fed-batch는 그대로라 major change 아님.\n· ATF: 펌프가 배양액을 빨았다 밀었다 하며 hollow fiber 필터로 상등액만 투과(하루 배양 부피의 1~3배 교환).\n· \"장점만 있는 공정은 없다.\" \"회분식\"이라는 표현 대신 batch/fed-batch/perfusion으로.\n(WK02 p.32–40 · 2주차 녹음 57:00–01:03:37, 02:11:21–02:26:39 · 4주차 녹음 01:27:55–01:31 · WK04(여과) 슬라이드 8)"
     },
     {
       "id": "wk02-018",
@@ -270,7 +287,8 @@
       ],
       "answer": 1,
       "explanation": "AAV는 HEK293 세포에 플라스미드를 transfection → 세포 내 AAV 생성 → lysis로 회수한다. 최적화 변수는 RPM, pH, DO 등이고 결과는 VCC, viability 등으로 본다.\nE. coli로 플라스미드를 만들고 → IVT → LNP 봉입하는 것은 mRNA 공정이다.",
-      "source": "WK02 p.12–13 · 2주차 녹음 25:24–31:52, 43:52"
+      "source": "WK02 p.12–13 · 2주차 녹음 25:24–31:52, 43:52",
+      "notes": "[바이오의약품 모달리티·플랫폼] (2주차 하태수 강사)\n· 단백질 기반: 항체·ADC·재조합 효소/단백질/펩타이드 – 현재 캐시카우. 대형 제약사는 항체 플랫폼을 10년 이상 다져 진입 장벽이 높아 ADC가 새 플랫폼으로 매력적.\n· 바이러스 기반: 유전자치료 벡터(AAV·렌티·레트로), 백신(mRNA/pDNA, 아데노바이러스 벡터).\n· 첨단(세포): 유전자변형 세포치료(CAR-T·NK), 줄기세포(MSC·iPSC).\n· 플랫폼 = 서열만 넣으면 최종 제품까지 나오는 정형화된 기술·공정 틀. 코로나 백신: 재조합 단백질(노바백스·SK바이오), 바이럴 벡터(AZ·스푸트니크), mRNA(바이오엔텍 R&D+화이자 생산, 모더나).\n· 숙주: 항체 = CHO(부유·분비), AAV = HEK293에 플라스미드 transfection → 세포 내 생성 → lysis 회수, mRNA = E. coli로 플라스미드 → IVT → LNP 봉입 → −80 ℃.\n· 강사: \"회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라.\"\n(WK02 p.5–13 · 2주차 녹음 04:58–45:22)"
     },
     {
       "id": "wk02-019",
@@ -285,7 +303,8 @@
       ],
       "answer": 3,
       "explanation": "오프라인 분석: 세포(VCD, viability, diameter), chemistry(glucose, glutamine, glutamate, ammonia, lactate, Ca, Na, K), gas(pH, pCO2, pO2), osmolality.\n샘플링해야만 알 수 있는 값이라 디지털 트윈·AI 예측 같은 연구가 진행 중이다.",
-      "source": "WK02 p.46–47 · 2주차 녹음 01:49:48"
+      "source": "WK02 p.46–47 · 2주차 녹음 01:49:48",
+      "notes": "[오프라인 분석 항목] (2주차)\n· 세포: VCD(viable cell density), viability(%), cell diameter\n· Chemistry: glucose, glutamine, glutamate, ammonia, lactate, Ca, Na, K\n· Gas: pH, pCO2, pO2 / 그 외 osmolality\n· 샘플링으로만 알 수 있어 디지털 트윈·AI 예측 연구가 진행 중. 데이터 = 초기 조건 + 배양 파라미터 + 대사 파라미터 + 품질 파라미터.\n· 배양 목적(김영태): 무균 전제하에 높은 VCD와 높은 titer(g/L, 항체 약 2~3 g/L).\n(WK02 p.24, 46–47 · 2주차 녹음 01:49:48–01:53:51 · 4주차 녹음 01:20:36)"
     },
     {
       "id": "wk02-020",
@@ -300,7 +319,8 @@
       ],
       "answer": 5,
       "explanation": "DoE로 얻은 결과에서 최적 운영 공간 = design space, 그 안의 운전 목표점 = set point. DO는 세포가 늘면 떨어지고 산소를 넣으면 오르기를 반복하므로 범위 관리가 필요하다.\n'배양 관련 위험 평가 및 process characterization'은 R&D 스케일 배양을 해 본 다음 단계라고 설명했다(김영태 강사는 PD = 되는 조건 찾기, PC = 최적값과 허용 범위 정하기로 설명).",
-      "source": "WK02 p.12, 18, 77 · 2주차 녹음 02:34:59–02:38:03 · 6주차 녹음 2부 00:00–04:20"
+      "source": "WK02 p.12, 18, 77 · 2주차 녹음 02:34:59–02:38:03 · 6주차 녹음 2부 00:00–04:20",
+      "notes": "[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
     },
     {
       "id": "wk02-021",
@@ -315,7 +335,8 @@
       ],
       "answer": 2,
       "explanation": "회사마다 강점 플랫폼이 다르다(예: mRNA 플랫폼을 수십 년 준비한 회사는 새 병원체가 나와도 서열만 넣어 빠르게 백신을 만든다). 대형 제약사는 항체 플랫폼을 10년 이상 다져 와 진입 장벽이 높고, 그래서 ADC 같은 새 플랫폼이 매력적이라고 했다.\n지원하려는 회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라고 강조했다.",
-      "source": "WK02 p.5–6 · 2주차 녹음 07:52, 11:04–13:04, 19:40–22:51"
+      "source": "WK02 p.5–6 · 2주차 녹음 07:52, 11:04–13:04, 19:40–22:51",
+      "notes": "[바이오의약품 모달리티·플랫폼] (2주차 하태수 강사)\n· 단백질 기반: 항체·ADC·재조합 효소/단백질/펩타이드 – 현재 캐시카우. 대형 제약사는 항체 플랫폼을 10년 이상 다져 진입 장벽이 높아 ADC가 새 플랫폼으로 매력적.\n· 바이러스 기반: 유전자치료 벡터(AAV·렌티·레트로), 백신(mRNA/pDNA, 아데노바이러스 벡터).\n· 첨단(세포): 유전자변형 세포치료(CAR-T·NK), 줄기세포(MSC·iPSC).\n· 플랫폼 = 서열만 넣으면 최종 제품까지 나오는 정형화된 기술·공정 틀. 코로나 백신: 재조합 단백질(노바백스·SK바이오), 바이럴 벡터(AZ·스푸트니크), mRNA(바이오엔텍 R&D+화이자 생산, 모더나).\n· 숙주: 항체 = CHO(부유·분비), AAV = HEK293에 플라스미드 transfection → 세포 내 생성 → lysis 회수, mRNA = E. coli로 플라스미드 → IVT → LNP 봉입 → −80 ℃.\n· 강사: \"회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라.\"\n(WK02 p.5–13 · 2주차 녹음 04:58–45:22)"
     },
     {
       "id": "wk02-022",
@@ -330,7 +351,8 @@
       ],
       "answer": 4,
       "explanation": "항체는 부유 배양이 가능한 동물세포 CHO에서 분비 생산한다. AAV는 HEK293에 플라스미드를 transfection해 세포 안에서 만들고 lysis로 회수한다. mRNA 백신은 E. coli로 플라스미드를 대량 생산 → IVT → LNP 봉입한다('mRNA 백신을 만드는 데 쓰는 셀라인도 미생물').\n부착 세포는 대량 생산에 한계가 있어 microcarrier를 쓰고, 부유 세포(CHO)는 배양기에서 키운다.",
-      "source": "WK02 p.12–13 · 2주차 녹음 25:24–31:52, 43:52, 46:24 · 4주차 녹음 48:22"
+      "source": "WK02 p.12–13 · 2주차 녹음 25:24–31:52, 43:52, 46:24 · 4주차 녹음 48:22",
+      "notes": "[바이오의약품 모달리티·플랫폼] (2주차 하태수 강사)\n· 단백질 기반: 항체·ADC·재조합 효소/단백질/펩타이드 – 현재 캐시카우. 대형 제약사는 항체 플랫폼을 10년 이상 다져 진입 장벽이 높아 ADC가 새 플랫폼으로 매력적.\n· 바이러스 기반: 유전자치료 벡터(AAV·렌티·레트로), 백신(mRNA/pDNA, 아데노바이러스 벡터).\n· 첨단(세포): 유전자변형 세포치료(CAR-T·NK), 줄기세포(MSC·iPSC).\n· 플랫폼 = 서열만 넣으면 최종 제품까지 나오는 정형화된 기술·공정 틀. 코로나 백신: 재조합 단백질(노바백스·SK바이오), 바이럴 벡터(AZ·스푸트니크), mRNA(바이오엔텍 R&D+화이자 생산, 모더나).\n· 숙주: 항체 = CHO(부유·분비), AAV = HEK293에 플라스미드 transfection → 세포 내 생성 → lysis 회수, mRNA = E. coli로 플라스미드 → IVT → LNP 봉입 → −80 ℃.\n· 강사: \"회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라.\"\n(WK02 p.5–13 · 2주차 녹음 04:58–45:22)"
     },
     {
       "id": "wk02-023",
@@ -345,7 +367,8 @@
       ],
       "answer": 1,
       "explanation": "VCD(viable cell density)와 titer(g/L, 항체 약 2~3 g/L)를 높이는 것이 배양의 목적이다(무균 전제). seed train은 N-3 → N-2 → N-1 → N(생산)으로 약 5배씩 키운다. doubling time(CHO ≈ 1일)도 함께 알아 두자.",
-      "source": "WK02 p.34–35 · 2주차 녹음 01:08:32, 02:15:10 · 4주차 녹음 01:20:36–01:26:44"
+      "source": "WK02 p.34–35 · 2주차 녹음 01:08:32, 02:15:10 · 4주차 녹음 01:20:36–01:26:44",
+      "notes": "[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     }
   ]
 }
