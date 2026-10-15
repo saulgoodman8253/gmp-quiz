@@ -310,7 +310,34 @@ table.stats td.num, table.stats th.num { text-align: right; white-space: nowrap;
   .q-text { font-size: 19px; }
 }
 
+/* 인쇄용 문제지 */
+.print-q { padding: 12px 0; border-bottom: 1px dashed var(--border); }
+.print-q:last-of-type { border-bottom: 0; }
+.print-q .q-text { margin-bottom: 8px; }
+.print-tag { font-size: 12px; font-weight: 400; color: var(--muted); }
+.print-choices { list-style: none; margin: 0; padding: 0 0 0 6px; }
+.print-choices li { margin: 4px 0; white-space: pre-line; }
+.print-choices li.ans { font-weight: 700; color: var(--ok); }
+.print-explain { margin-top: 8px; padding: 8px 10px; border-left: 3px solid var(--ok); background: var(--surface-2); font-size: 14px; white-space: pre-line; }
+.print-src { margin-top: 4px; color: var(--muted); font-size: 12px; }
+.print-key h3 { margin: 18px 0 8px; }
+.key-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 4px; }
+.key-grid div { border: 1px solid var(--border); border-radius: 6px; padding: 4px 6px; font-size: 15px; }
+
 @media print {
-  .topbar, .bottom-bar, .progress-wrap { display: none; }
-  body { background: #fff; color: #000; }
+  :root, :root:not([data-theme="light"]), :root[data-theme="dark"] {
+    color-scheme: light;
+    --bg: #fff; --surface: #fff; --surface-2: #f2f2f2; --text: #000; --muted: #444; --border: #999;
+    --ok: #0a6b2f; --ok-bg: #e8f5ec; --bad: #b00020; --bad-bg: #fdecee;
+  }
+  @page { size: A4; margin: 14mm 12mm; }
+  .topbar, .bottom-bar, .progress-wrap, .no-print { display: none !important; }
+  html, body { background: #fff !important; color: #000; }
+  body { font-size: 12.5pt; }
+  main { padding: 0; max-width: none; }
+  .card { box-shadow: none; border: 0; padding: 0; margin: 0 0 8px; background: #fff; }
+  .print-q, .review-item, .paper-q { break-inside: avoid; page-break-inside: avoid; }
+  .q-text { font-size: 12.5pt; }
+  .print-key { break-before: page; page-break-before: always; }
+  .choice { padding: 4px 8px; min-height: 0; }
 }

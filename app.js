@@ -321,9 +321,117 @@
           `🎯 전범위 모의고사 (${bank.length}문항 중 선택한 문제 수만큼)`),
         el('button', { class: 'btn secondary block', type: 'button', onclick: startWrong, disabled: wrongCount === 0 },
           `❗ 오답만 다시 풀기 (${wrongCount}문항)`),
-        el('button', { class: 'btn secondary block', type: 'button', onclick: () => showRecords() }, '📊 학습 기록 보기')),
+        el('button', { class: 'btn secondary block', type: 'button', onclick: () => showRecords() }, '📊 학습 기록 보기'),
+        el('button', { class: 'btn secondary block', type: 'button', onclick: () => {
+          savePrefs();
+          showPrintSetup(selectedWeeks(), selectedCount());
+        } }, '🖨️ 문제지 PDF로 저장·공유 (선택한 주차 범위)')),
     );
     update();
+  }
+
+  /* ---------- PDF 저장·공유 (브라우저 인쇄 → PDF로 저장) ---------- */
+  function showPrintSetup(ws, count) {
+    const pool = bank.filter((q) => ws.includes(q.week));
+    if (!pool.length) { toast('주차를 하나 이상 선택하세요'); return; }
+
+    const kinds = [
+      { v: 'paper', t: '📝 문제지만', d: '정답 없이 문제만' },
+      { v: 'key', t: '📝 문제지 + 정답표', d: '마지막 쪽에 정답표' },
+      { v: 'study', t: '📖 정답·해설 포함', d: '문항마다 정답·해설·출처 (요약 노트용)' },
+    ];
+    const orders = [
+      { v: 'shuffle', t: '🔀 섞기', d: '문항·보기 순서 무작위' },
+      { v: 'seq', t: '🔢 순서대로', d: '주차·번호 순서 그대로' },
+    ];
+    const kindInputs = kinds.map((k, i) => {
+      const input = el('input', { type: 'radio', name: 'pkind', value: k.v });
+      input.checked = i === 1;
+      return input;
+    });
+    const orderInputs = orders.map((o, i) => {
+      const input = el('input', { type: 'radio', name: 'porder', value: o.v });
+      input.checked = i === 0;
+      return input;
+    });
+    const total = count > 0 ? Math.min(count, pool.length) : pool.length;
+    const label = ws.length === weeks.length ? '전체 주차' : ws.join(', ');
+
+    function make() {
+      const kind = kindInputs.find((i) => i.checked).value;
+      const order = orderInputs.find((i) => i.checked).value;
+      let qs;
+      if (order === 'seq') {
+        const chosen = new Set(shuffle(pool).slice(0, total).map((q) => q.id));
+        qs = pool.filter((q) => chosen.has(q.id)).map((q) => ({
+          q, choices: q.choices.slice(), correctIndex: q.answer - 1,
+        }));
+      } else {
+        qs = shuffle(pool).slice(0, total).map((q) => prepareQuestion(q, false));
+      }
+      showPrintDoc(qs, kind, label, () => showPrintSetup(ws, count));
+    }
+
+    render(
+      el('section', { class: 'card' },
+        el('h2', null, '🖨️ 문제지 PDF로 저장·공유'),
+        el('p', { class: 'muted', style: 'margin:0' }, `범위: ${label} · ${pool.length}문항 중 ${total}문항 (처음 화면에서 고른 주차·문제 수)`)),
+      el('section', { class: 'card' },
+        el('h2', null, '형식'),
+        el('div', { class: 'chips' }, kindInputs.map((input, i) =>
+          el('label', { class: 'chip wide-chip' }, input, el('strong', null, kinds[i].t), el('small', null, kinds[i].d))))),
+      el('section', { class: 'card' },
+        el('h2', null, '순서'),
+        el('div', { class: 'chips' }, orderInputs.map((input, i) =>
+          el('label', { class: 'chip wide-chip' }, input, el('strong', null, orders[i].t), el('small', null, orders[i].d))))),
+      el('section', { class: 'card stack' },
+        el('button', { class: 'btn block', type: 'button', onclick: make }, '미리보기 만들기'),
+        el('button', { class: 'btn secondary block', type: 'button', onclick: showHome }, '처음으로')),
+    );
+  }
+
+  function showPrintDoc(items, kind, label, back) {
+    const now = new Date();
+    const date = `${now.getFullYear()}. ${now.getMonth() + 1}. ${now.getDate()}.`;
+    const kindName = { paper: '문제지', key: '문제지 + 정답표', study: '정답·해설 포함' }[kind];
+
+    const toolbar = el('section', { class: 'card stack no-print' },
+      el('button', { class: 'btn block', type: 'button', onclick: () => window.print() }, '🖨️ PDF로 저장 / 인쇄'),
+      el('p', { class: 'muted', style: 'margin:0;font-size:14px' },
+        '인쇄 창에서 대상(프린터)을 「PDF로 저장」으로 고르면 PDF 파일이 됩니다. ',
+        '휴대폰: 아이폰은 인쇄 미리보기에서 공유 버튼 → 파일에 저장/카카오톡 등으로 보내기, ',
+        '안드로이드는 프린터 선택에서 「PDF로 저장」 후 파일을 공유하세요.'),
+      el('div', { class: 'row', style: 'gap:10px' },
+        el('button', { class: 'btn secondary', type: 'button', style: 'flex:1', onclick: back }, '← 설정 바꾸기'),
+        el('button', { class: 'btn secondary', type: 'button', style: 'flex:1', onclick: showHome }, '처음으로')));
+
+    const head = el('header', { class: 'paper-head print-head' },
+      el('h2', null, 'GMP 복습 문제지'),
+      el('div', { class: 'sub' }, kindName),
+      el('div', { class: 'paper-grid' },
+        el('div', null, el('b', null, '범위'), label),
+        el('div', null, el('b', null, '문항 수'), `${items.length}문항`),
+        el('div', null, el('b', null, '일자'), date),
+        el('div', null, el('b', null, '이름'), '')));
+
+    const body = items.map((it, i) => el('article', { class: 'print-q' },
+      el('p', { class: 'q-text' }, el('span', { class: 'q-num' }, `${i + 1}.`), it.q.question,
+        el('span', { class: 'print-tag' }, ` [${it.q.week}${it.q.type ? ' · ' + it.q.type : ''}]`)),
+      el('ol', { class: 'print-choices' }, it.choices.map((c, ci) =>
+        el('li', { class: kind === 'study' && ci === it.correctIndex ? 'ans' : null },
+          el('span', { class: 'mark' }, MARKS[ci]), ' ', c))),
+      kind === 'study' ? el('div', { class: 'print-explain' },
+        el('div', null, el('b', null, `정답 ${MARKS[it.correctIndex]}`)),
+        it.q.explanation ? el('div', null, it.q.explanation) : null,
+        it.q.source ? el('div', { class: 'print-src' }, `출처: ${it.q.source}`) : null) : null));
+
+    const key = kind === 'key' ? el('section', { class: 'print-key' },
+      el('h3', null, '정답표'),
+      el('div', { class: 'key-grid' }, items.map((it, i) =>
+        el('div', null, el('b', null, `${i + 1}`), ` ${MARKS[it.correctIndex]}`)))) : null;
+
+    render(toolbar, el('section', { class: 'card print-doc' }, head, body, key));
+    window.scrollTo(0, 0);
   }
 
   /* ---------- 회차 시작 ---------- */
@@ -527,7 +635,9 @@
           startSession(s.mode, pickQuestions(bank.filter((q) => ws.has(q.id)), 0), '오답 다시 풀기');
         } }, `❗ 오답만 다시 풀기 (${bank.filter((q) => wrongNote.all().has(q.id)).length}문항)`)
         : null,
+      el('button', { class: 'btn secondary block', type: 'button', onclick: () => window.print() }, '🖨️ 결과·해설 PDF로 저장 / 인쇄'),
       el('button', { class: 'btn secondary block', type: 'button', onclick: showHome }, '처음으로'));
+    actions.classList.add('no-print');
 
     const review = el('section', null,
       el('h2', { style: 'margin:18px 0 10px' }, '문항별 정답과 해설'),
