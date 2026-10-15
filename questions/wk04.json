@@ -616,6 +616,261 @@
       "answer": 2,
       "explanation": "배양기는 숨 쉬는 공기도 무균으로 들어가야 하므로 inlet 가스 필터와 배기용 vent filter가 필수다. 미생물 배지(glucose)는 끓여 멸균할 수 있지만 동물세포 배지는 열에 약해 여과가 유일한 방법이다. perfusion도 세포와 배양액을 나누는 여과 기술이다.\n정제에서는 clarification, 탈염·농축(UF/DF), 바이러스 제거, 완제에서는 sterile filtration. 바이오의약품 공정 필터 용도: 제균, virus reduction, 정화, 사전 여과, 정제/분리, 농축, buffer 교환, 탈염.",
       "source": "4주차 녹음 02:48–02:52 · WK04(여과) 슬라이드 159"
+    },
+    {
+      "id": "wk04-042",
+      "type": "개념",
+      "question": "여과 관련 용어를 '어떤 기준의 이름인지'로 나눌 때 강의 슬라이드 분류로 옳은 것은?\n\nㄱ. UF   ㄴ. CFF·DEF   ㄷ. Diafiltration·Concentration",
+      "choices": [
+        "ㄱ-Material / ㄴ-Operational / ㄷ-Size exclusion",
+        "세 가지 모두 같은 기준(크기)에 따른 이름이다.",
+        "ㄱ-Mechanism / ㄴ-Size exclusion / ㄷ-Material",
+        "ㄱ-Size exclusion(크기) / ㄴ-Mechanism(흐름 방식) / ㄷ-Operational(운전 목적)",
+        "ㄱ-Operational / ㄴ-Size exclusion / ㄷ-Mechanism"
+      ],
+      "answer": 4,
+      "explanation": "UF는 '얼마나 작은 것을 거르나'(size exclusion), CFF(=TFF)와 DEF(dead-end)는 '액체가 막을 어떻게 지나가나'(mechanism), DF와 농축은 '무엇을 하려고 운전하나'(operational)에 따른 이름이다. 그래서 'UF/DF를 TFF로 한다'처럼 함께 쓰인다.\n강의의 여과 구분: ① Mechanism ② Size ③ Material ④ Gas(기체/액체) ⑤ 목적·크기·시스템 선택.",
+      "source": "WK04(여과) 슬라이드 25, 26, 27, 28, 33, 47 · 6주차 녹음 1부 16:04"
+    },
+    {
+      "id": "wk04-043",
+      "type": "연결",
+      "question": "막 여과를 크기 기준으로 나눌 때 옳게 짝지은 것은? (기공 크기 / 걸러내는 분자량 / 운전 압력)",
+      "choices": [
+        "MF – 0.1~100 µm / >300 kDa / 0.5~2 bar, UF – 3~100 nm / 1~300 kDa / 0.1~3 bar, RO – <150 Da / 10~100 bar",
+        "UF – 0.1~100 µm / <150 Da / 3~15 bar",
+        "RO가 가장 낮은 압력(0.1 bar 이하)에서 운전된다.",
+        "NF가 가장 큰 기공(100 µm)을 가진다.",
+        "MF – 3~100 nm / 1~300 kDa / 10~100 bar"
+      ],
+      "answer": 1,
+      "explanation": "작아질수록 MF → UF → NF(2~5 nm, >150 Da, 3~15 bar) → RO(<150 Da, 10~100 bar)이며 필요한 압력도 커진다. 0.2 µm sterilizing grade filtration은 MF 영역의 아래쪽 끝, 바이러스·알부민은 UF 영역이다.",
+      "source": "WK04(여과) 슬라이드 29, 32"
+    },
+    {
+      "id": "wk04-044",
+      "type": "개념",
+      "question": "다음 중 '막(membrane) 필터' 재질이 아니라 '심층(depth) 필터' 재질에 해당하는 것만 고른 것은?",
+      "choices": [
+        "PVDF, Nylon, PP",
+        "PES, PVDF, PTFE",
+        "PP, Glass fiber, Cellulose(규조토·carbon powder 포함)",
+        "CA, Nylon, PES",
+        "PTFE, CA, Glass fiber"
+      ],
+      "answer": 3,
+      "explanation": "Membrane: CA(cellulose acetate), Nylon, PVDF, PES(Sartopore), PTFE(소수성, Sartofluor).\nDepth: PP, glass fiber, cellulose(Sartoclear – 규조토·carbon powder 포함). 두 가지를 겹친 combination 필터도 있다.",
+      "source": "WK04(여과) 슬라이드 34, 35, 41, 42"
+    },
+    {
+      "id": "wk04-045",
+      "type": "상황판단",
+      "question": "세포 debris가 많은 배양액을 clarification하려 한다. Membrane 필터 하나만 쓰는 것보다 depth + membrane 조합이 유리한 이유로 가장 적절한 것은?",
+      "choices": [
+        "depth 필터가 sterile filter 역할을 하기 때문에",
+        "membrane 필터는 clarification에 사용이 금지되어 있기 때문에",
+        "두 필터를 함께 쓰면 압력이 0이 되기 때문에",
+        "membrane 필터는 압력이 높아지면 입자가 뒤로 넘어가기 때문에",
+        "depth 필터는 두꺼운 섬유층에 많은 입자를 붙잡아(dirt loading capacity↑) 조기 막힘을 막고, 뒤의 membrane이 정해진 크기 이상을 확실히 걸러(defined retention) 여과액의 안정성을 높이기 때문에"
+      ],
+      "answer": 5,
+      "explanation": "Membrane: 표면에서 거르며 높은 차압·압력 변화에도 입자가 뒤로 넘어가지 않음(particle, bioburden, sterile, mycoplasma, virus filtration). 대신 쉽게 막힌다.\nDepth: 많은 양을 holding해 조기 막힘이 없지만 압력에 민감해 압력이 높으면 넘어갈 수 있음(pre-filtration, clarification). 그래서 공정에서는 조합으로 효율을 최대화한다.",
+      "source": "WK04(여과) 슬라이드 40, 41, 43"
+    },
+    {
+      "id": "wk04-046",
+      "type": "계산",
+      "question": "여과의 구동력은 차압(ΔP = P1 − P2)이다. 다음 두 경우의 여과 구동력을 비교하면?\n\n· Case 1: P_in 100 bar, P_out 99 bar\n· Case 2: P_in 1 bar, P_out 0 bar",
+      "choices": [
+        "Case 1이 100배 크다",
+        "두 경우 ΔP가 1 bar로 같다",
+        "Case 2가 99배 크다",
+        "Case 1은 여과가 일어나지 않는다",
+        "Case 2는 음압이라 역류한다"
+      ],
+      "answer": 2,
+      "explanation": "여과 = 크기가 다른 물질을 물리적·기계적으로 분리하는 것이며, 압력이나 진공으로 만든 '차압(압력 강하)'이 유체를 이동시킨다. 절대 압력이 아니라 ΔP가 중요하므로 두 경우 모두 1 bar로 같다. In-line(양압) 필터와 bottle-top(음압·진공) 필터 모두 같은 원리다.",
+      "source": "WK04(여과) 슬라이드 22"
+    },
+    {
+      "id": "wk04-047",
+      "type": "연결",
+      "question": "박테리아에서 사람 호르몬(예: 재조합 인슐린)을 생산할 때, 생산물 위치에 따른 회수 공정으로 옳은 것은?",
+      "choices": [
+        "Intracellular는 세포를 제거하고 배양액만 쓴다.",
+        "Extracellular는 inclusion body refolding이 반드시 필요하다.",
+        "Extracellular – cell harvest → pellet → cell lysis / Intracellular – cell removal → permeate → sterile filter",
+        "Extracellular – cell removal(원심→depth→sterile, 또는 CFF permeate, 또는 DEF→depth→sterile) / Intracellular – cell harvest(원심 pellet 또는 CFF retentate) → cell lysis(→ inclusion body 세척·용해·refolding)",
+        "두 경우 모두 cell lysis 후 permeate를 회수한다."
+      ],
+      "answer": 4,
+      "explanation": "분비형(extracellular)은 세포를 '제거'(clarification)하고 액체(CFF면 permeate)를 쓴다. 세포 안에 쌓이는 형태(intracellular)는 세포를 '모아'(cell harvest; 원심 pellet, CFF retentate) 깨뜨린 뒤 inclusion body(잘못 접힌 단백질 덩어리)를 세척·용해·refolding한다.\n'실무자가 잘못 쓰는 단어(cell harvest vs clarification)'의 근거가 되는 슬라이드다.",
+      "source": "WK04(여과) 슬라이드 13, 14 · 4주차 녹음 01:35:56"
+    },
+    {
+      "id": "wk04-048",
+      "type": "개념",
+      "question": "혈장분획제제(예: IVIG) 생산 공정에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "혈액을 원심분리해 혈장(전체의 약 55%; 알부민 60%, 글로불린 35%, 피브리노겐 4%)을 얻고, cryopoor plasma에서 에탄올(EtOH) 침전으로 분획한 뒤 AEX → S/D 바이러스 불활성화 → CEX → virus filtration/formulation을 거친다.",
+        "혈장분획에는 침전을 쓰지 않고 SEC만 쓴다.",
+        "혈장은 적혈구(약 45%)를 뜻한다.",
+        "사람 유래라 바이러스 불활성화·제거 단계가 없다.",
+        "혈장을 CHO 세포에 넣어 배양한 뒤 Protein A로 정제한다."
+      ],
+      "answer": 1,
+      "explanation": "혈장 분획은 대표적인 precipitation(침전) 공정이다: 혈장은 알코올, 미생물은 황산, 구제역 백신은 PEG 침전(주로 1차 정제). 이후 크로마토그래피와 바이러스 불활성화(S/D)·제거(VF)를 거친다.\n항체(CHO) 공정은 precipitation을 쓰지 않는다는 점과 대비된다.",
+      "source": "WK04(여과) 슬라이드 11, 15 · 4주차 녹음 40:40–45:11"
+    },
+    {
+      "id": "wk04-049",
+      "type": "계산",
+      "question": "USP titer가 2 g/L인 항체를, 40 mg/0.4 mL 제형(예: Humira pen)으로 완제한다. 완제 농도와 배양액 대비 농축 배수는?",
+      "choices": [
+        "10 g/L, 5배",
+        "40 g/L, 20배",
+        "100 g/L, 50배",
+        "400 g/L, 200배",
+        "1 g/L, 0.5배"
+      ],
+      "answer": 3,
+      "explanation": "40 mg / 0.4 mL = 100 mg/mL = 100 g/L. 배양액 2 g/L 대비 100/2 = 50배 농축이다.\n이 농축과 버퍼 교환을 formulation 단계의 UF/DF(TFF)가 맡고, 이어서 final sterile filtration(integrity test, PUPSIT) → filling·capping을 한다.",
+      "source": "WK04(여과) 슬라이드 16, 17 · 7주차 녹음 1부 46:48"
+    },
+    {
+      "id": "wk04-050",
+      "type": "연결",
+      "question": "항체 정제 공정에서 여과가 맡는 역할을 공정 위치와 옳게 짝지은 것은?",
+      "choices": [
+        "Virus filtration – 농축 & 버퍼 교환",
+        "UF/DF는 bioreactor 바로 뒤에서 세포 제거를 한다.",
+        "여과는 배지(media)에는 쓰지 않는다.",
+        "Protein A 직후 – 농축 & 버퍼 교환 / UF/DF – 탈염",
+        "CEX 앞 – 탈염 & 버퍼 교환 / AEX 앞 – 버퍼 교환 / VF 앞 – 농축 / UF/DF – 농축 & 버퍼 교환 → final sterile F&F"
+      ],
+      "answer": 5,
+      "explanation": "슬라이드의 항체 정제 공정: Bioreactor → Protein A → Low pH inactivation → CEX → AEX → Virus filtration → UF/DF → Final sterile fill & finish. 각 크롬 사이에서 탈염·버퍼 교환·농축이 필요하고, 배지는 gamma, HTST, UV-C, autoclave, filtration 등으로 오염 위험을 낮춘다(mitigation).",
+      "source": "WK04(여과) 슬라이드 16, 23"
+    },
+    {
+      "id": "wk04-051",
+      "type": "개념",
+      "question": "기체(gas) 필터의 입자 포집 메커니즘과 특징으로 옳지 않은 것은?",
+      "choices": [
+        "작은 입자는 확산, 큰 입자는 충돌·차단으로 잘 걸리고, 그 사이 약 0.2 µm 부근이 가장 잘 통과하는 크기(MPPS)다.",
+        "기체 필터는 sieve effect만 작동하므로 표시된 기공 크기보다 작은 입자는 전혀 거르지 못한다.",
+        "Sieve effect – 기공보다 큰 입자는 표면에서 걸린다.",
+        "Impaction – 질량이 큰 입자가 흐름선을 따라가지 못해 섬유에 충돌한다.",
+        "Interception, electrostatic interaction, diffusion(Brownian motion)도 포집에 기여한다."
+      ],
+      "answer": 2,
+      "explanation": "기체 여과에서는 sieve 외에 impaction, interception, electrostatic, diffusion이 함께 작동한다. 그래서 0.2 µm 멸균 등급 기체 필터의 실제 포집 능력은 액체 기준 표시보다 10~20배 좋아, 0.01~0.02 µm(20 nm bacteriophage aerosol)도 100% 걸렀다.",
+      "source": "WK04(여과) 슬라이드 52, 53, 54, 55, 56"
+    },
+    {
+      "id": "wk04-052",
+      "type": "개념",
+      "question": "HEPA 필터 등급에 대한 강의 슬라이드 내용으로 옳은 것은?",
+      "choices": [
+        "HEPA 등급은 B. diminuta bacterial retention test로만 정한다.",
+        "E10~E12(EPA)가 HEPA보다 상위 등급이다.",
+        "HEPA는 5 µm 입자 기준 85% 이상 포집하는 필터다.",
+        "0.3 µm 입자 기준으로 등급을 매기며, EN 1822 H13은 ≥99.95%, H14는 ≥99.995%(averaged)를 포집한다. 그 위 등급은 ULPA(U15~U17)다.",
+        "HEPA는 액체 멸균용 0.2 µm PES 카트리지를 말한다."
+      ],
+      "answer": 4,
+      "explanation": "멸균 기체 필터는 B. diminuta bacterial retention test로, HEPA는 0.3 µm 입자 포집 효율로 등급을 매긴다(EPA E10~E12 < HEPA H13·H14 < ULPA U15~U17). 클린룸 Grade A 단일방향 기류, RABS·아이솔레이터 급기에 쓰인다.",
+      "source": "WK04(여과) 슬라이드 57 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk04-053",
+      "type": "상황판단",
+      "question": "WFI 저장 탱크 상부에 vent filter가 두 개(double vent) 설치되어 있고, 필터 하우징에 스팀 재킷(가열)이 붙어 있다. 그 이유로 가장 적절한 것은?",
+      "choices": [
+        "탱크에서 물을 빼고 채울 때 공기가 무균으로 드나들어야 하며, vent가 막히면 탱크가 찌그러지거나(진공 붕괴) 터질 수 있다. 소수성 PTFE vent 필터가 뜨거운 WFI 증기로 응축·막히지 않도록 가열하고, 하나가 문제여도 버틸 수 있게 이중으로 둔다.",
+        "WFI를 vent filter로 여과해 주사용수를 만든다.",
+        "vent filter는 친수성이라 물이 잘 통과해야 한다.",
+        "vent filter는 integrity test 대상이 아니다.",
+        "vent filter는 장식용이며 하나는 예비 부품 보관용이다."
+      ],
+      "answer": 1,
+      "explanation": "기체 필터 이해가 중요한 이유로 'vent가 제대로 안 된 탱크가 찌그러진' 사진이 소개되었다. vent/gas 필터는 소수성 PTFE(absolute retention, 기계적 강도, WIT 또는 IPA로 integrity test 가능)를 쓰며, 하우징에는 SIP용 clean steam, integrity test connector, 압력계, drain valve 등을 둔다.",
+      "source": "WK04(여과) 슬라이드 19, 48, 49, 50, 51, 58, 59, 60, 61"
+    },
+    {
+      "id": "wk04-054",
+      "type": "계산",
+      "question": "3 µm 이상 입자가 필터 상류에 1,000개, 하류에 100개 검출되었다. 이 필터의 β ratio와 제거율은?",
+      "choices": [
+        "β = 900, 90%",
+        "β = 0.1, 10%",
+        "β = 10, 90%",
+        "β = 100, 99%",
+        "β = 1,000, 99.9%"
+      ],
+      "answer": 3,
+      "explanation": "β_x = 상류 입자 수(≥x µm) / 하류 입자 수(≥x µm) = 1000/100 = 10 → 제거율 = 1 − 1/β = 90%. 하류에 1개만 나오면 β = 1,000(99.9%)으로 particulate control이 더 좋다.\n필터 표기는 pore size, retention rate, absolute/nominal로 나뉘며 회사마다 기준이 다르다(어떤 곳은 99.98% 이상을 absolute grade라 부름).",
+      "source": "WK04(여과) 슬라이드 44, 45"
+    },
+    {
+      "id": "wk04-055",
+      "type": "연결",
+      "question": "Filter sizing test 방법과 적용을 옳게 짝지은 것은?",
+      "choices": [
+        "Tmax는 온도 최대값을 뜻한다.",
+        "sizing test는 생산 규모 필터로만 할 수 있다.",
+        "sizing test 결과는 막면적 결정과 무관하다.",
+        "Vmax – 일정 유속, depth filter / Pmax – 일정 압력, membrane filter",
+        "Vmax – 일정 압력(constant pressure)에서 end flow rate까지의 최대 여과량, 주로 membrane filter / Pmax·Tmax – 일정 유속(constant flow)에서 end pressure·end turbidity까지의 최대 여과량, 주로 depth filter"
+      ],
+      "answer": 5,
+      "explanation": "Sizing test는 실제 공정에 쓸 필터 면적을 정하기 위해 작은 필터로 하는 시험이다(파라미터: pressure, batch volume, process time, 온도 등).\n결과 지표: Flux(LMH, L/m²/h) – plugging이 적은 시료에서 면적 결정에 중요 / Capacity(L/m²) – plugging이 많은 시료에서 중요.",
+      "source": "WK04(여과) 슬라이드 65, 66, 67, 68"
+    },
+    {
+      "id": "wk04-056",
+      "type": "계산",
+      "question": "Sizing test에서 0.02 m² 필터로 시료 4 L를 처리하고 막혔다(capacity 기준). 같은 시료 2,000 L를 처리하려면 필요한 최소 막면적은?",
+      "choices": [
+        "5 m²",
+        "10 m²",
+        "20 m²",
+        "100 m²",
+        "1 m²"
+      ],
+      "answer": 2,
+      "explanation": "Capacity = 4 L / 0.02 m² = 200 L/m². 필요 면적 = 2,000 L ÷ 200 L/m² = 10 m². 실제로는 safety factor를 곱해 더 크게 잡는다.\n같은 원리로 Slice 200(0.02 m²) 10 L/h → 500 LMH처럼 flux와 flow rate(L/h)를 구분해야 한다.",
+      "source": "WK04(여과) 슬라이드 68, 69, 70"
+    },
+    {
+      "id": "wk04-057",
+      "type": "개념",
+      "question": "필터가 막혔을 때(clogging) 생기는 일로 강의 슬라이드에 제시되지 않은 것은?",
+      "choices": [
+        "유량이 줄어 공정 시간이 예상보다 길어진다.",
+        "제거해야 할 입자가 여과액으로 넘어가 품질이 떨어질 수 있다.",
+        "필터 추가 교체, 시스템 정지·고장 등으로 비용이 늘어난다.",
+        "막히면 여과 효율이 높아져 품질이 좋아진다.",
+        "압력이 올라가 필터·튜빙·시스템에 부담을 준다."
+      ],
+      "answer": 4,
+      "explanation": "막힘 → 압력 증가, 유량 감소, particle penetrate → 필터 추가 교체, system stop/shut down, 공정 시간 증가 → 비용 증가. 그래서 sizing test로 '여과 공정 최적화'가 중요하다.",
+      "source": "WK04(여과) 슬라이드 64"
+    },
+    {
+      "id": "wk04-058",
+      "type": "개념",
+      "question": "필터 하우징에 쓰는 316L 스테인리스강에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "철(>60%)에 크롬(약 18%, 최소 10.5% 이상이면 stainless), 니켈(약 13~14%, 내식성·내열성), 몰리브덴(약 3%, 내식성 강화)을 더한 합금이다.",
+        "몰리브덴은 광택만 내고 내식성과 무관하다.",
+        "니켈은 316L에 들어가지 않는다.",
+        "316L은 플라스틱 하우징의 상품명이다.",
+        "크롬(Cr)이 0.1%만 들어가도 스테인리스라 부른다."
+      ],
+      "answer": 1,
+      "explanation": "Cr: 광택·경도·내식성(+), Ni: 내식성(++)·경도·내열성, Mo: 경도·내식성(+++). 바이오 공정의 탱크·배관·하우징은 대부분 316L이고, 배관 연결은 sanitary clamp/ferrule을 쓰는데 규격(DIN, ISO, ASME-BPE 등)마다 치수가 달라 주의해야 한다.",
+      "source": "WK04(여과) 슬라이드 75, 76"
     }
   ]
 }

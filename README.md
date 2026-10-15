@@ -79,8 +79,8 @@
 | --- | --- | --- | --- |
 | `wk02.json` | Upstream (배양) | 23 | WK02 PDF + 2주차 녹음 |
 | `wk03.json` | Downstream 1 (크로마토그래피) | 23 | WK03 PDF + 3주차 녹음 |
-| `wk04.json` | 바이오공정 개관 · Downstream 2 (여과) | 41 | 4주차 녹음 + WK04 여과 PDF(슬라이드 80~160) |
-| `wk05.json` | 완제 · RABS · APS · Isolator | 19 | WK05 PDF 2종 + 5주차 녹음 |
+| `wk04.json` | 바이오공정 개관 · Downstream 2 (여과) | 58 | 4주차 녹음 + WK04 여과 PDF 1·2부(슬라이드 1~160) |
+| `wk05.json` | 완제 · RABS · APS · Isolator | 25 | WK05 PDF 3종 + 5주차 녹음 |
 | `wk06.json` | mAb 공정 설계 · 여과 · 공정 계산 | 20 | WK06 PDF + 6주차 녹음 |
 | `wk07.json` | GMP Engineering | 21 | WK07 PDF + 7주차 녹음 |
 
