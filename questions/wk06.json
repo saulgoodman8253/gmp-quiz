@@ -15,7 +15,8 @@
       ],
       "answer": 2,
       "explanation": "① 메커니즘: dead-end(normal flow) vs cross-flow(TFF) ② 크기: MF vs UF ③ 재질: membrane vs depth ④ 목적(clarification, sterile, virus 등) ⑤ 액체 vs 기체(배양기 inlet·vent 가스 필터).\n7주차 시험 리뷰에서 '여과 5가지 구분법과 하위 분류'를 출제 포인트로 말했다.",
-      "source": "WK06 p.3 (필기) · 6주차 녹음 1부 16:04 · 7주차 녹음 2부 49:16–59:13"
+      "source": "WK06 p.3 (필기) · 6주차 녹음 1부 16:04 · 7주차 녹음 2부 49:16–59:13",
+      "notes": "[여과의 구분] (4·6주차 – \"하위 분류까지 알면 풀 수 있는 문제 많음\")\n· ① 메커니즘: dead-end(DEF, normal flow) vs cross-flow(CFF = TFF)\n· ② 크기: MF(µm, 균·입자) / UF(kDa·MWCO, 단백질) / NF / RO\n· ③ 재질: membrane(CA, Nylon, PVDF, PES, PTFE) / depth(PP, glass fiber, cellulose)\n· ④ 목적: 제균, virus reduction, clarification, pre-filter, 정제, 농축, buffer 교환, 탈염\n· ⑤ 대상: 액체 / 기체(gas·vent filter)\n· 슬라이드 명칭 구분: UF = size exclusion, CFF·DEF = mechanism, diafiltration·concentration = operational.\n· 여과 구동력 = 차압(ΔP = P1 − P2). 100→99 bar와 1→0 bar는 같은 1 bar.\n(WK04(여과) 슬라이드 22–28, 33, 47 · 6주차 녹음 1부 16:04)"
     },
     {
       "id": "wk06-002",
@@ -30,7 +31,8 @@
       ],
       "answer": 4,
       "explanation": "MF(예: 0.2 µm sterile filter)는 균·입자를 거르므로 µm. UF는 단백질을 남기고 물·염을 통과시키므로 MWCO(kDa)로 표시한다(예: 항체 150 kDa → 30~50 kDa 막). 크기는 MF > UF다.",
-      "source": "6주차 녹음 1부 16:04"
+      "source": "6주차 녹음 1부 16:04",
+      "notes": "[MF / UF / NF / RO]\n· MF: 기공 0.1~100 µm, >300 kDa 걸림, 0.5~2 bar – 균·입자(길이 단위 µm). 0.2 µm sterilizing grade filtration.\n· UF: 3~100 nm, 1~300 kDa, 0.1~3 bar – 단백질 농축·DF(무게 단위 kDa, MWCO). 항체 150 kDa는 30~50 kDa 막에 남음.\n· NF: 2~5 nm, >150 Da, 3~15 bar / RO: <150 Da, 10~100 bar.\n· MF가 크고 UF가 촘촘하다. MF-TFF는 permeate flux가 너무 빠르면 급격히 막힌다.\n(WK04(여과) 슬라이드 29–32, 101–102 · 6주차 녹음 1부 16:04)"
     },
     {
       "id": "wk06-003",
@@ -45,7 +47,8 @@
       ],
       "answer": 1,
       "explanation": "DF는 부피의 몇 배에 해당하는 새 버퍼를 넣어 교환하므로, 부피가 작을수록 버퍼·시간이 적게 든다. 그래서 '1st 농축 → DF → 2nd 농축(과농축) → product recovery' 순서다.\n면접 기출로도 소개되었다. CFF(유럽)와 TFF(미국·한국)는 같은 말이고, 신장 투석도 같은 원리다.",
-      "source": "WK06 p.4 (필기) · 6주차 녹음 1부 32:46–46:15"
+      "source": "WK06 p.4 (필기) · 6주차 녹음 1부 32:46–46:15",
+      "notes": "[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "wk06-004",
@@ -60,7 +63,8 @@
       ],
       "answer": 3,
       "explanation": "총량 = 2 g/L × 500 L = 1,000 g. 1,000 g ÷ 50 L = 20 g/L, 농축 배수 = 500/50 = 10배.\n정제 중후반에는 30~50 g/L, 완제는 100~200 g/L 수준까지 올린다.",
-      "source": "6주차 녹음 1부 32:46 · 7주차 녹음 1부 46:48"
+      "source": "6주차 녹음 1부 32:46 · 7주차 녹음 1부 46:48",
+      "notes": "[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "wk06-005",
@@ -75,7 +79,8 @@
       ],
       "answer": 5,
       "explanation": "공정 전 NWP를 재서 기준을 잡고, integrity test로 막 손상을 확인한 뒤 공정을 진행한다. 공정 후 CIP를 하고 다시 NWP를 재서 초기값과 비교해 세정이 되었는지 판단한다. 보존용액은 20% 에탄올 또는 0.1 M NaOH다.\n실제 8시간 중 공정 자체는 약 3시간이고 전후 처리가 약 5시간이다.",
-      "source": "WK06 p.4 (필기) · 6주차 녹음 1부 57:57–01:05"
+      "source": "WK06 p.4 (필기) · 6주차 녹음 1부 57:57–01:05",
+      "notes": "[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)\n\n[TFF 운전·세정·재사용] (6주차, WK04 슬라이드)\n· 순서: installation → flushing(보존용액 제거, WFI) → sanitization(NaOH) → flushing → NWP(기준) → integrity test → buffer conditioning → [1st 농축 → DF → 2nd 농축 → product recovery] → buffer flush → CIP(0.5 M NaOH) → flushing → NWP(초기와 비교) → storage(20% 에탄올 또는 0.1 M NaOH). 8시간 중 공정 3시간, 전후처리 5시간.\n· CWF = 물 flux. NWP = Water flux × 온도 보정계수(Kt) / (TMP × Area). Kt: 0 ℃ 2.003, 4 ℃ 1.751, 25 ℃ 1.000 – 차가우면 점도↑ flux↓. 뜨거운 물로 재면 115%가 나와 막 파손으로 오해한 사례(회복률 UF/DF 전 100%, 후 86.7%, 0.5 N NaOH 후 115.4%).\n· 재사용 기준(슬라이드): 배치 간 NWP(초기 대비 약 80% 표기), integrity, 제품 품질·수율, leachable(TOC) → life cycle 결정. 재사용 소모품 2개 = 크롬 레진, 카세트. 한계: 공정 문제(막힘→시간↑→deviation) + 제품 문제(E&L, ligand leaching → leached Protein A QC). 40회로 정했어도 과막힘이면 즉시 폐기.\n(WK04(여과) 슬라이드 106–113 · 6주차 녹음 1부 50:02–01:36:59)"
     },
     {
       "id": "wk06-006",
@@ -90,7 +95,8 @@
       ],
       "answer": 2,
       "explanation": "NWP = water flux × TCF / (TMP × Area) = 50 L/h × 1.000 / (0.5 bar × 2 m²) = 50 LMH/bar.\n회복률 = 50/60 ≈ 83%. 초기 대비 많이 낮으면 세정이 부족하거나 막이 막힌 것이다.",
-      "source": "WK06 p.5–6 (필기) · 6주차 녹음 1부 01:12–01:18"
+      "source": "WK06 p.5–6 (필기) · 6주차 녹음 1부 01:12–01:18",
+      "notes": "[TFF 운전·세정·재사용] (6주차, WK04 슬라이드)\n· 순서: installation → flushing(보존용액 제거, WFI) → sanitization(NaOH) → flushing → NWP(기준) → integrity test → buffer conditioning → [1st 농축 → DF → 2nd 농축 → product recovery] → buffer flush → CIP(0.5 M NaOH) → flushing → NWP(초기와 비교) → storage(20% 에탄올 또는 0.1 M NaOH). 8시간 중 공정 3시간, 전후처리 5시간.\n· CWF = 물 flux. NWP = Water flux × 온도 보정계수(Kt) / (TMP × Area). Kt: 0 ℃ 2.003, 4 ℃ 1.751, 25 ℃ 1.000 – 차가우면 점도↑ flux↓. 뜨거운 물로 재면 115%가 나와 막 파손으로 오해한 사례(회복률 UF/DF 전 100%, 후 86.7%, 0.5 N NaOH 후 115.4%).\n· 재사용 기준(슬라이드): 배치 간 NWP(초기 대비 약 80% 표기), integrity, 제품 품질·수율, leachable(TOC) → life cycle 결정. 재사용 소모품 2개 = 크롬 레진, 카세트. 한계: 공정 문제(막힘→시간↑→deviation) + 제품 문제(E&L, ligand leaching → leached Protein A QC). 40회로 정했어도 과막힘이면 즉시 폐기.\n(WK04(여과) 슬라이드 106–113 · 6주차 녹음 1부 50:02–01:36:59)\n\n[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "wk06-007",
@@ -105,7 +111,8 @@
       ],
       "answer": 4,
       "explanation": "NWP는 CWF(clean water flux)를 TMP·막면적·온도로 보정한 값이다. 온도가 낮으면 점도가 높아져 유속이 줄고(0 ℃ 보정계수 2.003 vs 25 ℃ 1.000, 약 2배 차이), 높으면 반대다.\n강의 사례에서도 뜨거운 물로 측정해 115%가 나와 막 파손으로 오해했다. 손상 여부는 integrity test로 판단한다.",
-      "source": "WK06 p.5–6 (필기) · 6주차 녹음 1부 01:12–01:18"
+      "source": "WK06 p.5–6 (필기) · 6주차 녹음 1부 01:12–01:18",
+      "notes": "[TFF 운전·세정·재사용] (6주차, WK04 슬라이드)\n· 순서: installation → flushing(보존용액 제거, WFI) → sanitization(NaOH) → flushing → NWP(기준) → integrity test → buffer conditioning → [1st 농축 → DF → 2nd 농축 → product recovery] → buffer flush → CIP(0.5 M NaOH) → flushing → NWP(초기와 비교) → storage(20% 에탄올 또는 0.1 M NaOH). 8시간 중 공정 3시간, 전후처리 5시간.\n· CWF = 물 flux. NWP = Water flux × 온도 보정계수(Kt) / (TMP × Area). Kt: 0 ℃ 2.003, 4 ℃ 1.751, 25 ℃ 1.000 – 차가우면 점도↑ flux↓. 뜨거운 물로 재면 115%가 나와 막 파손으로 오해한 사례(회복률 UF/DF 전 100%, 후 86.7%, 0.5 N NaOH 후 115.4%).\n· 재사용 기준(슬라이드): 배치 간 NWP(초기 대비 약 80% 표기), integrity, 제품 품질·수율, leachable(TOC) → life cycle 결정. 재사용 소모품 2개 = 크롬 레진, 카세트. 한계: 공정 문제(막힘→시간↑→deviation) + 제품 문제(E&L, ligand leaching → leached Protein A QC). 40회로 정했어도 과막힘이면 즉시 폐기.\n(WK04(여과) 슬라이드 106–113 · 6주차 녹음 1부 50:02–01:36:59)"
     },
     {
       "id": "wk06-008",
@@ -120,7 +127,8 @@
       ],
       "answer": 1,
       "explanation": "멸균 5총사 = 건열, 습열, 방사선, 가스, 여과. 대형 스테인리스 배양기는 현실적으로 습열(스팀)만 가능해 SIP를 쓴다.\nCIP(clean in place)를 먼저 하고 SIP(steam/sterilization in place)를 한다. 배관 CIP는 고속·고압 세척액, 탱크는 spray ball로 한다. UV 280 nm는 단백질 농도 모니터링이다.",
-      "source": "6주차 녹음 1부 51:29"
+      "source": "6주차 녹음 1부 51:29",
+      "notes": "[멸균 5총사 · CIP/SIP] (6주차 – \"외워라\")\n· 건열, 습열(수증기), 방사선, 독가스(EO·VHP 등), 여과.\n· 대형 스테인리스 배양기는 현실적으로 습열(스팀)만 가능 → SIP(steam/sterilization in place). CIP(clean in place)를 먼저, 그다음 SIP. 조립된 상태로 수행.\n· 배관 CIP는 고속·고압 세척액(난류), 탱크 내부는 spray ball. dead leg 최소화, 배수 기울기. 카세트 세정 0.5 M NaOH, 세정 확인 = 같은 압력에서 물 유속을 초기와 비교(NWP).\n· single-use는 배관이 간소하고 CIP/SIP 없이 일회용.\n(6주차 녹음 1부 50:02–57:57 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "wk06-009",
@@ -135,7 +143,8 @@
       ],
       "answer": 3,
       "explanation": "재사용 소모품의 대표가 크롬 레진과 카세트 필터이고, 재사용을 위해 CIP를 한다. 한계는 ① 공정(막힘·시간 증가) ② 제품(E&L, ligand leaching → leached Protein A QC 필수)이다.\n정해진 횟수(예: 40회) 전이라도 과도하게 막히면 즉시 폐기한다. 안전 마진은 보통 30%, 경우에 따라 50~100%로 잡는다.",
-      "source": "6주차 녹음 1부 01:23–01:36:59"
+      "source": "6주차 녹음 1부 01:23–01:36:59",
+      "notes": "[TFF 운전·세정·재사용] (6주차, WK04 슬라이드)\n· 순서: installation → flushing(보존용액 제거, WFI) → sanitization(NaOH) → flushing → NWP(기준) → integrity test → buffer conditioning → [1st 농축 → DF → 2nd 농축 → product recovery] → buffer flush → CIP(0.5 M NaOH) → flushing → NWP(초기와 비교) → storage(20% 에탄올 또는 0.1 M NaOH). 8시간 중 공정 3시간, 전후처리 5시간.\n· CWF = 물 flux. NWP = Water flux × 온도 보정계수(Kt) / (TMP × Area). Kt: 0 ℃ 2.003, 4 ℃ 1.751, 25 ℃ 1.000 – 차가우면 점도↑ flux↓. 뜨거운 물로 재면 115%가 나와 막 파손으로 오해한 사례(회복률 UF/DF 전 100%, 후 86.7%, 0.5 N NaOH 후 115.4%).\n· 재사용 기준(슬라이드): 배치 간 NWP(초기 대비 약 80% 표기), integrity, 제품 품질·수율, leachable(TOC) → life cycle 결정. 재사용 소모품 2개 = 크롬 레진, 카세트. 한계: 공정 문제(막힘→시간↑→deviation) + 제품 문제(E&L, ligand leaching → leached Protein A QC). 40회로 정했어도 과막힘이면 즉시 폐기.\n(WK04(여과) 슬라이드 106–113 · 6주차 녹음 1부 50:02–01:36:59)\n\n[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "wk06-010",
@@ -150,7 +159,8 @@
       ],
       "answer": 5,
       "explanation": "PD = 된다는 조건 찾기, PC = 그 조건 주변을 '물고 뜯어' 최적값과 허용 범위를 정량화. 그 결과가 design space다.\n2주차의 DoE·design space, 7주차 시험 리뷰의 'PD vs PC(+design space)'와 연결된다.",
-      "source": "6주차 녹음 2부 00:00–04:20 · 7주차 녹음 2부 49:16–59:13"
+      "source": "6주차 녹음 2부 00:00–04:20 · 7주차 녹음 2부 49:16–59:13",
+      "notes": "[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
     },
     {
       "id": "wk06-011",
@@ -165,7 +175,8 @@
       ],
       "answer": 2,
       "explanation": "P-C-A는 표준이지만 CEX를 high salt로 용출하므로 AEX 전에 희석이나 CFF가 필요하다. 대신 VCS 관점에서는 AEX에 부하 여유가 많아 바이러스 제거가 안정적이라는 장점이 있다.\nP-C-H는 농축 과정에서 생기는 dimer·multimer 제거에 HIC가 유리하다(Protein A·IEX는 monomer/dimer 분리가 어려움).",
-      "source": "6주차 녹음 2부 15:48–25:12 · 4주차 녹음 02:19"
+      "source": "6주차 녹음 2부 15:48–25:12 · 4주차 녹음 02:19",
+      "notes": "[크롬 조합과 VCS] (4·6주차)\n· 표준 P-C-A: CEX는 high salt(고전도도, mS/cm)로 용출 → AEX 전에 물 희석(대용량 부담) 또는 UF/DF(TFF)로 탈염 필요. VCS 관점에서 AEX에 여유가 있어 바이러스 제거가 안정적.\n· P-A-C: AEX가 flow-through라 전도도·pH 변화 없음 → 바로 CEX, 연속 공정에 편함.\n· P-C-H: 정제가 진행되며 농도↑로 생긴 dimer·multimer 제거에 HIC가 유리(Protein A·IEX는 monomer/dimer 분리 어려움).\n· IEX 용출은 pH 변경(구조 뒤틀림, 현업 안 씀) 대신 high salt(NaCl).\n· AEX(FT)는 바이러스 결합 제거(VCS 2번째), 한 스텝 5~6 LRV. + virus filtration → 총 10 중후반 LRV 목표. LRV = log₁₀(처리 전/처리 후).\n· 동물 유래 원료는 바이러스 위험을 배제할 수 없어 혈장제제·CHO 항체 모두 VCS(virus clearance study) 법적 요구. VCS는 축소 모델에 바이러스를 spiking해 평가.\n(4주차 녹음 02:00:18–02:22 · 6주차 녹음 1부 27:44–31:21, 2부 15:48–25:12)"
     },
     {
       "id": "wk06-012",
@@ -180,7 +191,8 @@
       ],
       "answer": 4,
       "explanation": "CV = πr²h = 3.14 × (0.8 cm)² × 20 cm = 3.14 × 0.64 × 20 ≈ 40.2 cm³ ≈ 40 mL (1 cm³ = 1 mL).\n16 mm 컬럼은 높이 1 cm당 약 2 mL다. '16/20'은 직경 16 mm, 베드 20 cm라는 뜻이다. 반지름이 아니라 직경(1.6)을 넣으면 4배인 약 160 mL로 틀린다.",
-      "source": "6주차 녹음 2부 39:17 · 3주차 녹음 01:12:17"
+      "source": "6주차 녹음 2부 39:17 · 3주차 녹음 01:12:17",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)\n\n[V-model · qualification vs validation] (7주차)\n· URS(사용자 요구 규격 – 220 V, 층고 등 최대한 상세히) → DQ(design qualification)/FDS(functional design spec) → FAT(제조사 공장에서 확인) → 배송·설치 → IQ(부속·도면대로 설치)/SAT → OQ(작동 – pH 센서 1~14 여러 포인트) → PQ(실제 공정 조건 – pH 7 ± 범위) → PV(process validation)/CV(cleaning validation) → re-validation.\n· Qualification(장비)이 전제되어야 validation(공정)을 한다 – 차이를 명확히. 변경 시 change control, requalification.\n· 사례: 구제역 센터 – 200 L 배양기 높이 2.5 m vs 천장 2.3 m → URS 누락.\n· HVAC 기류 패턴 확인은 실제 작동이 필요한 OQ/PQ 영역, IQ는 도면·문서·부품·교정 확인.\n(WK07 p.61 · 7주차 녹음 2부 01:10:15–01:20)"
     },
     {
       "id": "wk06-013",
@@ -195,7 +207,8 @@
       ],
       "answer": 1,
       "explanation": "배양 부피 = 1,000 g ÷ 0.1 g/L = 10,000 L.\n레진 = 1,000 g ÷ 50 g/L(=50 mg/mL) = 20 L, safety factor 100%를 적용하면 2배인 40 L.",
-      "source": "WK06 p.26 · 6주차 녹음 2부 46:53"
+      "source": "WK06 p.26 · 6주차 녹음 2부 46:53",
+      "notes": "[SBC vs DBC] (3·6주차)\n· SBC(static): beaker의 batch mode로 잰 총 용량. DBC(dynamic): 실제 운전 조건(유속)에서 흘리며 잰 '진짜' 용량 – 생산은 DBC로 설계.\n· breakthrough curve에서 C/C0 약 10%(회사에 따라 5~7%) 지점까지 넣은 양. 표기: 레진 1 mL당 mg + 유속 조건(느릴수록 잘 붙음). 공정 개발 끝·scale-up 직전, ≥10 mL 컬럼으로 측정.\n· 실제 로딩은 DBC의 50~70%(슬라이드 50~75%). 실무는 여유(safety factor, 일반 30%, 50~100%도).\n· 6주차 Case: 1 kg, titer 0.1 g/L → 10,000 L, DBC 50 mg/mL, SF 100% → 40 L 레진, 150 cm/h = 200 L/h → 50 h. CFF 20× → 500 L → 2.5 h. 레진 절반(20 L) 3 cycle → 170 L/cycle, 100 L/h → 약 6 h.\n(WK03 p.32 · 3주차 녹음 01:56:01–02:05:09 · 6주차 녹음 2부 44:25–46:53 · WK06 p.26–30)\n\n[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)"
     },
     {
       "id": "wk06-014",
@@ -210,7 +223,8 @@
       ],
       "answer": 3,
       "explanation": "20배 농축 → 10,000 L ÷ 20 = 500 L. 500 L ÷ 200 L/h = 2.5시간.\n같은 선속도·같은 레진을 쓰면 flow rate는 그대로이므로 로딩 시간은 부피에 비례한다.",
-      "source": "WK06 p.26–27 · 6주차 녹음 2부 46:53"
+      "source": "WK06 p.26–27 · 6주차 녹음 2부 46:53",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)\n\n[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "wk06-015",
@@ -225,7 +239,8 @@
       ],
       "answer": 5,
       "explanation": "500 L ÷ 3 ≈ 170 L/cycle. 높이를 유지하고 레진이 절반이면 단면적도 절반이므로 같은 선속도에서 유량은 100 L/h → cycle당 약 1.7~2시간, 3 cycle이면 약 6시간.\n레진 비용은 $800,000 → $400,000으로 줄지만 공정 시간과 인건비가 늘어난다(trade-off).",
-      "source": "WK06 p.28–29 · 6주차 녹음 2부 46:53"
+      "source": "WK06 p.28–29 · 6주차 녹음 2부 46:53",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)"
     },
     {
       "id": "wk06-016",
@@ -240,7 +255,8 @@
       ],
       "answer": 2,
       "explanation": "flow rate = 선속도 × 단면적이므로, 선속도와 베드 높이를 고정하고 직경을 키우면 체류 시간이 같게 유지된다. 베드 높이는 20 cm 전후를 선호한다.\n너무 느리게 흘리면 불순물까지 붙을 수 있다. 버퍼 양도 CV의 배수로 정하므로 스케일이 달라도 같은 비율이다.",
-      "source": "6주차 녹음 2부 25:21–35:14, 01:12 · 3주차 녹음 01:57:56"
+      "source": "6주차 녹음 2부 25:21–35:14, 01:12 · 3주차 녹음 01:57:56",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)"
     },
     {
       "id": "wk06-017",
@@ -255,7 +271,8 @@
       ],
       "answer": 4,
       "explanation": "실험실 1차수 ≈ 생산 RO/PW, 3차수 ≈ WFI. 바닥 청소는 PW로 한다. WFI를 만드는 방법은 시험 범위에서 제외된다고 했지만, '물(3차수 = WFI)'은 출제 포인트로 언급했다.",
-      "source": "6주차 녹음 1부 59:07 · 7주차 녹음 2부 49:16–59:13"
+      "source": "6주차 녹음 1부 59:07 · 7주차 녹음 2부 49:16–59:13",
+      "notes": "[제약용수] (4·6주차)\n· 실험실 1차수 ≈ 생산 RO/PW(purified water, 바닥 청소 등), 3차수(초순수 18.2 MΩ·cm) ≈ WFI(주사용수).\n· WFI는 무균수가 아니다 – 약전에 100 mL당 균수 기준이 있고 QC가 이를 확인한다. 바이알은 비멸균으로 사서 WFI로 세척 후 멸균·탈발열.\n· WFI 저장 탱크는 vent filter를 이중으로 두고 가열한다(막히면 탱크 붕괴). WFI 제조 방법은 시험 범위에서 제외.\n(4주차 녹음 02:57–02:59 · 6주차 녹음 1부 59:07 · WK04(여과) 슬라이드 19, 58–61)"
     },
     {
       "id": "wk06-018",
@@ -270,7 +287,8 @@
       ],
       "answer": 1,
       "explanation": "IEX 용출은 pH 변경과 high salt 두 방법이 있지만, 공정에서는 변성 위험 때문에 salt 용출(전도도 단위 mS/cm, µS/cm)을 주로 쓴다. 그 대가로 다음 단계 전 탈염(희석 또는 CFF)이 필요하다.",
-      "source": "6주차 녹음 1부 27:44–31:21 · 4주차 녹음 02:14"
+      "source": "6주차 녹음 1부 27:44–31:21 · 4주차 녹음 02:14",
+      "notes": "[크롬 조합과 VCS] (4·6주차)\n· 표준 P-C-A: CEX는 high salt(고전도도, mS/cm)로 용출 → AEX 전에 물 희석(대용량 부담) 또는 UF/DF(TFF)로 탈염 필요. VCS 관점에서 AEX에 여유가 있어 바이러스 제거가 안정적.\n· P-A-C: AEX가 flow-through라 전도도·pH 변화 없음 → 바로 CEX, 연속 공정에 편함.\n· P-C-H: 정제가 진행되며 농도↑로 생긴 dimer·multimer 제거에 HIC가 유리(Protein A·IEX는 monomer/dimer 분리 어려움).\n· IEX 용출은 pH 변경(구조 뒤틀림, 현업 안 씀) 대신 high salt(NaCl).\n· AEX(FT)는 바이러스 결합 제거(VCS 2번째), 한 스텝 5~6 LRV. + virus filtration → 총 10 중후반 LRV 목표. LRV = log₁₀(처리 전/처리 후).\n· 동물 유래 원료는 바이러스 위험을 배제할 수 없어 혈장제제·CHO 항체 모두 VCS(virus clearance study) 법적 요구. VCS는 축소 모델에 바이러스를 spiking해 평가.\n(4주차 녹음 02:00:18–02:22 · 6주차 녹음 1부 27:44–31:21, 2부 15:48–25:12)\n\n[물류·자재 · Lot·Batch · site] (7주차)\n· 물류 vs 자재 = QC 입고검사 전/후. 물류(수령) → 입고검사 신청 → quarantine zone(별도 구역) → QC 승인 → 자재. 세 공간 명확 구분. 입고검사 최장 약 2주. GMP 실사관은 창고(warehouse)부터 본다. 출하도 QC release 전까지 관리 후 물류로.\n· Batch = 생산 관점 단위, Lot = 같은 배치에서 나온 균일한(uniform) 최종 제품 묶음(도넛 비유). 문제 시 로트 전량 회수·문서 재검토. 원자재도 로트별 입고 QC(supply agreement).\n· Site: 세파(cephalosporin) 계열 항생제 – 알레르기 때문에 반경 내 다른 의약품 생산 불가. 에볼라 공장 옆 아파트 불허.\n(7주차 녹음 2부 33:18–46:46)"
     },
     {
       "id": "wk06-019",
@@ -285,7 +303,8 @@
       ],
       "answer": 3,
       "explanation": "seed의 목적은 증식(복사·붙여넣기)이므로 basal media의 batch가 적합하다. N의 목적은 생산(채찍질)이므로 feed로 titer를 올린다. 효모 맥주의 호기(증식)·혐기(알코올 생산) 비유가 나왔다.",
-      "source": "6주차 녹음 2부 07:48–12:35 · 4주차 녹음 01:26:44, 01:34:07"
+      "source": "6주차 녹음 2부 07:48–12:35 · 4주차 녹음 01:26:44, 01:34:07",
+      "notes": "[배양 모드]\n· Batch: 처음부터 배지를 가득 채우고 추가 없음(1~2주). 간편하지만 효율↓. 세포주 개발·클론 선별·배지 스크리닝(플라스크 수백 개)에 많이 씀.\n· Fed-batch: 절반 정도 채우고 세포가 북적이면 농축 feed(2~3주, 보통 14~15일). PD 단계부터 사용, COGS 비교에서 여전히 상업 생산의 70% 이상.\n· Perfusion: 세포는 남기고(ATF 등 cell retention device) 상등액만 빼며 신선 배지 공급 → 고밀도, lactate·암모니아 제거, death 지연(3~9주). 1,000 L에서 15회 교환 = 15,000 L 효과. 배지·필터(ATF 약 1억)·정제 부담이 크다.\n· N-1 perfusion: N-1에서 노폐물 제거·고밀도(≥1×10⁶) → N에 고농도 접종. 본배양 fed-batch는 그대로라 major change 아님.\n· ATF: 펌프가 배양액을 빨았다 밀었다 하며 hollow fiber 필터로 상등액만 투과(하루 배양 부피의 1~3배 교환).\n· \"장점만 있는 공정은 없다.\" \"회분식\"이라는 표현 대신 batch/fed-batch/perfusion으로.\n(WK02 p.32–40 · 2주차 녹음 57:00–01:03:37, 02:11:21–02:26:39 · 4주차 녹음 01:27:55–01:31 · WK04(여과) 슬라이드 8)\n\n[세포 성장 곡선] (2주차)\n· Lag(적응) → Log/Exponential(더블링, 3~6일째 peak VCD) → Stationary(증식≈사멸, 항체 가장 많이 생산, 7~8일) → Death(암모니아·lactate 등 독성 축적).\n· 접종 0.5×10⁶ cells/mL, fed-batch peak 약 3~5×10⁶, 총 약 15일. peak VCD를 2배(1×10⁷)로 올리고 stationary를 줄이면 10일로 단축 → 연간 배치↑.\n· CHO doubling time ≈ 1일 → 5배 희석을 회복하는 데 약 2.3일(log₂5). seed 단계 간격 약 3일, 해동부터 본배양 끝까지 약 한 달.\n· seed 계대는 증식이 왕성한 log phase에서 한다(seed = 복사·붙여넣기, N = 채찍질해 생산).\n· Perfusion은 신선 배지를 계속 넣어 death로 가지 않게 한다.\n(WK02 p.34 · 2주차 녹음 02:15:10–02:19:55 · 4주차 녹음 01:24–01:26:44)"
     },
     {
       "id": "wk06-020",
@@ -300,7 +319,8 @@
       ],
       "answer": 5,
       "explanation": "USP: media prep → seed expansion → production. Harvest: clarification. DSP: Protein A(capture) → low pH VI → CEX → AEX → virus removal filtration → UF/DF(formulation). DP: final(sterile) filtration → filling.\n7주차 VR 투어(원심분리 → depth filtration → Protein A → VI → depth filter → IEX → UF/DF → 완제)와 같은 흐름이다.",
-      "source": "WK06 p.24 · 6주차 녹음 1부 07:43 · 7주차 녹음 2부 16:52–23:12"
+      "source": "WK06 p.24 · 6주차 녹음 1부 07:43 · 7주차 녹음 2부 16:52–23:12",
+      "notes": "[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)\n\n[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)"
     }
   ]
 }

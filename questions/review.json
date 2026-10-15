@@ -15,7 +15,8 @@
       ],
       "answer": 4,
       "explanation": "resolution = 두 피크의 분리 정도. 피크 사이 거리(selectivity)와 피크의 날카로움(efficiency)으로 결정된다. 컬럼에 붙는 양은 binding capacity(DBC), 회수율은 recovery다.",
-      "source": "WK03 p.14–17 · 3주차 녹음 52:07–54:03"
+      "source": "WK03 p.14–17 · 3주차 녹음 52:07–54:03",
+      "notes": "[Resolution = selectivity + efficiency] (3주차)\n· Rs = (VR2 − VR1)/((Wb1 + Wb2)/2). Rs 1 ≈ 98%, Rs 1.5 ≈ 99.5% 이상(거의 완전 분리). \"식 외울 필요 없다, 의미를 알라.\"\n· Selectivity(선택성) = 피크 사이 거리 – 더 중요. 영향 요인: GF는 기공 크기(fractionation range), IEX는 레진(리간드) 종류와 pH.\n· Efficiency(효율) = 피크의 샤프함. ↑ 요인: 작은 비드, 긴 컬럼, 좋은 패킹, 적은 시료 부피, 낮은 점도, 적절한(느린) 유속.\n· 생산은 resolution을 만족하는 범위에서 최소 높이·최대 처리량을 택한다(170 cm 컬럼 사례).\n(WK03 p.14–18 · 3주차 녹음 52:07–01:06:02, 01:36:34)"
     },
     {
       "id": "review-002",
@@ -30,7 +31,8 @@
       ],
       "answer": 1,
       "explanation": "Rs = (46 − 40) / ((4 + 4)/2) = 6/4 = 1.5. Rs 1.5면 약 99.5% 이상 분리(강의: Rs 1 ≈ 98%, 1.5 ≈ 99.9%)로 사실상 baseline 분리다. 강사는 '식을 외울 필요는 없다'고 했지만 의미는 알아야 한다.",
-      "source": "WK03 p.14 · 3주차 녹음 52:07"
+      "source": "WK03 p.14 · 3주차 녹음 52:07",
+      "notes": "[Resolution = selectivity + efficiency] (3주차)\n· Rs = (VR2 − VR1)/((Wb1 + Wb2)/2). Rs 1 ≈ 98%, Rs 1.5 ≈ 99.5% 이상(거의 완전 분리). \"식 외울 필요 없다, 의미를 알라.\"\n· Selectivity(선택성) = 피크 사이 거리 – 더 중요. 영향 요인: GF는 기공 크기(fractionation range), IEX는 레진(리간드) 종류와 pH.\n· Efficiency(효율) = 피크의 샤프함. ↑ 요인: 작은 비드, 긴 컬럼, 좋은 패킹, 적은 시료 부피, 낮은 점도, 적절한(느린) 유속.\n· 생산은 resolution을 만족하는 범위에서 최소 높이·최대 처리량을 택한다(170 cm 컬럼 사례).\n(WK03 p.14–18 · 3주차 녹음 52:07–01:06:02, 01:36:34)"
     },
     {
       "id": "review-003",
@@ -45,7 +47,8 @@
       ],
       "answer": 3,
       "explanation": "피크 폭(efficiency)이 아니라 피크 위치(selectivity)가 문제다. selectivity가 resolution에서 더 중요하며, IEX에서는 레진(리간드) 종류와 pH, GF에서는 기공 크기(fractionation range)가 selectivity를 좌우한다.",
-      "source": "WK03 p.15 · 3주차 녹음 01:36:34"
+      "source": "WK03 p.15 · 3주차 녹음 01:36:34",
+      "notes": "[Resolution = selectivity + efficiency] (3주차)\n· Rs = (VR2 − VR1)/((Wb1 + Wb2)/2). Rs 1 ≈ 98%, Rs 1.5 ≈ 99.5% 이상(거의 완전 분리). \"식 외울 필요 없다, 의미를 알라.\"\n· Selectivity(선택성) = 피크 사이 거리 – 더 중요. 영향 요인: GF는 기공 크기(fractionation range), IEX는 레진(리간드) 종류와 pH.\n· Efficiency(효율) = 피크의 샤프함. ↑ 요인: 작은 비드, 긴 컬럼, 좋은 패킹, 적은 시료 부피, 낮은 점도, 적절한(느린) 유속.\n· 생산은 resolution을 만족하는 범위에서 최소 높이·최대 처리량을 택한다(170 cm 컬럼 사례).\n(WK03 p.14–18 · 3주차 녹음 52:07–01:06:02, 01:36:34)"
     },
     {
       "id": "review-004",
@@ -60,7 +63,8 @@
       ],
       "answer": 5,
       "explanation": "음이온 교환: Q(strong), DEAE(weak). 양이온 교환: S/SP(strong), CM(weak). 이 4개(Q, S, DEAE, CM)는 시험 리뷰에서 직접 언급되었다.",
-      "source": "WK03 p.27 · 3주차 녹음 01:39–01:44, 02:05:09"
+      "source": "WK03 p.27 · 3주차 녹음 01:39–01:44, 02:05:09",
+      "notes": "[IEX] (3주차 – \"가장 많이 쓰는 1번 기법\")\n· 단백질 표면 순전하(pI·pH)로 분리. 모든 단백질에 pI가 있어 범용(세잎클로버).\n· 레진 4종: 음이온 Q(quaternary ammonium, strong)·DEAE(weak) / 양이온 S(methyl sulfonate, strong)·CM(carboxymethyl, weak).\n· strong(Q, S): pH 2~12 전 영역에서 전하 일정, 평형화 빠름(버퍼 절감). weak: DEAE pH 2~9, CM pH 6~10 – pH에 따라 전하가 변해 alternative selectivity.\n· pH > pI → − → AIEX 결합 / pH < pI → + → CIEX 결합. 버퍼: AIEX Tris(7.1~9.1, 저렴), CIEX phosphate(가장 많이)·MES·HEPES(비쌈)·acetate·citrate, 25~50 mM.\n· 문제해결: 하나도 안 붙음 → 대부분 시료 염 농도↑(EQ 충분히, desalting·UF/DF·7~10배 희석), AIEX는 pH↑. 너무 강하게 붙음 → AIEX pH↓, CIEX pH↑. 고염은 단백질 침전 위험.\n(WK03 p.26–39 · 3주차 녹음 01:35:12–02:28)"
     },
     {
       "id": "review-005",
@@ -75,7 +79,8 @@
       ],
       "answer": 2,
       "explanation": "strong(Q, S)은 pH 2~12 전 영역에서 전하가 유지된다. weak는 pH에 따라 전하가 변해 범위가 좁다(DEAE 2~9, CM 6~10) – 대신 'alternative selectivity'를 준다.",
-      "source": "WK03 p.27"
+      "source": "WK03 p.27",
+      "notes": "[IEX] (3주차 – \"가장 많이 쓰는 1번 기법\")\n· 단백질 표면 순전하(pI·pH)로 분리. 모든 단백질에 pI가 있어 범용(세잎클로버).\n· 레진 4종: 음이온 Q(quaternary ammonium, strong)·DEAE(weak) / 양이온 S(methyl sulfonate, strong)·CM(carboxymethyl, weak).\n· strong(Q, S): pH 2~12 전 영역에서 전하 일정, 평형화 빠름(버퍼 절감). weak: DEAE pH 2~9, CM pH 6~10 – pH에 따라 전하가 변해 alternative selectivity.\n· pH > pI → − → AIEX 결합 / pH < pI → + → CIEX 결합. 버퍼: AIEX Tris(7.1~9.1, 저렴), CIEX phosphate(가장 많이)·MES·HEPES(비쌈)·acetate·citrate, 25~50 mM.\n· 문제해결: 하나도 안 붙음 → 대부분 시료 염 농도↑(EQ 충분히, desalting·UF/DF·7~10배 희석), AIEX는 pH↑. 너무 강하게 붙음 → AIEX pH↓, CIEX pH↑. 고염은 단백질 침전 위험.\n(WK03 p.26–39 · 3주차 녹음 01:35:12–02:28)"
     },
     {
       "id": "review-006",
@@ -90,7 +95,8 @@
       ],
       "answer": 4,
       "explanation": "strong IEX는 전하가 일정해 equilibration이 빠르고 버퍼가 절약된다. weak IEX는 pH 의존 전하로 다른 selectivity를 줄 수 있어 media scouting으로 비교한다.",
-      "source": "WK03 p.27–28 · 3주차 녹음 02:05:09"
+      "source": "WK03 p.27–28 · 3주차 녹음 02:05:09",
+      "notes": "[IEX] (3주차 – \"가장 많이 쓰는 1번 기법\")\n· 단백질 표면 순전하(pI·pH)로 분리. 모든 단백질에 pI가 있어 범용(세잎클로버).\n· 레진 4종: 음이온 Q(quaternary ammonium, strong)·DEAE(weak) / 양이온 S(methyl sulfonate, strong)·CM(carboxymethyl, weak).\n· strong(Q, S): pH 2~12 전 영역에서 전하 일정, 평형화 빠름(버퍼 절감). weak: DEAE pH 2~9, CM pH 6~10 – pH에 따라 전하가 변해 alternative selectivity.\n· pH > pI → − → AIEX 결합 / pH < pI → + → CIEX 결합. 버퍼: AIEX Tris(7.1~9.1, 저렴), CIEX phosphate(가장 많이)·MES·HEPES(비쌈)·acetate·citrate, 25~50 mM.\n· 문제해결: 하나도 안 붙음 → 대부분 시료 염 농도↑(EQ 충분히, desalting·UF/DF·7~10배 희석), AIEX는 pH↑. 너무 강하게 붙음 → AIEX pH↓, CIEX pH↑. 고염은 단백질 침전 위험.\n(WK03 p.26–39 · 3주차 녹음 01:35:12–02:28)"
     },
     {
       "id": "review-007",
@@ -105,7 +111,8 @@
       ],
       "answer": 1,
       "explanation": "efficiency = 피크의 샤프함(띠가 퍼지지 않는 정도). 작은 비드, 긴 컬럼, 좋은 패킹, 적은 시료 부피, 낮은 점도, 적절한 유속에서 좋아진다.",
-      "source": "WK03 p.16–17 · 3주차 녹음 52:07, 58:21–01:06:02"
+      "source": "WK03 p.16–17 · 3주차 녹음 52:07, 58:21–01:06:02",
+      "notes": "[Resolution = selectivity + efficiency] (3주차)\n· Rs = (VR2 − VR1)/((Wb1 + Wb2)/2). Rs 1 ≈ 98%, Rs 1.5 ≈ 99.5% 이상(거의 완전 분리). \"식 외울 필요 없다, 의미를 알라.\"\n· Selectivity(선택성) = 피크 사이 거리 – 더 중요. 영향 요인: GF는 기공 크기(fractionation range), IEX는 레진(리간드) 종류와 pH.\n· Efficiency(효율) = 피크의 샤프함. ↑ 요인: 작은 비드, 긴 컬럼, 좋은 패킹, 적은 시료 부피, 낮은 점도, 적절한(느린) 유속.\n· 생산은 resolution을 만족하는 범위에서 최소 높이·최대 처리량을 택한다(170 cm 컬럼 사례).\n(WK03 p.14–18 · 3주차 녹음 52:07–01:06:02, 01:36:34)"
     },
     {
       "id": "review-008",
@@ -120,7 +127,8 @@
       ],
       "answer": 3,
       "explanation": "이론상 작은 비드 = 샤프한 피크지만, 실전(생산)에서는 압력·비용 때문에 큰 비드(약 90 µm)를 쓴다. MonoQ(10 µm)로 생산하려다 실패한 사례가 있다.",
-      "source": "WK03 p.9 · 3주차 녹음 25:50, 01:03:54"
+      "source": "WK03 p.9 · 3주차 녹음 25:50, 01:03:54",
+      "notes": "[레진 비드 크기·접미사] (3주차)\n· 분석 ≤10 µm(2.5~7), 중압 30~50 µm, 생산 90~100 µm(공통 34 µm 이상). 작을수록 resolution↑·압력↑·가격↑ → 생산은 큰 비드. capture는 시료가 가장 더러워 무조건 큰 비드.\n· MonoQ(10 µm, 1 mL 380만 원)로 생산하려다 실패한 사례.\n· Cytiva 접미사: FF(fast flow, ~90 µm), HP(high performance, ~34 µm), XL(extreme load – 리간드 많음, 고용량). 같은 CIEX라도 레진마다 패턴이 달라 media scouting 필요.\n· 비드 = 다공성(지지체 약 10%, 기공 약 90%). 이상적 매트릭스: 친수성, 비특이 결합 없음, 화학·물리적 안정, 단단함.\n(WK03 p.9, 12–13, 28 · 3주차 녹음 03:27–07:47, 25:50, 42:44, 01:39–01:44)\n\n[Resolution = selectivity + efficiency] (3주차)\n· Rs = (VR2 − VR1)/((Wb1 + Wb2)/2). Rs 1 ≈ 98%, Rs 1.5 ≈ 99.5% 이상(거의 완전 분리). \"식 외울 필요 없다, 의미를 알라.\"\n· Selectivity(선택성) = 피크 사이 거리 – 더 중요. 영향 요인: GF는 기공 크기(fractionation range), IEX는 레진(리간드) 종류와 pH.\n· Efficiency(효율) = 피크의 샤프함. ↑ 요인: 작은 비드, 긴 컬럼, 좋은 패킹, 적은 시료 부피, 낮은 점도, 적절한(느린) 유속.\n· 생산은 resolution을 만족하는 범위에서 최소 높이·최대 처리량을 택한다(170 cm 컬럼 사례).\n(WK03 p.14–18 · 3주차 녹음 52:07–01:06:02, 01:36:34)"
     },
     {
       "id": "review-009",
@@ -135,7 +143,8 @@
       ],
       "answer": 5,
       "explanation": "작은 분자는 기공 안까지 들어가 이동 경로가 길어져 '나중에' 나온다. 큰 분자는 기공에 못 들어가 V0에서 먼저 나온다.",
-      "source": "WK03 p.19–20 · 3주차 녹음 01:06:59–01:12:17"
+      "source": "WK03 p.19–20 · 3주차 녹음 01:06:59–01:12:17",
+      "notes": "[SEC / Gel filtration] (3주차)\n· 결합 없이 크기로 분리 – 큰 분자는 기공에 못 들어가 먼저(V0), 작은 분자는 기공까지 들어가 나중(Vt 근처). V0 확인 = Blue Dextran.\n· Vt(=CV) = V0(레진 바깥) + Vi(기공) + Vmatrix. Kav = (Ve − V0)/(Vt − V0): 큰 분자 0, 작은 분자 1, 0.1~0.7 = fractionation range.\n· 목적 ① fine fractionation(monomer/dimer 분리, MW 추정): 시료 CV의 약 0.5~4%(강의 ~2%), 유속 매우 낮음(1~2 mL/min), 컬럼 30~60 cm, 주로 마지막 polishing·백신. ② group separation(desalting·buffer exchange): Sephadex G-25(~1~5 kDa), 시료 CV의 20~30%, 짧고 굵은 컬럼, 큰 비드(팽윤 1.7배), 빠른 유속.\n· GF는 유속이 낮고 시료량이 제한되어 polishing의 생산성 병목 → scale-up 시 높이 대신 20 cm 섹션을 이어 붙임.\n(WK03 p.15–25, 60 · 3주차 녹음 14:31, 54:03–58:21, 01:06:59–01:33:50)"
     },
     {
       "id": "review-010",
@@ -150,7 +159,8 @@
       ],
       "answer": 2,
       "explanation": "Kav = (Ve − V0)/(Vt − V0) = (12 − 8)/(24 − 8) = 4/16 = 0.25. fractionation range(0.1~0.7) 안이므로 이 레진으로 분리하기 적절한 크기다.",
-      "source": "WK03 p.16 · 3주차 녹음 54:03–58:21"
+      "source": "WK03 p.16 · 3주차 녹음 54:03–58:21",
+      "notes": "[SEC / Gel filtration] (3주차)\n· 결합 없이 크기로 분리 – 큰 분자는 기공에 못 들어가 먼저(V0), 작은 분자는 기공까지 들어가 나중(Vt 근처). V0 확인 = Blue Dextran.\n· Vt(=CV) = V0(레진 바깥) + Vi(기공) + Vmatrix. Kav = (Ve − V0)/(Vt − V0): 큰 분자 0, 작은 분자 1, 0.1~0.7 = fractionation range.\n· 목적 ① fine fractionation(monomer/dimer 분리, MW 추정): 시료 CV의 약 0.5~4%(강의 ~2%), 유속 매우 낮음(1~2 mL/min), 컬럼 30~60 cm, 주로 마지막 polishing·백신. ② group separation(desalting·buffer exchange): Sephadex G-25(~1~5 kDa), 시료 CV의 20~30%, 짧고 굵은 컬럼, 큰 비드(팽윤 1.7배), 빠른 유속.\n· GF는 유속이 낮고 시료량이 제한되어 polishing의 생산성 병목 → scale-up 시 높이 대신 20 cm 섹션을 이어 붙임.\n(WK03 p.15–25, 60 · 3주차 녹음 14:31, 54:03–58:21, 01:06:59–01:33:50)"
     },
     {
       "id": "review-011",
@@ -165,7 +175,8 @@
       ],
       "answer": 4,
       "explanation": "desalting은 시료 부피를 CV의 약 20~30%까지 넣을 수 있다 → 50 × 0.3 = 15 mL. fine fractionation(monomer/dimer 분리)은 CV의 약 0.5~4%(강의 ~2%)만 넣는다.",
-      "source": "WK03 p.21, 24 · 3주차 녹음 01:13:11, 01:24:51"
+      "source": "WK03 p.21, 24 · 3주차 녹음 01:13:11, 01:24:51",
+      "notes": "[SEC / Gel filtration] (3주차)\n· 결합 없이 크기로 분리 – 큰 분자는 기공에 못 들어가 먼저(V0), 작은 분자는 기공까지 들어가 나중(Vt 근처). V0 확인 = Blue Dextran.\n· Vt(=CV) = V0(레진 바깥) + Vi(기공) + Vmatrix. Kav = (Ve − V0)/(Vt − V0): 큰 분자 0, 작은 분자 1, 0.1~0.7 = fractionation range.\n· 목적 ① fine fractionation(monomer/dimer 분리, MW 추정): 시료 CV의 약 0.5~4%(강의 ~2%), 유속 매우 낮음(1~2 mL/min), 컬럼 30~60 cm, 주로 마지막 polishing·백신. ② group separation(desalting·buffer exchange): Sephadex G-25(~1~5 kDa), 시료 CV의 20~30%, 짧고 굵은 컬럼, 큰 비드(팽윤 1.7배), 빠른 유속.\n· GF는 유속이 낮고 시료량이 제한되어 polishing의 생산성 병목 → scale-up 시 높이 대신 20 cm 섹션을 이어 붙임.\n(WK03 p.15–25, 60 · 3주차 녹음 14:31, 54:03–58:21, 01:06:59–01:33:50)"
     },
     {
       "id": "review-012",
@@ -180,7 +191,8 @@
       ],
       "answer": 1,
       "explanation": "GF는 결합 없이 크기로만 나누며, 목적에 따라 운전 조건이 정반대다. GF는 유속이 낮고 시료량이 제한되어 polishing의 생산성 병목이다.",
-      "source": "WK03 p.20–24 · 3주차 녹음 01:06:59–01:33:50"
+      "source": "WK03 p.20–24 · 3주차 녹음 01:06:59–01:33:50",
+      "notes": "[SEC / Gel filtration] (3주차)\n· 결합 없이 크기로 분리 – 큰 분자는 기공에 못 들어가 먼저(V0), 작은 분자는 기공까지 들어가 나중(Vt 근처). V0 확인 = Blue Dextran.\n· Vt(=CV) = V0(레진 바깥) + Vi(기공) + Vmatrix. Kav = (Ve − V0)/(Vt − V0): 큰 분자 0, 작은 분자 1, 0.1~0.7 = fractionation range.\n· 목적 ① fine fractionation(monomer/dimer 분리, MW 추정): 시료 CV의 약 0.5~4%(강의 ~2%), 유속 매우 낮음(1~2 mL/min), 컬럼 30~60 cm, 주로 마지막 polishing·백신. ② group separation(desalting·buffer exchange): Sephadex G-25(~1~5 kDa), 시료 CV의 20~30%, 짧고 굵은 컬럼, 큰 비드(팽윤 1.7배), 빠른 유속.\n· GF는 유속이 낮고 시료량이 제한되어 polishing의 생산성 병목 → scale-up 시 높이 대신 20 cm 섹션을 이어 붙임.\n(WK03 p.15–25, 60 · 3주차 녹음 14:31, 54:03–58:21, 01:06:59–01:33:50)"
     },
     {
       "id": "review-013",
@@ -195,7 +207,8 @@
       ],
       "answer": 3,
       "explanation": "CIPP: Capture(분리·농축·안정화) → Intermediate(bulk 불순물 제거) → Polishing(trace 불순물·변이체 제거, 최종 순도 99%대). 한 스텝으로 끝나는 경우는 거의 없고 보통 2~3 스텝이다.",
-      "source": "WK03 p.10, 53 · 3주차 녹음 11:51–13:31, 29:58–33:27"
+      "source": "WK03 p.10, 53 · 3주차 녹음 11:51–13:31, 29:58–33:27",
+      "notes": "[3단계 정제 전략 CIPP] (3주차)\n· Preparation/Clarification → Capture(분리·농축·안정화; speed·capacity) → Intermediate(bulk 불순물 제거; resolution·capacity) → Polishing(trace 불순물·구조 변이체 제거; resolution·recovery, 순도 99%대).\n· 한 스텝으로 끝나는 경우는 거의 없다(럭키해도 2). 1st: affinity(Protein A/G – 최고 성능, 비쌈) 또는 IEX, 이후 IEX/HIC/MMC.\n· bind & elute vs flow-through: 타깃 9 : 불순물 1이면 불순물만 붙이는 FT가 유리(리간드 = 손).\n· 적합성 표: affinity·IEX = capture, SEC·HIC·IEX = polishing, RPC = HIC 강력판(유기용매 위험).\n· affinity tag(His, GST 등)는 연구용 – 의약품에는 쓰지 않음. \"KEEP IT SIMPLE!\"\n(WK03 p.10, 52–55 · 3주차 녹음 11:51–13:31, 29:58–36:42, 02:52–02:56)"
     },
     {
       "id": "review-014",
@@ -210,7 +223,8 @@
       ],
       "answer": 5,
       "explanation": "레진의 리간드는 '손'과 같아서, 붙여야 할 양이 적은 쪽을 붙이는 것이 효율적이다. pH를 조절해 항체는 +, DNA·endotoxin·바이러스는 − 로 만들어 AEX flow-through로 불순물만 잡는다.",
-      "source": "3주차 녹음 33:27–36:42 · 4주차 녹음 02:13"
+      "source": "3주차 녹음 33:27–36:42 · 4주차 녹음 02:13",
+      "notes": "[3단계 정제 전략 CIPP] (3주차)\n· Preparation/Clarification → Capture(분리·농축·안정화; speed·capacity) → Intermediate(bulk 불순물 제거; resolution·capacity) → Polishing(trace 불순물·구조 변이체 제거; resolution·recovery, 순도 99%대).\n· 한 스텝으로 끝나는 경우는 거의 없다(럭키해도 2). 1st: affinity(Protein A/G – 최고 성능, 비쌈) 또는 IEX, 이후 IEX/HIC/MMC.\n· bind & elute vs flow-through: 타깃 9 : 불순물 1이면 불순물만 붙이는 FT가 유리(리간드 = 손).\n· 적합성 표: affinity·IEX = capture, SEC·HIC·IEX = polishing, RPC = HIC 강력판(유기용매 위험).\n· affinity tag(His, GST 등)는 연구용 – 의약품에는 쓰지 않음. \"KEEP IT SIMPLE!\"\n(WK03 p.10, 52–55 · 3주차 녹음 11:51–13:31, 29:58–36:42, 02:52–02:56)\n\n[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)"
     },
     {
       "id": "review-015",
@@ -225,7 +239,8 @@
       ],
       "answer": 2,
       "explanation": "Capture는 가장 더러운 대용량 시료를 빨리 처리(큰 비드, 고용량), polishing은 미량 불순물까지 제거하면서 회수율 확보. 표에서 affinity·IEX는 capture에, SEC·HIC·IEX는 polishing에 적합.",
-      "source": "WK03 p.53–55 · 3주차 녹음 02:54:18"
+      "source": "WK03 p.53–55 · 3주차 녹음 02:54:18",
+      "notes": "[3단계 정제 전략 CIPP] (3주차)\n· Preparation/Clarification → Capture(분리·농축·안정화; speed·capacity) → Intermediate(bulk 불순물 제거; resolution·capacity) → Polishing(trace 불순물·구조 변이체 제거; resolution·recovery, 순도 99%대).\n· 한 스텝으로 끝나는 경우는 거의 없다(럭키해도 2). 1st: affinity(Protein A/G – 최고 성능, 비쌈) 또는 IEX, 이후 IEX/HIC/MMC.\n· bind & elute vs flow-through: 타깃 9 : 불순물 1이면 불순물만 붙이는 FT가 유리(리간드 = 손).\n· 적합성 표: affinity·IEX = capture, SEC·HIC·IEX = polishing, RPC = HIC 강력판(유기용매 위험).\n· affinity tag(His, GST 등)는 연구용 – 의약품에는 쓰지 않음. \"KEEP IT SIMPLE!\"\n(WK03 p.10, 52–55 · 3주차 녹음 11:51–13:31, 29:58–36:42, 02:52–02:56)"
     },
     {
       "id": "review-016",
@@ -240,7 +255,8 @@
       ],
       "answer": 4,
       "explanation": "multimodal 리간드는 화학적 scaffold로 1차 상호작용에 새 상호작용을 연결한다. 전통 레진의 selectivity가 부족할 때 쓰며 주로 polishing에 사용된다.",
-      "source": "WK03 p.40–41 · 3주차 녹음 02:28–02:43"
+      "source": "WK03 p.40–41 · 3주차 녹음 02:28–02:43",
+      "notes": "[MMC – multimodal / mixed-mode] (3주차)\n· 이온·소수성·수소결합·π-π 등 둘 이상의 상호작용을 하는 리간드(chemical scaffold로 연결). 독립적 또는 함께 작용. 주로 polishing.\n· 언제: 로딩 전도도가 너무 높을 때(salt tolerant → 희석·탈염 생략), 정제 스텝 수를 줄여야 할 때, 전통 레진의 selectivity가 부족할 때(bispecific, mAb, ADC).\n· Capto MMC: weak cation 성질 + 소수성·수소결합·thiophilic (CIEX계) – 전도도가 올라가도 DBC 유지. Capto adhere: AIEX계. Capto Core 700: shell은 크기 배제(700 kDa), core는 결합 → 바이러스 등 큰 분자 통과, GF 대비 생산성 약 100배.\n· pI를 넘는 pH에서도 결합 범위가 넓다. 조건이 복잡해 DoE/HTS로 최적화(프로인슐린 pI 5.3 사례: pH 5~5.4, 0~160 mM NaCl).\n(WK03 p.40–48 · 3주차 녹음 02:28–02:47:39)"
     },
     {
       "id": "review-017",
@@ -255,7 +271,8 @@
       ],
       "answer": 1,
       "explanation": "Capto MMC는 전도도가 높아져도 DBC가 유지되지만 전통 CIEX는 급격히 떨어진다. MMC는 '로딩 전도도가 너무 높을 때, 정제 스텝 수를 줄여야 할 때, 전통 레진의 selectivity가 부족할 때' 새 해결책이 된다.",
-      "source": "WK03 p.42, 44 · 3주차 녹음 02:28–02:43"
+      "source": "WK03 p.42, 44 · 3주차 녹음 02:28–02:43",
+      "notes": "[크롬 조합과 VCS] (4·6주차)\n· 표준 P-C-A: CEX는 high salt(고전도도, mS/cm)로 용출 → AEX 전에 물 희석(대용량 부담) 또는 UF/DF(TFF)로 탈염 필요. VCS 관점에서 AEX에 여유가 있어 바이러스 제거가 안정적.\n· P-A-C: AEX가 flow-through라 전도도·pH 변화 없음 → 바로 CEX, 연속 공정에 편함.\n· P-C-H: 정제가 진행되며 농도↑로 생긴 dimer·multimer 제거에 HIC가 유리(Protein A·IEX는 monomer/dimer 분리 어려움).\n· IEX 용출은 pH 변경(구조 뒤틀림, 현업 안 씀) 대신 high salt(NaCl).\n· AEX(FT)는 바이러스 결합 제거(VCS 2번째), 한 스텝 5~6 LRV. + virus filtration → 총 10 중후반 LRV 목표. LRV = log₁₀(처리 전/처리 후).\n· 동물 유래 원료는 바이러스 위험을 배제할 수 없어 혈장제제·CHO 항체 모두 VCS(virus clearance study) 법적 요구. VCS는 축소 모델에 바이러스를 spiking해 평가.\n(4주차 녹음 02:00:18–02:22 · 6주차 녹음 1부 27:44–31:21, 2부 15:48–25:12)\n\n[크로마토그래피 기초] (3주차 피크앤밴드)\n· chroma(색) + graphy(기록). 분석(GC, LC, HPLC – high performance/pressure) vs 분취(생산): 이론은 같고 레진 입자 크기·리간드가 다름.\n· 원리: 레진과 반응(머무는) 시간 차이 = retention time / retention volume / elution volume.\n· 시스템: 고정상(레진 패킹 컬럼), 이동상(버퍼), 펌프(핵심; 랩은 piston, peristaltic은 back pressure에 약함), 모니터 3종 – UV(280 nm 단백질, 260/254 nm 핵산), conductivity(염 농도; 1 M NaCl ≈ 85~100 mS/cm), pH + fraction collector. 생산 시스템은 압력도 감시(너무 높음=막힘, 너무 낮음=누출·탱크 빔).\n· 4대 테크닉: GF(SEC), IEX, HIC, affinity + MMC.\n(WK03 p.3–8 · 3주차 녹음 02:29–24:40)"
     },
     {
       "id": "review-018",
@@ -270,7 +287,8 @@
       ],
       "answer": 3,
       "explanation": "Capto Core 700은 exclusion limit 700 kDa, GF 대비 생산성 약 100배로 백신·바이러스 정제 마지막 단계의 GF 대안이다.",
-      "source": "WK03 p.41, 43, 48 · 3주차 녹음 02:28–02:43"
+      "source": "WK03 p.41, 43, 48 · 3주차 녹음 02:28–02:43",
+      "notes": "[MMC – multimodal / mixed-mode] (3주차)\n· 이온·소수성·수소결합·π-π 등 둘 이상의 상호작용을 하는 리간드(chemical scaffold로 연결). 독립적 또는 함께 작용. 주로 polishing.\n· 언제: 로딩 전도도가 너무 높을 때(salt tolerant → 희석·탈염 생략), 정제 스텝 수를 줄여야 할 때, 전통 레진의 selectivity가 부족할 때(bispecific, mAb, ADC).\n· Capto MMC: weak cation 성질 + 소수성·수소결합·thiophilic (CIEX계) – 전도도가 올라가도 DBC 유지. Capto adhere: AIEX계. Capto Core 700: shell은 크기 배제(700 kDa), core는 결합 → 바이러스 등 큰 분자 통과, GF 대비 생산성 약 100배.\n· pI를 넘는 pH에서도 결합 범위가 넓다. 조건이 복잡해 DoE/HTS로 최적화(프로인슐린 pI 5.3 사례: pH 5~5.4, 0~160 mM NaCl).\n(WK03 p.40–48 · 3주차 녹음 02:28–02:47:39)\n\n[SEC / Gel filtration] (3주차)\n· 결합 없이 크기로 분리 – 큰 분자는 기공에 못 들어가 먼저(V0), 작은 분자는 기공까지 들어가 나중(Vt 근처). V0 확인 = Blue Dextran.\n· Vt(=CV) = V0(레진 바깥) + Vi(기공) + Vmatrix. Kav = (Ve − V0)/(Vt − V0): 큰 분자 0, 작은 분자 1, 0.1~0.7 = fractionation range.\n· 목적 ① fine fractionation(monomer/dimer 분리, MW 추정): 시료 CV의 약 0.5~4%(강의 ~2%), 유속 매우 낮음(1~2 mL/min), 컬럼 30~60 cm, 주로 마지막 polishing·백신. ② group separation(desalting·buffer exchange): Sephadex G-25(~1~5 kDa), 시료 CV의 20~30%, 짧고 굵은 컬럼, 큰 비드(팽윤 1.7배), 빠른 유속.\n· GF는 유속이 낮고 시료량이 제한되어 polishing의 생산성 병목 → scale-up 시 높이 대신 20 cm 섹션을 이어 붙임.\n(WK03 p.15–25, 60 · 3주차 녹음 14:31, 54:03–58:21, 01:06:59–01:33:50)"
     },
     {
       "id": "review-019",
@@ -285,7 +303,8 @@
       ],
       "answer": 5,
       "explanation": "이온 세기를 올리면 버퍼 이온이 결합 자리를 두고 경쟁해 약하게 붙은 단백질부터 나온다. linear gradient(직선적 증가) vs step elution(계단식 증가)이 있다.",
-      "source": "WK03 p.29–30, 33 · 3주차 녹음 36:42–39:25"
+      "source": "WK03 p.29–30, 33 · 3주차 녹음 36:42–39:25",
+      "notes": "[Gradient vs step elution] (3주차)\n· Gradient = 용출 버퍼의 염 농도(또는 pH)를 점진적으로 바꿔 약하게 붙은 것부터 떼어 냄.\n· Linear: 미지 시료의 패턴 확인·고분해능 분석. EQ 10~20 CV, gradient 10~20 CV, 전체 40~60 CV(랩). 초기에는 unbound 포함 모든 분획을 받아 분석.\n· Step: linear로 최적화한 뒤 생산 적용. 랩 1 step 15~20 CV → 생산 2~3 CV. 시간·버퍼 절감, 피크 농축, 불순물 제거 스텝 분리. linear를 CV만 줄이면 피크가 뭉친다.\n(WK03 p.11, 33–34 · 3주차 녹음 36:42–39:49, 02:08:32–02:15:03)"
     },
     {
       "id": "review-020",
@@ -300,7 +319,8 @@
       ],
       "answer": 2,
       "explanation": "개발 초기 linear로 모든 분획을 받아 분석 → 타깃 기준 step(보통 3 step)으로 전환. linear를 CV만 줄이면 피크가 뭉친다.",
-      "source": "WK03 p.33–34 · 3주차 녹음 02:08:32–02:15:03"
+      "source": "WK03 p.33–34 · 3주차 녹음 02:08:32–02:15:03",
+      "notes": "[Gradient vs step elution] (3주차)\n· Gradient = 용출 버퍼의 염 농도(또는 pH)를 점진적으로 바꿔 약하게 붙은 것부터 떼어 냄.\n· Linear: 미지 시료의 패턴 확인·고분해능 분석. EQ 10~20 CV, gradient 10~20 CV, 전체 40~60 CV(랩). 초기에는 unbound 포함 모든 분획을 받아 분석.\n· Step: linear로 최적화한 뒤 생산 적용. 랩 1 step 15~20 CV → 생산 2~3 CV. 시간·버퍼 절감, 피크 농축, 불순물 제거 스텝 분리. linear를 CV만 줄이면 피크가 뭉친다.\n(WK03 p.11, 33–34 · 3주차 녹음 36:42–39:49, 02:08:32–02:15:03)"
     },
     {
       "id": "review-021",
@@ -315,7 +335,8 @@
       ],
       "answer": 4,
       "explanation": "CV = πr²h = 3.14 × (2.5)² × 20 = 3.14 × 6.25 × 20 ≈ 392.5 cm³ ≈ 393 mL. 직경(5)을 그대로 넣으면 4배(약 1,570 mL)로 틀린다.",
-      "source": "6주차 녹음 2부 39:17 · 3주차 녹음 01:12:17"
+      "source": "6주차 녹음 2부 39:17 · 3주차 녹음 01:12:17",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)\n\n[V-model · qualification vs validation] (7주차)\n· URS(사용자 요구 규격 – 220 V, 층고 등 최대한 상세히) → DQ(design qualification)/FDS(functional design spec) → FAT(제조사 공장에서 확인) → 배송·설치 → IQ(부속·도면대로 설치)/SAT → OQ(작동 – pH 센서 1~14 여러 포인트) → PQ(실제 공정 조건 – pH 7 ± 범위) → PV(process validation)/CV(cleaning validation) → re-validation.\n· Qualification(장비)이 전제되어야 validation(공정)을 한다 – 차이를 명확히. 변경 시 change control, requalification.\n· 사례: 구제역 센터 – 200 L 배양기 높이 2.5 m vs 천장 2.3 m → URS 누락.\n· HVAC 기류 패턴 확인은 실제 작동이 필요한 OQ/PQ 영역, IQ는 도면·문서·부품·교정 확인.\n(WK07 p.61 · 7주차 녹음 2부 01:10:15–01:20)"
     },
     {
       "id": "review-022",
@@ -330,7 +351,8 @@
       ],
       "answer": 1,
       "explanation": "단면적 = 1000 mL / 20 cm = 50 cm² → r² = 50/3.14 ≈ 15.9 → r ≈ 4 cm → 내경 약 8 cm.",
-      "source": "6주차 녹음 2부 39:17"
+      "source": "6주차 녹음 2부 39:17",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)"
     },
     {
       "id": "review-023",
@@ -345,7 +367,8 @@
       ],
       "answer": 3,
       "explanation": "단면적 = 3.14 × 0.8² ≈ 2.01 cm². 유량 = 300 cm/h × 2.01 cm² ≈ 603 mL/h ≈ 10 mL/min. (WK03 HiPrep 16/10 슬라이드도 10 mL/min = 300 cm/h)",
-      "source": "WK03 p.32 · 6주차 녹음 2부 25:21"
+      "source": "WK03 p.32 · 6주차 녹음 2부 25:21",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)"
     },
     {
       "id": "review-024",
@@ -360,7 +383,8 @@
       ],
       "answer": 5,
       "explanation": "DP는 출하 전 완제품 시험과 출하 승인을 거친다. 주사제는 위산 같은 안전장치가 없고 면역저하 환자에게 쓰이는 경우가 많아 무균이 절대 기준이다.",
-      "source": "WK05 완제공정 p.4, 6 · 5주차 녹음 1부 42:02–43:05"
+      "source": "WK05 완제공정 p.4, 6 · 5주차 녹음 1부 42:02–43:05",
+      "notes": "[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)"
     },
     {
       "id": "review-025",
@@ -375,7 +399,8 @@
       ],
       "answer": 2,
       "explanation": "formulation = 최종 제형 버퍼로 교환 + 목표 농도로 맞춤 → UF/DF. 주사제는 체액과 삼투압을 맞추고(약전), 고농도에서 응집을 막으려 polysorbate 같은 안정제를 넣는다. 이후 sterile filtration → filling & capping.",
-      "source": "4주차 녹음 02:25–02:31 · 6주차 녹음 1부 18:12, 32:46"
+      "source": "4주차 녹음 02:25–02:31 · 6주차 녹음 1부 18:12, 32:46",
+      "notes": "[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)"
     },
     {
       "id": "review-026",
@@ -390,7 +415,8 @@
       ],
       "answer": 4,
       "explanation": "액상에서 불안정하면 동결건조한다(딸기 비유). 바이알에 반마개 상태로 충전 → 동결건조 → 완전 밀봉 순서다.",
-      "source": "WK05 완제공정 p.16 · 5주차 녹음 1부 46:08"
+      "source": "WK05 완제공정 p.16 · 5주차 녹음 1부 46:08",
+      "notes": "[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)"
     },
     {
       "id": "review-027",
@@ -405,7 +431,8 @@
       ],
       "answer": 1,
       "explanation": "열에 견디면 최종멸균(원칙, 무균 보증 최고), 단백질은 열에 약해 0.2 µm 여과 멸균 후 무균 충전, 세포치료제는 세포(10 µm)가 필터를 못 지나므로 처음부터 끝까지 무균 공정.",
-      "source": "WK05 완제공정 p.7 · 4주차 녹음 02:52 · 5주차 녹음 1부 49:14"
+      "source": "WK05 완제공정 p.7 · 4주차 녹음 02:52 · 5주차 녹음 1부 49:14",
+      "notes": "[무균의약품 만드는 방법 3가지] (4·5주차)\n· Terminal sterilization(최종멸균): 충전·밀봉 후 용기째 가열(수액·생리식염수). 가능하면 원칙, 무균 보증 수준 최고. 멸균 후 생존 확률 10⁻⁶(100만분의 1) 이하 보증.\n· Sterile filtration: 열에 약한 단백질(항체)을 0.2 µm로 여과 멸균 후 무균 충전.\n· Aseptic process: 세포치료제는 세포(10 µm)가 0.2 µm 필터를 통과하지 못해 처음부터 끝까지 무균.\n· 공정별: 배양 = 무균 공정, 항체 정제 = non-aseptic, 완제 = sterile filtration으로 다시 무균. 무균성은 공정 설계와 지속 관리로 보증(감기 걸린 작업자 생산 불참).\n(4주차 녹음 02:52 · WK05 완제공정 p.7 · 5주차 녹음 1부 49:14–51:19)"
     },
     {
       "id": "review-028",
@@ -420,7 +447,8 @@
       ],
       "answer": 3,
       "explanation": "APS = 생산 공정 + 무균 배지. RABS는 오염을 '막는' 설계, APS는 그 설계가 실제로 작동함을 '증명'한다. 스모크 스터디가 필수 선행 요소다.",
-      "source": "WK05 RABS·APS p.3, 12"
+      "source": "WK05 RABS·APS p.3, 12",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)"
     },
     {
       "id": "review-029",
@@ -435,7 +463,8 @@
       ],
       "answer": 5,
       "explanation": "신규 라인·중대 변경·장기 미가동·중대 일탈 시 재검증한다. 대량 배치는 약 10,000 units 이상, 소량은 실제 최대 배치 규모로 충전한다.",
-      "source": "WK05 RABS·APS p.13, 15"
+      "source": "WK05 RABS·APS p.13, 15",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)"
     },
     {
       "id": "review-030",
@@ -450,7 +479,8 @@
       ],
       "answer": 2,
       "explanation": "용기를 뒤집어 배지가 마개까지 닿게 한 뒤 22.5 ℃ 7일 → 32.5 ℃ 7일. 낮은 온도는 진균, 높은 온도는 세균 검출에 유리하다. 배지는 SCDM을 쓴다.",
-      "source": "WK05 RABS·APS p.13, 16"
+      "source": "WK05 RABS·APS p.13, 16",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)"
     },
     {
       "id": "review-031",
@@ -465,7 +495,8 @@
       ],
       "answer": 4,
       "explanation": "부적합 시 조사 → 원인 규명 시 1회 검증 run, 원인 불명 시 3회 연속 run(Annex 1 / PDA). 육안 검사자는 미생물 오염 검사에 맞게 교육·훈련·평가되어야 한다.",
-      "source": "WK05 RABS·APS p.16"
+      "source": "WK05 RABS·APS p.16",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)"
     },
     {
       "id": "review-032",
@@ -480,7 +511,8 @@
       ],
       "answer": 1,
       "explanation": "APS는 실제 공정을 대표하되 가장 불리한(worst case) 조건으로 설계한다. 충전량은 실제 충전량과 무관하게 용기·마개·밀봉부가 배지에 닿을 정도면 된다.",
-      "source": "WK05 RABS·APS p.13, 15"
+      "source": "WK05 RABS·APS p.13, 15",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)\n\n[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)"
     },
     {
       "id": "review-033",
@@ -495,7 +527,8 @@
       ],
       "answer": 3,
       "explanation": "Closed RABS는 아이솔레이터에 가깝게 오염 위험이 낮지만 절차가 엄격하다. Open RABS는 유연하고 운영 부담이 낮은 대신 위험이 상대적으로 높다.",
-      "source": "WK05 RABS·APS p.8"
+      "source": "WK05 RABS·APS p.8",
+      "notes": "[RABS] (5주차 + 7주차)\n· Grade A 충전구역을 물리적 차단벽 + 단일방향 HEPA 기류(0.36~0.54 m/s)로 작업자 오염에서 보호. 주변실 Grade B. 글러브포트가 유일한 접근 경로.\n· Open RABS: 예외적 도어 intervention, Grade A 공기를 주변실로 배기, 소독 후 개방 이송 → 위험 상대적↑, 유연. Closed RABS: 글러브포트 전용, 폐쇄 순환·전용 배기, RTP 밀폐 이송 → 아이솔레이터에 근접.\n· 비교: 기존 클린룸(가운만, 배경 B) – RABS(차단벽, B) – 아이솔레이터(완전 밀폐, C/D, VHP 자동 제균). 위험 Cleanroom > RABS > Isolator, 초기 투자·제균 시간은 반대.\n· Intervention: 최소화·표준화·기록·검증. 바이알 쓰러짐 → 라인 정지 → 글러브포트로 제거 → 인접 용기 폐기 → 소독 → 기록. 도어 개방·Grade A 상부로 팔 뻗기(first air 차단) 금지. 최악 조건으로 APS·스모크 스터디에 반영.\n· 7주차: RABS = 밑이 뚫림, 오토클레이브 백에 알코올 분무 후 반입, 저렴 / isolator = 완전 밀봉, 옆 챔버 멸균 후 반입. Annex 1 개정 → '가능하면 isolator' → RABS 감소. 납기 1~2년이라 준공 2년 전 발주.\n(WK05 RABS·APS p.3–11, 22–24 · 7주차 녹음 1부 54:10–58:43)"
     },
     {
       "id": "review-034",
@@ -510,7 +543,8 @@
       ],
       "answer": 5,
       "explanation": "RABS 배경은 Grade B(밑이 뚫린 구조, 오토클레이브 백 알코올 분무 반입). Grade C/D 배경이 가능한 것은 완전 밀폐형 아이솔레이터다. Annex 1 개정으로 'RABS 대신 isolator' 추세.",
-      "source": "WK05 RABS·APS p.4–9 · 7주차 녹음 1부 55:22–58:43"
+      "source": "WK05 RABS·APS p.4–9 · 7주차 녹음 1부 55:22–58:43",
+      "notes": "[RABS] (5주차 + 7주차)\n· Grade A 충전구역을 물리적 차단벽 + 단일방향 HEPA 기류(0.36~0.54 m/s)로 작업자 오염에서 보호. 주변실 Grade B. 글러브포트가 유일한 접근 경로.\n· Open RABS: 예외적 도어 intervention, Grade A 공기를 주변실로 배기, 소독 후 개방 이송 → 위험 상대적↑, 유연. Closed RABS: 글러브포트 전용, 폐쇄 순환·전용 배기, RTP 밀폐 이송 → 아이솔레이터에 근접.\n· 비교: 기존 클린룸(가운만, 배경 B) – RABS(차단벽, B) – 아이솔레이터(완전 밀폐, C/D, VHP 자동 제균). 위험 Cleanroom > RABS > Isolator, 초기 투자·제균 시간은 반대.\n· Intervention: 최소화·표준화·기록·검증. 바이알 쓰러짐 → 라인 정지 → 글러브포트로 제거 → 인접 용기 폐기 → 소독 → 기록. 도어 개방·Grade A 상부로 팔 뻗기(first air 차단) 금지. 최악 조건으로 APS·스모크 스터디에 반영.\n· 7주차: RABS = 밑이 뚫림, 오토클레이브 백에 알코올 분무 후 반입, 저렴 / isolator = 완전 밀봉, 옆 챔버 멸균 후 반입. Annex 1 개정 → '가능하면 isolator' → RABS 감소. 납기 1~2년이라 준공 2년 전 발주.\n(WK05 RABS·APS p.3–11, 22–24 · 7주차 녹음 1부 54:10–58:43)"
     },
     {
       "id": "review-035",
@@ -525,7 +559,8 @@
       ],
       "answer": 2,
       "explanation": "Intervention 원칙: 최소화·표준화·기록·검증. 해당 동작은 최악 조건으로 APS·스모크 스터디에 반영한다.",
-      "source": "WK05 RABS·APS p.22–23"
+      "source": "WK05 RABS·APS p.22–23",
+      "notes": "[RABS] (5주차 + 7주차)\n· Grade A 충전구역을 물리적 차단벽 + 단일방향 HEPA 기류(0.36~0.54 m/s)로 작업자 오염에서 보호. 주변실 Grade B. 글러브포트가 유일한 접근 경로.\n· Open RABS: 예외적 도어 intervention, Grade A 공기를 주변실로 배기, 소독 후 개방 이송 → 위험 상대적↑, 유연. Closed RABS: 글러브포트 전용, 폐쇄 순환·전용 배기, RTP 밀폐 이송 → 아이솔레이터에 근접.\n· 비교: 기존 클린룸(가운만, 배경 B) – RABS(차단벽, B) – 아이솔레이터(완전 밀폐, C/D, VHP 자동 제균). 위험 Cleanroom > RABS > Isolator, 초기 투자·제균 시간은 반대.\n· Intervention: 최소화·표준화·기록·검증. 바이알 쓰러짐 → 라인 정지 → 글러브포트로 제거 → 인접 용기 폐기 → 소독 → 기록. 도어 개방·Grade A 상부로 팔 뻗기(first air 차단) 금지. 최악 조건으로 APS·스모크 스터디에 반영.\n· 7주차: RABS = 밑이 뚫림, 오토클레이브 백에 알코올 분무 후 반입, 저렴 / isolator = 완전 밀봉, 옆 챔버 멸균 후 반입. Annex 1 개정 → '가능하면 isolator' → RABS 감소. 납기 1~2년이라 준공 2년 전 발주.\n(WK05 RABS·APS p.3–11, 22–24 · 7주차 녹음 1부 54:10–58:43)\n\n[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)"
     },
     {
       "id": "review-036",
@@ -540,7 +575,8 @@
       ],
       "answer": 4,
       "explanation": "합격 기준은 모든 BI 불활성화(6-log SLR 이상). BI·CI는 worst case 위치(모서리, 차폐부, 공정 핵심 위치)에 배치하고, main chamber와 airlock을 나눠 번호로 관리한다.",
-      "source": "WK05 Isolator p.11, 13, 16"
+      "source": "WK05 Isolator p.11, 13, 16",
+      "notes": "[VHP 제염과 BI·CI] (5주차 Isolator)\n· 4단계: Preparation → Conditioning(H2O2 주입, 목표 농도까지) → Decontamination(농도 유지·노출, BI·CI로 확인) → Aeration(잔류 H2O2를 기준 이하, 약 1 ppm 미만 – 작업자 안전·제품 영향).\n· 성공 조건: 목표 농도(H2O2 용액 34~37%)가 모든 표면에 충분한 시간 접촉. 원리: H2O2 → 2·OH 라디칼이 세포막·단백질·핵산 산화. 아포는 침투가 늦어 더 긴 노출 필요.\n· Occluded surface(겹친 적재물, 나사·힌지·개스킷 틈, 튜빙 내강)에는 효과 없음 → worst case BI·CI를 모서리·차폐부·공정 핵심 위치에, main chamber와 airlock을 나눠 번호로 관리.\n· BI = 살아 있는 포자로 사멸 증명(6-log SLR 이상, 모든 BI 불활성화가 합격). CI = 색 변화로 노출·분포 확인(사멸 증명 아님).\n· Cycle development: BI 3개×10 group total kill time, 온·습도 매핑, worst case → load pattern·주입량·dwell·aeration time이 PQ 조건. 흡착성 재질은 농도↓·aeration↑, 적재 감소는 유리한 변경(cycle 유지).\n(WK05 Isolator p.7–17 · 5주차 녹음 2부 00:00–01:59)"
     },
     {
       "id": "review-037",
@@ -555,7 +591,8 @@
       ],
       "answer": 1,
       "explanation": "성공 조건: 목표 농도의 H2O2가 모든 표면에 충분한 시간 접촉. 겹친 면, 나사·힌지 틈, 튜빙 내강은 전형적인 occluded surface다.",
-      "source": "WK05 Isolator p.7, 10, 12"
+      "source": "WK05 Isolator p.7, 10, 12",
+      "notes": "[VHP 제염과 BI·CI] (5주차 Isolator)\n· 4단계: Preparation → Conditioning(H2O2 주입, 목표 농도까지) → Decontamination(농도 유지·노출, BI·CI로 확인) → Aeration(잔류 H2O2를 기준 이하, 약 1 ppm 미만 – 작업자 안전·제품 영향).\n· 성공 조건: 목표 농도(H2O2 용액 34~37%)가 모든 표면에 충분한 시간 접촉. 원리: H2O2 → 2·OH 라디칼이 세포막·단백질·핵산 산화. 아포는 침투가 늦어 더 긴 노출 필요.\n· Occluded surface(겹친 적재물, 나사·힌지·개스킷 틈, 튜빙 내강)에는 효과 없음 → worst case BI·CI를 모서리·차폐부·공정 핵심 위치에, main chamber와 airlock을 나눠 번호로 관리.\n· BI = 살아 있는 포자로 사멸 증명(6-log SLR 이상, 모든 BI 불활성화가 합격). CI = 색 변화로 노출·분포 확인(사멸 증명 아님).\n· Cycle development: BI 3개×10 group total kill time, 온·습도 매핑, worst case → load pattern·주입량·dwell·aeration time이 PQ 조건. 흡착성 재질은 농도↓·aeration↑, 적재 감소는 유리한 변경(cycle 유지).\n(WK05 Isolator p.7–17 · 5주차 녹음 2부 00:00–01:59)"
     },
     {
       "id": "review-038",
@@ -570,7 +607,8 @@
       ],
       "answer": 3,
       "explanation": "Preparation → Conditioning(농도 상승) → Decontamination(유지·노출) → Aeration(제거). 흡착성 재질은 H2O2를 천천히 방출하므로 최대 적재에서 aeration을 검증하고 임의 단축을 금지한다.",
-      "source": "WK05 Isolator p.7, 11, 17 · 5주차 녹음 2부 01:59"
+      "source": "WK05 Isolator p.7, 11, 17 · 5주차 녹음 2부 01:59",
+      "notes": "[VHP 제염과 BI·CI] (5주차 Isolator)\n· 4단계: Preparation → Conditioning(H2O2 주입, 목표 농도까지) → Decontamination(농도 유지·노출, BI·CI로 확인) → Aeration(잔류 H2O2를 기준 이하, 약 1 ppm 미만 – 작업자 안전·제품 영향).\n· 성공 조건: 목표 농도(H2O2 용액 34~37%)가 모든 표면에 충분한 시간 접촉. 원리: H2O2 → 2·OH 라디칼이 세포막·단백질·핵산 산화. 아포는 침투가 늦어 더 긴 노출 필요.\n· Occluded surface(겹친 적재물, 나사·힌지·개스킷 틈, 튜빙 내강)에는 효과 없음 → worst case BI·CI를 모서리·차폐부·공정 핵심 위치에, main chamber와 airlock을 나눠 번호로 관리.\n· BI = 살아 있는 포자로 사멸 증명(6-log SLR 이상, 모든 BI 불활성화가 합격). CI = 색 변화로 노출·분포 확인(사멸 증명 아님).\n· Cycle development: BI 3개×10 group total kill time, 온·습도 매핑, worst case → load pattern·주입량·dwell·aeration time이 PQ 조건. 흡착성 재질은 농도↓·aeration↑, 적재 감소는 유리한 변경(cycle 유지).\n(WK05 Isolator p.7–17 · 5주차 녹음 2부 00:00–01:59)"
     },
     {
       "id": "review-039",
@@ -585,7 +623,8 @@
       ],
       "answer": 5,
       "explanation": "IQ = 설치·자재·계기·도면 일치 / OQ = pressure, airflow, leak, alarm, interlock 기능 / MBQ·PQ = worst case load에서 BI 사멸·SLR 입증 / PRQ = 주기적 재적격성.",
-      "source": "WK05 Isolator p.15"
+      "source": "WK05 Isolator p.15",
+      "notes": "[아이솔레이터와 qualification] (5주차)\n· 원리 4: 물리적 구조(글러브포트로만 조작), 압력·기류(양압, HEPA 단일방향), 기밀성(leak integrity – 앞의 두 원리의 전제), 표면 제염(VHP). 작업공간이 Grade C여도 내부 Grade A. 압력 계위: main chamber > airlock > 작업공간. Incoming·outgoing airlock까지 하나의 시스템.\n· Qualification: URS → IQ(설치·자재·계기·도면 일치) → OQ(pressure, airflow, leak, alarm, interlock 기능) → CD(cycle development) → MBQ/PQ(worst case load에서 BI 사멸·SLR) → PRQ(매년 주기적 재적격성).\n· 글러브: 작업 전·후 leak test(부풀려 pressure decay, ISO 14644-7), 실패 시 조사, 모든 결과 기록. Annex 1: 빈번한 leak test 요구.\n· 7주차 V-model과 같은 구조: qualification(장비) 전제 위에 validation(공정).\n(WK05 Isolator p.2–6, 15, 18 · 5주차 녹음 2부 00:00–01:59 · 7주차 녹음 2부 01:10:15)"
     },
     {
       "id": "review-040",
@@ -600,7 +639,8 @@
       ],
       "answer": 2,
       "explanation": "cycle development에서 확정한 load pattern, H2O2 주입량, dwell time, aeration time이 PQ의 검증 조건이 된다. 아이솔레이터·멸균기는 매년 재적격성 평가(PRQ)를 한다.",
-      "source": "WK05 Isolator p.2, 11, 15 · 5주차 녹음 2부 00:00"
+      "source": "WK05 Isolator p.2, 11, 15 · 5주차 녹음 2부 00:00",
+      "notes": "[아이솔레이터와 qualification] (5주차)\n· 원리 4: 물리적 구조(글러브포트로만 조작), 압력·기류(양압, HEPA 단일방향), 기밀성(leak integrity – 앞의 두 원리의 전제), 표면 제염(VHP). 작업공간이 Grade C여도 내부 Grade A. 압력 계위: main chamber > airlock > 작업공간. Incoming·outgoing airlock까지 하나의 시스템.\n· Qualification: URS → IQ(설치·자재·계기·도면 일치) → OQ(pressure, airflow, leak, alarm, interlock 기능) → CD(cycle development) → MBQ/PQ(worst case load에서 BI 사멸·SLR) → PRQ(매년 주기적 재적격성).\n· 글러브: 작업 전·후 leak test(부풀려 pressure decay, ISO 14644-7), 실패 시 조사, 모든 결과 기록. Annex 1: 빈번한 leak test 요구.\n· 7주차 V-model과 같은 구조: qualification(장비) 전제 위에 validation(공정).\n(WK05 Isolator p.2–6, 15, 18 · 5주차 녹음 2부 00:00–01:59 · 7주차 녹음 2부 01:10:15)\n\n[VHP 제염과 BI·CI] (5주차 Isolator)\n· 4단계: Preparation → Conditioning(H2O2 주입, 목표 농도까지) → Decontamination(농도 유지·노출, BI·CI로 확인) → Aeration(잔류 H2O2를 기준 이하, 약 1 ppm 미만 – 작업자 안전·제품 영향).\n· 성공 조건: 목표 농도(H2O2 용액 34~37%)가 모든 표면에 충분한 시간 접촉. 원리: H2O2 → 2·OH 라디칼이 세포막·단백질·핵산 산화. 아포는 침투가 늦어 더 긴 노출 필요.\n· Occluded surface(겹친 적재물, 나사·힌지·개스킷 틈, 튜빙 내강)에는 효과 없음 → worst case BI·CI를 모서리·차폐부·공정 핵심 위치에, main chamber와 airlock을 나눠 번호로 관리.\n· BI = 살아 있는 포자로 사멸 증명(6-log SLR 이상, 모든 BI 불활성화가 합격). CI = 색 변화로 노출·분포 확인(사멸 증명 아님).\n· Cycle development: BI 3개×10 group total kill time, 온·습도 매핑, worst case → load pattern·주입량·dwell·aeration time이 PQ 조건. 흡착성 재질은 농도↓·aeration↑, 적재 감소는 유리한 변경(cycle 유지).\n(WK05 Isolator p.7–17 · 5주차 녹음 2부 00:00–01:59)"
     },
     {
       "id": "review-041",
@@ -615,7 +655,8 @@
       ],
       "answer": 4,
       "explanation": "단백질 기반(특히 항체)이 캐시카우이고, 회사가 어떤 모달리티·플랫폼에 강한지 먼저 파악하라고 했다.",
-      "source": "WK02 p.5–6 · 2주차 녹음 04:58–25:09"
+      "source": "WK02 p.5–6 · 2주차 녹음 04:58–25:09",
+      "notes": "[바이오의약품 모달리티·플랫폼] (2주차 하태수 강사)\n· 단백질 기반: 항체·ADC·재조합 효소/단백질/펩타이드 – 현재 캐시카우. 대형 제약사는 항체 플랫폼을 10년 이상 다져 진입 장벽이 높아 ADC가 새 플랫폼으로 매력적.\n· 바이러스 기반: 유전자치료 벡터(AAV·렌티·레트로), 백신(mRNA/pDNA, 아데노바이러스 벡터).\n· 첨단(세포): 유전자변형 세포치료(CAR-T·NK), 줄기세포(MSC·iPSC).\n· 플랫폼 = 서열만 넣으면 최종 제품까지 나오는 정형화된 기술·공정 틀. 코로나 백신: 재조합 단백질(노바백스·SK바이오), 바이럴 벡터(AZ·스푸트니크), mRNA(바이오엔텍 R&D+화이자 생산, 모더나).\n· 숙주: 항체 = CHO(부유·분비), AAV = HEK293에 플라스미드 transfection → 세포 내 생성 → lysis 회수, mRNA = E. coli로 플라스미드 → IVT → LNP 봉입 → −80 ℃.\n· 강사: \"회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라.\"\n(WK02 p.5–13 · 2주차 녹음 04:58–45:22)"
     },
     {
       "id": "review-042",
@@ -630,7 +671,8 @@
       ],
       "answer": 1,
       "explanation": "항체 상업 생산은 CHO(부유, 분비형)가 표준이고, AAV는 HEK293, mRNA 플라스미드는 E. coli를 쓴다.",
-      "source": "2주차 녹음 46:24 · 4주차 녹음 48:22"
+      "source": "2주차 녹음 46:24 · 4주차 녹음 48:22",
+      "notes": "[바이오의약품 모달리티·플랫폼] (2주차 하태수 강사)\n· 단백질 기반: 항체·ADC·재조합 효소/단백질/펩타이드 – 현재 캐시카우. 대형 제약사는 항체 플랫폼을 10년 이상 다져 진입 장벽이 높아 ADC가 새 플랫폼으로 매력적.\n· 바이러스 기반: 유전자치료 벡터(AAV·렌티·레트로), 백신(mRNA/pDNA, 아데노바이러스 벡터).\n· 첨단(세포): 유전자변형 세포치료(CAR-T·NK), 줄기세포(MSC·iPSC).\n· 플랫폼 = 서열만 넣으면 최종 제품까지 나오는 정형화된 기술·공정 틀. 코로나 백신: 재조합 단백질(노바백스·SK바이오), 바이럴 벡터(AZ·스푸트니크), mRNA(바이오엔텍 R&D+화이자 생산, 모더나).\n· 숙주: 항체 = CHO(부유·분비), AAV = HEK293에 플라스미드 transfection → 세포 내 생성 → lysis 회수, mRNA = E. coli로 플라스미드 → IVT → LNP 봉입 → −80 ℃.\n· 강사: \"회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라.\"\n(WK02 p.5–13 · 2주차 녹음 04:58–45:22)"
     },
     {
       "id": "review-043",
@@ -645,7 +687,8 @@
       ],
       "answer": 3,
       "explanation": "플랫폼화 = 'a, b, c 제품 모두 서열만 넣으면 파이널 단계까지 나오는' 체계. 그래서 각 회사가 자기 플랫폼(재조합 단백질, 바이럴 벡터, mRNA)으로 백신 개발에 뛰어들었다.",
-      "source": "2주차 녹음 19:40–22:51"
+      "source": "2주차 녹음 19:40–22:51",
+      "notes": "[바이오의약품 모달리티·플랫폼] (2주차 하태수 강사)\n· 단백질 기반: 항체·ADC·재조합 효소/단백질/펩타이드 – 현재 캐시카우. 대형 제약사는 항체 플랫폼을 10년 이상 다져 진입 장벽이 높아 ADC가 새 플랫폼으로 매력적.\n· 바이러스 기반: 유전자치료 벡터(AAV·렌티·레트로), 백신(mRNA/pDNA, 아데노바이러스 벡터).\n· 첨단(세포): 유전자변형 세포치료(CAR-T·NK), 줄기세포(MSC·iPSC).\n· 플랫폼 = 서열만 넣으면 최종 제품까지 나오는 정형화된 기술·공정 틀. 코로나 백신: 재조합 단백질(노바백스·SK바이오), 바이럴 벡터(AZ·스푸트니크), mRNA(바이오엔텍 R&D+화이자 생산, 모더나).\n· 숙주: 항체 = CHO(부유·분비), AAV = HEK293에 플라스미드 transfection → 세포 내 생성 → lysis 회수, mRNA = E. coli로 플라스미드 → IVT → LNP 봉입 → −80 ℃.\n· 강사: \"회사가 어떤 모달리티에서 어떤 플랫폼을 가졌는지 먼저 파악하라.\"\n(WK02 p.5–13 · 2주차 녹음 04:58–45:22)"
     },
     {
       "id": "review-044",
@@ -660,7 +703,8 @@
       ],
       "answer": 5,
       "explanation": "pH·온도·교반·DO는 센서로 실시간 제어한다. 대사 물질(glucose, lactate 등), VCD·viability, 삼투압은 샘플링 후 오프라인 분석으로만 안다.",
-      "source": "WK02 p.22, 46 · 2주차 녹음 01:14:18–01:16:43, 01:49:48"
+      "source": "WK02 p.22, 46 · 2주차 녹음 01:14:18–01:16:43, 01:49:48",
+      "notes": "[오프라인 분석 항목] (2주차)\n· 세포: VCD(viable cell density), viability(%), cell diameter\n· Chemistry: glucose, glutamine, glutamate, ammonia, lactate, Ca, Na, K\n· Gas: pH, pCO2, pO2 / 그 외 osmolality\n· 샘플링으로만 알 수 있어 디지털 트윈·AI 예측 연구가 진행 중. 데이터 = 초기 조건 + 배양 파라미터 + 대사 파라미터 + 품질 파라미터.\n· 배양 목적(김영태): 무균 전제하에 높은 VCD와 높은 titer(g/L, 항체 약 2~3 g/L).\n(WK02 p.24, 46–47 · 2주차 녹음 01:49:48–01:53:51 · 4주차 녹음 01:20:36)\n\n[배양 CPP와 제어] (2주차)\n· 배양기가 직접·실시간 측정·제어하는 변수: pH, 온도, 교반(rpm), DO. 대사 변수(glucose·lactate·glutamine·ammonia), VCD·viability, 삼투압은 샘플링해야만 안다(하루 1회 이상 샘플링 백).\n· 가스 4종: air·O2 → DO↑, N2 → DO↓, CO2 → pH↓. pH가 떨어지면(보통 lactate 축적) 염기(중탄산나트륨), 오르면 CO2. pH 센서는 백업용 2개, DO가 떨어지면 순산소 자동 공급.\n· 배양기 기능 = 교반(agitation) + 통기(aeration). 샘플링 라인은 하단 포트. seed 배양기를 위층에 두어 중력 이송(세포 스트레스↓, 역류 방지).\n· 문제해결 예: pH 저하 → glucose 소비·lactate 축적 확인.\n(WK02 p.18–22, 46–47 · 2주차 녹음 01:14:18–01:29:52, 01:38:43, 02:43:31)"
     },
     {
       "id": "review-045",
@@ -675,7 +719,8 @@
       ],
       "answer": 2,
       "explanation": "air·O2 = DO↑, N2 = DO↓, CO2 = pH↓. 세포가 늘면 산소 소비(OUR)가 커져 DO가 떨어지고, 산소를 넣으면 다시 오른다.",
-      "source": "2주차 녹음 01:26:37, 01:38:43, 02:36:04"
+      "source": "2주차 녹음 01:26:37, 01:38:43, 02:36:04",
+      "notes": "[배양 CPP와 제어] (2주차)\n· 배양기가 직접·실시간 측정·제어하는 변수: pH, 온도, 교반(rpm), DO. 대사 변수(glucose·lactate·glutamine·ammonia), VCD·viability, 삼투압은 샘플링해야만 안다(하루 1회 이상 샘플링 백).\n· 가스 4종: air·O2 → DO↑, N2 → DO↓, CO2 → pH↓. pH가 떨어지면(보통 lactate 축적) 염기(중탄산나트륨), 오르면 CO2. pH 센서는 백업용 2개, DO가 떨어지면 순산소 자동 공급.\n· 배양기 기능 = 교반(agitation) + 통기(aeration). 샘플링 라인은 하단 포트. seed 배양기를 위층에 두어 중력 이송(세포 스트레스↓, 역류 방지).\n· 문제해결 예: pH 저하 → glucose 소비·lactate 축적 확인.\n(WK02 p.18–22, 46–47 · 2주차 녹음 01:14:18–01:29:52, 01:38:43, 02:43:31)"
     },
     {
       "id": "review-046",
@@ -690,7 +735,8 @@
       ],
       "answer": 4,
       "explanation": "pH가 떨어지면(보통 lactate 축적) 염기를 넣고, 오르면 CO2를 넣어 낮춘다. pH 센서는 백업으로 2개 둔다.",
-      "source": "2주차 녹음 01:26:37–01:29:52"
+      "source": "2주차 녹음 01:26:37–01:29:52",
+      "notes": "[배양 CPP와 제어] (2주차)\n· 배양기가 직접·실시간 측정·제어하는 변수: pH, 온도, 교반(rpm), DO. 대사 변수(glucose·lactate·glutamine·ammonia), VCD·viability, 삼투압은 샘플링해야만 안다(하루 1회 이상 샘플링 백).\n· 가스 4종: air·O2 → DO↑, N2 → DO↓, CO2 → pH↓. pH가 떨어지면(보통 lactate 축적) 염기(중탄산나트륨), 오르면 CO2. pH 센서는 백업용 2개, DO가 떨어지면 순산소 자동 공급.\n· 배양기 기능 = 교반(agitation) + 통기(aeration). 샘플링 라인은 하단 포트. seed 배양기를 위층에 두어 중력 이송(세포 스트레스↓, 역류 방지).\n· 문제해결 예: pH 저하 → glucose 소비·lactate 축적 확인.\n(WK02 p.18–22, 46–47 · 2주차 녹음 01:14:18–01:29:52, 01:38:43, 02:43:31)"
     },
     {
       "id": "review-047",
@@ -705,7 +751,8 @@
       ],
       "answer": 1,
       "explanation": "배지는 배양기가 아니라 media prep 탱크에서 만들어 이송한다. 해동 → 플라스크 계대 → seed 배양기(N-x … N-1) → 생산 배양기(N) → 수확(clarification).",
-      "source": "2주차 녹음 01:11:33–01:13:24"
+      "source": "2주차 녹음 01:11:33–01:13:24",
+      "notes": "[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "review-048",
@@ -720,7 +767,8 @@
       ],
       "answer": 3,
       "explanation": "2,000~3,000 L 이상이면 연속식 원심분리를 쓰고, 원심 뒤에는 반드시 depth filter로 잔여 세포를 제거한다(세트). 세포 부피(wet cell weight)만큼 부피가 줄고, post-flush로 필터 잔류분을 회수한다.",
-      "source": "4주차 녹음 01:42:57 · 7주차 녹음 1부 46:48 · 7주차 녹음 2부 16:52"
+      "source": "4주차 녹음 01:42:57 · 7주차 녹음 1부 46:48 · 7주차 녹음 2부 16:52",
+      "notes": "[Cell harvest vs Clarification – 실무자가 잘못 쓰는 단어]\n· 미생물(E. coli): 세포벽이 있고 생산물이 세포 안(intracellular) → 세포를 '모은다' = cell harvest(원심 pellet 또는 CFF retentate) → 파쇄(lysis) → inclusion body 세척·용해·refolding.\n· 동물세포(CHO): 항체를 배양액으로 분비(extracellular) → 세포를 '제거한다' = (cell) clarification(원심→depth→sterile, 또는 CFF permeate, 또는 DEF→depth→sterile).\n· 김영태: \"실무자들이 혼용하지만 cell harvest라고 외우면 헛공부.\"\n· sol/insol 분리 = 원심·여과. 2,000~3,000 L 이상이면 연속식 원심분리기, 이하면 필터만(VCD가 10배면 2,000 L라도 원심). 원심 후 반드시 depth filter(세트). 세포 부피(wet cell weight, 약 20%)만큼 부피 감소, post-flush로 필터 잔류분 회수.\n(4주차 녹음 01:35:56–01:49 · WK04(여과) 슬라이드 13–14 · 6주차 녹음 2부 01:27 · 7주차 녹음 1부 46:48)"
     },
     {
       "id": "review-049",
@@ -735,7 +783,8 @@
       ],
       "answer": 5,
       "explanation": "stationary를 길게 유지하고 peak VCD를 높이는 것이 titer 향상의 핵심이다. perfusion은 신선 배지를 계속 넣어 death로 가는 것을 늦춘다.",
-      "source": "WK02 p.34 · 2주차 녹음 02:15:10–02:19:55"
+      "source": "WK02 p.34 · 2주차 녹음 02:15:10–02:19:55",
+      "notes": "[세포 성장 곡선] (2주차)\n· Lag(적응) → Log/Exponential(더블링, 3~6일째 peak VCD) → Stationary(증식≈사멸, 항체 가장 많이 생산, 7~8일) → Death(암모니아·lactate 등 독성 축적).\n· 접종 0.5×10⁶ cells/mL, fed-batch peak 약 3~5×10⁶, 총 약 15일. peak VCD를 2배(1×10⁷)로 올리고 stationary를 줄이면 10일로 단축 → 연간 배치↑.\n· CHO doubling time ≈ 1일 → 5배 희석을 회복하는 데 약 2.3일(log₂5). seed 단계 간격 약 3일, 해동부터 본배양 끝까지 약 한 달.\n· seed 계대는 증식이 왕성한 log phase에서 한다(seed = 복사·붙여넣기, N = 채찍질해 생산).\n· Perfusion은 신선 배지를 계속 넣어 death로 가지 않게 한다.\n(WK02 p.34 · 2주차 녹음 02:15:10–02:19:55 · 4주차 녹음 01:24–01:26:44)"
     },
     {
       "id": "review-050",
@@ -750,7 +799,8 @@
       ],
       "answer": 2,
       "explanation": "seed는 log phase에서 빨리 키워 다음 단계로 넘기고, N에서 성장 → stationary로 전환하며 생산한다. N-1 perfusion으로 고농도 접종하면 N의 peak VCD가 높아진다.",
-      "source": "6주차 녹음 2부 07:48–12:35 · 4주차 녹음 01:26:44 · 2주차 녹음 02:21:51"
+      "source": "6주차 녹음 2부 07:48–12:35 · 4주차 녹음 01:26:44 · 2주차 녹음 02:21:51",
+      "notes": "[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)\n\n[세포 성장 곡선] (2주차)\n· Lag(적응) → Log/Exponential(더블링, 3~6일째 peak VCD) → Stationary(증식≈사멸, 항체 가장 많이 생산, 7~8일) → Death(암모니아·lactate 등 독성 축적).\n· 접종 0.5×10⁶ cells/mL, fed-batch peak 약 3~5×10⁶, 총 약 15일. peak VCD를 2배(1×10⁷)로 올리고 stationary를 줄이면 10일로 단축 → 연간 배치↑.\n· CHO doubling time ≈ 1일 → 5배 희석을 회복하는 데 약 2.3일(log₂5). seed 단계 간격 약 3일, 해동부터 본배양 끝까지 약 한 달.\n· seed 계대는 증식이 왕성한 log phase에서 한다(seed = 복사·붙여넣기, N = 채찍질해 생산).\n· Perfusion은 신선 배지를 계속 넣어 death로 가지 않게 한다.\n(WK02 p.34 · 2주차 녹음 02:15:10–02:19:55 · 4주차 녹음 01:24–01:26:44)"
     },
     {
       "id": "review-051",
@@ -765,7 +815,8 @@
       ],
       "answer": 4,
       "explanation": "200 rpm = 3.33 rps. tip speed = π × 0.3 × 3.33 ≈ 3.14 m/s. rpm을 rps로 바꾸지 않으면 188로 틀린다.",
-      "source": "WK02 p.89 · 2주차 녹음 02:51:48"
+      "source": "WK02 p.89 · 2주차 녹음 02:51:48",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)"
     },
     {
       "id": "review-052",
@@ -780,7 +831,8 @@
       ],
       "answer": 1,
       "explanation": "n = tip speed / (π·d) = 1.5 / (3.14 × 0.6) ≈ 0.796 rps × 60 ≈ 48 rpm. 스케일이 커지면 임펠러가 커져 같은 shear를 지키려면 rpm을 낮춰야 한다(→ 혼합·산소 전달 검토).",
-      "source": "WK02 p.86, 89 · 2주차 녹음 02:46:49–02:51:48"
+      "source": "WK02 p.86, 89 · 2주차 녹음 02:46:49–02:51:48",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)"
     },
     {
       "id": "review-053",
@@ -795,7 +847,8 @@
       ],
       "answer": 3,
       "explanation": "π·d₁·n₁ = π·d₂·n₂ → 0.2 × 240 = 0.8 × n₂ → n₂ = 60 rpm.",
-      "source": "WK02 p.89 · 2주차 녹음 02:51:48"
+      "source": "WK02 p.89 · 2주차 녹음 02:51:48",
+      "notes": "[교반·통기 scale-up] (2주차)\n· 교반 변수 3: mixing time, P/V(power input per volume, 가장 많이 사용 – 같은 P/V가 되는 rpm 계산, P/V = Ne·ρ·n³·d⁵/V), tip speed.\n· tip speed = π × 임펠러 직경 × 회전속도(rps로 환산, m/s). shear 지표. 같은 tip speed → d₁n₁ = d₂n₂.\n· 통기 변수 3: VVM, superficial gas velocity(vs), kLa(산소 전달 계수, 가장 많이 연구). 공기 버블 산소 21%.\n· OTR(배양기의 물리적 산소 전달) ≥ OUR(세포 소비) 이어야 함.\n· design space: 최소 rpm(혼합 불균일) ~ 최대 rpm(shear), 최소 가스(산소 제한) ~ 최대 가스(foam). 임펠러가 커질수록 shear↑ → rpm↓ → 산소 전달↓. 대형일수록 CO2 stripping 어려움(pCO2↑), design space 좁음.\n(WK02 p.86–97 · 2주차 녹음 02:46:49–02:57:17)"
     },
     {
       "id": "review-054",
@@ -810,7 +863,8 @@
       ],
       "answer": 5,
       "explanation": "VCD(viable cell density) = 살아 있는 세포 밀도 = 4.5 × 10⁶. viability = 4.5/5.0 = 90%.",
-      "source": "2주차 녹음 01:49:48 · 4주차 녹음 01:20:36"
+      "source": "2주차 녹음 01:49:48 · 4주차 녹음 01:20:36",
+      "notes": "[오프라인 분석 항목] (2주차)\n· 세포: VCD(viable cell density), viability(%), cell diameter\n· Chemistry: glucose, glutamine, glutamate, ammonia, lactate, Ca, Na, K\n· Gas: pH, pCO2, pO2 / 그 외 osmolality\n· 샘플링으로만 알 수 있어 디지털 트윈·AI 예측 연구가 진행 중. 데이터 = 초기 조건 + 배양 파라미터 + 대사 파라미터 + 품질 파라미터.\n· 배양 목적(김영태): 무균 전제하에 높은 VCD와 높은 titer(g/L, 항체 약 2~3 g/L).\n(WK02 p.24, 46–47 · 2주차 녹음 01:49:48–01:53:51 · 4주차 녹음 01:20:36)"
     },
     {
       "id": "review-055",
@@ -825,7 +879,8 @@
       ],
       "answer": 2,
       "explanation": "4 / 0.5 = 8배 = 2³ → 3번 분열 → 3일(log phase 가정). 강의: 접종 0.5 × 10⁶, fed-batch peak 3~5 × 10⁶(3~6일).",
-      "source": "2주차 녹음 02:15:10 · 4주차 녹음 01:24"
+      "source": "2주차 녹음 02:15:10 · 4주차 녹음 01:24",
+      "notes": "[세포 성장 곡선] (2주차)\n· Lag(적응) → Log/Exponential(더블링, 3~6일째 peak VCD) → Stationary(증식≈사멸, 항체 가장 많이 생산, 7~8일) → Death(암모니아·lactate 등 독성 축적).\n· 접종 0.5×10⁶ cells/mL, fed-batch peak 약 3~5×10⁶, 총 약 15일. peak VCD를 2배(1×10⁷)로 올리고 stationary를 줄이면 10일로 단축 → 연간 배치↑.\n· CHO doubling time ≈ 1일 → 5배 희석을 회복하는 데 약 2.3일(log₂5). seed 단계 간격 약 3일, 해동부터 본배양 끝까지 약 한 달.\n· seed 계대는 증식이 왕성한 log phase에서 한다(seed = 복사·붙여넣기, N = 채찍질해 생산).\n· Perfusion은 신선 배지를 계속 넣어 death로 가지 않게 한다.\n(WK02 p.34 · 2주차 녹음 02:15:10–02:19:55 · 4주차 녹음 01:24–01:26:44)\n\n[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "review-056",
@@ -840,7 +895,8 @@
       ],
       "answer": 4,
       "explanation": "배양 목적 = 무균 전제하에 높은 VCD와 높은 titer(항체 약 2~3 g/L). seed train은 약 5배씩(예: 120 → 600 → 3,000 → 15,000 L).",
-      "source": "2주차 녹음 01:08:32 · 4주차 녹음 01:20:36–01:24"
+      "source": "2주차 녹음 01:08:32 · 4주차 녹음 01:20:36–01:24",
+      "notes": "[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "review-057",
@@ -855,7 +911,8 @@
       ],
       "answer": 1,
       "explanation": "2주차 강사: DoE 결과의 초록 영역 = design space, 십자 점 = set point, 세포가 살아 있어 pH·DO가 변하므로 '공간'이 필요. PC는 R&D 스케일 배양 이후 위험평가와 함께 한다. 김영태: PD = pH 7이 되네, PC = 7.1 ± 0.1.",
-      "source": "2주차 녹음 02:34:59–02:38:03 · 6주차 녹음 2부 00:00–04:20"
+      "source": "2주차 녹음 02:34:59–02:38:03 · 6주차 녹음 2부 00:00–04:20",
+      "notes": "[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
     },
     {
       "id": "review-058",
@@ -870,7 +927,8 @@
       ],
       "answer": 3,
       "explanation": "PD → PC → design space → control strategy(QbD). 생산 규모에서는 조건을 바꿔 시험할 수 없으므로 scale-down model에서 미리 범위를 정한다.",
-      "source": "6주차 녹음 2부 00:00–04:20 · 2주차 녹음 01:03:49"
+      "source": "6주차 녹음 2부 00:00–04:20 · 2주차 녹음 01:03:49",
+      "notes": "[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
     },
     {
       "id": "review-059",
@@ -885,7 +943,8 @@
       ],
       "answer": 5,
       "explanation": "perfusion은 cell retention device(ATF 등)로 세포는 남기고 spent medium & product만 빼낸다. '회분식' 같은 표현보다 batch/fed-batch/perfusion으로 쓰라고 했다.",
-      "source": "WK04(여과) 슬라이드 8 · 4주차 녹음 01:27:55 · 2주차 녹음 57:00–01:03:37"
+      "source": "WK04(여과) 슬라이드 8 · 4주차 녹음 01:27:55 · 2주차 녹음 57:00–01:03:37",
+      "notes": "[배양 모드]\n· Batch: 처음부터 배지를 가득 채우고 추가 없음(1~2주). 간편하지만 효율↓. 세포주 개발·클론 선별·배지 스크리닝(플라스크 수백 개)에 많이 씀.\n· Fed-batch: 절반 정도 채우고 세포가 북적이면 농축 feed(2~3주, 보통 14~15일). PD 단계부터 사용, COGS 비교에서 여전히 상업 생산의 70% 이상.\n· Perfusion: 세포는 남기고(ATF 등 cell retention device) 상등액만 빼며 신선 배지 공급 → 고밀도, lactate·암모니아 제거, death 지연(3~9주). 1,000 L에서 15회 교환 = 15,000 L 효과. 배지·필터(ATF 약 1억)·정제 부담이 크다.\n· N-1 perfusion: N-1에서 노폐물 제거·고밀도(≥1×10⁶) → N에 고농도 접종. 본배양 fed-batch는 그대로라 major change 아님.\n· ATF: 펌프가 배양액을 빨았다 밀었다 하며 hollow fiber 필터로 상등액만 투과(하루 배양 부피의 1~3배 교환).\n· \"장점만 있는 공정은 없다.\" \"회분식\"이라는 표현 대신 batch/fed-batch/perfusion으로.\n(WK02 p.32–40 · 2주차 녹음 57:00–01:03:37, 02:11:21–02:26:39 · 4주차 녹음 01:27:55–01:31 · WK04(여과) 슬라이드 8)"
     },
     {
       "id": "review-060",
@@ -900,7 +959,8 @@
       ],
       "answer": 2,
       "explanation": "1,000 L × 1.5/day × 10일 = 15,000 L. 김영태 강사 예시처럼 1,000 L perfusion이 15,000 L 배양 효과를 낼 수 있지만, 배지·정제 비용이 크다(ATF는 하루 1~3배 교환).",
-      "source": "4주차 녹음 01:27:55 · 2주차 녹음 02:26:39"
+      "source": "4주차 녹음 01:27:55 · 2주차 녹음 02:26:39",
+      "notes": "[배양 모드]\n· Batch: 처음부터 배지를 가득 채우고 추가 없음(1~2주). 간편하지만 효율↓. 세포주 개발·클론 선별·배지 스크리닝(플라스크 수백 개)에 많이 씀.\n· Fed-batch: 절반 정도 채우고 세포가 북적이면 농축 feed(2~3주, 보통 14~15일). PD 단계부터 사용, COGS 비교에서 여전히 상업 생산의 70% 이상.\n· Perfusion: 세포는 남기고(ATF 등 cell retention device) 상등액만 빼며 신선 배지 공급 → 고밀도, lactate·암모니아 제거, death 지연(3~9주). 1,000 L에서 15회 교환 = 15,000 L 효과. 배지·필터(ATF 약 1억)·정제 부담이 크다.\n· N-1 perfusion: N-1에서 노폐물 제거·고밀도(≥1×10⁶) → N에 고농도 접종. 본배양 fed-batch는 그대로라 major change 아님.\n· ATF: 펌프가 배양액을 빨았다 밀었다 하며 hollow fiber 필터로 상등액만 투과(하루 배양 부피의 1~3배 교환).\n· \"장점만 있는 공정은 없다.\" \"회분식\"이라는 표현 대신 batch/fed-batch/perfusion으로.\n(WK02 p.32–40 · 2주차 녹음 57:00–01:03:37, 02:11:21–02:26:39 · 4주차 녹음 01:27:55–01:31 · WK04(여과) 슬라이드 8)\n\n[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "review-061",
@@ -915,7 +975,8 @@
       ],
       "answer": 4,
       "explanation": "하위 분류까지 알면 풀 수 있는 문제가 많다고 했다. MF는 µm(길이), UF는 kDa(MWCO, 무게) 단위로 표시한다.",
-      "source": "6주차 녹음 1부 16:04 · WK04(여과) 슬라이드 25, 26, 28, 33, 47"
+      "source": "6주차 녹음 1부 16:04 · WK04(여과) 슬라이드 25, 26, 28, 33, 47",
+      "notes": "[여과의 구분] (4·6주차 – \"하위 분류까지 알면 풀 수 있는 문제 많음\")\n· ① 메커니즘: dead-end(DEF, normal flow) vs cross-flow(CFF = TFF)\n· ② 크기: MF(µm, 균·입자) / UF(kDa·MWCO, 단백질) / NF / RO\n· ③ 재질: membrane(CA, Nylon, PVDF, PES, PTFE) / depth(PP, glass fiber, cellulose)\n· ④ 목적: 제균, virus reduction, clarification, pre-filter, 정제, 농축, buffer 교환, 탈염\n· ⑤ 대상: 액체 / 기체(gas·vent filter)\n· 슬라이드 명칭 구분: UF = size exclusion, CFF·DEF = mechanism, diafiltration·concentration = operational.\n· 여과 구동력 = 차압(ΔP = P1 − P2). 100→99 bar와 1→0 bar는 같은 1 bar.\n(WK04(여과) 슬라이드 22–28, 33, 47 · 6주차 녹음 1부 16:04)\n\n[MF / UF / NF / RO]\n· MF: 기공 0.1~100 µm, >300 kDa 걸림, 0.5~2 bar – 균·입자(길이 단위 µm). 0.2 µm sterilizing grade filtration.\n· UF: 3~100 nm, 1~300 kDa, 0.1~3 bar – 단백질 농축·DF(무게 단위 kDa, MWCO). 항체 150 kDa는 30~50 kDa 막에 남음.\n· NF: 2~5 nm, >150 Da, 3~15 bar / RO: <150 Da, 10~100 bar.\n· MF가 크고 UF가 촘촘하다. MF-TFF는 permeate flux가 너무 빠르면 급격히 막힌다.\n(WK04(여과) 슬라이드 29–32, 101–102 · 6주차 녹음 1부 16:04)"
     },
     {
       "id": "review-062",
@@ -930,7 +991,8 @@
       ],
       "answer": 1,
       "explanation": "MF는 0.1~100 µm, UF는 1~300 kDa(3~100 nm). MF가 크고 UF가 촘촘하다. 항체(150 kDa)는 UF 막에 남는다.",
-      "source": "6주차 녹음 1부 16:04 · WK04(여과) 슬라이드 32"
+      "source": "6주차 녹음 1부 16:04 · WK04(여과) 슬라이드 32",
+      "notes": "[MF / UF / NF / RO]\n· MF: 기공 0.1~100 µm, >300 kDa 걸림, 0.5~2 bar – 균·입자(길이 단위 µm). 0.2 µm sterilizing grade filtration.\n· UF: 3~100 nm, 1~300 kDa, 0.1~3 bar – 단백질 농축·DF(무게 단위 kDa, MWCO). 항체 150 kDa는 30~50 kDa 막에 남음.\n· NF: 2~5 nm, >150 Da, 3~15 bar / RO: <150 Da, 10~100 bar.\n· MF가 크고 UF가 촘촘하다. MF-TFF는 permeate flux가 너무 빠르면 급격히 막힌다.\n(WK04(여과) 슬라이드 29–32, 101–102 · 6주차 녹음 1부 16:04)\n\n[크기 – \"외워라\"] (4주차)\n· 동물세포 약 10 µm > 미생물 약 1 µm > sterile filter 0.2 µm(=200 nm) > enveloped virus 약 100 nm > non-enveloped virus 약 20 nm. 항체는 150 kDa(무게 단위). 머리카락 약 100 µm.\n· 그래서 0.2 µm로 균은 걸러도 바이러스는 통과 → low pH VI, AEX, virus filtration 같은 VCS 단계가 필요. 세포치료제는 세포 자체가 10 µm라 여과 멸균 불가.\n(4주차 녹음 01:40:21)"
     },
     {
       "id": "review-063",
@@ -945,7 +1007,8 @@
       ],
       "answer": 3,
       "explanation": "CFF(유럽식 명칭) = TFF(미국·한국). 우유통 비유: 순환하면서 물만 투과 → 농축. sterile filtration·depth filtration은 대부분 dead-end다.",
-      "source": "6주차 녹음 1부 32:46 · WK04(여과) 슬라이드 26"
+      "source": "6주차 녹음 1부 32:46 · WK04(여과) 슬라이드 26",
+      "notes": "[여과의 구분] (4·6주차 – \"하위 분류까지 알면 풀 수 있는 문제 많음\")\n· ① 메커니즘: dead-end(DEF, normal flow) vs cross-flow(CFF = TFF)\n· ② 크기: MF(µm, 균·입자) / UF(kDa·MWCO, 단백질) / NF / RO\n· ③ 재질: membrane(CA, Nylon, PVDF, PES, PTFE) / depth(PP, glass fiber, cellulose)\n· ④ 목적: 제균, virus reduction, clarification, pre-filter, 정제, 농축, buffer 교환, 탈염\n· ⑤ 대상: 액체 / 기체(gas·vent filter)\n· 슬라이드 명칭 구분: UF = size exclusion, CFF·DEF = mechanism, diafiltration·concentration = operational.\n· 여과 구동력 = 차압(ΔP = P1 − P2). 100→99 bar와 1→0 bar는 같은 1 bar.\n(WK04(여과) 슬라이드 22–28, 33, 47 · 6주차 녹음 1부 16:04)\n\n[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "review-064",
@@ -960,7 +1023,8 @@
       ],
       "answer": 5,
       "explanation": "clarification은 depth(+membrane) 조합, 제균·바이러스 제거는 membrane이다.",
-      "source": "WK04(여과) 슬라이드 34, 40, 41, 43"
+      "source": "WK04(여과) 슬라이드 34, 40, 41, 43",
+      "notes": "[Membrane vs Depth 필터]\n· Membrane(친수성/소수성): 정해진 기공 – 높은 차압·급격한 압력 변화에도 입자가 뒤로 넘어가지 않음. particle·bioburden·sterile·mycoplasma·virus filtration. 대신 쉽게 막힘.\n· Depth(PP, glass fiber, cellulose – Sartoclear는 규조토·carbon powder 포함): 두꺼운 섬유층에 많은 입자를 holding해 조기 막힘이 없음. 압력에 민감해 높아지면 넘어갈 수 있음. pre-filtration, clarification.\n· 조합(depth + membrane): 높은 dirt loading capacity + defined retention → clarification 등에서 효율 최대화.\n· 막 제조: 셀룰로스계는 evaporation, PES·폴리아미드는 quenching(precipitation) 공정. 비대칭 PES 막은 casting 조건으로 용도 조절.\n(WK04(여과) 슬라이드 34–43)"
     },
     {
       "id": "review-065",
@@ -975,7 +1039,8 @@
       ],
       "answer": 2,
       "explanation": "vent가 막히면 탱크가 진공으로 찌그러질 수 있어, WFI 탱크는 vent 필터를 이중으로 두고 가열한다. 소수성 막은 WIT(water intrusion)로 integrity test한다.",
-      "source": "WK04(여과) 슬라이드 50, 51, 53, 56, 58 · 4주차 녹음 02:48"
+      "source": "WK04(여과) 슬라이드 50, 51, 53, 56, 58 · 4주차 녹음 02:48",
+      "notes": "[기체 필터 · HEPA]\n· 배양기 inlet 가스 필터(air, CO2, O2, N2)와 vent(배기) 필터 – \"필터가 없으면 배양 자체가 성립하지 않는다.\" 소수성 PTFE(absolute retention, 기계적 강도, WIT 또는 IPA로 integrity test).\n· 기체 포집 메커니즘: sieve, impaction(큰 입자 충돌), interception(흐름선이 섬유 근처), electrostatic, diffusion(Brownian, 작은 입자). 약 0.2 µm 부근이 가장 잘 통과(MPPS). 그래서 기체 필터는 액체 표시보다 10~20배 잘 걸러 0.2 µm 필터가 20 nm phage aerosol도 100% 포집.\n· WFI 탱크 vent가 막히면 탱크가 찌그러진다 → double vent + 스팀 재킷 가열(응축 방지), 하우징에 SIP용 clean steam·integrity test connector·압력계.\n· HEPA 등급(EN 1822): 0.3 µm 기준 – EPA E10~E12 < HEPA H13 ≥99.95%, H14 ≥99.995% < ULPA U15~U17. 재질은 강의자료에 직접 나오지 않음(일반적으로 극세 유리섬유).\n(WK04(여과) 슬라이드 47–61 · 4주차 녹음 02:48–02:50)"
     },
     {
       "id": "review-066",
@@ -990,7 +1055,8 @@
       ],
       "answer": 4,
       "explanation": "네 가지 모두 pI가 낮아(약 2~4) pH 5~6에서 − 전하를 띤다. 그래서 AEX flow-through로 함께 잡을 수 있다.",
-      "source": "4주차 녹음 02:06–02:12"
+      "source": "4주차 녹음 02:06–02:12",
+      "notes": "[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)"
     },
     {
       "id": "review-067",
@@ -1005,7 +1071,8 @@
       ],
       "answer": 1,
       "explanation": "항체 pI 7~8 / impurity pI 2~4. pH를 그 사이(5~6)로 맞추면 전하가 반대가 되어 분리된다.",
-      "source": "4주차 녹음 02:06–02:22"
+      "source": "4주차 녹음 02:06–02:22",
+      "notes": "[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)"
     },
     {
       "id": "review-068",
@@ -1020,7 +1087,8 @@
       ],
       "answer": 3,
       "explanation": "3 g/L × 2,000 L = 6,000 g → × 0.6 = 3,600 g → ÷ 0.15 g = 24,000개. 시험 리뷰: 'mass balance 같이 계산해본 것(배양 볼륨, titer, DP 개수)'.",
-      "source": "7주차 녹음 1부 38:30 · 7주차 녹음 2부 49:16–59:13"
+      "source": "7주차 녹음 1부 38:30 · 7주차 녹음 2부 49:16–59:13",
+      "notes": "[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)\n\n[Mass balance] (7주차 CD 단계 · 시험 리뷰 \"같이 계산해 본 것\")\n· 배양 부피 × titer = 생산량 → × 공정 수율 → ÷ 바이알당 함량 = DP 개수. 거꾸로 목표 DP 개수에서 필요한 배양 부피를 역산.\n· 15,000 L 배양기에 3,000 L 접종 → 배지 12,000 L. 실무는 산·염기, antifoam 공간, 손실 여유, QC/IPC 샘플링, 손상·응집을 고려(최종 100 바이알이면 110개 생산). N-1에서 3,200 L 키워 3,000 L 사용.\n· 배지 제조 전략: 한꺼번에(보관·안정성 문제) vs 매번(번거로움) → 초기 몇 개 묶고 N-1/N은 just-in-time.\n· 농도 흐름: clarification으로 세포 부피만큼 감소, post-flush로 부피 증가, 정제 중후반 30~50 g/L, 완제 100~200 g/L.\n(7주차 녹음 1부 37:19–47:00 · 6주차 녹음 1부 01:27)"
     },
     {
       "id": "review-069",
@@ -1035,7 +1103,8 @@
       ],
       "answer": 5,
       "explanation": "필요 항체 = 100 mg × 10,000 = 1,000 g. 수율 50% → 배양에서 2,000 g 필요 → ÷ 2 g/L = 1,000 L.",
-      "source": "7주차 녹음 1부 38:30"
+      "source": "7주차 녹음 1부 38:30",
+      "notes": "[Mass balance] (7주차 CD 단계 · 시험 리뷰 \"같이 계산해 본 것\")\n· 배양 부피 × titer = 생산량 → × 공정 수율 → ÷ 바이알당 함량 = DP 개수. 거꾸로 목표 DP 개수에서 필요한 배양 부피를 역산.\n· 15,000 L 배양기에 3,000 L 접종 → 배지 12,000 L. 실무는 산·염기, antifoam 공간, 손실 여유, QC/IPC 샘플링, 손상·응집을 고려(최종 100 바이알이면 110개 생산). N-1에서 3,200 L 키워 3,000 L 사용.\n· 배지 제조 전략: 한꺼번에(보관·안정성 문제) vs 매번(번거로움) → 초기 몇 개 묶고 N-1/N은 just-in-time.\n· 농도 흐름: clarification으로 세포 부피만큼 감소, post-flush로 부피 증가, 정제 중후반 30~50 g/L, 완제 100~200 g/L.\n(7주차 녹음 1부 37:19–47:00 · 6주차 녹음 1부 01:27)"
     },
     {
       "id": "review-070",
@@ -1050,7 +1119,8 @@
       ],
       "answer": 2,
       "explanation": "배지 = 2,000 − 400 = 1,600 L(실무는 산·염기, antifoam, 샘플링, 손실 여유를 더함). seed는 약 5배씩: 2,000 ← 400 ← 80 ← 16 L.",
-      "source": "4주차 녹음 01:21:45 · 7주차 녹음 1부 38:30"
+      "source": "4주차 녹음 01:21:45 · 7주차 녹음 1부 38:30",
+      "notes": "[Seed train]\n· WCB 바이알(LN2 약 −170 ℃, 약 2 mL) 해동 → 직후 생존율 약 60% → 플라스크 4~7단계 계대로 99% 이상 회복 → seed bioreactor → production bioreactor.\n· 희석 배수가 크면 안 자라므로 '화분 분갈이'처럼 동물세포는 약 5배씩: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) L (삼바 120→600→3,000→15,000 L, 셀트리온 24→120→600→4,500→15,000 L). 삼바·셀트·롯바 배양기 15,000 L는 '업계 상식, 외워라'.\n· 배지는 media prep 탱크에서 만들어 이송. 15,000 L에 3,000 L 접종 → 배지 12,000 L(+산·염기, antifoam, 샘플링, 손실 여유).\n· seed 단계는 오염이 10일 뒤에야 나타날 수 있어 무균 최고 등급(BSC, pass box). RM(wave) 백은 표기 부피의 절반만 사용.\n(WK02 p.35 · 2주차 녹음 01:08:32–01:13:24, 01:22:34 · 4주차 녹음 01:21:45 · 7주차 녹음 2부 07:17)"
     },
     {
       "id": "review-071",
@@ -1065,7 +1135,8 @@
       ],
       "answer": 4,
       "explanation": "생산 바이알 = 110개 × 50 mg = 5,500 mg = 5.5 g → 수율 80%로 나누면 5.5 / 0.8 = 6.875 g. 강의 예: 최종 100 바이알이면 110개를 생산하도록 mass balance를 잡는다.",
-      "source": "7주차 녹음 1부 38:30"
+      "source": "7주차 녹음 1부 38:30",
+      "notes": "[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)\n\n[Mass balance] (7주차 CD 단계 · 시험 리뷰 \"같이 계산해 본 것\")\n· 배양 부피 × titer = 생산량 → × 공정 수율 → ÷ 바이알당 함량 = DP 개수. 거꾸로 목표 DP 개수에서 필요한 배양 부피를 역산.\n· 15,000 L 배양기에 3,000 L 접종 → 배지 12,000 L. 실무는 산·염기, antifoam 공간, 손실 여유, QC/IPC 샘플링, 손상·응집을 고려(최종 100 바이알이면 110개 생산). N-1에서 3,200 L 키워 3,000 L 사용.\n· 배지 제조 전략: 한꺼번에(보관·안정성 문제) vs 매번(번거로움) → 초기 몇 개 묶고 N-1/N은 just-in-time.\n· 농도 흐름: clarification으로 세포 부피만큼 감소, post-flush로 부피 증가, 정제 중후반 30~50 g/L, 완제 100~200 g/L.\n(7주차 녹음 1부 37:19–47:00 · 6주차 녹음 1부 01:27)"
     },
     {
       "id": "review-072",
@@ -1080,7 +1151,8 @@
       ],
       "answer": 1,
       "explanation": "pH > pI → −, pH < pI → +. pH 6.5에서 목적(pI 4.5)은 −, 불순물(pI 8)은 +. 항체 공정(항체 pI 7~8 +, 불순물 pI 2~4 −)과 반대 상황이다.",
-      "source": "4주차 녹음 02:06–02:13 · WK03 p.36"
+      "source": "4주차 녹음 02:06–02:13 · WK03 p.36",
+      "notes": "[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)"
     },
     {
       "id": "review-073",
@@ -1095,7 +1167,8 @@
       ],
       "answer": 3,
       "explanation": "CEX에 항체를 붙이려면 pH < pI(예: 5~6)여야 한다. 그래서 low pH VI 후 pH를 5~6으로 맞추고 formulation 직전까지 유지한다.",
-      "source": "4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44"
+      "source": "4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44",
+      "notes": "[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)\n\n[크롬 조합과 VCS] (4·6주차)\n· 표준 P-C-A: CEX는 high salt(고전도도, mS/cm)로 용출 → AEX 전에 물 희석(대용량 부담) 또는 UF/DF(TFF)로 탈염 필요. VCS 관점에서 AEX에 여유가 있어 바이러스 제거가 안정적.\n· P-A-C: AEX가 flow-through라 전도도·pH 변화 없음 → 바로 CEX, 연속 공정에 편함.\n· P-C-H: 정제가 진행되며 농도↑로 생긴 dimer·multimer 제거에 HIC가 유리(Protein A·IEX는 monomer/dimer 분리 어려움).\n· IEX 용출은 pH 변경(구조 뒤틀림, 현업 안 씀) 대신 high salt(NaCl).\n· AEX(FT)는 바이러스 결합 제거(VCS 2번째), 한 스텝 5~6 LRV. + virus filtration → 총 10 중후반 LRV 목표. LRV = log₁₀(처리 전/처리 후).\n· 동물 유래 원료는 바이러스 위험을 배제할 수 없어 혈장제제·CHO 항체 모두 VCS(virus clearance study) 법적 요구. VCS는 축소 모델에 바이러스를 spiking해 평가.\n(4주차 녹음 02:00:18–02:22 · 6주차 녹음 1부 27:44–31:21, 2부 15:48–25:12)"
     },
     {
       "id": "review-074",
@@ -1110,7 +1183,8 @@
       ],
       "answer": 5,
       "explanation": "pH 5.5 < 항체 pI → +, pH 5.5 > DNA pI → −. 그래서 CEX는 항체를, AEX는 DNA를 잡는다.",
-      "source": "4주차 녹음 02:06–02:12"
+      "source": "4주차 녹음 02:06–02:12",
+      "notes": "[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)"
     },
     {
       "id": "review-075",
@@ -1125,7 +1199,8 @@
       ],
       "answer": 2,
       "explanation": "버퍼 양은 CV의 배수로 정하므로 스케일이 달라도 비율은 같다. 새 컬럼도 pre-CIP를 하고, 세정은 고염(NaCl) 후 NaOH 순서.",
-      "source": "6주차 녹음 2부 01:12 · WK03 p.28–31"
+      "source": "6주차 녹음 2부 01:12 · WK03 p.28–31",
+      "notes": "[크로마토그래피 1 cycle]\n· Pre-CIP(새 컬럼도 세정) → Equilibration(저염 start buffer) → Sample load(안 붙는 것은 unbound peak) → Wash(binding buffer) → Elution(염 농도 증가, 0.5~1 M NaCl – 약하게 붙은 것부터) → High salt wash(1 M NaCl, regeneration) → CIP(1.5~2 M NaCl, NaOH) → Re-equilibration.\n· 6주차 요약: EQ → Load → Wash → Elution → Regeneration. 버퍼 양은 CV 배수로 정하므로 스케일이 달라도 비율은 같다.\n· 세정 순서: 고염(이온 경쟁으로 밀어냄) 먼저 → NaOH(녹임). 순서를 바꾸면 막힌다. 레진 수명: IEX/HIC 200~300회, capture 50~70회.\n(WK03 p.28–31 · 3주차 녹음 46:57–48:39, 01:46:42–01:51:44 · 6주차 녹음 2부 01:12)"
     },
     {
       "id": "review-076",
@@ -1140,7 +1215,8 @@
       ],
       "answer": 4,
       "explanation": "Protein A는 Fc에 결합하고 low pH로 용출한다('외우세요'). 레진은 binding과 elution 조건을 쌍으로 알아 두라고 했다. IEX는 high salt(고전도도)로 용출.",
-      "source": "4주차 녹음 01:56:19 · 6주차 녹음 1부 23:20"
+      "source": "4주차 녹음 01:56:19 · 6주차 녹음 1부 23:20",
+      "notes": "[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)\n\n[크로마토그래피 1 cycle]\n· Pre-CIP(새 컬럼도 세정) → Equilibration(저염 start buffer) → Sample load(안 붙는 것은 unbound peak) → Wash(binding buffer) → Elution(염 농도 증가, 0.5~1 M NaCl – 약하게 붙은 것부터) → High salt wash(1 M NaCl, regeneration) → CIP(1.5~2 M NaCl, NaOH) → Re-equilibration.\n· 6주차 요약: EQ → Load → Wash → Elution → Regeneration. 버퍼 양은 CV 배수로 정하므로 스케일이 달라도 비율은 같다.\n· 세정 순서: 고염(이온 경쟁으로 밀어냄) 먼저 → NaOH(녹임). 순서를 바꾸면 막힌다. 레진 수명: IEX/HIC 200~300회, capture 50~70회.\n(WK03 p.28–31 · 3주차 녹음 46:57–48:39, 01:46:42–01:51:44 · 6주차 녹음 2부 01:12)"
     },
     {
       "id": "review-077",
@@ -1155,7 +1231,8 @@
       ],
       "answer": 1,
       "explanation": "살아 있는 사람이 원료를 만드는 가장 직관적인 바이오의약품. 문제: 원료 공급 불안정, 바이러스 감염 위험(일본 HIV 사고) → VCS 법.",
-      "source": "4주차 녹음 40:40–45:11"
+      "source": "4주차 녹음 40:40–45:11",
+      "notes": "[혈장분획제제 – 가장 원초적인 바이오의약품] (4주차)\n· 헌혈 혈액 중 유통기한 지난 것을 적십자 혈장분획센터(음성)에서 전혈 분리·기본 처리 → 라이선스 보유 회사(녹십자, SK플라즈마)가 성분(응고인자·면역글로불린·알부민)을 분리.\n· 슬라이드: 원심분리로 혈장(약 55%; 알부민 60%, 글로불린 35%, 피브리노겐 4%) → cryopoor plasma → 에탄올 침전 분획 → AEX → S/D 바이러스 불활성화 → CEX → virus filtration/formulation. 침전: 혈장=알코올, 미생물=황산, 구제역 백신=PEG.\n· 문제: ① 원료 공급 불안정(매혈 금지) ② 바이러스 감염 위험(일본 HIV 사고 약 1,500명) → VCS 법. 그 해결책으로 재조합(CLD) 의약품.\n(4주차 녹음 40:40–46:11 · WK04(여과) 슬라이드 11, 15)"
     },
     {
       "id": "review-078",
@@ -1170,7 +1247,8 @@
       ],
       "answer": 3,
       "explanation": "혈장 분획의 핵심은 알코올(에탄올) 침전이다. 혈장 구성: 알부민 약 60%, 글로불린 약 35%, 피브리노겐 약 4%.",
-      "source": "WK04(여과) 슬라이드 11, 15"
+      "source": "WK04(여과) 슬라이드 11, 15",
+      "notes": "[혈장분획제제 – 가장 원초적인 바이오의약품] (4주차)\n· 헌혈 혈액 중 유통기한 지난 것을 적십자 혈장분획센터(음성)에서 전혈 분리·기본 처리 → 라이선스 보유 회사(녹십자, SK플라즈마)가 성분(응고인자·면역글로불린·알부민)을 분리.\n· 슬라이드: 원심분리로 혈장(약 55%; 알부민 60%, 글로불린 35%, 피브리노겐 4%) → cryopoor plasma → 에탄올 침전 분획 → AEX → S/D 바이러스 불활성화 → CEX → virus filtration/formulation. 침전: 혈장=알코올, 미생물=황산, 구제역 백신=PEG.\n· 문제: ① 원료 공급 불안정(매혈 금지) ② 바이러스 감염 위험(일본 HIV 사고 약 1,500명) → VCS 법. 그 해결책으로 재조합(CLD) 의약품.\n(4주차 녹음 40:40–46:11 · WK04(여과) 슬라이드 11, 15)"
     },
     {
       "id": "review-079",
@@ -1185,7 +1263,8 @@
       ],
       "answer": 5,
       "explanation": "flow rate = 선속도 × 단면적. 선속도와 베드 높이를 같게 하면 체류 시간이 같다. 직경만 키운다(베드 20 cm 선호).",
-      "source": "6주차 녹음 2부 25:21–35:14 · WK03 p.58"
+      "source": "6주차 녹음 2부 25:21–35:14 · WK03 p.58",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)"
     },
     {
       "id": "review-080",
@@ -1200,7 +1279,8 @@
       ],
       "answer": 2,
       "explanation": "단면적 = 3.14 × 15² = 706.5 cm². 유량 = 150 × 706.5 = 105,975 mL/h ≈ 106 L/h. 레진 = 706.5 × 20 = 14,130 mL ≈ 14 L.",
-      "source": "6주차 녹음 2부 25:21–39:17"
+      "source": "6주차 녹음 2부 25:21–39:17",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)"
     },
     {
       "id": "review-081",
@@ -1215,7 +1295,8 @@
       ],
       "answer": 4,
       "explanation": "cycle당 로딩량 = 10 L × 40 g/L × 0.6 = 240 g. 1,000 / 240 = 4.17 → 5 cycle. 레진을 줄이면 비용은 줄지만 cycle 수·공정 시간이 는다(6주차 사례).",
-      "source": "6주차 녹음 2부 44:25–46:53"
+      "source": "6주차 녹음 2부 44:25–46:53",
+      "notes": "[SBC vs DBC] (3·6주차)\n· SBC(static): beaker의 batch mode로 잰 총 용량. DBC(dynamic): 실제 운전 조건(유속)에서 흘리며 잰 '진짜' 용량 – 생산은 DBC로 설계.\n· breakthrough curve에서 C/C0 약 10%(회사에 따라 5~7%) 지점까지 넣은 양. 표기: 레진 1 mL당 mg + 유속 조건(느릴수록 잘 붙음). 공정 개발 끝·scale-up 직전, ≥10 mL 컬럼으로 측정.\n· 실제 로딩은 DBC의 50~70%(슬라이드 50~75%). 실무는 여유(safety factor, 일반 30%, 50~100%도).\n· 6주차 Case: 1 kg, titer 0.1 g/L → 10,000 L, DBC 50 mg/mL, SF 100% → 40 L 레진, 150 cm/h = 200 L/h → 50 h. CFF 20× → 500 L → 2.5 h. 레진 절반(20 L) 3 cycle → 170 L/cycle, 100 L/h → 약 6 h.\n(WK03 p.32 · 3주차 녹음 01:56:01–02:05:09 · 6주차 녹음 2부 44:25–46:53 · WK06 p.26–30)\n\n[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)"
     },
     {
       "id": "review-082",
@@ -1230,7 +1311,8 @@
       ],
       "answer": 1,
       "explanation": "여과가 없으면 배양 자체가 성립하지 않는다(무균 공기, 무균 배지). perfusion도 여과 기술이다.",
-      "source": "4주차 녹음 02:48–02:52 · WK04(여과) 슬라이드 23"
+      "source": "4주차 녹음 02:48–02:52 · WK04(여과) 슬라이드 23",
+      "notes": "[여과는 온 천지] (4주차)\n· 배양: inlet 가스·vent 필터, 동물세포 배지 여과 멸균(열에 약한 성분 – 미생물 배지 glucose는 끓여 멸균 가능), perfusion 세포 유지.\n· 정제: clarification(원심+depth), CEX·AEX 사이 탈염·버퍼 교환, virus filtration, UF/DF.\n· 완제: 0.2 µm sterile filtration(사용 전후 integrity test), filling.\n· 바이오의약품 제조 공정 필터 용도: 제균(0.2 µm), virus reduction, 정화(clarification), 사전 여과(pre-filter), 정제/분리, 농축, buffer 교환(DF), 탈염.\n(4주차 녹음 02:48–02:52 · WK04(여과) 슬라이드 16, 23, 159)"
     },
     {
       "id": "review-083",
@@ -1245,7 +1327,8 @@
       ],
       "answer": 3,
       "explanation": "미생물 배지의 glucose는 열에 덜 예민해 끓여 멸균할 수 있지만, 동물세포 배지는 열에 약한 성분이 많다.",
-      "source": "4주차 녹음 02:50:51"
+      "source": "4주차 녹음 02:50:51",
+      "notes": "[멸균 5총사 · CIP/SIP] (6주차 – \"외워라\")\n· 건열, 습열(수증기), 방사선, 독가스(EO·VHP 등), 여과.\n· 대형 스테인리스 배양기는 현실적으로 습열(스팀)만 가능 → SIP(steam/sterilization in place). CIP(clean in place)를 먼저, 그다음 SIP. 조립된 상태로 수행.\n· 배관 CIP는 고속·고압 세척액(난류), 탱크 내부는 spray ball. dead leg 최소화, 배수 기울기. 카세트 세정 0.5 M NaOH, 세정 확인 = 같은 압력에서 물 유속을 초기와 비교(NWP).\n· single-use는 배관이 간소하고 CIP/SIP 없이 일회용.\n(6주차 녹음 1부 50:02–57:57 · 7주차 녹음 2부 07:17)\n\n[제약용수] (4·6주차)\n· 실험실 1차수 ≈ 생산 RO/PW(purified water, 바닥 청소 등), 3차수(초순수 18.2 MΩ·cm) ≈ WFI(주사용수).\n· WFI는 무균수가 아니다 – 약전에 100 mL당 균수 기준이 있고 QC가 이를 확인한다. 바이알은 비멸균으로 사서 WFI로 세척 후 멸균·탈발열.\n· WFI 저장 탱크는 vent filter를 이중으로 두고 가열한다(막히면 탱크 붕괴). WFI 제조 방법은 시험 범위에서 제외.\n(4주차 녹음 02:57–02:59 · 6주차 녹음 1부 59:07 · WK04(여과) 슬라이드 19, 58–61)"
     },
     {
       "id": "review-084",
@@ -1260,7 +1343,8 @@
       ],
       "answer": 5,
       "explanation": "7주차 VR 투어 흐름: harvest room 원심 → depth skid → Protein A → VI(pH 모니터) → depth filter(Millistak) → IEX → UF/DF → 완제(바이알 세척, 탈발열, 충전, 라벨, 캡핑).",
-      "source": "7주차 녹음 2부 16:52–23:12 · WK04(여과) 슬라이드 16"
+      "source": "7주차 녹음 2부 16:52–23:12 · WK04(여과) 슬라이드 16",
+      "notes": "[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)\n\n[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)"
     },
     {
       "id": "review-085",
@@ -1275,7 +1359,8 @@
       ],
       "answer": 2,
       "explanation": "Protein A 용출(low pH 3~3.5) → 30분~1시간 holding(enveloped virus 불활성화) → 응집·침전 → depth filter → pH 5~6.",
-      "source": "4주차 녹음 02:00:18–02:05 · 6주차 녹음 1부 23:20"
+      "source": "4주차 녹음 02:00:18–02:05 · 6주차 녹음 1부 23:20",
+      "notes": "[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)"
     },
     {
       "id": "review-086",
@@ -1290,7 +1375,8 @@
       ],
       "answer": 4,
       "explanation": "P-A-C는 AEX가 FT라 전도도·pH가 거의 그대로여서 바로 CEX로 이어지기 쉽다. P-C-A는 VCS 관점(AEX 여유)에서 유리하다.",
-      "source": "4주차 녹음 02:14–02:19 · 6주차 녹음 2부 15:48–25:12"
+      "source": "4주차 녹음 02:14–02:19 · 6주차 녹음 2부 15:48–25:12",
+      "notes": "[크롬 조합과 VCS] (4·6주차)\n· 표준 P-C-A: CEX는 high salt(고전도도, mS/cm)로 용출 → AEX 전에 물 희석(대용량 부담) 또는 UF/DF(TFF)로 탈염 필요. VCS 관점에서 AEX에 여유가 있어 바이러스 제거가 안정적.\n· P-A-C: AEX가 flow-through라 전도도·pH 변화 없음 → 바로 CEX, 연속 공정에 편함.\n· P-C-H: 정제가 진행되며 농도↑로 생긴 dimer·multimer 제거에 HIC가 유리(Protein A·IEX는 monomer/dimer 분리 어려움).\n· IEX 용출은 pH 변경(구조 뒤틀림, 현업 안 씀) 대신 high salt(NaCl).\n· AEX(FT)는 바이러스 결합 제거(VCS 2번째), 한 스텝 5~6 LRV. + virus filtration → 총 10 중후반 LRV 목표. LRV = log₁₀(처리 전/처리 후).\n· 동물 유래 원료는 바이러스 위험을 배제할 수 없어 혈장제제·CHO 항체 모두 VCS(virus clearance study) 법적 요구. VCS는 축소 모델에 바이러스를 spiking해 평가.\n(4주차 녹음 02:00:18–02:22 · 6주차 녹음 1부 27:44–31:21, 2부 15:48–25:12)"
     },
     {
       "id": "review-087",
@@ -1305,7 +1391,8 @@
       ],
       "answer": 1,
       "explanation": "'cell harvest라고 외우면 헛공부'. 미생물(세포벽, intracellular)은 세포를 모아(원심 pellet, CFF retentate) 파쇄 → inclusion body 처리.",
-      "source": "4주차 녹음 01:35:56–01:39 · WK04(여과) 슬라이드 13"
+      "source": "4주차 녹음 01:35:56–01:39 · WK04(여과) 슬라이드 13",
+      "notes": "[Cell harvest vs Clarification – 실무자가 잘못 쓰는 단어]\n· 미생물(E. coli): 세포벽이 있고 생산물이 세포 안(intracellular) → 세포를 '모은다' = cell harvest(원심 pellet 또는 CFF retentate) → 파쇄(lysis) → inclusion body 세척·용해·refolding.\n· 동물세포(CHO): 항체를 배양액으로 분비(extracellular) → 세포를 '제거한다' = (cell) clarification(원심→depth→sterile, 또는 CFF permeate, 또는 DEF→depth→sterile).\n· 김영태: \"실무자들이 혼용하지만 cell harvest라고 외우면 헛공부.\"\n· sol/insol 분리 = 원심·여과. 2,000~3,000 L 이상이면 연속식 원심분리기, 이하면 필터만(VCD가 10배면 2,000 L라도 원심). 원심 후 반드시 depth filter(세트). 세포 부피(wet cell weight, 약 20%)만큼 부피 감소, post-flush로 필터 잔류분 회수.\n(4주차 녹음 01:35:56–01:49 · WK04(여과) 슬라이드 13–14 · 6주차 녹음 2부 01:27 · 7주차 녹음 1부 46:48)"
     },
     {
       "id": "review-088",
@@ -1320,7 +1407,8 @@
       ],
       "answer": 3,
       "explanation": "같은 원리(막 표면을 따라 흐르며 순환)이며 DSP의 약 30%를 차지한다. 신장 투석도 같은 원리다.",
-      "source": "6주차 녹음 1부 32:46–46:15"
+      "source": "6주차 녹음 1부 32:46–46:15",
+      "notes": "[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
     },
     {
       "id": "review-089",
@@ -1335,7 +1423,8 @@
       ],
       "answer": 5,
       "explanation": "WFI를 만드는 방법은 시험 범위에서 빠졌지만, 3차수 = WFI 대응은 출제 포인트다.",
-      "source": "6주차 녹음 1부 59:07 · 7주차 녹음 2부 49:16–59:13"
+      "source": "6주차 녹음 1부 59:07 · 7주차 녹음 2부 49:16–59:13",
+      "notes": "[제약용수] (4·6주차)\n· 실험실 1차수 ≈ 생산 RO/PW(purified water, 바닥 청소 등), 3차수(초순수 18.2 MΩ·cm) ≈ WFI(주사용수).\n· WFI는 무균수가 아니다 – 약전에 100 mL당 균수 기준이 있고 QC가 이를 확인한다. 바이알은 비멸균으로 사서 WFI로 세척 후 멸균·탈발열.\n· WFI 저장 탱크는 vent filter를 이중으로 두고 가열한다(막히면 탱크 붕괴). WFI 제조 방법은 시험 범위에서 제외.\n(4주차 녹음 02:57–02:59 · 6주차 녹음 1부 59:07 · WK04(여과) 슬라이드 19, 58–61)"
     },
     {
       "id": "review-090",
@@ -1350,7 +1439,8 @@
       ],
       "answer": 2,
       "explanation": "QC는 'WFI 100 mL당 균 몇 마리 이하'를 확인한다. WFI 저장 탱크는 이중 vent 필터와 가열로 관리한다.",
-      "source": "4주차 녹음 02:57–02:59:17 · WK04(여과) 슬라이드 19, 58"
+      "source": "4주차 녹음 02:57–02:59:17 · WK04(여과) 슬라이드 19, 58",
+      "notes": "[제약용수] (4·6주차)\n· 실험실 1차수 ≈ 생산 RO/PW(purified water, 바닥 청소 등), 3차수(초순수 18.2 MΩ·cm) ≈ WFI(주사용수).\n· WFI는 무균수가 아니다 – 약전에 100 mL당 균수 기준이 있고 QC가 이를 확인한다. 바이알은 비멸균으로 사서 WFI로 세척 후 멸균·탈발열.\n· WFI 저장 탱크는 vent filter를 이중으로 두고 가열한다(막히면 탱크 붕괴). WFI 제조 방법은 시험 범위에서 제외.\n(4주차 녹음 02:57–02:59 · 6주차 녹음 1부 59:07 · WK04(여과) 슬라이드 19, 58–61)"
     },
     {
       "id": "review-091",
@@ -1365,7 +1455,8 @@
       ],
       "answer": 4,
       "explanation": "멸균 기체 필터는 bacterial retention test, HEPA는 0.3 µm 입자 포집 효율로 등급을 매긴다.",
-      "source": "WK04(여과) 슬라이드 57"
+      "source": "WK04(여과) 슬라이드 57",
+      "notes": "[기체 필터 · HEPA]\n· 배양기 inlet 가스 필터(air, CO2, O2, N2)와 vent(배기) 필터 – \"필터가 없으면 배양 자체가 성립하지 않는다.\" 소수성 PTFE(absolute retention, 기계적 강도, WIT 또는 IPA로 integrity test).\n· 기체 포집 메커니즘: sieve, impaction(큰 입자 충돌), interception(흐름선이 섬유 근처), electrostatic, diffusion(Brownian, 작은 입자). 약 0.2 µm 부근이 가장 잘 통과(MPPS). 그래서 기체 필터는 액체 표시보다 10~20배 잘 걸러 0.2 µm 필터가 20 nm phage aerosol도 100% 포집.\n· WFI 탱크 vent가 막히면 탱크가 찌그러진다 → double vent + 스팀 재킷 가열(응축 방지), 하우징에 SIP용 clean steam·integrity test connector·압력계.\n· HEPA 등급(EN 1822): 0.3 µm 기준 – EPA E10~E12 < HEPA H13 ≥99.95%, H14 ≥99.995% < ULPA U15~U17. 재질은 강의자료에 직접 나오지 않음(일반적으로 극세 유리섬유).\n(WK04(여과) 슬라이드 47–61 · 4주차 녹음 02:48–02:50)\n\n[클린룸 specification] (7주차 – 시험 리뷰 \"class 100의 의미\")\n· Grade A ↔ ISO 5 ↔ Class 100 / Grade C ↔ ISO 7 ↔ Class 10,000 / Grade D ↔ ISO 8 ↔ Class 100,000.\n· Class 100 = ft³당 0.5 µm 이상 입자 100개 이하(1 m³ ≈ 35.3 ft³ → 약 3,530개) ≈ Grade A 기준 0.5 µm 3,520개/m³. Class 숫자가 클수록 덜 깨끗.\n· EU 지향 = Grade A~D, 미국 지향 = Class 숫자 → 표기로 주력 시장 추정.\n· 가장 깨끗한 공간(Class A/100)은 사람과 공존 불가 → RABS·아이솔레이터 같은 격리 설비.\n(WK07 p.37–42 · 7주차 녹음 1부 55:22 · 2부 01:02:46)"
     },
     {
       "id": "review-092",
@@ -1380,7 +1471,8 @@
       ],
       "answer": 1,
       "explanation": "HEPA는 극세 유리섬유 여재를 주름(pleat) 형태로 만든다. 강의 슬라이드에서 glass fiber는 depth 필터 재질로도 나온다(슬라이드 42). 수업 설명과 다르면 알려 달라.",
-      "source": "7주차 녹음 2부 49:16–59:13 (출제 언급) · WK04(여과) 슬라이드 42, 57 · 재질은 일반 지식"
+      "source": "7주차 녹음 2부 49:16–59:13 (출제 언급) · WK04(여과) 슬라이드 42, 57 · 재질은 일반 지식",
+      "notes": "[Membrane vs Depth 필터]\n· Membrane(친수성/소수성): 정해진 기공 – 높은 차압·급격한 압력 변화에도 입자가 뒤로 넘어가지 않음. particle·bioburden·sterile·mycoplasma·virus filtration. 대신 쉽게 막힘.\n· Depth(PP, glass fiber, cellulose – Sartoclear는 규조토·carbon powder 포함): 두꺼운 섬유층에 많은 입자를 holding해 조기 막힘이 없음. 압력에 민감해 높아지면 넘어갈 수 있음. pre-filtration, clarification.\n· 조합(depth + membrane): 높은 dirt loading capacity + defined retention → clarification 등에서 효율 최대화.\n· 막 제조: 셀룰로스계는 evaporation, PES·폴리아미드는 quenching(precipitation) 공정. 비대칭 PES 막은 casting 조건으로 용도 조절.\n(WK04(여과) 슬라이드 34–43)"
     },
     {
       "id": "review-093",
@@ -1395,7 +1487,8 @@
       ],
       "answer": 3,
       "explanation": "100 × 35.3 ≈ 3,530개/m³ → EU Grade A 기준(0.5 µm 3,520/m³), ISO 5와 같은 수준. 'Class 100의 100 = ft³당 입자 수'.",
-      "source": "7주차 녹음 2부 01:02:46 · WK07 p.37–38"
+      "source": "7주차 녹음 2부 01:02:46 · WK07 p.37–38",
+      "notes": "[클린룸 specification] (7주차 – 시험 리뷰 \"class 100의 의미\")\n· Grade A ↔ ISO 5 ↔ Class 100 / Grade C ↔ ISO 7 ↔ Class 10,000 / Grade D ↔ ISO 8 ↔ Class 100,000.\n· Class 100 = ft³당 0.5 µm 이상 입자 100개 이하(1 m³ ≈ 35.3 ft³ → 약 3,530개) ≈ Grade A 기준 0.5 µm 3,520개/m³. Class 숫자가 클수록 덜 깨끗.\n· EU 지향 = Grade A~D, 미국 지향 = Class 숫자 → 표기로 주력 시장 추정.\n· 가장 깨끗한 공간(Class A/100)은 사람과 공존 불가 → RABS·아이솔레이터 같은 격리 설비.\n(WK07 p.37–42 · 7주차 녹음 1부 55:22 · 2부 01:02:46)"
     },
     {
       "id": "review-094",
@@ -1410,7 +1503,8 @@
       ],
       "answer": 5,
       "explanation": "EU 지향이면 Grade A~D, 미국 지향이면 Class 숫자를 쓴다(표기로 주력 시장 추정 가능).",
-      "source": "7주차 녹음 2부 01:02:46"
+      "source": "7주차 녹음 2부 01:02:46",
+      "notes": "[클린룸 specification] (7주차 – 시험 리뷰 \"class 100의 의미\")\n· Grade A ↔ ISO 5 ↔ Class 100 / Grade C ↔ ISO 7 ↔ Class 10,000 / Grade D ↔ ISO 8 ↔ Class 100,000.\n· Class 100 = ft³당 0.5 µm 이상 입자 100개 이하(1 m³ ≈ 35.3 ft³ → 약 3,530개) ≈ Grade A 기준 0.5 µm 3,520개/m³. Class 숫자가 클수록 덜 깨끗.\n· EU 지향 = Grade A~D, 미국 지향 = Class 숫자 → 표기로 주력 시장 추정.\n· 가장 깨끗한 공간(Class A/100)은 사람과 공존 불가 → RABS·아이솔레이터 같은 격리 설비.\n(WK07 p.37–42 · 7주차 녹음 1부 55:22 · 2부 01:02:46)"
     },
     {
       "id": "review-095",
@@ -1425,7 +1519,8 @@
       ],
       "answer": 2,
       "explanation": "동선 예: CNC → 갱의 → D → 갱의 → C → B. 물동선 MAL, 인동선 PAL로 나눈다.",
-      "source": "7주차 녹음 2부 01:02:46–01:10"
+      "source": "7주차 녹음 2부 01:02:46–01:10",
+      "notes": "[압력·airlock·동선] (7주차)\n· GMP = 제품 보호를 위한 양압(오염 유입 방지), BSL(biosafety level) = 사람·환경 보호를 위한 음압(유출 방지) – 정반대. 둘 다 만족 = airlock(버퍼 공간)과 압력 조합(bubble, sink, cascade – 이름은 시험에 안 냄).\n· Airlock = 공간, interlock = 두 문이 동시에 열리지 않게 하는 장치(강제 개방 시 알람).\n· CNC(controlled not classified): 등급은 없지만 통제·관리, 환경 모니터링 대상 아님. 동선: CNC → 갱의 → D → 갱의 → C → (손 넣어) B. MAL(material airlock) = 물동선, PAL(personnel airlock) = 인동선, 폐기물은 pass box. 모서리 라운드(물 고임 방지).\n· 소방법(대피 거리)과 GMP 동선이 충돌 → 비상 탈출구 별도.\n(WK07 p.41–42, 65 · 7주차 녹음 1부 22:53, 01:17:31–01:21 · 2부 01:02:46–01:10)"
     },
     {
       "id": "review-096",
@@ -1440,7 +1535,8 @@
       ],
       "answer": 4,
       "explanation": "준공 = 일해도 될 만큼 진척 + 허가, 완공 = 공사 완전 종료. CD 3주차쯤 mass balance 확정 → PFD, equipment list.",
-      "source": "7주차 녹음 1부 12:44–38:30"
+      "source": "7주차 녹음 1부 12:44–38:30",
+      "notes": "[EPC · 설계 단계 · 준공/완공] (7주차)\n· EPC = Engineering(설계) + Procurement(구매 – 장비 납기 때문에 연 단위 계획) + Construction(시공). 삼성엔지니어링·삼성물산·롯데건설, 하도급 구조.\n· CD(concept design, 개념설계 – 뼈대, 가장 중요·돈 많이 듦, 약 2개월) → BD(basic) → DD(detail – 주름 하나까지). CD: 1~2주 kick-off/workshop → 3주차쯤 mass balance 확정 → 최적 시나리오(스케줄링), PFD, equipment list.\n· 준공 = 들어가 일해도 될 만큼 진척 + 허가, 완공 = 공사 완전 종료.\n· GMP 시설 구성: process, clean utilities, HVAC, black utilities, electrical, communication. 송도 간척지 파일 공사 8개월 동안 설계 병행 – 장비·사람이 놀지 않게 스케줄링.\n(WK07 p.27, 57–62 · 7주차 녹음 1부 12:44–38:30, 01:08–01:12:58)"
     },
     {
       "id": "review-097",
@@ -1455,7 +1551,8 @@
       ],
       "answer": 1,
       "explanation": "airlock = 공간, interlock = 두 문이 동시에 열리지 않게 하는 장치(강제 개방 시 알람).",
-      "source": "7주차 녹음 1부 01:17:31–01:21 · 7주차 녹음 2부 01:02:46"
+      "source": "7주차 녹음 1부 01:17:31–01:21 · 7주차 녹음 2부 01:02:46",
+      "notes": "[압력·airlock·동선] (7주차)\n· GMP = 제품 보호를 위한 양압(오염 유입 방지), BSL(biosafety level) = 사람·환경 보호를 위한 음압(유출 방지) – 정반대. 둘 다 만족 = airlock(버퍼 공간)과 압력 조합(bubble, sink, cascade – 이름은 시험에 안 냄).\n· Airlock = 공간, interlock = 두 문이 동시에 열리지 않게 하는 장치(강제 개방 시 알람).\n· CNC(controlled not classified): 등급은 없지만 통제·관리, 환경 모니터링 대상 아님. 동선: CNC → 갱의 → D → 갱의 → C → (손 넣어) B. MAL(material airlock) = 물동선, PAL(personnel airlock) = 인동선, 폐기물은 pass box. 모서리 라운드(물 고임 방지).\n· 소방법(대피 거리)과 GMP 동선이 충돌 → 비상 탈출구 별도.\n(WK07 p.41–42, 65 · 7주차 녹음 1부 22:53, 01:17:31–01:21 · 2부 01:02:46–01:10)\n\n[아이솔레이터와 qualification] (5주차)\n· 원리 4: 물리적 구조(글러브포트로만 조작), 압력·기류(양압, HEPA 단일방향), 기밀성(leak integrity – 앞의 두 원리의 전제), 표면 제염(VHP). 작업공간이 Grade C여도 내부 Grade A. 압력 계위: main chamber > airlock > 작업공간. Incoming·outgoing airlock까지 하나의 시스템.\n· Qualification: URS → IQ(설치·자재·계기·도면 일치) → OQ(pressure, airflow, leak, alarm, interlock 기능) → CD(cycle development) → MBQ/PQ(worst case load에서 BI 사멸·SLR) → PRQ(매년 주기적 재적격성).\n· 글러브: 작업 전·후 leak test(부풀려 pressure decay, ISO 14644-7), 실패 시 조사, 모든 결과 기록. Annex 1: 빈번한 leak test 요구.\n· 7주차 V-model과 같은 구조: qualification(장비) 전제 위에 validation(공정).\n(WK05 Isolator p.2–6, 15, 18 · 5주차 녹음 2부 00:00–01:59 · 7주차 녹음 2부 01:10:15)"
     },
     {
       "id": "review-098",
@@ -1470,7 +1567,8 @@
       ],
       "answer": 3,
       "explanation": "qualification(장비: IQ·OQ·PQ)이 전제된 뒤 validation(공정: PV, 세척: CV). 천장 2.3 m에 2.5 m 배양기 사례 = URS 실패.",
-      "source": "7주차 녹음 2부 01:10:15–01:20"
+      "source": "7주차 녹음 2부 01:10:15–01:20",
+      "notes": "[V-model · qualification vs validation] (7주차)\n· URS(사용자 요구 규격 – 220 V, 층고 등 최대한 상세히) → DQ(design qualification)/FDS(functional design spec) → FAT(제조사 공장에서 확인) → 배송·설치 → IQ(부속·도면대로 설치)/SAT → OQ(작동 – pH 센서 1~14 여러 포인트) → PQ(실제 공정 조건 – pH 7 ± 범위) → PV(process validation)/CV(cleaning validation) → re-validation.\n· Qualification(장비)이 전제되어야 validation(공정)을 한다 – 차이를 명확히. 변경 시 change control, requalification.\n· 사례: 구제역 센터 – 200 L 배양기 높이 2.5 m vs 천장 2.3 m → URS 누락.\n· HVAC 기류 패턴 확인은 실제 작동이 필요한 OQ/PQ 영역, IQ는 도면·문서·부품·교정 확인.\n(WK07 p.61 · 7주차 녹음 2부 01:10:15–01:20)\n\n[아이솔레이터와 qualification] (5주차)\n· 원리 4: 물리적 구조(글러브포트로만 조작), 압력·기류(양압, HEPA 단일방향), 기밀성(leak integrity – 앞의 두 원리의 전제), 표면 제염(VHP). 작업공간이 Grade C여도 내부 Grade A. 압력 계위: main chamber > airlock > 작업공간. Incoming·outgoing airlock까지 하나의 시스템.\n· Qualification: URS → IQ(설치·자재·계기·도면 일치) → OQ(pressure, airflow, leak, alarm, interlock 기능) → CD(cycle development) → MBQ/PQ(worst case load에서 BI 사멸·SLR) → PRQ(매년 주기적 재적격성).\n· 글러브: 작업 전·후 leak test(부풀려 pressure decay, ISO 14644-7), 실패 시 조사, 모든 결과 기록. Annex 1: 빈번한 leak test 요구.\n· 7주차 V-model과 같은 구조: qualification(장비) 전제 위에 validation(공정).\n(WK05 Isolator p.2–6, 15, 18 · 5주차 녹음 2부 00:00–01:59 · 7주차 녹음 2부 01:10:15)"
     },
     {
       "id": "review-099",
@@ -1485,7 +1583,8 @@
       ],
       "answer": 5,
       "explanation": "문제 시 로트 전량 회수. 입고검사는 최장 약 2주. GMP 실사관은 창고부터 본다.",
-      "source": "7주차 녹음 2부 37:24–46:46"
+      "source": "7주차 녹음 2부 37:24–46:46",
+      "notes": "[물류·자재 · Lot·Batch · site] (7주차)\n· 물류 vs 자재 = QC 입고검사 전/후. 물류(수령) → 입고검사 신청 → quarantine zone(별도 구역) → QC 승인 → 자재. 세 공간 명확 구분. 입고검사 최장 약 2주. GMP 실사관은 창고(warehouse)부터 본다. 출하도 QC release 전까지 관리 후 물류로.\n· Batch = 생산 관점 단위, Lot = 같은 배치에서 나온 균일한(uniform) 최종 제품 묶음(도넛 비유). 문제 시 로트 전량 회수·문서 재검토. 원자재도 로트별 입고 QC(supply agreement).\n· Site: 세파(cephalosporin) 계열 항생제 – 알레르기 때문에 반경 내 다른 의약품 생산 불가. 에볼라 공장 옆 아파트 불허.\n(7주차 녹음 2부 33:18–46:46)"
     },
     {
       "id": "review-100",
@@ -1500,7 +1599,8 @@
       ],
       "answer": 2,
       "explanation": "I = P/V = 3,800/380 = 10 A. '전압은 반드시 같아야, 전류는 같거나 커도 된다(외우세요)'. 대용량 장비는 전압을 높여(380 V) 전류를 줄인다.",
-      "source": "7주차 녹음 2부 26:03–33:18"
+      "source": "7주차 녹음 2부 26:03–33:18",
+      "notes": "[전기 – \"외우세요\"] (7주차)\n· Voltage(전압)는 반드시 같아야 하고, ampere(전류) 정격은 같거나 커도 된다.\n· P = V × I → 필요 전류 I = P/V. 멀티탭·차단기의 정격 전류 확인. 대용량 장비는 전압을 높여(380 V) 전류를 줄인다.\n· 돈가스 식당 비유: 레시피 = 공정(PFD) → equipment list → scale → 사람·유틸리티.\n(7주차 녹음 2부 26:03–33:18)"
     }
   ]
 }
