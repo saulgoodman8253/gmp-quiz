@@ -1,0 +1,306 @@
+{
+  "week": "WK06",
+  "title": "mAb 공정 설계 · 여과(CFF/TFF) · 공정 계산",
+  "questions": [
+    {
+      "id": "wk06-001",
+      "type": "연결",
+      "question": "강의에서 정리한 '여과의 5가지 구분법'과 예시를 옳게 짝지은 것은?",
+      "choices": [
+        "메커니즘 – MF vs UF / 크기 – dead-end vs cross-flow / 재질 – 액체 vs 기체",
+        "메커니즘 – dead-end(normal) vs cross-flow / 크기 – MF vs UF / 재질 – membrane vs depth / 그 외 목적, 액체 vs 기체",
+        "메커니즘 – membrane vs depth / 크기 – 액체 vs 기체 / 재질 – MF vs UF",
+        "여과는 크기 하나로만 구분한다.",
+        "메커니즘 – 목적 / 크기 – 재질 / 재질 – 메커니즘"
+      ],
+      "answer": 2,
+      "explanation": "① 메커니즘: dead-end(normal flow) vs cross-flow(TFF) ② 크기: MF vs UF ③ 재질: membrane vs depth ④ 목적(clarification, sterile, virus 등) ⑤ 액체 vs 기체(배양기 inlet·vent 가스 필터).\n7주차 시험 리뷰에서 '여과 5가지 구분법과 하위 분류'를 출제 포인트로 말했다.",
+      "source": "WK06 p.3 (필기) · 6주차 녹음 1부 16:04 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk06-002",
+      "type": "개념",
+      "question": "MF(microfiltration)와 UF(ultrafiltration)의 비교로 옳은 것은?",
+      "choices": [
+        "MF와 UF는 단위가 같고 이름만 다르다.",
+        "UF는 세균 제거용 0.2 µm 필터를 말한다.",
+        "MF는 단백질을 걸러 농축하는 데 쓰고 kDa 단위로 표시한다.",
+        "MF는 균·파티클이 대상이라 길이 단위(µm)로, UF는 단백질을 다루므로 무게 단위(kDa, MWCO)로 표시하며 UF가 더 촘촘하다.",
+        "UF의 기공이 MF보다 크다."
+      ],
+      "answer": 4,
+      "explanation": "MF(예: 0.2 µm sterile filter)는 균·입자를 거르므로 µm. UF는 단백질을 남기고 물·염을 통과시키므로 MWCO(kDa)로 표시한다(예: 항체 150 kDa → 30~50 kDa 막). 크기는 MF > UF다.",
+      "source": "6주차 녹음 1부 16:04"
+    },
+    {
+      "id": "wk06-003",
+      "type": "상황판단",
+      "question": "Formulation을 위해 CFF(TFF)로 항체 용액의 버퍼를 바꾸고 농축해야 한다. '농축(UF)을 먼저 하고 DF(diafiltration)를 나중에' 하는 이유로 가장 적절한 것은?",
+      "choices": [
+        "부피를 먼저 줄인 뒤 버퍼를 교환해야 필요한 교환 버퍼(WFI)·시간·비용이 크게 줄기 때문에",
+        "UF는 항체를 변성시키므로 빨리 끝내야 하기 때문에",
+        "DF를 먼저 하면 바이러스가 제거되지 않기 때문에",
+        "규정상 순서가 정해져 있을 뿐 이유는 없다.",
+        "DF를 먼저 하면 항체가 막을 통과해 버리기 때문에"
+      ],
+      "answer": 1,
+      "explanation": "DF는 부피의 몇 배에 해당하는 새 버퍼를 넣어 교환하므로, 부피가 작을수록 버퍼·시간이 적게 든다. 그래서 '1st 농축 → DF → 2nd 농축(과농축) → product recovery' 순서다.\n면접 기출로도 소개되었다. CFF(유럽)와 TFF(미국·한국)는 같은 말이고, 신장 투석도 같은 원리다.",
+      "source": "WK06 p.4 (필기) · 6주차 녹음 1부 32:46–46:15"
+    },
+    {
+      "id": "wk06-004",
+      "type": "계산",
+      "question": "항체 2 g/L 용액 500 L를 UF로 50 L까지 농축했다(회수율 100% 가정). 농축 후 농도와 농축 배수는?",
+      "choices": [
+        "2 g/L, 1배",
+        "10 g/L, 5배",
+        "20 g/L, 10배",
+        "40 g/L, 20배",
+        "200 g/L, 100배"
+      ],
+      "answer": 3,
+      "explanation": "총량 = 2 g/L × 500 L = 1,000 g. 1,000 g ÷ 50 L = 20 g/L, 농축 배수 = 500/50 = 10배.\n정제 중후반에는 30~50 g/L, 완제는 100~200 g/L 수준까지 올린다.",
+      "source": "6주차 녹음 1부 32:46 · 7주차 녹음 1부 46:48"
+    },
+    {
+      "id": "wk06-005",
+      "type": "개념",
+      "question": "TFF(UF/DF) 공정의 전체 순서로 가장 적절한 것은?",
+      "choices": [
+        "integrity test → 농축 → DF → 설치 → NWP",
+        "buffer conditioning → 설치 → CIP → 농축 → 보관",
+        "설치 → DF → 1st 농축 → sanitization → NWP",
+        "농축 → 설치 → NWP → CIP → integrity test",
+        "설치 → flushing(보존용액 제거) → sanitization(NaOH) → flushing → NWP 측정 → integrity test → buffer conditioning → 1st 농축 → DF → 2nd 농축 → product recovery → buffer flush → CIP → flushing → NWP → 보관"
+      ],
+      "answer": 5,
+      "explanation": "공정 전 NWP를 재서 기준을 잡고, integrity test로 막 손상을 확인한 뒤 공정을 진행한다. 공정 후 CIP를 하고 다시 NWP를 재서 초기값과 비교해 세정이 되었는지 판단한다. 보존용액은 20% 에탄올 또는 0.1 M NaOH다.\n실제 8시간 중 공정 자체는 약 3시간이고 전후 처리가 약 5시간이다.",
+      "source": "WK06 p.4 (필기) · 6주차 녹음 1부 57:57–01:05"
+    },
+    {
+      "id": "wk06-006",
+      "type": "계산",
+      "question": "TFF 카세트(막면적 2 m²)의 세정 후 NWP를 25 ℃(온도 보정계수 1.000)에서 측정했다. TMP 0.5 bar에서 물 투과 유량이 50 L/h였다.\nNWP와, 사용 전 초기 NWP가 60 LMH/bar였을 때의 회복률은?",
+      "choices": [
+        "25 LMH/bar, 약 42%",
+        "50 LMH/bar, 약 83%",
+        "100 LMH/bar, 약 167%",
+        "50 LMH/bar, 100%",
+        "12.5 LMH/bar, 약 21%"
+      ],
+      "answer": 2,
+      "explanation": "NWP = water flux × TCF / (TMP × Area) = 50 L/h × 1.000 / (0.5 bar × 2 m²) = 50 LMH/bar.\n회복률 = 50/60 ≈ 83%. 초기 대비 많이 낮으면 세정이 부족하거나 막이 막힌 것이다.",
+      "source": "WK06 p.5–6 (필기) · 6주차 녹음 1부 01:12–01:18"
+    },
+    {
+      "id": "wk06-007",
+      "type": "상황판단",
+      "question": "CIP 직후 뜨거운 물로 헹군 상태에서 NWP를 측정했더니 초기값 대비 115%가 나왔다. 가장 적절한 해석은?",
+      "choices": [
+        "NWP는 온도와 무관하므로 그대로 기록한다.",
+        "NWP가 100%를 넘으면 integrity test를 생략할 수 있다.",
+        "막이 찢어진 것이 확실하므로 즉시 폐기한다.",
+        "온도가 높으면 물의 점도가 낮아져 유속이 커지므로, 온도 보정(TCF)을 하지 않았거나 측정 온도가 달랐을 가능성을 먼저 확인한다.",
+        "세정이 너무 잘 되어 막이 새것보다 좋아졌다."
+      ],
+      "answer": 4,
+      "explanation": "NWP는 CWF(clean water flux)를 TMP·막면적·온도로 보정한 값이다. 온도가 낮으면 점도가 높아져 유속이 줄고(0 ℃ 보정계수 2.003 vs 25 ℃ 1.000, 약 2배 차이), 높으면 반대다.\n강의 사례에서도 뜨거운 물로 측정해 115%가 나와 막 파손으로 오해했다. 손상 여부는 integrity test로 판단한다.",
+      "source": "WK06 p.5–6 (필기) · 6주차 녹음 1부 01:12–01:18"
+    },
+    {
+      "id": "wk06-008",
+      "type": "개념",
+      "question": "강의에서 '외워라'고 한 멸균 5총사에 해당하지 않는 것은?",
+      "choices": [
+        "UV 280 nm 측정",
+        "건열",
+        "습열(수증기)",
+        "방사선",
+        "가스(독가스, 예: EO·VHP)"
+      ],
+      "answer": 1,
+      "explanation": "멸균 5총사 = 건열, 습열, 방사선, 가스, 여과. 대형 스테인리스 배양기는 현실적으로 습열(스팀)만 가능해 SIP를 쓴다.\nCIP(clean in place)를 먼저 하고 SIP(steam/sterilization in place)를 한다. 배관 CIP는 고속·고압 세척액, 탱크는 spray ball로 한다. UV 280 nm는 단백질 농도 모니터링이다.",
+      "source": "6주차 녹음 1부 51:29"
+    },
+    {
+      "id": "wk06-009",
+      "type": "상황판단",
+      "question": "크로마토그래피 레진과 TFF 카세트를 계속 재사용하고 있다. 재사용 한계를 정할 때 고려할 두 가지 문제로 가장 적절한 것은?",
+      "choices": [
+        "재사용 소모품은 한계 없이 쓸 수 있다.",
+        "색깔 변화와 무게 변화",
+        "공정 문제(막힘 → 공정 시간 증가 → deviation)와 제품 문제(E&L: extractables & leachables, 예: ligand 탈락으로 binding capacity 저하·leached Protein A)",
+        "작업자 피로와 전기 요금",
+        "레진 제조사 변경과 포장 단위"
+      ],
+      "answer": 3,
+      "explanation": "재사용 소모품의 대표가 크롬 레진과 카세트 필터이고, 재사용을 위해 CIP를 한다. 한계는 ① 공정(막힘·시간 증가) ② 제품(E&L, ligand leaching → leached Protein A QC 필수)이다.\n정해진 횟수(예: 40회) 전이라도 과도하게 막히면 즉시 폐기한다. 안전 마진은 보통 30%, 경우에 따라 50~100%로 잡는다.",
+      "source": "6주차 녹음 1부 01:23–01:36:59"
+    },
+    {
+      "id": "wk06-010",
+      "type": "개념",
+      "question": "PD(process development)와 PC(process characterization), design space의 관계로 옳은 것은?",
+      "choices": [
+        "PC는 PD보다 먼저 수행한다.",
+        "design space는 하나의 고정된 set point다.",
+        "PC는 생산 배치에서만 수행한다.",
+        "PD와 PC는 같은 말이다.",
+        "PD는 '되는 조건'을 찾는 단계(예: pH 7에서 잘 된다)이고, PC는 그 주변을 체계적으로 시험해 최적점(예: 7.1)과 허용 범위(예: ±0.1)를 정해 design space를 설정하는 단계다."
+      ],
+      "answer": 5,
+      "explanation": "PD = 된다는 조건 찾기, PC = 그 조건 주변을 '물고 뜯어' 최적값과 허용 범위를 정량화. 그 결과가 design space다.\n2주차의 DoE·design space, 7주차 시험 리뷰의 'PD vs PC(+design space)'와 연결된다.",
+      "source": "6주차 녹음 2부 00:00–04:20 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk06-011",
+      "type": "상황판단",
+      "question": "항체 정제 크로마토그래피 조합을 P-C-A(Protein A → CEX → AEX)에서 P-A-C(Protein A → AEX → CEX)로 바꾸려 한다. P-A-C의 장점으로 가장 적절한 것은?",
+      "choices": [
+        "CEX 용출액의 염을 제거하기 위한 CFF가 반드시 추가로 필요해진다.",
+        "AEX는 flow-through라 통과액의 전도도·pH가 거의 변하지 않으므로 바로 CEX에 로딩할 수 있어 중간 탈염이 줄고 연속 공정에 유리하다.",
+        "AEX에서 항체가 결합하므로 농축 효과가 크다.",
+        "dimer·multimer 제거 능력이 HIC보다 뛰어나다.",
+        "P-A-C에서는 VCS가 필요 없다."
+      ],
+      "answer": 2,
+      "explanation": "P-C-A는 표준이지만 CEX를 high salt로 용출하므로 AEX 전에 희석이나 CFF가 필요하다. 대신 VCS 관점에서는 AEX에 부하 여유가 많아 바이러스 제거가 안정적이라는 장점이 있다.\nP-C-H는 농축 과정에서 생기는 dimer·multimer 제거에 HIC가 유리하다(Protein A·IEX는 monomer/dimer 분리가 어려움).",
+      "source": "6주차 녹음 2부 15:48–25:12 · 4주차 녹음 02:19"
+    },
+    {
+      "id": "wk06-012",
+      "type": "계산",
+      "question": "내경 16 mm인 PD 컬럼에 베드 높이 20 cm로 레진을 패킹했다. 컬럼 부피(CV)는 약 얼마인가? (π = 3.14)",
+      "choices": [
+        "약 400 mL",
+        "약 4 mL",
+        "약 16 mL",
+        "약 40 mL",
+        "약 160 mL"
+      ],
+      "answer": 4,
+      "explanation": "CV = πr²h = 3.14 × (0.8 cm)² × 20 cm = 3.14 × 0.64 × 20 ≈ 40.2 cm³ ≈ 40 mL (1 cm³ = 1 mL).\n16 mm 컬럼은 높이 1 cm당 약 2 mL다. '16/20'은 직경 16 mm, 베드 20 cm라는 뜻이다. 반지름이 아니라 직경(1.6)을 넣으면 4배인 약 160 mL로 틀린다.",
+      "source": "6주차 녹음 2부 39:17 · 3주차 녹음 01:12:17"
+    },
+    {
+      "id": "wk06-013",
+      "type": "계산",
+      "question": "항체 1 kg을 생산해야 한다. 배양 titer는 0.1 g/L이고 Protein A 레진 DBC는 50 mg/mL이며 safety factor 100%를 적용한다.\n필요한 배양 부피와 Protein A 레진 부피는?",
+      "choices": [
+        "10,000 L / 40 L",
+        "100,000 L / 40 L",
+        "10,000 L / 80 L",
+        "1,000 L / 20 L",
+        "10,000 L / 20 L"
+      ],
+      "answer": 1,
+      "explanation": "배양 부피 = 1,000 g ÷ 0.1 g/L = 10,000 L.\n레진 = 1,000 g ÷ 50 g/L(=50 mg/mL) = 20 L, safety factor 100%를 적용하면 2배인 40 L.",
+      "source": "WK06 p.26 · 6주차 녹음 2부 46:53"
+    },
+    {
+      "id": "wk06-014",
+      "type": "계산",
+      "question": "위 사례(배양액 10,000 L, Protein A 레진 40 L, 컬럼 높이 30 cm, 선속도 150 cm/h = 200 L/h)에서 배양액을 그대로 로딩하면 약 50시간이 걸린다.\n로딩 전에 CFF로 20배 농축하면 로딩 시간은?",
+      "choices": [
+        "약 50시간 (변화 없음)",
+        "약 0.5시간",
+        "약 2.5시간",
+        "약 5시간",
+        "약 25시간"
+      ],
+      "answer": 3,
+      "explanation": "20배 농축 → 10,000 L ÷ 20 = 500 L. 500 L ÷ 200 L/h = 2.5시간.\n같은 선속도·같은 레진을 쓰면 flow rate는 그대로이므로 로딩 시간은 부피에 비례한다.",
+      "source": "WK06 p.26–27 · 6주차 녹음 2부 46:53"
+    },
+    {
+      "id": "wk06-015",
+      "type": "계산",
+      "question": "같은 사례에서 비싼 Protein A 레진(약 $20,000/L)을 절반인 20 L만 쓰고(높이 30 cm 유지, 유량 100 L/h), 농축된 500 L를 3 cycle로 나눠 처리하려 한다.\ncycle당 로딩 부피와 총 로딩 시간은 약 얼마인가?",
+      "choices": [
+        "250 L / 2.5시간",
+        "170 L / 1.7시간",
+        "100 L / 3시간",
+        "500 L / 5시간",
+        "170 L / 약 6시간(cycle당 약 2시간 × 3)"
+      ],
+      "answer": 5,
+      "explanation": "500 L ÷ 3 ≈ 170 L/cycle. 높이를 유지하고 레진이 절반이면 단면적도 절반이므로 같은 선속도에서 유량은 100 L/h → cycle당 약 1.7~2시간, 3 cycle이면 약 6시간.\n레진 비용은 $800,000 → $400,000으로 줄지만 공정 시간과 인건비가 늘어난다(trade-off).",
+      "source": "WK06 p.28–29 · 6주차 녹음 2부 46:53"
+    },
+    {
+      "id": "wk06-016",
+      "type": "개념",
+      "question": "크로마토그래피 scale-up 시 '같아야 하는' 공정 조건으로 옳은 것은? (같은 레진·같은 버퍼 전제)",
+      "choices": [
+        "volumetric flow rate(L/h)와 컬럼 직경",
+        "선속도(linear velocity, cm/h)와 베드 높이",
+        "총 레진 부피와 펌프 용량",
+        "로딩 시간과 컬럼 직경",
+        "컬럼 직경과 베드 높이"
+      ],
+      "answer": 2,
+      "explanation": "flow rate = 선속도 × 단면적이므로, 선속도와 베드 높이를 고정하고 직경을 키우면 체류 시간이 같게 유지된다. 베드 높이는 20 cm 전후를 선호한다.\n너무 느리게 흘리면 불순물까지 붙을 수 있다. 버퍼 양도 CV의 배수로 정하므로 스케일이 달라도 같은 비율이다.",
+      "source": "6주차 녹음 2부 25:21–35:14, 01:12 · 3주차 녹음 01:57:56"
+    },
+    {
+      "id": "wk06-017",
+      "type": "연결",
+      "question": "실험실 물과 생산 현장 물의 대응으로 옳은 것은?",
+      "choices": [
+        "PW와 WFI는 같은 물이다.",
+        "WFI는 바닥 청소용, PW는 주사제 제조용이다.",
+        "1차수 – WFI / 3차수 – PW",
+        "1차수 ≈ RO/PW(purified water), 3차수(초순수, 18.2 MΩ·cm) ≈ WFI(주사용수)",
+        "1차수 – 수돗물 / 3차수 – 생리식염수"
+      ],
+      "answer": 4,
+      "explanation": "실험실 1차수 ≈ 생산 RO/PW, 3차수 ≈ WFI. 바닥 청소는 PW로 한다. WFI를 만드는 방법은 시험 범위에서 제외된다고 했지만, '물(3차수 = WFI)'은 출제 포인트로 언급했다.",
+      "source": "6주차 녹음 1부 59:07 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk06-018",
+      "type": "상황판단",
+      "question": "CEX를 high salt로 용출하지 않고 pH를 바꿔 용출하는 방안이 제안되었다. 강의 내용에 비추어 가장 적절한 판단은?",
+      "choices": [
+        "pH를 크게 바꾸면 단백질 구조가 뒤틀릴(변성) 위험이 있어 현업에서는 주로 high salt(NaCl, 고전도도) 용출을 쓰고, pH 5~6은 formulation 직전까지 유지한다.",
+        "salt 용출은 전도도를 낮추므로 다음 단계에 유리하다.",
+        "CEX는 결합하지 않으므로 용출이 필요 없다.",
+        "pH 12로 올려 한 번에 용출한다.",
+        "pH 변경 용출이 현업 표준이다."
+      ],
+      "answer": 1,
+      "explanation": "IEX 용출은 pH 변경과 high salt 두 방법이 있지만, 공정에서는 변성 위험 때문에 salt 용출(전도도 단위 mS/cm, µS/cm)을 주로 쓴다. 그 대가로 다음 단계 전 탈염(희석 또는 CFF)이 필요하다.",
+      "source": "6주차 녹음 1부 27:44–31:21 · 4주차 녹음 02:14"
+    },
+    {
+      "id": "wk06-019",
+      "type": "개념",
+      "question": "basal media와 feed media, 배양 단계별 운영 방식에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "feed media와 basal media는 성분이 완전히 같다.",
+        "basal media는 titer를 높이려 생산 후반에 넣는 배지다.",
+        "basal media는 처음부터 넣는 증식용 배지이고 feed media는 titer를 높이는 생산용이다. seed(N-1까지)는 batch가 유리하고 N(생산)은 fed-batch로 운영한다.",
+        "seed 단계에서 feed를 가장 많이 넣는다.",
+        "N 단계는 항상 batch로만 운영한다."
+      ],
+      "answer": 3,
+      "explanation": "seed의 목적은 증식(복사·붙여넣기)이므로 basal media의 batch가 적합하다. N의 목적은 생산(채찍질)이므로 feed로 titer를 올린다. 효모 맥주의 호기(증식)·혐기(알코올 생산) 비유가 나왔다.",
+      "source": "6주차 녹음 2부 07:48–12:35 · 4주차 녹음 01:26:44, 01:34:07"
+    },
+    {
+      "id": "wk06-020",
+      "type": "연결",
+      "question": "mAb 플랫폼 공정 순서로 옳은 것은?",
+      "choices": [
+        "Media prep → Production → Seed expansion → Protein A → Clarification → UF/DF → CEX → Filling",
+        "Clarification → Media prep → Protein A → Seed → CEX → Filling",
+        "Protein A → Production → Seed → Clarification → UF/DF → AEX → Filling",
+        "Seed → Media prep → Clarification → Virus inactivation → Protein A → Filling",
+        "Media prep → Seed expansion → Production → Clarification → Protein A → Virus inactivation → CEX → AEX → Viral filtration → UF/DF(formulation) → Final filtration → Filling"
+      ],
+      "answer": 5,
+      "explanation": "USP: media prep → seed expansion → production. Harvest: clarification. DSP: Protein A(capture) → low pH VI → CEX → AEX → virus removal filtration → UF/DF(formulation). DP: final(sterile) filtration → filling.\n7주차 VR 투어(원심분리 → depth filtration → Protein A → VI → depth filter → IEX → UF/DF → 완제)와 같은 흐름이다.",
+      "source": "WK06 p.24 · 6주차 녹음 1부 07:43 · 7주차 녹음 2부 16:52–23:12"
+    }
+  ]
+}

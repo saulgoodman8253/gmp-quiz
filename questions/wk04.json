@@ -1,0 +1,876 @@
+{
+  "week": "WK04",
+  "title": "바이오공정 개관 · Downstream 2 (여과)",
+  "questions": [
+    {
+      "id": "wk04-001",
+      "type": "연결",
+      "question": "세포은행(cell bank) 4종과 설명을 옳게 짝지은 것은?\n\nㄱ. 연구 단계에서 후보 세포주를 선별하기 위해 만든 은행\nㄴ. cell line characterization 후 대량 보관하며, 임상·상업 생산의 출발점\nㄷ. 상위 은행 바이알 1개로 100~200개를 만들어 제약사가 실제 생산에 사용\nㄹ. 생산 종료 시점의 세포를 처음과 비교해 변이 여부를 확인",
+      "choices": [
+        "ㄱ-MCB, ㄴ-RCB, ㄷ-WCB, ㄹ-EOPCB",
+        "ㄱ-RCB, ㄴ-MCB, ㄷ-WCB, ㄹ-EOPCB",
+        "ㄱ-RCB, ㄴ-WCB, ㄷ-MCB, ㄹ-EOPCB",
+        "ㄱ-EOPCB, ㄴ-MCB, ㄷ-WCB, ㄹ-RCB",
+        "ㄱ-WCB, ㄴ-MCB, ㄷ-RCB, ㄹ-EOPCB"
+      ],
+      "answer": 2,
+      "explanation": "RCB(research) → MCB(master: characterization 후, 임상·상업 생산은 MCB부터) → WCB(working: MCB 1개로 100~200개) → EOPCB(end of production: 생산 끝의 세포를 처음과 비교해 변이 확인).\n강의에서 '4개는 무조건 외워라'고 했고, 은행의 주기적 QC는 법적 의무다. characterization+MCB 구축에 반년, 10억 이상 든다.",
+      "source": "4주차 녹음 01:03:15–01:15"
+    },
+    {
+      "id": "wk04-002",
+      "type": "상황판단",
+      "question": "신입 사원이 \"CHO 항체 공정에서 배양이 끝나면 cell harvest를 해서 세포를 모읍니다\"라고 보고했다. 강의 내용에 비추어 가장 적절한 지적은?",
+      "choices": [
+        "cell harvest와 clarification은 완전히 같은 뜻이라 구분할 필요가 없다.",
+        "clarification은 완제 공정의 sterile filtration을 뜻한다.",
+        "맞다. 동물세포는 항체를 세포 안에 쌓으므로 세포를 모아야 한다.",
+        "동물세포는 항체를 배양액으로 분비(extracellular)하므로 세포를 '제거'하는 clarification이 맞는 표현이다. 세포를 모으는 cell harvest는 세포 안에 생산물이 있는 미생물(intracellular) 공정의 개념이다.",
+        "CHO는 세포벽이 있어 반드시 세포를 파쇄해야 한다."
+      ],
+      "answer": 4,
+      "explanation": "미생물(E. coli)은 세포벽이 있고 생산물이 주로 세포 안(intracellular)에 있어 세포를 모은다(cell harvest). 동물세포는 분비형이라 세포를 제거하고 상등액을 쓴다(clarification).\n강의에서 '실무자들이 혼용하지만 cell harvest라고 외우면 헛공부'라고 했고, 7주차 시험 리뷰에서도 '실무자가 잘못 쓰는 단어'로 다시 언급했다.",
+      "source": "4주차 녹음 01:35:56–01:39 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk04-003",
+      "type": "개념",
+      "question": "강의에서 '외워라'고 한 크기 비교 중, 0.2 µm sterile filter로 '제거되지 않는' 것은?",
+      "choices": [
+        "Enveloped virus(약 100 nm)",
+        "머리카락(약 100 µm)",
+        "세포 debris 중 수 µm 크기 입자",
+        "CHO 세포(약 10 µm)",
+        "세균(약 1 µm)"
+      ],
+      "answer": 1,
+      "explanation": "크기: 동물세포 10 µm > 미생물 1 µm > sterile filter 0.2 µm(=200 nm) > enveloped virus 100 nm > non-enveloped virus 20 nm. 항체는 150 kDa로 무게 단위다.\n바이러스는 0.2 µm 필터를 통과하므로 별도의 virus filtration(VF), low pH VI, AEX 같은 VCS 단계가 필요하다.",
+      "source": "4주차 녹음 01:40:21"
+    },
+    {
+      "id": "wk04-004",
+      "type": "계산",
+      "question": "15,000 L 생산 배양기(N)로 가는 seed train을 동물세포 방식대로 '약 5배씩' 단계적으로 키운다.\nN-1, N-2, N-3 단계 배양 부피로 가장 적절한 것은?",
+      "choices": [
+        "N-1 300 L / N-2 60 L / N-3 12 L",
+        "N-1 7,500 L / N-2 3,750 L / N-3 1,875 L",
+        "N-1 3,000 L / N-2 600 L / N-3 120 L",
+        "N-1 1,500 L / N-2 150 L / N-3 15 L",
+        "N-1 15,000 L / N-2 3,000 L / N-3 600 L"
+      ],
+      "answer": 3,
+      "explanation": "희석 배수가 크면 세포가 잘 자라지 않아, 화분 분갈이처럼 약 5배씩 키운다: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) ….\n15,000 L에 3,000 L를 접종하므로 배지는 12,000 L가 필요하다(mass balance). 삼바·셀트리온·롯데바이오 배양기 15,000 L는 '업계 상식, 외워라'.",
+      "source": "4주차 녹음 01:21:45 · 2주차 녹음 01:08:32"
+    },
+    {
+      "id": "wk04-005",
+      "type": "계산",
+      "question": "CHO 세포의 doubling time이 약 1일이다. seed를 5배로 희석해 다음 단계에 접종했다면, 원래 세포 밀도로 회복하는 데 걸리는 시간은 약 얼마인가? (log₂5 ≈ 2.32)",
+      "choices": [
+        "약 5일",
+        "약 10일",
+        "약 0.5일",
+        "약 1일",
+        "약 2.3일"
+      ],
+      "answer": 5,
+      "explanation": "5배 희석을 회복하려면 2ⁿ = 5 → n = log₂5 ≈ 2.32번 분열해야 한다. doubling time이 1일이면 약 2.3일이다.\n그래서 seed 단계 간격이 약 3일이고, 해동부터 본배양 종료까지 약 한 달이 걸린다.",
+      "source": "4주차 녹음 01:24–01:25 · 7주차 녹음 1부 43:33"
+    },
+    {
+      "id": "wk04-006",
+      "type": "연결",
+      "question": "배양 모드와 설명을 옳게 짝지은 것은?\n\nㄱ. 처음부터 배지를 가득 채워 키운다. 간편하지만 효율이 낮다.\nㄴ. 절반 정도만 채우고 세포가 북적이면 feed를 넣는다. 정밀한 feed 전략이 필요하다.\nㄷ. 1,000 L에서 배양액을 빼고 새 배지를 15회 넣어 15,000 L 효과를 낸다.",
+      "choices": [
+        "ㄱ-fed-batch, ㄴ-batch, ㄷ-perfusion",
+        "ㄱ-batch, ㄴ-fed-batch, ㄷ-perfusion",
+        "ㄱ-perfusion, ㄴ-fed-batch, ㄷ-batch",
+        "ㄱ-batch, ㄴ-perfusion, ㄷ-fed-batch",
+        "ㄱ-batch, ㄴ-fed-batch, ㄷ-N-1 seed"
+      ],
+      "answer": 2,
+      "explanation": "batch = 처음부터 가득, fed-batch = 반쯤 채우고 feed, perfusion = 세포는 두고 배양액 교환(차세대·연속 공정).\n'회분식'이라는 표현은 쓰지 말라고 했다. N-1 perfusion은 대형 fed-batch 배양기를 그대로 두고 N-1에서만 노폐물을 제거해 고밀도 접종을 하는 전략이다.",
+      "source": "4주차 녹음 01:27:55–01:31:00"
+    },
+    {
+      "id": "wk04-007",
+      "type": "상황판단",
+      "question": "Protein A 컬럼에서 항체를 용출한 직후의 공정 흐름으로 가장 적절한 것은?",
+      "choices": [
+        "pH 9로 올려 AEX bind-and-elute를 한다.",
+        "바로 sterile filtration 후 바이알에 충전한다.",
+        "pH 7로 즉시 중화한 뒤 바로 CEX에 로딩한다.",
+        "low pH(3~3.5) 상태로 30분~1시간 유지해 enveloped virus를 불활성화(VI)하고, 생긴 탁도(응집·침전)를 depth filter로 제거한 뒤 pH를 5~6으로 올린다.",
+        "low pH에서 24시간 이상 보관해 바이러스를 완전히 제거한다."
+      ],
+      "answer": 4,
+      "explanation": "Protein A 용출은 low pH(3~3.5)이므로 그 상태로 holding하는 low pH VI가 짝으로 따라온다(VCS). 이때 변성·응집으로 '조개탕 국물' 같은 탁도가 생겨 depth filter로 제거한다.\n이후 IEX를 위해 pH 5~6으로 올린다.",
+      "source": "4주차 녹음 01:56:19, 02:00:18–02:05 · 6주차 녹음 1부 23:20"
+    },
+    {
+      "id": "wk04-008",
+      "type": "상황판단",
+      "question": "low pH VI 후 pH를 5~6으로 맞춘 항체 용액을 다음 IEX 단계로 보낸다. 이 pH에서 일어나는 일로 옳은 것은? (항체 pI 7~8, 주요 불순물 pI 2~4)",
+      "choices": [
+        "항체는 + 전하, 불순물(HCP·DNA·endotoxin·virus)은 − 전하를 띠어, CEX bind-and-elute에서 항체만 결합시키거나 AEX flow-through에서 불순물만 결합시킬 수 있다.",
+        "항체는 − 전하를 띠어 CEX에 결합하지 않는다.",
+        "pH 5~6에서는 모든 단백질이 전하를 잃는다.",
+        "불순물은 + 전하를 띠어 CEX에 결합하고 항체는 흘러나간다.",
+        "항체와 불순물 모두 − 전하를 띠어 AEX에 함께 결합한다."
+      ],
+      "answer": 1,
+      "explanation": "pH < pI → +, pH > pI → −. pH 5~6에서 항체(pI 7~8)는 +, 불순물 4총사(pI 2~4)는 −다.\n그래서 CEX는 항체를 붙였다 떼는 B/E, AEX는 불순물만 붙이고 항체는 통과시키는 FT로 쓴다. 7주차 시험 리뷰에서 'pI를 거꾸로'라는 출제 포인트로 언급했다.",
+      "source": "4주차 녹음 02:06–02:13 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk04-009",
+      "type": "개념",
+      "question": "강의에서 말한 바이오의약품 정제의 'impurity 4총사'에 해당하지 않는 것은?",
+      "choices": [
+        "Endotoxin",
+        "Virus",
+        "Polysorbate(Tween)",
+        "HCP (host cell protein)",
+        "HCD (host cell DNA)"
+      ],
+      "answer": 3,
+      "explanation": "impurity 4총사 = HCP, HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮아(2~4) pH 5~6에서 − 전하를 띤다.\npolysorbate는 농축으로 생기는 응집을 막으려고 formulation에서 일부러 넣는 안정제(부형제)다.",
+      "source": "4주차 녹음 02:06–02:12, 02:25"
+    },
+    {
+      "id": "wk04-010",
+      "type": "상황판단",
+      "question": "P-C-A(Protein A → CEX → AEX) 공정에서 CEX 용출액을 바로 AEX에 넣으면 문제가 된다. 이유와 대책으로 옳은 것은?",
+      "choices": [
+        "CEX 용출액에는 단백질이 없어서 – 농축 필요",
+        "AEX는 결합형이라 용출 버퍼가 필요해서 – Protein A 버퍼 사용",
+        "문제 없다. 바로 연결하면 된다.",
+        "CEX 용출액은 pH가 너무 높아서 – 산으로 중화",
+        "CEX는 high salt(고전도도)로 용출하므로 그대로 넣으면 AEX에 불순물이 붙지 않는다 – 물로 희석하거나 UF/DF(TFF)로 염을 제거"
+      ],
+      "answer": 5,
+      "explanation": "IEX 용출은 high salt(고전도도, mS/cm)로 한다. 염이 많으면 AEX에서 이온 결합이 일어나지 않아 불순물 제거가 안 된다. 그래서 물로 희석(대용량 부담)하거나 UF/DF(TFF)로 탈염한다.\n반대로 P-A-C는 AEX가 FT라 전도도·pH 변화가 없어 바로 CEX로 이어 갈 수 있다.",
+      "source": "4주차 녹음 02:14–02:19 · 6주차 녹음 2부 15:48–25:12"
+    },
+    {
+      "id": "wk04-011",
+      "type": "계산",
+      "question": "VCS(virus clearance study)에서 어떤 단계 전후의 바이러스 역가가 10⁸ → 10³(단위 동일)으로 줄었다.\n이 단계의 LRV는?",
+      "choices": [
+        "3",
+        "5",
+        "8",
+        "11",
+        "10⁵"
+      ],
+      "answer": 2,
+      "explanation": "LRV(log reduction value) = log₁₀(처리 전 / 처리 후) = log₁₀(10⁸ / 10³) = 5.\nAEX 한 단계에서 5~6 LRV를 얻는다. low pH VI, AEX, virus filtration을 합쳐 전체 10 중후반 LRV를 목표로 한다.",
+      "source": "4주차 녹음 02:21:53"
+    },
+    {
+      "id": "wk04-012",
+      "type": "계산",
+      "question": "항체 공정의 바이러스 제거 단계별 LRV가 low pH VI 4, AEX(FT) 5, virus filtration 6이다. 처음 바이러스 부하가 10¹²였다면 최종 이론적 잔류량은?",
+      "choices": [
+        "10³",
+        "10⁻¹⁵",
+        "10⁷",
+        "10⁻³",
+        "10⁰"
+      ],
+      "answer": 4,
+      "explanation": "단계별 LRV는 더한다(각 log 감소가 곱해지므로): 4 + 5 + 6 = 15 LRV. 10¹² × 10⁻¹⁵ = 10⁻³.\n1보다 훨씬 작다는 것은 '바이러스 1개가 남을 확률'이 매우 낮다는 뜻이다. 그래서 여러 원리(불활성화 + 흡착 + 크기 배제)를 겹쳐 안전 마진을 확보한다.",
+      "source": "4주차 녹음 02:00:18, 02:21:53"
+    },
+    {
+      "id": "wk04-013",
+      "type": "연결",
+      "question": "무균의약품을 만드는 3가지 방법과 대표 제품을 옳게 짝지은 것은?",
+      "choices": [
+        "수액(생리식염수) – terminal sterilization / 항체 – sterile filtration / 세포치료제 – aseptic process",
+        "수액 – sterile filtration / 항체 – aseptic process / 세포치료제 – terminal sterilization",
+        "세 가지 모두 terminal sterilization으로 만든다.",
+        "수액 – terminal sterilization / 항체 – terminal sterilization / 세포치료제 – sterile filtration",
+        "수액(생리식염수) – aseptic process / 항체 – terminal sterilization / 세포치료제 – sterile filtration"
+      ],
+      "answer": 1,
+      "explanation": "terminal sterilization(사후 멸균): 열에 견디는 수액·생리식염수.\nsterile filtration: 열에 약한 단백질(항체)을 0.2 µm로 여과 멸균.\naseptic process: 세포치료제는 세포가 10 µm라 0.2 µm 필터를 통과하지 못하므로 처음부터 끝까지 무균으로 다룬다. 7주차 시험 리뷰에서 '무균의약품 만드는 방법 3개'를 직접 언급했다.",
+      "source": "4주차 녹음 02:52 · 5주차 녹음 1부 49:14 · 7주차 녹음 2부 49:16"
+    },
+    {
+      "id": "wk04-014",
+      "type": "개념",
+      "question": "혈장분획제제에 대한 설명으로 옳지 않은 것은?",
+      "choices": [
+        "매혈 금지 등으로 원료 공급이 불안정하다.",
+        "과거 HIV 감염 사고 등 바이러스 감염 위험 때문에 VCS가 법적으로 요구되었다.",
+        "사람 혈장 유래이므로 바이러스 위험이 없어 VCS가 필요 없다.",
+        "가장 원초적인 형태의 바이오의약품으로, 사람 혈장에서 필요한 단백질(예: 혈우병 치료 인자)을 분리한다.",
+        "국내에서는 녹십자, SK플라즈마 등이 생산한다."
+      ],
+      "answer": 3,
+      "explanation": "혈장분획제제의 두 가지 문제: ① 원료 공급 불안정(매혈 금지) ② 바이러스 감염 위험(일본 HIV 사고). 그래서 VCS 법이 생겼다.\n동물(사람) 유래 원료는 바이러스 위험을 배제할 수 없으므로 혈장제제와 CHO 항체 모두 VCS 대상이다. 그 해결책으로 재조합(CLD) 의약품이 나왔다.",
+      "source": "4주차 녹음 40:40–45:11, 02:00:18"
+    },
+    {
+      "id": "wk04-015",
+      "type": "개념",
+      "question": "재조합 단백질 생산 숙주로 동물세포(CHO)와 미생물(E. coli)을 비교할 때, 강의에서 말한 '공정상 가장 큰 차이'는?",
+      "choices": [
+        "배지 색깔",
+        "배양기 재질",
+        "세포은행 개수",
+        "배양 온도",
+        "세포벽의 유무"
+      ],
+      "answer": 5,
+      "explanation": "미생물은 세포벽이 있어 생산물이 세포 안에 남는 경우가 많다(intracellular → cell harvest, 파쇄). 동물세포는 세포벽이 없고 분비형(extracellular → clarification)이다.\n이 차이가 이후 공정(회수·정제) 설계를 완전히 바꾼다.",
+      "source": "4주차 녹음 48:22, 01:35:56"
+    },
+    {
+      "id": "wk04-016",
+      "type": "상황판단",
+      "question": "1,000 L 규모 CHO 배양을 clarification하려 한다. 강의 내용에 비추어 가장 적절한 방법은?",
+      "choices": [
+        "반드시 연속식 원심분리기만 쓰고 필터는 쓰지 않는다.",
+        "보통 2,000~3,000 L 이상에서 연속식 원심분리를 쓰므로, 이 규모는 depth filter 위주로 처리할 수 있다. 다만 VCD가 매우 높으면 원심분리를 검토한다.",
+        "precipitation으로 세포를 침전시킨 뒤 상등액을 바로 Protein A에 넣는다.",
+        "0.2 µm sterile filter 하나로 세포를 바로 거른다.",
+        "SEC 컬럼으로 세포를 분리한다."
+      ],
+      "answer": 2,
+      "explanation": "sol/insol 분리는 centrifugation과 filtration이다. 2,000~3,000 L 이상이면 연속식 원심분리기를 쓰고, 그 이하면 필터만으로도 처리한다. VCD가 10배 높으면 2,000 L라도 원심분리가 필요할 수 있다.\n원심분리 뒤에는 반드시 depth filter 등으로 남은 세포를 제거한다(세트).",
+      "source": "4주차 녹음 01:42:57 · 6주차 녹음 1부 21:32"
+    },
+    {
+      "id": "wk04-017",
+      "type": "연결",
+      "question": "분리 대상의 상태(sol/insol)와 분리 기술을 옳게 짝지은 것은?",
+      "choices": [
+        "모든 분리는 chromatography 하나로 한다.",
+        "sol/sol – centrifugation / sol/insol – IEX",
+        "sol/insol – chromatography, precipitation / sol/sol – centrifugation, filtration",
+        "sol/insol – centrifugation, filtration / sol/sol – chromatography, precipitation(단, 항체 공정에서는 precipitation을 거의 쓰지 않음)",
+        "sol/insol – SEC / sol/sol – depth filter"
+      ],
+      "answer": 4,
+      "explanation": "세포·debris 같은 불용성(insol)과 용액(sol) 분리 = 원심분리, 여과. 녹아 있는 것끼리(sol/sol) 분리 = 크로마토그래피, 침전.\n항체는 precipitation을 쓰지 않으므로 사실상 정제 = 크로마토그래피 + 여과다.",
+      "source": "4주차 녹음 01:42:57, 01:53:04 · 6주차 녹음 1부 13:10–15:25"
+    },
+    {
+      "id": "wk04-018",
+      "type": "개념",
+      "question": "강의의 '오총사' 기준 바이오의약품 생산 공정 순서로 옳은 것은?",
+      "choices": [
+        "CLD → 배양 → 크로마토그래피 → 여과 → 완제",
+        "CLD → 크로마토그래피 → 배양 → 완제 → 여과",
+        "완제 → 여과 → 크로마토그래피 → 배양 → CLD",
+        "CLD → 여과 → 배양 → 완제 → 크로마토그래피",
+        "배양 → CLD → 여과 → 크로마토그래피 → 완제"
+      ],
+      "answer": 1,
+      "explanation": "CLD(세포주 개발) → 배양(USP) → 크로마토그래피 → 여과(DSP) → 완제(DP). 여과는 사실 배양(가스·배지 여과), 정제(clarification, UF/DF, VF), 완제(sterile filtration) 모든 곳에 쓰인다.",
+      "source": "4주차 녹음 38:12, 02:48"
+    },
+    {
+      "id": "wk04-019",
+      "type": "상황판단",
+      "question": "정제가 진행되며 항체 농도가 높아지고 부피가 줄었다. 이때 생길 수 있는 문제와 formulation 단계의 대응으로 가장 적절한 것은?",
+      "choices": [
+        "농축은 품질과 무관하다.",
+        "농도가 높아지면 바이러스가 증식한다 – 항생제 첨가",
+        "고농도에서 dimer·응집이 생길 위험이 있다 – polysorbate(Tween) 등 안정제 추가, UF/DF로 버퍼 조성 변경과 농도 정밀 조절",
+        "농도가 높아지면 pH가 0이 된다 – NaOH 첨가",
+        "부피가 줄면 endotoxin이 사라진다 – 추가 조치 불필요"
+      ],
+      "answer": 3,
+      "explanation": "DSP의 목적은 yield와 purity이고, 진행할수록 부피는 줄고 농도는 높아져 응집 위험이 커진다. 그래서 안정제를 넣는다.\nformulation 핵심 2가지 = 버퍼(국물) 조성 변경 + 농도 정확 조절이며, 둘 다 UF/DF로 한다. 주사제는 체액과 삼투압을 맞춘다(약전).",
+      "source": "4주차 녹음 02:25–02:31 · 6주차 녹음 1부 18:12"
+    },
+    {
+      "id": "wk04-020",
+      "type": "개념",
+      "question": "공정별 무균 여부에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "WFI(주사용수)는 무균수다.",
+        "바이알은 반드시 멸균된 상태로 구매해 그대로 쓴다.",
+        "정제 공정은 0.2 µm 필터 없이도 무균이 보장된다.",
+        "배양, 정제, 완제 모두 처음부터 끝까지 aseptic이다.",
+        "배양은 무균 공정, 항체 정제는 non-aseptic, 완제에서 sterile filtration으로 다시 무균을 확보한다."
+      ],
+      "answer": 5,
+      "explanation": "배양은 오염되면 끝이므로 무균 공정이다. 항체 정제는 non-aseptic이고, 완제에서 sterile filtration으로 다시 무균화한다.\nWFI는 무균이 아니다(약전에 100 mL당 균수 기준이 있다). 바이알은 비멸균으로 사서 WFI로 세척한 뒤 자체 멸균(탈발열)한다.",
+      "source": "4주차 녹음 02:52–02:57"
+    },
+    {
+      "id": "wk04-021",
+      "type": "연결",
+      "question": "공정용 펌프 종류와 특징을 옳게 짝지은 것은?\n\nㄱ. 시료가 펌프와 닿지 않고 튜빙만 교체하면 되지만, 낮은 RPM에서 맥동(pulse)이 생기고 scale-up에 한계가 있다.\nㄴ. self-priming이 가능하고 shear stress가 적지만, self-draining과 스팀 멸균이 어렵고 유량이 낮다.\nㄷ. CIP·SIP가 가능하고 대형 scale-up에 유리하지만, 소음이 있고 self-priming이 안 되며 dry-running을 막아야 한다.",
+      "choices": [
+        "ㄱ-Diaphragm, ㄴ-Peristaltic, ㄷ-Rotary lobe",
+        "ㄱ-Peristaltic, ㄴ-Diaphragm, ㄷ-Rotary lobe",
+        "ㄱ-Rotary lobe, ㄴ-Diaphragm, ㄷ-Peristaltic",
+        "ㄱ-Peristaltic, ㄴ-Rotary lobe, ㄷ-Diaphragm",
+        "ㄱ-Diaphragm, ㄴ-Rotary lobe, ㄷ-Peristaltic"
+      ],
+      "answer": 2,
+      "explanation": "Peristaltic(튜브 펌프): 시료와 접촉하지 않고 세척이 필요 없으며 속도 조절이 쉽다. 단, 튜빙을 주기적으로 교체해야 하고 scale-up에 한계가 있다(유량은 RPM과 튜빙 크기·펌프 헤드로 정해짐).\nDiaphragm: self-priming, 저소음, 저shear. 단점은 self-draining·스팀 멸균이 어렵고 유량이 낮다는 것.\nRotary lobe: CIP/SIP, 대형 공정에 적합. 단점은 소음, self-priming 불가, dry-running 방지 필요.",
+      "source": "WK04(여과) 슬라이드 81, 82"
+    },
+    {
+      "id": "wk04-022",
+      "type": "개념",
+      "question": "Normal flow(dead-end) 여과와 비교한 TFF(tangential/cross flow filtration)의 핵심 장점은?",
+      "choices": [
+        "압력이 전혀 필요 없다.",
+        "단백질이 막을 통과해 permeate로 회수된다.",
+        "모든 액체가 막을 수직으로 통과해 한 번에 여과가 끝난다.",
+        "액체가 막 표면을 따라 흐르며(crossflow) 막 표면에 쌓이는 입자·gel layer를 쓸어내므로, 막힘이 적고 순환하며 농축·버퍼 교환을 할 수 있다.",
+        "펌프가 필요 없다."
+      ],
+      "answer": 4,
+      "explanation": "dead-end에서는 막 위에 cake가 쌓여 곧 막힌다. TFF는 feed가 막과 평행하게 흐르며 표면을 씻어 주고, retentate는 탱크로 돌아가 순환한다.\n구성: feed tank → pump → (feed 압력) → 막 → retentate(되돌아감) / permeate(투과액).",
+      "source": "WK04(여과) 슬라이드 85, 86, 87 · 6주차 녹음 1부 32:46"
+    },
+    {
+      "id": "wk04-023",
+      "type": "계산",
+      "question": "TFF 운전 중 압력이 P_feed = 2.0 bar, P_retentate = 1.0 bar, P_permeate = 0.5 bar로 측정되었다. TMP와 ΔP는?",
+      "choices": [
+        "TMP 1.0 bar, ΔP 1.0 bar",
+        "TMP 2.5 bar, ΔP 1.0 bar",
+        "TMP 1.0 bar, ΔP 1.5 bar",
+        "TMP 0.5 bar, ΔP 2.0 bar",
+        "TMP 1.5 bar, ΔP 0.5 bar"
+      ],
+      "answer": 1,
+      "explanation": "TMP = (P_feed + P_retentate)/2 − P_permeate = (2.0 + 1.0)/2 − 0.5 = 1.0 bar.\nΔP = P_feed − P_retentate = 2.0 − 1.0 = 1.0 bar. ΔP는 crossflow(recirculation rate)를 만드는 압력차다.",
+      "source": "WK04(여과) 슬라이드 88"
+    },
+    {
+      "id": "wk04-024",
+      "type": "상황판단",
+      "question": "단백질 용액을 TFF로 농축하면서 TMP를 계속 올렸더니, 어느 지점부터 TMP를 올려도 permeate flux가 거의 늘지 않았다. 가장 적절한 해석과 조치는?",
+      "choices": [
+        "TMP와 flux는 항상 비례하므로 측정 오류다.",
+        "막이 찢어진 것이므로 즉시 교체한다.",
+        "막 표면에 gel layer가 형성되어 flux가 gel layer에 지배되는 구간이다. flux가 꺾이는 지점 부근을 최적 TMP로 잡고, ΔP(crossflow)를 높여 gel layer를 씻어 내는 방안을 검토한다.",
+        "TMP를 더 높이면 flux가 다시 급증하므로 최대한 올린다.",
+        "crossflow를 0으로 줄인다."
+      ],
+      "answer": 3,
+      "explanation": "Gel polarisation model: 낮은 TMP에서는 flux가 TMP에 비례(membrane controlled)하지만, 일정 TMP를 넘으면 gel layer controlled가 되어 flux가 포화된다. TMP를 너무 높이면 오히려 막 표면에 단백질이 압착되어 불리하다.\nΔP를 높이면 crossflow와 permeate flow가 늘고 gel layer를 씻어 주지만, 시료에 따라 문제가 생길 수 있어 '무조건 높을수록 좋은 것'은 아니다. crossflow rate가 클수록 같은 TMP에서 flux가 높다.",
+      "source": "WK04(여과) 슬라이드 90, 91, 92, 93"
+    },
+    {
+      "id": "wk04-025",
+      "type": "연결",
+      "question": "TFF 막 모듈 선택에서 Cassette와 Hollow fiber의 특징을 옳게 짝지은 것은?",
+      "choices": [
+        "두 모듈은 구조와 용도가 같다.",
+        "Hollow fiber는 CIP를 할 수 없어 mAb 공정에만 쓴다.",
+        "Cassette는 백신·대분자 single-use 공정 전용이다.",
+        "Cassette – holder가 필요 없는 일체형 / Hollow fiber – 고점도(>200 g/L) 고농축에 최적",
+        "Cassette – 고점도(단백질 >200 g/L)·고flux·CIP 회전율이 높지만 holder 장치가 필요 / Hollow fiber – holder 없는 일체형, spacer 없는 유로, functionally closed지만 펌프 요구 조건이 큼"
+      ],
+      "answer": 5,
+      "explanation": "Cassette(예: Sartocon)는 고점도·고농축 mAb 공정(multiple-use)에 강하다. Hollow fiber는 spacer가 없어 세포·대분자(백신 등)와 single-use에 유리하다. 고농도 세포 clarification(>150×10⁶ cells/mL)도 hollow fiber를 쓴다.\n모듈 형태는 hollow fiber, spiral-wound, flat plate(cassette) 세 가지다.",
+      "source": "WK04(여과) 슬라이드 95, 96, 99"
+    },
+    {
+      "id": "wk04-026",
+      "type": "연결",
+      "question": "TFF의 용도별로 목적물(product)을 회수하는 쪽을 옳게 짝지은 것은?",
+      "choices": [
+        "Clarification – retentate / Concentration – permeate / Perfusion – permeate",
+        "Clarification(MF) – permeate / Concentration·Diafiltration(MF·UF) – retentate / Perfusion(MF) – retentate(세포 유지)",
+        "모든 용도에서 permeate로 회수한다.",
+        "모든 용도에서 retentate로 회수한다.",
+        "Clarification – retentate / Diafiltration – permeate / Perfusion – retentate"
+      ],
+      "answer": 2,
+      "explanation": "Clarification은 세포·debris(insoluble)를 막에 남기고 항체가 든 액체를 통과시키므로 permeate가 제품이다.\n농축과 DF는 단백질을 막 안쪽에 남기므로 retentate가 제품이다. Perfusion은 세포를 retentate 쪽(배양기)에 남긴다.",
+      "source": "WK04(여과) 슬라이드 100"
+    },
+    {
+      "id": "wk04-027",
+      "type": "상황판단",
+      "question": "0.2 µm MF 카세트로 TFF clarification을 하는데, 초반에 permeate flux를 매우 높게 잡았더니 금세 막혀 버렸다. 가장 적절한 해석은?",
+      "choices": [
+        "UF 막으로 바꾸면 항체가 더 잘 통과한다.",
+        "permeate 밸브를 닫으면 해결된다.",
+        "MF는 UF보다 기공이 작아 원래 막히지 않는다.",
+        "MF-TFF에서 permeate flux가 너무 빠르면 입자가 막 기공으로 급격히 끌려가 막힘을 초래하므로, TMP·flux를 낮게(투과율 기준) 관리해야 한다.",
+        "flux를 더 올리면 막힘이 해소된다."
+      ],
+      "answer": 4,
+      "explanation": "MF는 투과율(transmission) 성능을 위해 낮은 TMP에서, UF는 flux 성능을 위해 더 높은 TMP에서 최적점이 있다. 0.2 µm 카세트의 permeate 값(900 L/h)처럼 MF는 flux가 매우 커서 그대로 쓰면 급격한 막힘이 생긴다.",
+      "source": "WK04(여과) 슬라이드 101, 102"
+    },
+    {
+      "id": "wk04-028",
+      "type": "개념",
+      "question": "같은 양의 염을 제거할 때 batch(discontinuous) diafiltration과 비교한 continuous diafiltration의 특징으로 옳은 것은?",
+      "choices": [
+        "permeate로 빠지는 만큼 버퍼를 연속 보충해 부피를 일정하게 유지하므로, 비슷한 버퍼량으로 염 농도를 훨씬 낮출 수 있다(강의 예: batch 400 mL → 6.25%, continuous 480 mL → 0.4%).",
+        "continuous는 농축과 동시에 부피가 계속 늘어난다.",
+        "diafiltration은 단백질을 permeate로 빼내는 공정이다.",
+        "batch DF는 희석 없이 농축만 반복한다.",
+        "continuous가 항상 버퍼를 10배 이상 더 쓴다."
+      ],
+      "answer": 1,
+      "explanation": "DF = 농축된 '소금물'에 '설탕물'(새 버퍼)을 넣고 다시 농축하기를 반복해 소금(옛 버퍼 성분)은 줄이고 설탕(새 버퍼)은 늘리는 것이다.\nbatch는 희석 → 농축을 단계적으로 반복하고, continuous는 일정 부피를 유지하며 연속 교환해 효율이 높다.",
+      "source": "WK04(여과) 슬라이드 103, 104 · 6주차 녹음 1부 32:46–46:15"
+    },
+    {
+      "id": "wk04-029",
+      "type": "계산",
+      "question": "4 ℃에서 CWF(clean water flux)를 측정했더니 40 LMH, TMP는 1.0 bar였다. 온도 보정계수(Kt)는 4 ℃에서 1.751, 25 ℃에서 1.000이다. NWP(LMH/bar)는?",
+      "choices": [
+        "약 23 LMH/bar",
+        "40 LMH/bar",
+        "약 70 LMH/bar",
+        "약 175 LMH/bar",
+        "약 41 LMH/bar"
+      ],
+      "answer": 3,
+      "explanation": "NWP = Water flux × 온도 보정계수 / TMP (막면적은 이미 LMH에 반영) = 40 × 1.751 / 1.0 ≈ 70 LMH/bar.\n차가운 물은 점도가 높아 flux가 낮게 나오므로 25 ℃ 기준으로 올려 보정한다. 보정계수로 나누면(약 23) 반대로 계산한 것이다.",
+      "source": "WK04(여과) 슬라이드 111, 112 · 6주차 녹음 1부 01:12–01:18"
+    },
+    {
+      "id": "wk04-030",
+      "type": "개념",
+      "question": "TFF 카세트를 재사용(re-use)할 때 수명(life cycle)을 정하는 기준으로 강의 슬라이드에 제시되지 않은 것은?",
+      "choices": [
+        "배치 간 Water flux(NWP) – 예: 초기값의 약 80%",
+        "막의 integrity",
+        "제품 품질과 수율",
+        "Leachable(TOC)",
+        "카세트 외형 색상 변화만으로 판단"
+      ],
+      "answer": 5,
+      "explanation": "재사용 판단 기준: NWP(초기 대비 회복률), integrity, 제품 품질·수율, leachable(TOC) → 이를 종합해 life cycle을 정한다. 세척 회복률 사례(UF/DF 전 100%, 후 86.7%, 0.5 N NaOH 세척 후 115.4%)도 함께 다뤘다.",
+      "source": "WK04(여과) 슬라이드 110, 113 · 6주차 녹음 1부 01:23–01:36"
+    },
+    {
+      "id": "wk04-031",
+      "type": "연결",
+      "question": "필터 integrity test를 파괴/비파괴로 나눌 때 옳은 것은?",
+      "choices": [
+        "파괴검사 – end user가 공정 전후 매번 수행 / 비파괴검사 – 제조사만 수행",
+        "파괴검사(bacteria challenge, particle challenge, 전자현미경 등) – 주로 제조사가 규격 설정에 사용, 필터 재사용 불가 / 비파괴검사(bubble point, diffusion, pressure decay, water intrusion 등) – end user가 사용, 필터 재사용 가능",
+        "bubble point test는 필터를 파괴한다.",
+        "bacteria challenge test는 end user가 생산 배치마다 수행한다.",
+        "비파괴검사는 간접적 방법이 아니라 미생물을 직접 흘려 보는 방법이다."
+      ],
+      "answer": 2,
+      "explanation": "제조사는 bubble point·diffusion 같은 integrity test와 bacteria challenge test를 함께 수행해 두 결과를 연결한 integrity test limit을 설정한다. end user는 그 limit을 기준으로 비파괴 시험만 한다(간접 시험).",
+      "source": "WK04(여과) 슬라이드 118, 119, 120"
+    },
+    {
+      "id": "wk04-032",
+      "type": "개념",
+      "question": "멸균 필터(sterilizing-grade filter)의 정의로 쓰이는 bacteria challenge test 기준으로 옳은 것은?",
+      "choices": [
+        "바이러스를 10⁷ PFU로 흘려 LRV 4 이상이면 멸균 필터다.",
+        "멸균 필터는 bubble point만으로 정의되며 미생물 시험은 필요 없다.",
+        "E. coli를 10³ CFU/mL로 흘려 99%가 제거되면 멸균 필터다.",
+        "Brevundimonas diminuta를 유효 여과면적 1 cm²당 1.0 × 10⁷ CFU로 challenge했을 때 여과액이 무균이면 멸균 필터로 본다.",
+        "Serratia marcescens를 0.45 µm 필터에 흘려 일부 통과해도 된다."
+      ],
+      "answer": 4,
+      "explanation": "HIMA(1982) 기준: B. diminuta(ATCC 19146) 1.0×10⁷ CFU/cm² EFA로 challenge 후 여과액이 무균이면 sterilizing filter. B. diminuta는 매우 작은 세균이라 0.2 µm 필터 시험균으로 쓴다(Acholeplasma laidlawii는 0.1 µm, Serratia marcescens는 0.45 µm용).",
+      "source": "WK04(여과) 슬라이드 118, 121"
+    },
+    {
+      "id": "wk04-033",
+      "type": "계산",
+      "question": "Bubble point 압력은 P_BP = 2σ·cosθ / r · K 로 나타낸다. 어떤 친수성 필터의 bubble point가 물(표면장력 0.072 N/m)로 적셨을 때 3.6 bar였다. 같은 필터를 에탄올(0.022 N/m)로 적시면 bubble point는 약 얼마인가? (wetting angle 등 다른 조건은 같다고 가정)",
+      "choices": [
+        "약 1.1 bar",
+        "약 3.6 bar",
+        "약 11.8 bar",
+        "약 7.2 bar",
+        "약 0.3 bar"
+      ],
+      "answer": 1,
+      "explanation": "P_BP는 표면장력(σ)에 비례하고 기공 반지름(r)에 반비례한다. 3.6 × (0.022/0.072) ≈ 1.1 bar.\n그래서 wetting이 잘 안 될 때 IPA처럼 표면장력이 낮은 용액으로 시험하면 기준값(limit)도 그 용액 기준으로 따로 정해야 한다(예: IPA/물 60/40). 기공이 클수록(r↑) bubble point는 낮아진다.",
+      "source": "WK04(여과) 슬라이드 125, 134, 156"
+    },
+    {
+      "id": "wk04-034",
+      "type": "개념",
+      "question": "Wetting된 필터에 기체 압력을 서서히 올릴 때의 거동으로 옳은 것은?",
+      "choices": [
+        "bubble point는 기체 흐름이 0이 되는 압력이다.",
+        "압력을 올리는 즉시 bulk flow가 생긴다.",
+        "bubble point 전에는 기체가 기공 속 액막에 녹아 확산하는 diffusive flow(직선적, 작음)만 있고, bubble point를 넘으면 기공의 액체가 밀려나 bulk flow가 급증한다. diffusion test는 보통 bubble point의 약 80% 압력에서 한다.",
+        "diffusion flow는 bubble point 이후에만 나타난다.",
+        "압력과 기체 흐름은 무관하다."
+      ],
+      "answer": 3,
+      "explanation": "Diffusive flow는 N/t = D·L·ΔP·F/d 로, 압력차와 필터 면적에 비례하고 막 두께에 반비례한다. bubble point(P_BP)에서 단일 기포 → 연속 기포로 바뀌고 이후 bulk flow가 된다. 장비는 이 꺾임(비선형 구간)으로 bubble point를 판정한다.",
+      "source": "WK04(여과) 슬라이드 126, 127, 129, 131"
+    },
+    {
+      "id": "wk04-035",
+      "type": "연결",
+      "question": "필터 integrity test 방법과 적용 필터를 옳게 짝지은 것은?",
+      "choices": [
+        "모든 시험은 HEPA 필터 integrity에도 그대로 쓴다.",
+        "Water intrusion test는 IPA로 적신 뒤에만 할 수 있다.",
+        "소수성 필터는 integrity test가 필요 없다.",
+        "Bubble point·Diffusion·Pressure drop – 소수성 / Water intrusion·Water flow – 친수성",
+        "Bubble point·Diffusion·Pressure drop – 친수성 필터 / Water intrusion·Water flow – 소수성 필터(벤트·가스 필터 등)"
+      ],
+      "answer": 5,
+      "explanation": "친수성(sterile filter, virus filter, cassette filter)은 물로 적셔 bubble point/diffusion/pressure drop을 한다. 소수성 막은 물로 적셔지지 않으므로, 물을 채우고 기공 안으로 물이 침투(intrusion)하는 정도로 시험한다(WIT). HEPA는 이 방법들의 대상이 아니다.\nWIT 장점: 스팀 멸균 후에도 적용, IPA 잔여물·오염 위험 없음, 건조 불필요, 소수성 유지, 높은 민감도, 시험 시간 감소.",
+      "source": "WK04(여과) 슬라이드 124, 137, 138, 144"
+    },
+    {
+      "id": "wk04-036",
+      "type": "계산",
+      "question": "Pressure drop test에서 같은 10\" 카트리지(diffusive flow 10 mL/min)를 시험하는데, 하우징의 upstream net volume(Vn)이 1,000 mL일 때 압력 강하가 10 mbar였다. Vn이 2,000 mL인 하우징에서 같은 시간 동안 측정하면 압력 강하는?",
+      "choices": [
+        "40 mbar",
+        "5 mbar",
+        "10 mbar",
+        "20 mbar",
+        "2.5 mbar"
+      ],
+      "answer": 2,
+      "explanation": "pressure drop: p₁ − p₂ = D·p_atm·t / Vn. 같은 필터(D 동일)·같은 시간이면 압력 강하는 Vn에 반비례 → 10 × 1000/2000 = 5 mbar.\n그래서 pressure drop test는 일정한 volume, 온도, 정해진 시험 압력·시간, net volume을 전제 조건으로 한다(같은 필터라도 시스템에 따라 값이 달라짐).",
+      "source": "WK04(여과) 슬라이드 135, 136"
+    },
+    {
+      "id": "wk04-037",
+      "type": "상황판단",
+      "question": "멸균 필터의 사용 후 integrity test가 기준을 통과하지 못했다(fail). PDA TR No.26의 decision tree에 따른 조치 순서로 옳은 것은?",
+      "choices": [
+        "다른 필터로 바꿔 시험하고 그 결과를 기록한다.",
+        "fail은 흔하므로 재시험 없이 통과로 기록한다.",
+        "즉시 '필터 불량'으로 기록하고 배치를 폐기한다.",
+        "① 시스템 설정·누출·장비 교정·시험 파라미터·wetting 절차 확인 후 재시험 → ② 그래도 fail이면 flush 부피·시간·차압을 늘려 다시 wetting(재wetting) → ③ 그래도 fail이면 IPA 등 표면장력이 낮은 reference 액으로 적셔 해당 기준으로 시험 → 그래도 fail이면 필터 fail로 기록",
+        "시험 압력을 기준보다 낮춰 통과시킨다."
+      ],
+      "answer": 4,
+      "explanation": "Step 1: system setup/leak, test 방법·parameter 확인 → Step 2: re-wetting(많은 경우 여기서 해결) → Step 3: 낮은 표면장력 용액(예: IPA/물 60/40)과 그 기준값으로 시험. 이 단계를 모두 거쳐도 fail이면 필터 fail이다.",
+      "source": "WK04(여과) 슬라이드 152, 153, 154, 155, 156"
+    },
+    {
+      "id": "wk04-038",
+      "type": "개념",
+      "question": "멸균 여과의 규제 요구사항에 대한 설명으로 옳지 않은 것은?",
+      "choices": [
+        "사용 후 integrity test는 필터를 이미 썼으므로 어떤 규정에서도 요구하지 않는다.",
+        "Redundant filtration = 두 번째 멸균 등급 필터를 직렬로 두어 1차 필터 integrity 실패에 대비하는 방식이다.",
+        "EMA(2008)는 멸균 여과의 위험 때문에 두 번째 여과를 가능한 한 충전 지점 가까이에 두라고 권고한다.",
+        "EU GMP Annex 1은 integrity test를 사용 전(prior)과 사용 후(post) 모두 요구한다.",
+        "bubble point와 diffusion은 규제 문서들이 인정하는 integrity test 방법이다."
+      ],
+      "answer": 1,
+      "explanation": "Pre-use post-sterilization integrity test(PUPSIT)와 post-use test를 함께 다룬다. EC-GMP Annex 1과 PDA TR26은 사용 전·후 모두 요구하고, FDA aseptic GL(2004)은 사용 전은 +/−, 사용 후는 +로 표시된다.",
+      "source": "WK04(여과) 슬라이드 157, 158"
+    },
+    {
+      "id": "wk04-039",
+      "type": "개념",
+      "question": "Bubble point 기준값에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "Min. BP와 Max. BP는 같은 값이다.",
+        "Min. BP는 필터가 손상되지 않는 최대 압력이다.",
+        "Min. BP는 필터 완전성을 충족하기 위해 필터가 물(wetting agent)을 머금고 있어야 하는 최소 압력으로, 완전성 판별 척도다. Max. BP는 시험 시간을 줄이려 설정한 종료 압력이며 완전성과 직접 관련은 없다(캡슐은 4 bar 이하 권장).",
+        "Max. BP를 넘지 못하면 필터 fail이다.",
+        "캡슐 필터는 Max. BP를 10 bar 이상으로 잡는다."
+      ],
+      "answer": 3,
+      "explanation": "완전성 판정은 Min. BP 기준이다. Max. BP는 Min. BP를 지난(통과 기준을 충족한) 뒤 필터가 계속 압력을 받아 손상되지 않도록 시험을 끝내는 압력 지점이다. 캡슐은 4 bar 이상이 계속되면 파손 위험이 있어 4 bar 이하를 권장한다.",
+      "source": "WK04(여과) 슬라이드 151"
+    },
+    {
+      "id": "wk04-040",
+      "type": "개념",
+      "question": "혈장분획제제의 생산 흐름에 대한 강의 설명으로 옳은 것은?",
+      "choices": [
+        "혈장은 세포가 그대로 들어 있는 전혈을 뜻한다.",
+        "사람 유래 원료라 바이러스 검사·제거가 필요 없다.",
+        "원료(혈액) 공급이 매우 안정적이라 재조합 의약품이 필요 없었다.",
+        "CHO 세포에 혈액응고인자 유전자를 넣어 배양한다.",
+        "헌혈 혈액 중 유통기한이 지난 것을 버리지 않고 적십자 혈장분획센터에서 전혈을 분리·기본 처리한 뒤, 라이선스를 가진 회사(녹십자, SK플라즈마)가 필요한 성분(예: 혈우병 응고인자)을 분리해 의약품으로 만든다."
+      ],
+      "answer": 5,
+      "explanation": "살아 있는 사람이 원료를 만드는 가장 직관적·원초적인 바이오의약품이다. 혈장(plasma)은 세포 등이 제거된 성분이다. 세 기관(적십자·녹십자·SK플라즈마)의 공정은 큰 틀에서 거의 같다고 했다.\n문제는 원료 공급 불안정과 바이러스 감염 위험(일본 HIV 사고) → VCS가 법으로 요구되었다.",
+      "source": "4주차 녹음 40:40–45:11"
+    },
+    {
+      "id": "wk04-041",
+      "type": "연결",
+      "question": "'여과는 온 천지에 쓰인다' – 공정 단계별 여과 적용 예를 옳게 짝지은 것은?",
+      "choices": [
+        "배양 – virus filtration / 정제 – vent filter / 완제 – depth filter로 세포 제거",
+        "배양 – 가스 inlet·vent filter, 열 멸균이 안 되는 동물세포 배지의 여과 멸균, perfusion 세포 유지 / 정제 – clarification(depth), UF/DF(TFF), virus filtration / 완제 – sterile filtration(0.2 µm)",
+        "배양 – UF/DF로 formulation / 정제 – 배지 여과 멸균 / 완제 – perfusion",
+        "여과는 정제 단계에서만 쓴다.",
+        "배양 – 원심분리 / 정제 – 크로마토그래피 / 완제 – 동결건조"
+      ],
+      "answer": 2,
+      "explanation": "배양기는 숨 쉬는 공기도 무균으로 들어가야 하므로 inlet 가스 필터와 배기용 vent filter가 필수다. 미생물 배지(glucose)는 끓여 멸균할 수 있지만 동물세포 배지는 열에 약해 여과가 유일한 방법이다. perfusion도 세포와 배양액을 나누는 여과 기술이다.\n정제에서는 clarification, 탈염·농축(UF/DF), 바이러스 제거, 완제에서는 sterile filtration. 바이오의약품 공정 필터 용도: 제균, virus reduction, 정화, 사전 여과, 정제/분리, 농축, buffer 교환, 탈염.",
+      "source": "4주차 녹음 02:48–02:52 · WK04(여과) 슬라이드 159"
+    },
+    {
+      "id": "wk04-042",
+      "type": "개념",
+      "question": "여과 관련 용어를 '어떤 기준의 이름인지'로 나눌 때 강의 슬라이드 분류로 옳은 것은?\n\nㄱ. UF   ㄴ. CFF·DEF   ㄷ. Diafiltration·Concentration",
+      "choices": [
+        "ㄱ-Material / ㄴ-Operational / ㄷ-Size exclusion",
+        "세 가지 모두 같은 기준(크기)에 따른 이름이다.",
+        "ㄱ-Mechanism / ㄴ-Size exclusion / ㄷ-Material",
+        "ㄱ-Size exclusion(크기) / ㄴ-Mechanism(흐름 방식) / ㄷ-Operational(운전 목적)",
+        "ㄱ-Operational / ㄴ-Size exclusion / ㄷ-Mechanism"
+      ],
+      "answer": 4,
+      "explanation": "UF는 '얼마나 작은 것을 거르나'(size exclusion), CFF(=TFF)와 DEF(dead-end)는 '액체가 막을 어떻게 지나가나'(mechanism), DF와 농축은 '무엇을 하려고 운전하나'(operational)에 따른 이름이다. 그래서 'UF/DF를 TFF로 한다'처럼 함께 쓰인다.\n강의의 여과 구분: ① Mechanism ② Size ③ Material ④ Gas(기체/액체) ⑤ 목적·크기·시스템 선택.",
+      "source": "WK04(여과) 슬라이드 25, 26, 27, 28, 33, 47 · 6주차 녹음 1부 16:04"
+    },
+    {
+      "id": "wk04-043",
+      "type": "연결",
+      "question": "막 여과를 크기 기준으로 나눌 때 옳게 짝지은 것은? (기공 크기 / 걸러내는 분자량 / 운전 압력)",
+      "choices": [
+        "MF – 0.1~100 µm / >300 kDa / 0.5~2 bar, UF – 3~100 nm / 1~300 kDa / 0.1~3 bar, RO – <150 Da / 10~100 bar",
+        "UF – 0.1~100 µm / <150 Da / 3~15 bar",
+        "RO가 가장 낮은 압력(0.1 bar 이하)에서 운전된다.",
+        "NF가 가장 큰 기공(100 µm)을 가진다.",
+        "MF – 3~100 nm / 1~300 kDa / 10~100 bar"
+      ],
+      "answer": 1,
+      "explanation": "작아질수록 MF → UF → NF(2~5 nm, >150 Da, 3~15 bar) → RO(<150 Da, 10~100 bar)이며 필요한 압력도 커진다. 0.2 µm sterilizing grade filtration은 MF 영역의 아래쪽 끝, 바이러스·알부민은 UF 영역이다.",
+      "source": "WK04(여과) 슬라이드 29, 32"
+    },
+    {
+      "id": "wk04-044",
+      "type": "개념",
+      "question": "다음 중 '막(membrane) 필터' 재질이 아니라 '심층(depth) 필터' 재질에 해당하는 것만 고른 것은?",
+      "choices": [
+        "PVDF, Nylon, PP",
+        "PES, PVDF, PTFE",
+        "PP, Glass fiber, Cellulose(규조토·carbon powder 포함)",
+        "CA, Nylon, PES",
+        "PTFE, CA, Glass fiber"
+      ],
+      "answer": 3,
+      "explanation": "Membrane: CA(cellulose acetate), Nylon, PVDF, PES(Sartopore), PTFE(소수성, Sartofluor).\nDepth: PP, glass fiber, cellulose(Sartoclear – 규조토·carbon powder 포함). 두 가지를 겹친 combination 필터도 있다.",
+      "source": "WK04(여과) 슬라이드 34, 35, 41, 42"
+    },
+    {
+      "id": "wk04-045",
+      "type": "상황판단",
+      "question": "세포 debris가 많은 배양액을 clarification하려 한다. Membrane 필터 하나만 쓰는 것보다 depth + membrane 조합이 유리한 이유로 가장 적절한 것은?",
+      "choices": [
+        "depth 필터가 sterile filter 역할을 하기 때문에",
+        "membrane 필터는 clarification에 사용이 금지되어 있기 때문에",
+        "두 필터를 함께 쓰면 압력이 0이 되기 때문에",
+        "membrane 필터는 압력이 높아지면 입자가 뒤로 넘어가기 때문에",
+        "depth 필터는 두꺼운 섬유층에 많은 입자를 붙잡아(dirt loading capacity↑) 조기 막힘을 막고, 뒤의 membrane이 정해진 크기 이상을 확실히 걸러(defined retention) 여과액의 안정성을 높이기 때문에"
+      ],
+      "answer": 5,
+      "explanation": "Membrane: 표면에서 거르며 높은 차압·압력 변화에도 입자가 뒤로 넘어가지 않음(particle, bioburden, sterile, mycoplasma, virus filtration). 대신 쉽게 막힌다.\nDepth: 많은 양을 holding해 조기 막힘이 없지만 압력에 민감해 압력이 높으면 넘어갈 수 있음(pre-filtration, clarification). 그래서 공정에서는 조합으로 효율을 최대화한다.",
+      "source": "WK04(여과) 슬라이드 40, 41, 43"
+    },
+    {
+      "id": "wk04-046",
+      "type": "계산",
+      "question": "여과의 구동력은 차압(ΔP = P1 − P2)이다. 다음 두 경우의 여과 구동력을 비교하면?\n\n· Case 1: P_in 100 bar, P_out 99 bar\n· Case 2: P_in 1 bar, P_out 0 bar",
+      "choices": [
+        "Case 1이 100배 크다",
+        "두 경우 ΔP가 1 bar로 같다",
+        "Case 2가 99배 크다",
+        "Case 1은 여과가 일어나지 않는다",
+        "Case 2는 음압이라 역류한다"
+      ],
+      "answer": 2,
+      "explanation": "여과 = 크기가 다른 물질을 물리적·기계적으로 분리하는 것이며, 압력이나 진공으로 만든 '차압(압력 강하)'이 유체를 이동시킨다. 절대 압력이 아니라 ΔP가 중요하므로 두 경우 모두 1 bar로 같다. In-line(양압) 필터와 bottle-top(음압·진공) 필터 모두 같은 원리다.",
+      "source": "WK04(여과) 슬라이드 22"
+    },
+    {
+      "id": "wk04-047",
+      "type": "연결",
+      "question": "박테리아에서 사람 호르몬(예: 재조합 인슐린)을 생산할 때, 생산물 위치에 따른 회수 공정으로 옳은 것은?",
+      "choices": [
+        "Intracellular는 세포를 제거하고 배양액만 쓴다.",
+        "Extracellular는 inclusion body refolding이 반드시 필요하다.",
+        "Extracellular – cell harvest → pellet → cell lysis / Intracellular – cell removal → permeate → sterile filter",
+        "Extracellular – cell removal(원심→depth→sterile, 또는 CFF permeate, 또는 DEF→depth→sterile) / Intracellular – cell harvest(원심 pellet 또는 CFF retentate) → cell lysis(→ inclusion body 세척·용해·refolding)",
+        "두 경우 모두 cell lysis 후 permeate를 회수한다."
+      ],
+      "answer": 4,
+      "explanation": "분비형(extracellular)은 세포를 '제거'(clarification)하고 액체(CFF면 permeate)를 쓴다. 세포 안에 쌓이는 형태(intracellular)는 세포를 '모아'(cell harvest; 원심 pellet, CFF retentate) 깨뜨린 뒤 inclusion body(잘못 접힌 단백질 덩어리)를 세척·용해·refolding한다.\n'실무자가 잘못 쓰는 단어(cell harvest vs clarification)'의 근거가 되는 슬라이드다.",
+      "source": "WK04(여과) 슬라이드 13, 14 · 4주차 녹음 01:35:56"
+    },
+    {
+      "id": "wk04-048",
+      "type": "개념",
+      "question": "혈장분획제제(예: IVIG) 생산 공정에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "혈액을 원심분리해 혈장(전체의 약 55%; 알부민 60%, 글로불린 35%, 피브리노겐 4%)을 얻고, cryopoor plasma에서 에탄올(EtOH) 침전으로 분획한 뒤 AEX → S/D 바이러스 불활성화 → CEX → virus filtration/formulation을 거친다.",
+        "혈장분획에는 침전을 쓰지 않고 SEC만 쓴다.",
+        "혈장은 적혈구(약 45%)를 뜻한다.",
+        "사람 유래라 바이러스 불활성화·제거 단계가 없다.",
+        "혈장을 CHO 세포에 넣어 배양한 뒤 Protein A로 정제한다."
+      ],
+      "answer": 1,
+      "explanation": "혈장 분획은 대표적인 precipitation(침전) 공정이다: 혈장은 알코올, 미생물은 황산, 구제역 백신은 PEG 침전(주로 1차 정제). 이후 크로마토그래피와 바이러스 불활성화(S/D)·제거(VF)를 거친다.\n항체(CHO) 공정은 precipitation을 쓰지 않는다는 점과 대비된다.",
+      "source": "WK04(여과) 슬라이드 11, 15 · 4주차 녹음 40:40–45:11"
+    },
+    {
+      "id": "wk04-049",
+      "type": "계산",
+      "question": "USP titer가 2 g/L인 항체를, 40 mg/0.4 mL 제형(예: Humira pen)으로 완제한다. 완제 농도와 배양액 대비 농축 배수는?",
+      "choices": [
+        "10 g/L, 5배",
+        "40 g/L, 20배",
+        "100 g/L, 50배",
+        "400 g/L, 200배",
+        "1 g/L, 0.5배"
+      ],
+      "answer": 3,
+      "explanation": "40 mg / 0.4 mL = 100 mg/mL = 100 g/L. 배양액 2 g/L 대비 100/2 = 50배 농축이다.\n이 농축과 버퍼 교환을 formulation 단계의 UF/DF(TFF)가 맡고, 이어서 final sterile filtration(integrity test, PUPSIT) → filling·capping을 한다.",
+      "source": "WK04(여과) 슬라이드 16, 17 · 7주차 녹음 1부 46:48"
+    },
+    {
+      "id": "wk04-050",
+      "type": "연결",
+      "question": "항체 정제 공정에서 여과가 맡는 역할을 공정 위치와 옳게 짝지은 것은?",
+      "choices": [
+        "Virus filtration – 농축 & 버퍼 교환",
+        "UF/DF는 bioreactor 바로 뒤에서 세포 제거를 한다.",
+        "여과는 배지(media)에는 쓰지 않는다.",
+        "Protein A 직후 – 농축 & 버퍼 교환 / UF/DF – 탈염",
+        "CEX 앞 – 탈염 & 버퍼 교환 / AEX 앞 – 버퍼 교환 / VF 앞 – 농축 / UF/DF – 농축 & 버퍼 교환 → final sterile F&F"
+      ],
+      "answer": 5,
+      "explanation": "슬라이드의 항체 정제 공정: Bioreactor → Protein A → Low pH inactivation → CEX → AEX → Virus filtration → UF/DF → Final sterile fill & finish. 각 크롬 사이에서 탈염·버퍼 교환·농축이 필요하고, 배지는 gamma, HTST, UV-C, autoclave, filtration 등으로 오염 위험을 낮춘다(mitigation).",
+      "source": "WK04(여과) 슬라이드 16, 23"
+    },
+    {
+      "id": "wk04-051",
+      "type": "개념",
+      "question": "기체(gas) 필터의 입자 포집 메커니즘과 특징으로 옳지 않은 것은?",
+      "choices": [
+        "작은 입자는 확산, 큰 입자는 충돌·차단으로 잘 걸리고, 그 사이 약 0.2 µm 부근이 가장 잘 통과하는 크기(MPPS)다.",
+        "기체 필터는 sieve effect만 작동하므로 표시된 기공 크기보다 작은 입자는 전혀 거르지 못한다.",
+        "Sieve effect – 기공보다 큰 입자는 표면에서 걸린다.",
+        "Impaction – 질량이 큰 입자가 흐름선을 따라가지 못해 섬유에 충돌한다.",
+        "Interception, electrostatic interaction, diffusion(Brownian motion)도 포집에 기여한다."
+      ],
+      "answer": 2,
+      "explanation": "기체 여과에서는 sieve 외에 impaction, interception, electrostatic, diffusion이 함께 작동한다. 그래서 0.2 µm 멸균 등급 기체 필터의 실제 포집 능력은 액체 기준 표시보다 10~20배 좋아, 0.01~0.02 µm(20 nm bacteriophage aerosol)도 100% 걸렀다.",
+      "source": "WK04(여과) 슬라이드 52, 53, 54, 55, 56"
+    },
+    {
+      "id": "wk04-052",
+      "type": "개념",
+      "question": "HEPA 필터 등급에 대한 강의 슬라이드 내용으로 옳은 것은?",
+      "choices": [
+        "HEPA 등급은 B. diminuta bacterial retention test로만 정한다.",
+        "E10~E12(EPA)가 HEPA보다 상위 등급이다.",
+        "HEPA는 5 µm 입자 기준 85% 이상 포집하는 필터다.",
+        "0.3 µm 입자 기준으로 등급을 매기며, EN 1822 H13은 ≥99.95%, H14는 ≥99.995%(averaged)를 포집한다. 그 위 등급은 ULPA(U15~U17)다.",
+        "HEPA는 액체 멸균용 0.2 µm PES 카트리지를 말한다."
+      ],
+      "answer": 4,
+      "explanation": "멸균 기체 필터는 B. diminuta bacterial retention test로, HEPA는 0.3 µm 입자 포집 효율로 등급을 매긴다(EPA E10~E12 < HEPA H13·H14 < ULPA U15~U17). 클린룸 Grade A 단일방향 기류, RABS·아이솔레이터 급기에 쓰인다.",
+      "source": "WK04(여과) 슬라이드 57 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk04-053",
+      "type": "상황판단",
+      "question": "WFI 저장 탱크 상부에 vent filter가 두 개(double vent) 설치되어 있고, 필터 하우징에 스팀 재킷(가열)이 붙어 있다. 그 이유로 가장 적절한 것은?",
+      "choices": [
+        "탱크에서 물을 빼고 채울 때 공기가 무균으로 드나들어야 하며, vent가 막히면 탱크가 찌그러지거나(진공 붕괴) 터질 수 있다. 소수성 PTFE vent 필터가 뜨거운 WFI 증기로 응축·막히지 않도록 가열하고, 하나가 문제여도 버틸 수 있게 이중으로 둔다.",
+        "WFI를 vent filter로 여과해 주사용수를 만든다.",
+        "vent filter는 친수성이라 물이 잘 통과해야 한다.",
+        "vent filter는 integrity test 대상이 아니다.",
+        "vent filter는 장식용이며 하나는 예비 부품 보관용이다."
+      ],
+      "answer": 1,
+      "explanation": "기체 필터 이해가 중요한 이유로 'vent가 제대로 안 된 탱크가 찌그러진' 사진이 소개되었다. vent/gas 필터는 소수성 PTFE(absolute retention, 기계적 강도, WIT 또는 IPA로 integrity test 가능)를 쓰며, 하우징에는 SIP용 clean steam, integrity test connector, 압력계, drain valve 등을 둔다.",
+      "source": "WK04(여과) 슬라이드 19, 48, 49, 50, 51, 58, 59, 60, 61"
+    },
+    {
+      "id": "wk04-054",
+      "type": "계산",
+      "question": "3 µm 이상 입자가 필터 상류에 1,000개, 하류에 100개 검출되었다. 이 필터의 β ratio와 제거율은?",
+      "choices": [
+        "β = 900, 90%",
+        "β = 0.1, 10%",
+        "β = 10, 90%",
+        "β = 100, 99%",
+        "β = 1,000, 99.9%"
+      ],
+      "answer": 3,
+      "explanation": "β_x = 상류 입자 수(≥x µm) / 하류 입자 수(≥x µm) = 1000/100 = 10 → 제거율 = 1 − 1/β = 90%. 하류에 1개만 나오면 β = 1,000(99.9%)으로 particulate control이 더 좋다.\n필터 표기는 pore size, retention rate, absolute/nominal로 나뉘며 회사마다 기준이 다르다(어떤 곳은 99.98% 이상을 absolute grade라 부름).",
+      "source": "WK04(여과) 슬라이드 44, 45"
+    },
+    {
+      "id": "wk04-055",
+      "type": "연결",
+      "question": "Filter sizing test 방법과 적용을 옳게 짝지은 것은?",
+      "choices": [
+        "Tmax는 온도 최대값을 뜻한다.",
+        "sizing test는 생산 규모 필터로만 할 수 있다.",
+        "sizing test 결과는 막면적 결정과 무관하다.",
+        "Vmax – 일정 유속, depth filter / Pmax – 일정 압력, membrane filter",
+        "Vmax – 일정 압력(constant pressure)에서 end flow rate까지의 최대 여과량, 주로 membrane filter / Pmax·Tmax – 일정 유속(constant flow)에서 end pressure·end turbidity까지의 최대 여과량, 주로 depth filter"
+      ],
+      "answer": 5,
+      "explanation": "Sizing test는 실제 공정에 쓸 필터 면적을 정하기 위해 작은 필터로 하는 시험이다(파라미터: pressure, batch volume, process time, 온도 등).\n결과 지표: Flux(LMH, L/m²/h) – plugging이 적은 시료에서 면적 결정에 중요 / Capacity(L/m²) – plugging이 많은 시료에서 중요.",
+      "source": "WK04(여과) 슬라이드 65, 66, 67, 68"
+    },
+    {
+      "id": "wk04-056",
+      "type": "계산",
+      "question": "Sizing test에서 0.02 m² 필터로 시료 4 L를 처리하고 막혔다(capacity 기준). 같은 시료 2,000 L를 처리하려면 필요한 최소 막면적은?",
+      "choices": [
+        "5 m²",
+        "10 m²",
+        "20 m²",
+        "100 m²",
+        "1 m²"
+      ],
+      "answer": 2,
+      "explanation": "Capacity = 4 L / 0.02 m² = 200 L/m². 필요 면적 = 2,000 L ÷ 200 L/m² = 10 m². 실제로는 safety factor를 곱해 더 크게 잡는다.\n같은 원리로 Slice 200(0.02 m²) 10 L/h → 500 LMH처럼 flux와 flow rate(L/h)를 구분해야 한다.",
+      "source": "WK04(여과) 슬라이드 68, 69, 70"
+    },
+    {
+      "id": "wk04-057",
+      "type": "개념",
+      "question": "필터가 막혔을 때(clogging) 생기는 일로 강의 슬라이드에 제시되지 않은 것은?",
+      "choices": [
+        "유량이 줄어 공정 시간이 예상보다 길어진다.",
+        "제거해야 할 입자가 여과액으로 넘어가 품질이 떨어질 수 있다.",
+        "필터 추가 교체, 시스템 정지·고장 등으로 비용이 늘어난다.",
+        "막히면 여과 효율이 높아져 품질이 좋아진다.",
+        "압력이 올라가 필터·튜빙·시스템에 부담을 준다."
+      ],
+      "answer": 4,
+      "explanation": "막힘 → 압력 증가, 유량 감소, particle penetrate → 필터 추가 교체, system stop/shut down, 공정 시간 증가 → 비용 증가. 그래서 sizing test로 '여과 공정 최적화'가 중요하다.",
+      "source": "WK04(여과) 슬라이드 64"
+    },
+    {
+      "id": "wk04-058",
+      "type": "개념",
+      "question": "필터 하우징에 쓰는 316L 스테인리스강에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "철(>60%)에 크롬(약 18%, 최소 10.5% 이상이면 stainless), 니켈(약 13~14%, 내식성·내열성), 몰리브덴(약 3%, 내식성 강화)을 더한 합금이다.",
+        "몰리브덴은 광택만 내고 내식성과 무관하다.",
+        "니켈은 316L에 들어가지 않는다.",
+        "316L은 플라스틱 하우징의 상품명이다.",
+        "크롬(Cr)이 0.1%만 들어가도 스테인리스라 부른다."
+      ],
+      "answer": 1,
+      "explanation": "Cr: 광택·경도·내식성(+), Ni: 내식성(++)·경도·내열성, Mo: 경도·내식성(+++). 바이오 공정의 탱크·배관·하우징은 대부분 316L이고, 배관 연결은 sanitary clamp/ferrule을 쓰는데 규격(DIN, ISO, ASME-BPE 등)마다 치수가 달라 주의해야 한다.",
+      "source": "WK04(여과) 슬라이드 75, 76"
+    }
+  ]
+}
