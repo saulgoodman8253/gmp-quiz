@@ -1,0 +1,306 @@
+{
+  "week": "WK04",
+  "title": "바이오공정 개관 (김영태, 녹음 기반)",
+  "questions": [
+    {
+      "id": "wk04-001",
+      "type": "연결",
+      "question": "세포은행(cell bank) 4종과 설명을 옳게 짝지은 것은?\n\nㄱ. 연구 단계에서 후보 세포주를 선별하기 위해 만든 은행\nㄴ. cell line characterization 후 대량 보관하며, 임상·상업 생산의 출발점\nㄷ. 상위 은행 바이알 1개로 100~200개를 만들어 제약사가 실제 생산에 사용\nㄹ. 생산 종료 시점의 세포를 처음과 비교해 변이 여부를 확인",
+      "choices": [
+        "ㄱ-MCB, ㄴ-RCB, ㄷ-WCB, ㄹ-EOPCB",
+        "ㄱ-RCB, ㄴ-MCB, ㄷ-WCB, ㄹ-EOPCB",
+        "ㄱ-RCB, ㄴ-WCB, ㄷ-MCB, ㄹ-EOPCB",
+        "ㄱ-EOPCB, ㄴ-MCB, ㄷ-WCB, ㄹ-RCB",
+        "ㄱ-WCB, ㄴ-MCB, ㄷ-RCB, ㄹ-EOPCB"
+      ],
+      "answer": 2,
+      "explanation": "RCB(research) → MCB(master: characterization 후, 임상·상업 생산은 MCB부터) → WCB(working: MCB 1개로 100~200개) → EOPCB(end of production: 생산 끝의 세포를 처음과 비교해 변이 확인).\n강의에서 '4개는 무조건 외워라'고 했고, 은행의 주기적 QC는 법적 의무다. characterization+MCB 구축에 반년, 10억 이상 든다.",
+      "source": "4주차 녹음 01:03:15–01:15"
+    },
+    {
+      "id": "wk04-002",
+      "type": "상황판단",
+      "question": "신입 사원이 \"CHO 항체 공정에서 배양이 끝나면 cell harvest를 해서 세포를 모읍니다\"라고 보고했다. 강의 내용에 비추어 가장 적절한 지적은?",
+      "choices": [
+        "cell harvest와 clarification은 완전히 같은 뜻이라 구분할 필요가 없다.",
+        "clarification은 완제 공정의 sterile filtration을 뜻한다.",
+        "맞다. 동물세포는 항체를 세포 안에 쌓으므로 세포를 모아야 한다.",
+        "동물세포는 항체를 배양액으로 분비(extracellular)하므로 세포를 '제거'하는 clarification이 맞는 표현이다. 세포를 모으는 cell harvest는 세포 안에 생산물이 있는 미생물(intracellular) 공정의 개념이다.",
+        "CHO는 세포벽이 있어 반드시 세포를 파쇄해야 한다."
+      ],
+      "answer": 4,
+      "explanation": "미생물(E. coli)은 세포벽이 있고 생산물이 주로 세포 안(intracellular)에 있어 세포를 모은다(cell harvest). 동물세포는 분비형이라 세포를 제거하고 상등액을 쓴다(clarification).\n강의에서 '실무자들이 혼용하지만 cell harvest라고 외우면 헛공부'라고 했고, 7주차 시험 리뷰에서도 '실무자가 잘못 쓰는 단어'로 다시 언급했다.",
+      "source": "4주차 녹음 01:35:56–01:39 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk04-003",
+      "type": "개념",
+      "question": "강의에서 '외워라'고 한 크기 비교 중, 0.2 µm sterile filter로 '제거되지 않는' 것은?",
+      "choices": [
+        "Enveloped virus(약 100 nm)",
+        "머리카락(약 100 µm)",
+        "세포 debris 중 수 µm 크기 입자",
+        "CHO 세포(약 10 µm)",
+        "세균(약 1 µm)"
+      ],
+      "answer": 1,
+      "explanation": "크기: 동물세포 10 µm > 미생물 1 µm > sterile filter 0.2 µm(=200 nm) > enveloped virus 100 nm > non-enveloped virus 20 nm. 항체는 150 kDa로 무게 단위다.\n바이러스는 0.2 µm 필터를 통과하므로 별도의 virus filtration(VF), low pH VI, AEX 같은 VCS 단계가 필요하다.",
+      "source": "4주차 녹음 01:40:21"
+    },
+    {
+      "id": "wk04-004",
+      "type": "계산",
+      "question": "15,000 L 생산 배양기(N)로 가는 seed train을 동물세포 방식대로 '약 5배씩' 단계적으로 키운다.\nN-1, N-2, N-3 단계 배양 부피로 가장 적절한 것은?",
+      "choices": [
+        "N-1 300 L / N-2 60 L / N-3 12 L",
+        "N-1 7,500 L / N-2 3,750 L / N-3 1,875 L",
+        "N-1 3,000 L / N-2 600 L / N-3 120 L",
+        "N-1 1,500 L / N-2 150 L / N-3 15 L",
+        "N-1 15,000 L / N-2 3,000 L / N-3 600 L"
+      ],
+      "answer": 3,
+      "explanation": "희석 배수가 크면 세포가 잘 자라지 않아, 화분 분갈이처럼 약 5배씩 키운다: 15,000 ← 3,000 ← 600 ← 120(100) ← 24(20) ….\n15,000 L에 3,000 L를 접종하므로 배지는 12,000 L가 필요하다(mass balance). 삼바·셀트리온·롯데바이오 배양기 15,000 L는 '업계 상식, 외워라'.",
+      "source": "4주차 녹음 01:21:45 · 2주차 녹음 01:08:32"
+    },
+    {
+      "id": "wk04-005",
+      "type": "계산",
+      "question": "CHO 세포의 doubling time이 약 1일이다. seed를 5배로 희석해 다음 단계에 접종했다면, 원래 세포 밀도로 회복하는 데 걸리는 시간은 약 얼마인가? (log₂5 ≈ 2.32)",
+      "choices": [
+        "약 5일",
+        "약 10일",
+        "약 0.5일",
+        "약 1일",
+        "약 2.3일"
+      ],
+      "answer": 5,
+      "explanation": "5배 희석을 회복하려면 2ⁿ = 5 → n = log₂5 ≈ 2.32번 분열해야 한다. doubling time이 1일이면 약 2.3일이다.\n그래서 seed 단계 간격이 약 3일이고, 해동부터 본배양 종료까지 약 한 달이 걸린다.",
+      "source": "4주차 녹음 01:24–01:25 · 7주차 녹음 1부 43:33"
+    },
+    {
+      "id": "wk04-006",
+      "type": "연결",
+      "question": "배양 모드와 설명을 옳게 짝지은 것은?\n\nㄱ. 처음부터 배지를 가득 채워 키운다. 간편하지만 효율이 낮다.\nㄴ. 절반 정도만 채우고 세포가 북적이면 feed를 넣는다. 정밀한 feed 전략이 필요하다.\nㄷ. 1,000 L에서 배양액을 빼고 새 배지를 15회 넣어 15,000 L 효과를 낸다.",
+      "choices": [
+        "ㄱ-fed-batch, ㄴ-batch, ㄷ-perfusion",
+        "ㄱ-batch, ㄴ-fed-batch, ㄷ-perfusion",
+        "ㄱ-perfusion, ㄴ-fed-batch, ㄷ-batch",
+        "ㄱ-batch, ㄴ-perfusion, ㄷ-fed-batch",
+        "ㄱ-batch, ㄴ-fed-batch, ㄷ-N-1 seed"
+      ],
+      "answer": 2,
+      "explanation": "batch = 처음부터 가득, fed-batch = 반쯤 채우고 feed, perfusion = 세포는 두고 배양액 교환(차세대·연속 공정).\n'회분식'이라는 표현은 쓰지 말라고 했다. N-1 perfusion은 대형 fed-batch 배양기를 그대로 두고 N-1에서만 노폐물을 제거해 고밀도 접종을 하는 전략이다.",
+      "source": "4주차 녹음 01:27:55–01:31:00"
+    },
+    {
+      "id": "wk04-007",
+      "type": "상황판단",
+      "question": "Protein A 컬럼에서 항체를 용출한 직후의 공정 흐름으로 가장 적절한 것은?",
+      "choices": [
+        "pH 9로 올려 AEX bind-and-elute를 한다.",
+        "바로 sterile filtration 후 바이알에 충전한다.",
+        "pH 7로 즉시 중화한 뒤 바로 CEX에 로딩한다.",
+        "low pH(3~3.5) 상태로 30분~1시간 유지해 enveloped virus를 불활성화(VI)하고, 생긴 탁도(응집·침전)를 depth filter로 제거한 뒤 pH를 5~6으로 올린다.",
+        "low pH에서 24시간 이상 보관해 바이러스를 완전히 제거한다."
+      ],
+      "answer": 4,
+      "explanation": "Protein A 용출은 low pH(3~3.5)이므로 그 상태로 holding하는 low pH VI가 짝으로 따라온다(VCS). 이때 변성·응집으로 '조개탕 국물' 같은 탁도가 생겨 depth filter로 제거한다.\n이후 IEX를 위해 pH 5~6으로 올린다.",
+      "source": "4주차 녹음 01:56:19, 02:00:18–02:05 · 6주차 녹음 1부 23:20"
+    },
+    {
+      "id": "wk04-008",
+      "type": "상황판단",
+      "question": "low pH VI 후 pH를 5~6으로 맞춘 항체 용액을 다음 IEX 단계로 보낸다. 이 pH에서 일어나는 일로 옳은 것은? (항체 pI 7~8, 주요 불순물 pI 2~4)",
+      "choices": [
+        "항체는 + 전하, 불순물(HCP·DNA·endotoxin·virus)은 − 전하를 띠어, CEX bind-and-elute에서 항체만 결합시키거나 AEX flow-through에서 불순물만 결합시킬 수 있다.",
+        "항체는 − 전하를 띠어 CEX에 결합하지 않는다.",
+        "pH 5~6에서는 모든 단백질이 전하를 잃는다.",
+        "불순물은 + 전하를 띠어 CEX에 결합하고 항체는 흘러나간다.",
+        "항체와 불순물 모두 − 전하를 띠어 AEX에 함께 결합한다."
+      ],
+      "answer": 1,
+      "explanation": "pH < pI → +, pH > pI → −. pH 5~6에서 항체(pI 7~8)는 +, 불순물 4총사(pI 2~4)는 −다.\n그래서 CEX는 항체를 붙였다 떼는 B/E, AEX는 불순물만 붙이고 항체는 통과시키는 FT로 쓴다. 7주차 시험 리뷰에서 'pI를 거꾸로'라는 출제 포인트로 언급했다.",
+      "source": "4주차 녹음 02:06–02:13 · 7주차 녹음 2부 49:16–59:13"
+    },
+    {
+      "id": "wk04-009",
+      "type": "개념",
+      "question": "강의에서 말한 바이오의약품 정제의 'impurity 4총사'에 해당하지 않는 것은?",
+      "choices": [
+        "Endotoxin",
+        "Virus",
+        "Polysorbate(Tween)",
+        "HCP (host cell protein)",
+        "HCD (host cell DNA)"
+      ],
+      "answer": 3,
+      "explanation": "impurity 4총사 = HCP, HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮아(2~4) pH 5~6에서 − 전하를 띤다.\npolysorbate는 농축으로 생기는 응집을 막으려고 formulation에서 일부러 넣는 안정제(부형제)다.",
+      "source": "4주차 녹음 02:06–02:12, 02:25"
+    },
+    {
+      "id": "wk04-010",
+      "type": "상황판단",
+      "question": "P-C-A(Protein A → CEX → AEX) 공정에서 CEX 용출액을 바로 AEX에 넣으면 문제가 된다. 이유와 대책으로 옳은 것은?",
+      "choices": [
+        "CEX 용출액에는 단백질이 없어서 – 농축 필요",
+        "AEX는 결합형이라 용출 버퍼가 필요해서 – Protein A 버퍼 사용",
+        "문제 없다. 바로 연결하면 된다.",
+        "CEX 용출액은 pH가 너무 높아서 – 산으로 중화",
+        "CEX는 high salt(고전도도)로 용출하므로 그대로 넣으면 AEX에 불순물이 붙지 않는다 – 물로 희석하거나 UF/DF(TFF)로 염을 제거"
+      ],
+      "answer": 5,
+      "explanation": "IEX 용출은 high salt(고전도도, mS/cm)로 한다. 염이 많으면 AEX에서 이온 결합이 일어나지 않아 불순물 제거가 안 된다. 그래서 물로 희석(대용량 부담)하거나 UF/DF(TFF)로 탈염한다.\n반대로 P-A-C는 AEX가 FT라 전도도·pH 변화가 없어 바로 CEX로 이어 갈 수 있다.",
+      "source": "4주차 녹음 02:14–02:19 · 6주차 녹음 2부 15:48–25:12"
+    },
+    {
+      "id": "wk04-011",
+      "type": "계산",
+      "question": "VCS(virus clearance study)에서 어떤 단계 전후의 바이러스 역가가 10⁸ → 10³(단위 동일)으로 줄었다.\n이 단계의 LRV는?",
+      "choices": [
+        "3",
+        "5",
+        "8",
+        "11",
+        "10⁵"
+      ],
+      "answer": 2,
+      "explanation": "LRV(log reduction value) = log₁₀(처리 전 / 처리 후) = log₁₀(10⁸ / 10³) = 5.\nAEX 한 단계에서 5~6 LRV를 얻는다. low pH VI, AEX, virus filtration을 합쳐 전체 10 중후반 LRV를 목표로 한다.",
+      "source": "4주차 녹음 02:21:53"
+    },
+    {
+      "id": "wk04-012",
+      "type": "계산",
+      "question": "항체 공정의 바이러스 제거 단계별 LRV가 low pH VI 4, AEX(FT) 5, virus filtration 6이다. 처음 바이러스 부하가 10¹²였다면 최종 이론적 잔류량은?",
+      "choices": [
+        "10³",
+        "10⁻¹⁵",
+        "10⁷",
+        "10⁻³",
+        "10⁰"
+      ],
+      "answer": 4,
+      "explanation": "단계별 LRV는 더한다(각 log 감소가 곱해지므로): 4 + 5 + 6 = 15 LRV. 10¹² × 10⁻¹⁵ = 10⁻³.\n1보다 훨씬 작다는 것은 '바이러스 1개가 남을 확률'이 매우 낮다는 뜻이다. 그래서 여러 원리(불활성화 + 흡착 + 크기 배제)를 겹쳐 안전 마진을 확보한다.",
+      "source": "4주차 녹음 02:00:18, 02:21:53"
+    },
+    {
+      "id": "wk04-013",
+      "type": "연결",
+      "question": "무균의약품을 만드는 3가지 방법과 대표 제품을 옳게 짝지은 것은?",
+      "choices": [
+        "수액(생리식염수) – terminal sterilization / 항체 – sterile filtration / 세포치료제 – aseptic process",
+        "수액 – sterile filtration / 항체 – aseptic process / 세포치료제 – terminal sterilization",
+        "세 가지 모두 terminal sterilization으로 만든다.",
+        "수액 – terminal sterilization / 항체 – terminal sterilization / 세포치료제 – sterile filtration",
+        "수액(생리식염수) – aseptic process / 항체 – terminal sterilization / 세포치료제 – sterile filtration"
+      ],
+      "answer": 1,
+      "explanation": "terminal sterilization(사후 멸균): 열에 견디는 수액·생리식염수.\nsterile filtration: 열에 약한 단백질(항체)을 0.2 µm로 여과 멸균.\naseptic process: 세포치료제는 세포가 10 µm라 0.2 µm 필터를 통과하지 못하므로 처음부터 끝까지 무균으로 다룬다. 7주차 시험 리뷰에서 '무균의약품 만드는 방법 3개'를 직접 언급했다.",
+      "source": "4주차 녹음 02:52 · 5주차 녹음 1부 49:14 · 7주차 녹음 2부 49:16"
+    },
+    {
+      "id": "wk04-014",
+      "type": "개념",
+      "question": "혈장분획제제에 대한 설명으로 옳지 않은 것은?",
+      "choices": [
+        "매혈 금지 등으로 원료 공급이 불안정하다.",
+        "과거 HIV 감염 사고 등 바이러스 감염 위험 때문에 VCS가 법적으로 요구되었다.",
+        "사람 혈장 유래이므로 바이러스 위험이 없어 VCS가 필요 없다.",
+        "가장 원초적인 형태의 바이오의약품으로, 사람 혈장에서 필요한 단백질(예: 혈우병 치료 인자)을 분리한다.",
+        "국내에서는 녹십자, SK플라즈마 등이 생산한다."
+      ],
+      "answer": 3,
+      "explanation": "혈장분획제제의 두 가지 문제: ① 원료 공급 불안정(매혈 금지) ② 바이러스 감염 위험(일본 HIV 사고). 그래서 VCS 법이 생겼다.\n동물(사람) 유래 원료는 바이러스 위험을 배제할 수 없으므로 혈장제제와 CHO 항체 모두 VCS 대상이다. 그 해결책으로 재조합(CLD) 의약품이 나왔다.",
+      "source": "4주차 녹음 40:40–45:11, 02:00:18"
+    },
+    {
+      "id": "wk04-015",
+      "type": "개념",
+      "question": "재조합 단백질 생산 숙주로 동물세포(CHO)와 미생물(E. coli)을 비교할 때, 강의에서 말한 '공정상 가장 큰 차이'는?",
+      "choices": [
+        "배지 색깔",
+        "배양기 재질",
+        "세포은행 개수",
+        "배양 온도",
+        "세포벽의 유무"
+      ],
+      "answer": 5,
+      "explanation": "미생물은 세포벽이 있어 생산물이 세포 안에 남는 경우가 많다(intracellular → cell harvest, 파쇄). 동물세포는 세포벽이 없고 분비형(extracellular → clarification)이다.\n이 차이가 이후 공정(회수·정제) 설계를 완전히 바꾼다.",
+      "source": "4주차 녹음 48:22, 01:35:56"
+    },
+    {
+      "id": "wk04-016",
+      "type": "상황판단",
+      "question": "1,000 L 규모 CHO 배양을 clarification하려 한다. 강의 내용에 비추어 가장 적절한 방법은?",
+      "choices": [
+        "반드시 연속식 원심분리기만 쓰고 필터는 쓰지 않는다.",
+        "보통 2,000~3,000 L 이상에서 연속식 원심분리를 쓰므로, 이 규모는 depth filter 위주로 처리할 수 있다. 다만 VCD가 매우 높으면 원심분리를 검토한다.",
+        "precipitation으로 세포를 침전시킨 뒤 상등액을 바로 Protein A에 넣는다.",
+        "0.2 µm sterile filter 하나로 세포를 바로 거른다.",
+        "SEC 컬럼으로 세포를 분리한다."
+      ],
+      "answer": 2,
+      "explanation": "sol/insol 분리는 centrifugation과 filtration이다. 2,000~3,000 L 이상이면 연속식 원심분리기를 쓰고, 그 이하면 필터만으로도 처리한다. VCD가 10배 높으면 2,000 L라도 원심분리가 필요할 수 있다.\n원심분리 뒤에는 반드시 depth filter 등으로 남은 세포를 제거한다(세트).",
+      "source": "4주차 녹음 01:42:57 · 6주차 녹음 1부 21:32"
+    },
+    {
+      "id": "wk04-017",
+      "type": "연결",
+      "question": "분리 대상의 상태(sol/insol)와 분리 기술을 옳게 짝지은 것은?",
+      "choices": [
+        "모든 분리는 chromatography 하나로 한다.",
+        "sol/sol – centrifugation / sol/insol – IEX",
+        "sol/insol – chromatography, precipitation / sol/sol – centrifugation, filtration",
+        "sol/insol – centrifugation, filtration / sol/sol – chromatography, precipitation(단, 항체 공정에서는 precipitation을 거의 쓰지 않음)",
+        "sol/insol – SEC / sol/sol – depth filter"
+      ],
+      "answer": 4,
+      "explanation": "세포·debris 같은 불용성(insol)과 용액(sol) 분리 = 원심분리, 여과. 녹아 있는 것끼리(sol/sol) 분리 = 크로마토그래피, 침전.\n항체는 precipitation을 쓰지 않으므로 사실상 정제 = 크로마토그래피 + 여과다.",
+      "source": "4주차 녹음 01:42:57, 01:53:04 · 6주차 녹음 1부 13:10–15:25"
+    },
+    {
+      "id": "wk04-018",
+      "type": "개념",
+      "question": "강의의 '오총사' 기준 바이오의약품 생산 공정 순서로 옳은 것은?",
+      "choices": [
+        "CLD → 배양 → 크로마토그래피 → 여과 → 완제",
+        "CLD → 크로마토그래피 → 배양 → 완제 → 여과",
+        "완제 → 여과 → 크로마토그래피 → 배양 → CLD",
+        "CLD → 여과 → 배양 → 완제 → 크로마토그래피",
+        "배양 → CLD → 여과 → 크로마토그래피 → 완제"
+      ],
+      "answer": 1,
+      "explanation": "CLD(세포주 개발) → 배양(USP) → 크로마토그래피 → 여과(DSP) → 완제(DP). 여과는 사실 배양(가스·배지 여과), 정제(clarification, UF/DF, VF), 완제(sterile filtration) 모든 곳에 쓰인다.",
+      "source": "4주차 녹음 38:12, 02:48"
+    },
+    {
+      "id": "wk04-019",
+      "type": "상황판단",
+      "question": "정제가 진행되며 항체 농도가 높아지고 부피가 줄었다. 이때 생길 수 있는 문제와 formulation 단계의 대응으로 가장 적절한 것은?",
+      "choices": [
+        "농축은 품질과 무관하다.",
+        "농도가 높아지면 바이러스가 증식한다 – 항생제 첨가",
+        "고농도에서 dimer·응집이 생길 위험이 있다 – polysorbate(Tween) 등 안정제 추가, UF/DF로 버퍼 조성 변경과 농도 정밀 조절",
+        "농도가 높아지면 pH가 0이 된다 – NaOH 첨가",
+        "부피가 줄면 endotoxin이 사라진다 – 추가 조치 불필요"
+      ],
+      "answer": 3,
+      "explanation": "DSP의 목적은 yield와 purity이고, 진행할수록 부피는 줄고 농도는 높아져 응집 위험이 커진다. 그래서 안정제를 넣는다.\nformulation 핵심 2가지 = 버퍼(국물) 조성 변경 + 농도 정확 조절이며, 둘 다 UF/DF로 한다. 주사제는 체액과 삼투압을 맞춘다(약전).",
+      "source": "4주차 녹음 02:25–02:31 · 6주차 녹음 1부 18:12"
+    },
+    {
+      "id": "wk04-020",
+      "type": "개념",
+      "question": "공정별 무균 여부에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "WFI(주사용수)는 무균수다.",
+        "바이알은 반드시 멸균된 상태로 구매해 그대로 쓴다.",
+        "정제 공정은 0.2 µm 필터 없이도 무균이 보장된다.",
+        "배양, 정제, 완제 모두 처음부터 끝까지 aseptic이다.",
+        "배양은 무균 공정, 항체 정제는 non-aseptic, 완제에서 sterile filtration으로 다시 무균을 확보한다."
+      ],
+      "answer": 5,
+      "explanation": "배양은 오염되면 끝이므로 무균 공정이다. 항체 정제는 non-aseptic이고, 완제에서 sterile filtration으로 다시 무균화한다.\nWFI는 무균이 아니다(약전에 100 mL당 균수 기준이 있다). 바이알은 비멸균으로 사서 WFI로 세척한 뒤 자체 멸균(탈발열)한다.",
+      "source": "4주차 녹음 02:52–02:57"
+    }
+  ]
+}

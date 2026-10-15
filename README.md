@@ -73,6 +73,20 @@
 - `source` 에는 강의 PDF 쪽수와 녹음 시간을 적습니다. 해설 아래에 "📄 출처"로 표시됩니다.
 - 형식이 틀린 문항이 있으면 시작 화면 위에 어떤 파일의 어떤 문항이 문제인지 표시됩니다.
 
+## 현재 문제 구성
+
+| 파일 | 범위 | 문항 | 주요 근거 |
+| --- | --- | --- | --- |
+| `wk02.json` | Upstream (배양) | 19 | WK02 PDF + 2주차 녹음 |
+| `wk03.json` | Downstream 1 (크로마토그래피) | 23 | WK03 PDF + 3주차 녹음 |
+| `wk04.json` | 바이오공정 개관 | 20 | 4주차 녹음 (PDF 없음) |
+| `wk05.json` | 완제 · RABS · APS · Isolator | 19 | WK05 PDF 2종 + 5주차 녹음 |
+| `wk06.json` | mAb 공정 설계 · 여과 · 공정 계산 | 20 | WK06 PDF + 6주차 녹음 |
+| `wk07.json` | GMP Engineering | 20 | WK07 PDF + 7주차 녹음 |
+
+- 출처의 `p.N` 은 PDF 뷰어 기준 쪽수입니다(WK03은 스캔본이라 인쇄된 쪽 번호 + 1). 녹음 시간은 `N주차 녹음 (1부/2부) hh:mm` 형식입니다.
+- 7주차 녹음 2부 49:16~59:13의 시험 범위 리뷰에서 언급된 주제를 우선해 출제했습니다. 슬라이드에 X 표시가 된 쪽은 출제 근거에서 뺐습니다.
+
 ## 강의자료·녹음본으로 문제 늘리기
 
 `materials/` 폴더에 강의 PDF와 강의 녹음 텍스트를 올려 두면, 그 내용을 바탕으로 `questions/wkXX.json` 문항을 만들거나 고칠 수 있습니다. 자세한 방법은 [`materials/README.md`](materials/README.md)를 보세요.
@@ -94,7 +108,7 @@ style.css           디자인 (모바일 우선, 다크 모드)
 app.js              동작 (문제 불러오기, 채점, 기록)
 questions/
   index.json        사용할 문제 파일 목록
-  wk02.json         WK02 문항
+  wk02~wk07.json    주차별 문항
 materials/          강의 PDF·녹음 텍스트 보관 (앱에서는 쓰지 않음)
 .nojekyll           GitHub Pages가 파일을 그대로 배포하게 함
 ```

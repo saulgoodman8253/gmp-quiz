@@ -1,0 +1,351 @@
+{
+  "week": "WK03",
+  "title": "Downstream Process 1 (Chromatography)",
+  "questions": [
+    {
+      "id": "wk03-001",
+      "type": "개념",
+      "question": "크로마토그래피의 resolution(분리능)에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "resolution은 efficiency만으로 결정되며 selectivity와 무관하다.",
+        "resolution = selectivity(피크 간 거리) + efficiency(피크의 샤프함)이며, 둘 중 selectivity가 더 중요하다.",
+        "resolution이 높을수록 피크 폭이 넓어진다.",
+        "Rs 값이 0일 때 두 피크가 완전히 분리된다.",
+        "resolution은 유속과 무관하다."
+      ],
+      "answer": 2,
+      "explanation": "Rs = (VR2 − VR1) / ((Wb1 + Wb2)/2). 피크 사이 거리(selectivity)와 피크 폭(efficiency)이 함께 결정한다. 강의와 슬라이드 모두 'selectivity가 더 중요'하다고 강조했다.\nRs 1.5면 거의 완전 분리(약 99.5%)다.",
+      "source": "WK03 p.14–15, 17 · 3주차 녹음 52:07–54:03"
+    },
+    {
+      "id": "wk03-002",
+      "type": "상황판단",
+      "question": "두 단백질 피크가 겹쳐서 나온다. 같은 레진을 유지하면서 efficiency를 높여 분리를 개선하려 한다.\n다음 중 efficiency를 '높이는' 조치가 아닌 것은?",
+      "choices": [
+        "컬럼(베드) 높이를 늘린다.",
+        "패킹 품질을 개선한다.",
+        "시료 부피를 줄인다.",
+        "유속을 최대한 빠르게 올린다.",
+        "더 작은 비드 크기의 같은 계열 레진을 사용한다."
+      ],
+      "answer": 4,
+      "explanation": "efficiency를 높이는 요인: 작은 비드, 긴 컬럼, 좋은 패킹, 적은 시료 부피, 낮은 점도, 적절한(느린) 유속.\n유속을 너무 빠르게 하면 확산·물질전달이 따라오지 못해 피크가 넓어진다. 생산에서는 resolution을 만족하는 범위에서 최소 높이·최대 처리량을 찾는다.",
+      "source": "WK03 p.17–18 · 3주차 녹음 58:21–01:06:02"
+    },
+    {
+      "id": "wk03-003",
+      "type": "계산",
+      "question": "Gel filtration 컬럼에서 void volume(V0) = 10 mL, total volume(Vt) = 30 mL이다.\n어떤 단백질의 elution volume(Ve)이 20 mL였다면 Kav와 해석으로 옳은 것은?",
+      "choices": [
+        "Kav = 0.5, fractionation range(0.1~0.7) 안에 있어 분리에 적합",
+        "Kav = 0.67, 너무 작아 분리 불가",
+        "Kav = 1, 염 같은 작은 분자",
+        "Kav = 0, 기공에 전혀 들어가지 못하는 큰 분자",
+        "Kav = 0.33"
+      ],
+      "answer": 1,
+      "explanation": "Kav = (Ve − V0) / (Vt − V0) = (20 − 10) / (30 − 10) = 0.5.\n큰 분자는 V0에서 용출(Kav ≈ 0), 작은 분자는 Vt 근처(Kav ≈ 1). Kav 0.1~0.7 범위가 fractionation range로, 이 범위에서 분리가 잘 된다.",
+      "source": "WK03 p.15–16 · 3주차 녹음 54:03–58:21"
+    },
+    {
+      "id": "wk03-004",
+      "type": "상황판단",
+      "question": "항체 정제 마지막 단계에서 monomer와 dimer를 분리하려고 SEC(gel filtration)를 쓰려 한다.\n이 'fine fractionation' 운전 조건으로 옳지 않은 것은?",
+      "choices": [
+        "베드 높이를 길게(약 30~60 cm) 한다.",
+        "주로 공정 마지막 polishing 단계에 배치한다.",
+        "탈염처럼 시료를 컬럼 부피의 30%까지 넣고 짧고 굵은 컬럼에서 빠르게 흘린다.",
+        "시료 부피를 컬럼 부피의 수 %(약 0.5~4%) 이하로 작게 넣는다.",
+        "유속을 낮게 운전한다."
+      ],
+      "answer": 3,
+      "explanation": "SEC의 두 목적: ① fine fractionation(monomer/dimer 분리, MW 추정) = 작은 시료 부피, 낮은 유속, 긴 컬럼, polishing 단계 ② group separation(desalting/buffer exchange) = 시료 부피 CV의 ~30%까지, 짧고 굵은 컬럼, 큰 비드, 빠른 유속.\n'CV의 30%, 짧고 굵은 컬럼, 빠른 유속'은 group separation(탈염) 조건이다.",
+      "source": "WK03 p.20–21, 24 · 3주차 녹음 01:06:59–01:15"
+    },
+    {
+      "id": "wk03-005",
+      "type": "개념",
+      "question": "Sephadex G-25로 desalting(group separation)을 할 때 용출 순서와 특징으로 옳은 것은?",
+      "choices": [
+        "단백질과 염이 레진에 결합한 뒤 high salt로 용출된다.",
+        "desalting은 시료를 CV의 1% 이하로만 넣을 수 있다.",
+        "단백질이 침전되는 조건일수록 desalting이 적합하다.",
+        "염이 먼저(V0) 나오고 단백질이 나중에 나온다.",
+        "단백질은 기공에 들어가지 못해 V0 근처에서 먼저 나오고, 염(작은 분자)은 기공에 들어가 나중에 나온다."
+      ],
+      "answer": 5,
+      "explanation": "GF는 결합 없이 크기로만 분리한다. G-25의 기공(~1~5 kDa)보다 큰 단백질은 V0로 먼저, 염은 나중에 나온다. 그래서 다음 IEX 전 염 제거나 buffer exchange에 쓴다.\n시료 부피는 CV의 20~30%까지 가능하다. 단백질이 침전되는 조건에서는 쓰지 않는다.",
+      "source": "WK03 p.23–25 · 3주차 녹음 01:24:51–01:33:50"
+    },
+    {
+      "id": "wk03-006",
+      "type": "연결",
+      "question": "IEX 레진의 작용기(리간드)를 종류와 옳게 짝지은 것은?",
+      "choices": [
+        "Q – 약 음이온 교환 / DEAE – 강 음이온 교환 / S – 약 양이온 교환 / CM – 강 양이온 교환",
+        "Q – 강 음이온 교환 / DEAE – 약 음이온 교환 / S – 강 양이온 교환 / CM – 약 양이온 교환",
+        "Q – 강 양이온 교환 / DEAE – 약 양이온 교환 / S – 강 음이온 교환 / CM – 약 음이온 교환",
+        "Q – 강 음이온 교환 / DEAE – 약 양이온 교환 / S – 강 양이온 교환 / CM – 약 음이온 교환",
+        "네 가지 모두 강 이온교환 레진이다."
+      ],
+      "answer": 2,
+      "explanation": "음이온 교환(AIEX): Q(quaternary ammonium, strong), DEAE(diethylaminoethyl, weak).\n양이온 교환(CIEX): S(methyl sulfonate, strong), CM(carboxymethyl, weak). 7주차 시험 리뷰에서 'IEX 레진 strong/weak 4종'을 직접 언급했다.",
+      "source": "WK03 p.27 · 3주차 녹음 01:39–01:44, 02:05:09 · 7주차 녹음 2부 49:16"
+    },
+    {
+      "id": "wk03-007",
+      "type": "개념",
+      "question": "strong ion exchanger(Q, S)의 특징으로 옳은 것은?",
+      "choices": [
+        "pH에 따라 전하량이 크게 변해 'alternative selectivity'를 준다.",
+        "용출에 반드시 유기용매가 필요하다.",
+        "좁은 pH 범위(pH 6~10)에서만 전하를 띤다.",
+        "넓은 pH 범위(약 pH 2~12)에서 전하 정도가 일정하게 유지되고, 평형화가 빨라 버퍼를 아낄 수 있다.",
+        "weak exchanger보다 항상 selectivity가 우수하다."
+      ],
+      "answer": 4,
+      "explanation": "Q·S는 pH 2~12에서 전하가 유지된다. 반면 DEAE(pH 2~9), CM(pH 6~10) 같은 weak exchanger는 pH에 따라 전하 정도가 변해 alternative selectivity를 준다.\nstrong은 평형화가 빨라 버퍼가 덜 든다.",
+      "source": "WK03 p.27 · 3주차 녹음 02:05:09"
+    },
+    {
+      "id": "wk03-008",
+      "type": "연결",
+      "question": "Cytiva 레진 이름 뒤의 접미사와 의미를 옳게 짝지은 것은?",
+      "choices": [
+        "FF – fast flow(~90 µm) / HP – high performance(~34 µm) / XL – extreme load(리간드 밀도↑, 고용량)",
+        "FF – flow-through 전용 / HP – hydrophobic / XL – extra low pH",
+        "FF – fast flow(~10 µm) / HP – high performance(~90 µm) / XL – 소용량",
+        "세 접미사 모두 비드 크기와 무관한 상표명이다.",
+        "FF – fine fraction(10 µm) / HP – high pressure only / XL – extra large column"
+      ],
+      "answer": 1,
+      "explanation": "FF(fast flow)는 큰 비드라 유속이 빠르고, HP(high performance)는 작은 비드라 resolution이 높다. XL(extreme load)은 리간드가 많아 binding capacity가 크다.\n같은 CIEX라도 레진에 따라 분리 패턴이 달라 레진 스크리닝(media scouting)이 필요하다.",
+      "source": "WK03 p.28 · 3주차 녹음 01:39–01:44"
+    },
+    {
+      "id": "wk03-009",
+      "type": "개념",
+      "question": "IEX 크로마토그래피 1 cycle의 순서로 옳은 것은?",
+      "choices": [
+        "Equilibration → Elution → Sample load → Wash → Re-equilibration",
+        "Sample load → Equilibration → Elution → Wash → CIP",
+        "(Pre-CIP) → Equilibration(저염) → Sample load → Wash → Elution(염 농도 증가) → High salt wash(Regeneration) → CIP → Re-equilibration",
+        "Elution → Equilibration → Sample load → CIP → Wash",
+        "CIP → Sample load → Elution → Equilibration → Wash"
+      ],
+      "answer": 3,
+      "explanation": "새 컬럼도 Pre-CIP로 세정한 뒤, 저이온강도 start buffer로 평형화 → 시료 로딩(안 붙는 것은 unbound peak로 나옴) → wash → 염 농도를 올려 약하게 붙은 것부터 용출 → 1 M NaCl 등 high salt wash → CIP(NaCl·NaOH) → 재평형화.\n6주차에서도 1 cycle = EQ → Load → Wash → Elution → Regeneration으로 정리했다.",
+      "source": "WK03 p.28–31 · 3주차 녹음 01:46:42–01:51:44 · 6주차 녹음 2부 01:12"
+    },
+    {
+      "id": "wk03-010",
+      "type": "상황판단",
+      "question": "사용한 레진을 세정할 때 1~2 M NaCl과 1 M NaOH를 쓰려 한다. 순서와 이유로 옳은 것은?",
+      "choices": [
+        "둘을 섞어 한 번에 흘린다.",
+        "순서는 상관없다.",
+        "NaCl만 쓰고 NaOH는 레진을 파괴하므로 사용하지 않는다.",
+        "NaOH 먼저 – 단백질을 녹인 뒤 NaCl로 중화",
+        "NaCl 먼저 – 이온 결합된 단백질을 이온 경쟁으로 밀어낸 뒤, NaOH로 남은 것을 녹여 제거(순서를 바꾸면 막힐 수 있음)"
+      ],
+      "answer": 5,
+      "explanation": "이상적인 매트릭스는 화학적으로 안정해서 고염과 NaOH 세정을 견딘다. 강의에서 '고염으로 먼저 밀어내고 NaOH로 녹인다. 순서를 바꾸면 막힌다'고 했다.",
+      "source": "WK03 p.13 · 3주차 녹음 46:57–48:39"
+    },
+    {
+      "id": "wk03-011",
+      "type": "상황판단",
+      "question": "pI가 6.0인 목적 단백질을 IEX bind-and-elute로 정제하려 한다. 버퍼 pH를 8.0으로 정했다면 어떤 레진을 써야 하는가?",
+      "choices": [
+        "S 또는 CM(양이온 교환) – 단백질이 + 전하를 띠므로",
+        "Q 또는 DEAE(음이온 교환) – pH > pI 이므로 단백질이 − 전하를 띤다",
+        "Protein A – 모든 단백질이 Fc에 결합하므로",
+        "SEC – 전하로 분리하므로",
+        "어떤 IEX에도 결합하지 않는다."
+      ],
+      "answer": 2,
+      "explanation": "pH > pI → 단백질 순전하 −  → 음이온 교환(AIEX: Q, DEAE)에 결합.\npH < pI → + → 양이온 교환(CIEX: S, CM). 항체(pI 7~8)를 pH 5~6에서 CEX에 붙이는 원리도 같다.",
+      "source": "WK03 p.26, 35–36 · 3주차 녹음 02:16:27–02:21:03"
+    },
+    {
+      "id": "wk03-012",
+      "type": "상황판단",
+      "question": "음이온 교환(AIEX) 컬럼에 시료를 넣었더니 salt gradient가 시작되기 전에 목적 단백질이 모두 흘러나왔다(unbound).\n가장 먼저 의심하고 조치할 것은?",
+      "choices": [
+        "gradient 기울기를 더 가파르게 한다.",
+        "컬럼을 SEC 컬럼으로 바꾼다.",
+        "단백질이 너무 강하게 붙었으므로 버퍼 pH를 낮춘다.",
+        "시료의 이온강도(염 농도)가 높을 가능성이 크므로 탈염하거나 start buffer로 희석하고, 필요하면 버퍼 pH를 높인다.",
+        "유속을 10배 올린다."
+      ],
+      "answer": 4,
+      "explanation": "하나도 붙지 않는 경우 대부분 시료의 염 농도가 높기 때문이다 → desalting, UF/DF, 7~10배 희석. 그리고 AIEX라면 pH를 올려(단백질을 더 − 로) 결합을 강화한다.\n반대로 high salt wash에서야 나오면 너무 강하게 붙은 것이므로 AIEX는 pH를 낮추고 CIEX는 pH를 올린다.",
+      "source": "WK03 p.37–38 · 3주차 녹음 02:21:03–02:28"
+    },
+    {
+      "id": "wk03-013",
+      "type": "개념",
+      "question": "SBC(static binding capacity)와 DBC(dynamic binding capacity)에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "DBC는 실제 운전 조건(유속)에서 측정하며, breakthrough curve에서 C/C0 약 10%가 되는 지점까지 넣은 양으로 정하고, 실제 로딩은 DBC의 50~70% 수준으로 한다.",
+        "DBC는 유속이 빠를수록 커진다.",
+        "DBC는 레진 1 L당 kg 단위로만 표기하고 유속 조건은 적지 않는다.",
+        "DBC는 공정 개발 초기 96-well에서 한 번 측정하면 scale-up 전에 다시 볼 필요가 없다.",
+        "생산 공정은 시료를 정지 상태로 두므로 SBC로 레진 양을 정한다."
+      ],
+      "answer": 1,
+      "explanation": "SBC는 beaker의 batch mode에서 잰 '총 용량'이고, 생산은 흘리면서 붙이므로 DBC가 '진짜' 용량이다. 보통 10% breakthrough(회사에 따라 5~7%) 지점을 기준으로 하며 mg/mL resin과 유속 조건을 함께 표기한다(느릴수록 잘 붙음).\nscale-up 직전에 10 mL 이상 컬럼으로 측정하고, 손실을 줄이려 DBC의 50~70%(슬라이드: 50~75%)만 로딩한다.",
+      "source": "WK03 p.32 · 3주차 녹음 01:56:01–02:05:09"
+    },
+    {
+      "id": "wk03-014",
+      "type": "계산",
+      "question": "목적 단백질 8 g을 IEX 컬럼에 한 번에 로딩하려 한다. 해당 레진의 DBC는 40 mg/mL이고, 안전을 위해 DBC의 50%까지만 로딩하기로 했다.\n필요한 최소 레진 부피는?",
+      "choices": [
+        "200 mL",
+        "320 mL",
+        "400 mL",
+        "800 mL",
+        "100 mL"
+      ],
+      "answer": 3,
+      "explanation": "실제 로딩 용량 = 40 mg/mL × 0.5 = 20 mg/mL.\n필요 레진 = 8,000 mg ÷ 20 mg/mL = 400 mL. DBC 100%로 계산하면 200 mL이지만 손실 위험이 크다.",
+      "source": "WK03 p.32 · 3주차 녹음 01:56:01–02:05:09"
+    },
+    {
+      "id": "wk03-015",
+      "type": "상황판단",
+      "question": "개발 초기에는 linear gradient로 IEX 용출 패턴을 확인했다. 생산 단계에서 step elution으로 바꾸려는 이유로 옳지 않은 것은?",
+      "choices": [
+        "분리 시간을 줄일 수 있다.",
+        "버퍼 사용량을 줄일 수 있다.",
+        "목적 단백질이 샤프한 피크로 농축되어 나온다.",
+        "불순물 제거 조건(step)을 따로 줄 수 있다.",
+        "모르는 시료를 처음 분석할 때 가장 높은 분해능을 얻기 위해서다."
+      ],
+      "answer": 5,
+      "explanation": "linear gradient는 미지 시료를 처음 다룰 때나 고분해능 분석에 쓴다(EQ 10~20 CV, 전체 40~60 CV). 조건이 최적화되면 step elution(생산 2~3 CV)으로 바꿔 시간·버퍼를 줄이고 피크를 농축한다.\n'미지 시료의 고분해능 분석'은 linear gradient를 쓰는 이유다.",
+      "source": "WK03 p.33–34 · 3주차 녹음 02:08:32–02:15:03"
+    },
+    {
+      "id": "wk03-016",
+      "type": "개념",
+      "question": "Multimodal(mixed-mode) chromatography(MMC)에 대한 설명으로 옳지 않은 것은?",
+      "choices": [
+        "Capto Core 700은 바깥 shell이 크기 배제를 하고 안쪽 core가 작은 불순물을 결합해, 바이러스 같은 큰 분자를 통과시킨다.",
+        "단일 상호작용만 하므로 selectivity가 전통 IEX보다 항상 낮다.",
+        "이온 결합, 소수성, 수소결합 등 둘 이상의 상호작용을 하는 리간드를 사용한다.",
+        "Capto MMC는 weak 양이온 교환 성질을 가진 multimodal 레진이다.",
+        "염 농도(전도도)가 높은 시료에서도 결합이 잘 되어(salt tolerant) 희석·탈염 단계를 생략할 수 있다."
+      ],
+      "answer": 2,
+      "explanation": "MMC는 여러 상호작용이 독립적으로 또는 함께 작용해 전통 레진으로 부족한 selectivity를 보완한다. 주로 polishing에 쓰고, 고염 시료를 바로 로딩할 수 있으며, pI를 넘는 pH에서도 결합한다.\nCapto adhere는 AIEX 계열이고, Capto Core 700의 exclusion limit은 700 kDa이다.",
+      "source": "WK03 p.40–44, 47–48 · 3주차 녹음 02:28–02:43"
+    },
+    {
+      "id": "wk03-017",
+      "type": "연결",
+      "question": "3단계 정제 전략(CIPP)에서 각 단계와 가장 중요한 목표를 옳게 짝지은 것은?",
+      "choices": [
+        "세 단계 모두 같은 레진과 같은 목표를 쓴다.",
+        "Capture – SEC / Intermediate – Protein A / Polishing – 원심분리",
+        "Capture – 미량 불순물 제거, 최고 resolution / Polishing – 빠른 농축",
+        "Capture – 빠른 농축·안정화·분리(speed, capacity) / Intermediate – 주요 불순물 제거(resolution, capacity) / Polishing – 미량 불순물·구조 변이체 제거(resolution, recovery)",
+        "Capture – recovery만 중요 / Intermediate – speed만 중요 / Polishing – capacity만 중요"
+      ],
+      "answer": 4,
+      "explanation": "Capture: 가장 더러운 시료를 다루므로 큰 비드·고용량·속도(speed, capacity).\nIntermediate: bulk 불순물 제거(resolution, capacity). Polishing: trace 불순물·variants 제거로 최종 순도(resolution, recovery). Polishing 뒤 순도는 99%대다.",
+      "source": "WK03 p.53–55 · 3주차 녹음 29:58–33:27, 02:54:18"
+    },
+    {
+      "id": "wk03-018",
+      "type": "개념",
+      "question": "크로마토그래피 scale-up(IEX, HIC, AF 같은 흡착형)에서 '고정(fixed)'해야 하는 변수로 옳은 것은?",
+      "choices": [
+        "베드 높이와 선속도(linear flow rate, cm/h) – 시료 농도, CV 대비 시료·gradient 부피도 유지",
+        "레진 부피와 컬럼 직경",
+        "시료 로딩 총량과 펌프 크기",
+        "컬럼 재질과 시스템 제조사",
+        "컬럼 직경과 volumetric flow rate(mL/min)"
+      ],
+      "answer": 1,
+      "explanation": "Fixed: bed height, linear flow rate(cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피.\nVariable(증가): 시료 로딩량, volumetric flow rate, 컬럼 직경. 즉 '높이는 그대로, 직경만 키운다'. 7주차 시험 리뷰에서도 '크롬 scale-up 시 같아야 하는 것'을 언급했다.",
+      "source": "WK03 p.57–59 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21"
+    },
+    {
+      "id": "wk03-019",
+      "type": "계산",
+      "question": "랩 컬럼(내경 1.6 cm, 베드 높이 20 cm)에서 선속도 150 cm/h로 공정을 개발했다.\n내경 60 cm인 생산 컬럼으로 scale-up할 때 volumetric flow rate는 약 얼마인가? (π = 3.14)",
+      "choices": [
+        "약 28 L/h",
+        "약 85 L/h",
+        "약 424 L/h",
+        "약 1,700 L/h",
+        "약 4.2 L/h"
+      ],
+      "answer": 3,
+      "explanation": "선속도를 유지하므로 flow rate = 선속도 × 단면적.\n단면적 = π × (30 cm)² = 3.14 × 900 = 2,826 cm². 150 cm/h × 2,826 cm² = 423,900 cm³/h ≈ 424 L/h(1 cm³ = 1 mL).\n약 1,700 L/h는 반지름 대신 지름(60)을 넣은 값이다(3.14×3600×150 ≈ 1,696 L/h).",
+      "source": "WK03 p.57–58 · 3주차 녹음 01:57:56 · 6주차 녹음 2부 25:21–39:17"
+    },
+    {
+      "id": "wk03-020",
+      "type": "상황판단",
+      "question": "Gel filtration(SEC) 공정을 scale-up하려 한다. 랩에서 베드 높이 60 cm로 분리했다. 가장 적절한 방법은?",
+      "choices": [
+        "SEC는 결합형이므로 DBC를 측정해 레진 양을 정한다.",
+        "선속도를 10배 높여 처리 시간을 줄인다.",
+        "시료 부피를 CV의 30%까지 늘린다.",
+        "컬럼 높이를 60 cm에서 2 m로 늘린다.",
+        "직경만 키우고 높이는 유지하며, 필요하면 20 cm 컬럼 섹션 여러 개를 직렬로 연결한다(높이를 무리하게 늘리면 wall effect·패킹 문제)."
+      ],
+      "answer": 5,
+      "explanation": "GF도 '직경 증가, 높이 유지'가 원칙이고, 긴 컬럼이 필요하면 column section(예: 20 cm × 3)으로 나눈다. GF는 결합하지 않으므로 DBC 개념이 없다. 시료 부피는 fine fractionation에서 작게 유지해야 한다.\nGF(SEC)는 유속이 낮고 시료량이 제한되어 polishing의 생산성 병목이다.",
+      "source": "WK03 p.21, 48, 60 · 3주차 녹음 01:13:11"
+    },
+    {
+      "id": "wk03-021",
+      "type": "연결",
+      "question": "크로마토그래피 시스템의 모니터와 측정 대상을 옳게 짝지은 것은?",
+      "choices": [
+        "UV 280 nm – 핵산 / UV 260 nm – 단백질 / conductivity – pH",
+        "UV 280 nm – 단백질 / UV 260 nm – 핵산 / conductivity – 염 농도(1 M NaCl ≈ 85~100 mS/cm) / pH – 버퍼 확인",
+        "UV 280 nm – 염 농도 / conductivity – 단백질 농도",
+        "pH 모니터 – 바이러스 / UV – endotoxin",
+        "conductivity – 컬럼 압력"
+      ],
+      "answer": 2,
+      "explanation": "UV 280 nm는 방향족 아미노산 때문에 단백질을, 260/254 nm는 핵산을 본다. conductivity(mS/cm)로 염 농도 gradient를 확인한다. 생산 시스템은 압력도 모니터링한다(너무 높으면 막힘, 너무 낮으면 누출이나 버퍼 탱크가 빈 것).",
+      "source": "WK03 p.7 · 3주차 녹음 15:36–24:40"
+    },
+    {
+      "id": "wk03-022",
+      "type": "상황판단",
+      "question": "분석용 고분해능 레진(비드 약 10 µm, MonoQ)으로 얻은 좋은 분리 결과를 그대로 생산 공정에 쓰려 한다. 가장 큰 문제는?",
+      "choices": [
+        "작은 비드는 CIP가 필요 없다.",
+        "생산 컬럼에서는 비드 크기와 압력이 무관하다.",
+        "작은 비드는 resolution이 낮아 생산에 부적합하다.",
+        "작은 비드는 back pressure가 매우 높고 가격이 비싸 대형 컬럼 운전이 어렵다. 그래서 생산은 큰 비드(약 90~100 µm, 최소 34 µm 이상)를 쓴다.",
+        "작은 비드는 단백질과 결합하지 않는다."
+      ],
+      "answer": 4,
+      "explanation": "비드가 작을수록 resolution은 높지만 압력이 높다. 분석(HPLC) ≤10 µm, 중압 30~50 µm, 생산 90~100 µm이다. 강의에서 MonoQ(10 µm)로 생산하려다 실패한 사례를 소개했다.\n특히 capture는 시료가 가장 더러워 큰 비드를 쓴다.",
+      "source": "WK03 p.9 · 3주차 녹음 25:50, 03:27–07:47"
+    },
+    {
+      "id": "wk03-023",
+      "type": "개념",
+      "question": "크로마토그래피 모드 중 시료가 레진에 '결합하지 않는' 기법은?",
+      "choices": [
+        "Gel filtration (SEC)",
+        "MMC (multimodal)",
+        "IEX (ion exchange)",
+        "HIC (hydrophobic interaction)",
+        "Affinity (Protein A)"
+      ],
+      "answer": 1,
+      "explanation": "GF/SEC만 결합 없이 크기 차이(기공 진입 정도)로 분리한다. IEX·HIC·affinity·MMC는 결합 후 염·pH·경쟁자 등으로 용출한다.\nHIC는 high salt에서 결합하고 salt를 낮춰 용출한다(IEX와 반대).",
+      "source": "WK03 p.10, 19 · 3주차 녹음 08:23–10:43, 36:42–39:25"
+    }
+  ]
+}
