@@ -1,0 +1,137 @@
+{
+  "week": "WK07",
+  "title": "GMP Engineering",
+  "questions": [
+    {
+      "id": "wk07-s01",
+      "kind": "short",
+      "type": "단답",
+      "question": "EPC(Engineering, ?, Construction)에서 P는?",
+      "answer": "Procurement (구매)",
+      "accept": [
+        "procurement",
+        "구매",
+        "조달"
+      ],
+      "explanation": "Engineering(설계), Procurement(구매, 연 단위 계획), Construction(시공).",
+      "source": "7주차 녹음 1부 16:19",
+      "notes": "[EPC · 설계 단계 · 준공/완공] (7주차)\n· EPC = Engineering(설계) + Procurement(구매 – 장비 납기 때문에 연 단위 계획) + Construction(시공). 삼성엔지니어링·삼성물산·롯데건설, 하도급 구조.\n· CD(concept design, 개념설계 – 뼈대, 가장 중요·돈 많이 듦, 약 2개월) → BD(basic) → DD(detail – 주름 하나까지). CD: 1~2주 kick-off/workshop → 3주차쯤 mass balance 확정 → 최적 시나리오(스케줄링), PFD, equipment list.\n· 준공 = 들어가 일해도 될 만큼 진척 + 허가, 완공 = 공사 완전 종료.\n· GMP 시설 구성: process, clean utilities, HVAC, black utilities, electrical, communication. 송도 간척지 파일 공사 8개월 동안 설계 병행 – 장비·사람이 놀지 않게 스케줄링.\n(WK07 p.27, 57–62 · 7주차 녹음 1부 12:44–38:30, 01:08–01:12:58)"
+    },
+    {
+      "id": "wk07-s02",
+      "kind": "short",
+      "type": "단답",
+      "question": "개념설계·기본설계·상세설계 중 '뼈대'로서 가장 중요하고 비용이 많이 드는 단계의 약어는?",
+      "answer": "CD",
+      "accept": [
+        "concept design",
+        "conceptual design",
+        "개념설계",
+        "개념 설계"
+      ],
+      "explanation": "CD(concept design)가 뼈대이고, BD(basic design)가 세부, DD(detail design)가 “주름 하나까지”다. CD는 약 2개월 걸린다.",
+      "source": "7주차 녹음 1부 32:40",
+      "notes": "[EPC · 설계 단계 · 준공/완공] (7주차)\n· EPC = Engineering(설계) + Procurement(구매 – 장비 납기 때문에 연 단위 계획) + Construction(시공). 삼성엔지니어링·삼성물산·롯데건설, 하도급 구조.\n· CD(concept design, 개념설계 – 뼈대, 가장 중요·돈 많이 듦, 약 2개월) → BD(basic) → DD(detail – 주름 하나까지). CD: 1~2주 kick-off/workshop → 3주차쯤 mass balance 확정 → 최적 시나리오(스케줄링), PFD, equipment list.\n· 준공 = 들어가 일해도 될 만큼 진척 + 허가, 완공 = 공사 완전 종료.\n· GMP 시설 구성: process, clean utilities, HVAC, black utilities, electrical, communication. 송도 간척지 파일 공사 8개월 동안 설계 병행 – 장비·사람이 놀지 않게 스케줄링.\n(WK07 p.27, 57–62 · 7주차 녹음 1부 12:44–38:30, 01:08–01:12:58)"
+    },
+    {
+      "id": "wk07-s03",
+      "kind": "short",
+      "type": "단답",
+      "question": "공사가 완전히 끝나지 않았어도 들어가 일할 수 있을 만큼 진척되고 허가를 받은 상태는? (준공 / 완공 중)",
+      "answer": "준공",
+      "accept": [
+        "준공상태"
+      ],
+      "explanation": "준공은 일해도 문제없을 정도로 공사가 진척되고 허가를 받은 상태다. 완공은 공사가 완전히 끝난 상태다.",
+      "source": "7주차 녹음 1부 12:44–15:07",
+      "notes": "[EPC · 설계 단계 · 준공/완공] (7주차)\n· EPC = Engineering(설계) + Procurement(구매 – 장비 납기 때문에 연 단위 계획) + Construction(시공). 삼성엔지니어링·삼성물산·롯데건설, 하도급 구조.\n· CD(concept design, 개념설계 – 뼈대, 가장 중요·돈 많이 듦, 약 2개월) → BD(basic) → DD(detail – 주름 하나까지). CD: 1~2주 kick-off/workshop → 3주차쯤 mass balance 확정 → 최적 시나리오(스케줄링), PFD, equipment list.\n· 준공 = 들어가 일해도 될 만큼 진척 + 허가, 완공 = 공사 완전 종료.\n· GMP 시설 구성: process, clean utilities, HVAC, black utilities, electrical, communication. 송도 간척지 파일 공사 8개월 동안 설계 병행 – 장비·사람이 놀지 않게 스케줄링.\n(WK07 p.27, 57–62 · 7주차 녹음 1부 12:44–38:30, 01:08–01:12:58)"
+    },
+    {
+      "id": "wk07-s04",
+      "kind": "short",
+      "type": "단답",
+      "question": "GMP 청정실(양압)과 BSL 구역(음압)의 상반된 요구를 함께 만족시키는 버퍼 공간은?",
+      "answer": "airlock",
+      "accept": [
+        "에어락",
+        "에어록",
+        "air lock",
+        "air-lock"
+      ],
+      "explanation": "GMP는 오염 유입을 막으려 양압을, BSL은 유해물 유출을 막으려 음압을 쓴다. 둘 사이에 airlock을 둔다.",
+      "source": "7주차 녹음 1부 01:17:31–01:21",
+      "notes": "[압력·airlock·동선] (7주차)\n· GMP = 제품 보호를 위한 양압(오염 유입 방지), BSL(biosafety level) = 사람·환경 보호를 위한 음압(유출 방지) – 정반대. 둘 다 만족 = airlock(버퍼 공간)과 압력 조합(bubble, sink, cascade – 이름은 시험에 안 냄).\n· Airlock = 공간, interlock = 두 문이 동시에 열리지 않게 하는 장치(강제 개방 시 알람).\n· CNC(controlled not classified): 등급은 없지만 통제·관리, 환경 모니터링 대상 아님. 동선: CNC → 갱의 → D → 갱의 → C → (손 넣어) B. MAL(material airlock) = 물동선, PAL(personnel airlock) = 인동선, 폐기물은 pass box. 모서리 라운드(물 고임 방지).\n· 소방법(대피 거리)과 GMP 동선이 충돌 → 비상 탈출구 별도.\n(WK07 p.41–42, 65 · 7주차 녹음 1부 22:53, 01:17:31–01:21 · 2부 01:02:46–01:10)"
+    },
+    {
+      "id": "wk07-s05",
+      "kind": "short",
+      "type": "단답",
+      "question": "airlock 양쪽 문이 동시에 열리지 않게 하는 장치는?",
+      "answer": "interlock",
+      "accept": [
+        "인터락",
+        "인터록",
+        "inter lock",
+        "inter-lock"
+      ],
+      "explanation": "강제로 열면 알람이 울린다. 물동선은 MAL(material airlock), 인동선은 PAL(personnel airlock)이다.",
+      "source": "7주차 녹음 2부 01:02:46",
+      "notes": "[압력·airlock·동선] (7주차)\n· GMP = 제품 보호를 위한 양압(오염 유입 방지), BSL(biosafety level) = 사람·환경 보호를 위한 음압(유출 방지) – 정반대. 둘 다 만족 = airlock(버퍼 공간)과 압력 조합(bubble, sink, cascade – 이름은 시험에 안 냄).\n· Airlock = 공간, interlock = 두 문이 동시에 열리지 않게 하는 장치(강제 개방 시 알람).\n· CNC(controlled not classified): 등급은 없지만 통제·관리, 환경 모니터링 대상 아님. 동선: CNC → 갱의 → D → 갱의 → C → (손 넣어) B. MAL(material airlock) = 물동선, PAL(personnel airlock) = 인동선, 폐기물은 pass box. 모서리 라운드(물 고임 방지).\n· 소방법(대피 거리)과 GMP 동선이 충돌 → 비상 탈출구 별도.\n(WK07 p.41–42, 65 · 7주차 녹음 1부 22:53, 01:17:31–01:21 · 2부 01:02:46–01:10)"
+    },
+    {
+      "id": "wk07-s06",
+      "kind": "short",
+      "type": "단답",
+      "question": "등급을 부여하지 않지만 깨끗하게 관리하는 구역 'controlled not classified'의 약어는?",
+      "answer": "CNC",
+      "accept": [
+        "controlled not classified"
+      ],
+      "explanation": "CNC는 환경모니터링 대상이 아니다. 동선은 CNC → 갱의 → D → 갱의 → C → B다.",
+      "source": "7주차 녹음 2부 01:02:46",
+      "notes": "[압력·airlock·동선] (7주차)\n· GMP = 제품 보호를 위한 양압(오염 유입 방지), BSL(biosafety level) = 사람·환경 보호를 위한 음압(유출 방지) – 정반대. 둘 다 만족 = airlock(버퍼 공간)과 압력 조합(bubble, sink, cascade – 이름은 시험에 안 냄).\n· Airlock = 공간, interlock = 두 문이 동시에 열리지 않게 하는 장치(강제 개방 시 알람).\n· CNC(controlled not classified): 등급은 없지만 통제·관리, 환경 모니터링 대상 아님. 동선: CNC → 갱의 → D → 갱의 → C → (손 넣어) B. MAL(material airlock) = 물동선, PAL(personnel airlock) = 인동선, 폐기물은 pass box. 모서리 라운드(물 고임 방지).\n· 소방법(대피 거리)과 GMP 동선이 충돌 → 비상 탈출구 별도.\n(WK07 p.41–42, 65 · 7주차 녹음 1부 22:53, 01:17:31–01:21 · 2부 01:02:46–01:10)\n\n[클린룸 specification] (7주차 – 시험 리뷰 \"class 100의 의미\")\n· Grade A ↔ ISO 5 ↔ Class 100 / Grade C ↔ ISO 7 ↔ Class 10,000 / Grade D ↔ ISO 8 ↔ Class 100,000.\n· Class 100 = ft³당 0.5 µm 이상 입자 100개 이하(1 m³ ≈ 35.3 ft³ → 약 3,530개) ≈ Grade A 기준 0.5 µm 3,520개/m³. Class 숫자가 클수록 덜 깨끗.\n· EU 지향 = Grade A~D, 미국 지향 = Class 숫자 → 표기로 주력 시장 추정.\n· 가장 깨끗한 공간(Class A/100)은 사람과 공존 불가 → RABS·아이솔레이터 같은 격리 설비.\n(WK07 p.37–42 · 7주차 녹음 1부 55:22 · 2부 01:02:46)"
+    },
+    {
+      "id": "wk07-s07",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "US class 100은 1 ft³당 0.5 µm 이상 입자가 몇 개 이하인 청정도인가?",
+      "answer": "100개",
+      "accept": [],
+      "num": 100,
+      "tol": 0,
+      "explanation": "class 100 = ft³당 100개 ≈ m³당 3,520개 = Grade A = ISO 5.",
+      "source": "7주차 녹음 2부 01:02:46",
+      "notes": "[클린룸 specification] (7주차 – 시험 리뷰 \"class 100의 의미\")\n· Grade A ↔ ISO 5 ↔ Class 100 / Grade C ↔ ISO 7 ↔ Class 10,000 / Grade D ↔ ISO 8 ↔ Class 100,000.\n· Class 100 = ft³당 0.5 µm 이상 입자 100개 이하(1 m³ ≈ 35.3 ft³ → 약 3,530개) ≈ Grade A 기준 0.5 µm 3,520개/m³. Class 숫자가 클수록 덜 깨끗.\n· EU 지향 = Grade A~D, 미국 지향 = Class 숫자 → 표기로 주력 시장 추정.\n· 가장 깨끗한 공간(Class A/100)은 사람과 공존 불가 → RABS·아이솔레이터 같은 격리 설비.\n(WK07 p.37–42 · 7주차 녹음 1부 55:22 · 2부 01:02:46)"
+    },
+    {
+      "id": "wk07-s08",
+      "kind": "short",
+      "type": "단답",
+      "question": "V-model에서 제조사 공장을 방문해 출하 전 장비를 시험하는 단계의 약어는?",
+      "answer": "FAT",
+      "accept": [
+        "factory acceptance test"
+      ],
+      "explanation": "URS → DQ/FDS → FAT → 설치 → IQ/SAT → OQ → PQ → PV/CV.",
+      "source": "7주차 녹음 2부 01:10:15–01:20",
+      "notes": "[V-model · qualification vs validation] (7주차)\n· URS(사용자 요구 규격 – 220 V, 층고 등 최대한 상세히) → DQ(design qualification)/FDS(functional design spec) → FAT(제조사 공장에서 확인) → 배송·설치 → IQ(부속·도면대로 설치)/SAT → OQ(작동 – pH 센서 1~14 여러 포인트) → PQ(실제 공정 조건 – pH 7 ± 범위) → PV(process validation)/CV(cleaning validation) → re-validation.\n· Qualification(장비)이 전제되어야 validation(공정)을 한다 – 차이를 명확히. 변경 시 change control, requalification.\n· 사례: 구제역 센터 – 200 L 배양기 높이 2.5 m vs 천장 2.3 m → URS 누락.\n· HVAC 기류 패턴 확인은 실제 작동이 필요한 OQ/PQ 영역, IQ는 도면·문서·부품·교정 확인.\n(WK07 p.61 · 7주차 녹음 2부 01:10:15–01:20)"
+    },
+    {
+      "id": "wk07-s09",
+      "kind": "short",
+      "type": "단답",
+      "question": "사용자가 장비에 요구하는 조건(전압, 층고 등)을 최대한 상세히 적는 문서의 약어는?",
+      "answer": "URS",
+      "accept": [
+        "user requirement specification",
+        "user requirements specification",
+        "사용자요구사항",
+        "사용자 요구 규격"
+      ],
+      "explanation": "200 L 배양기 높이 2.5 m vs 천장 2.3 m 사례처럼 URS가 부실하면 설치 단계에서 문제가 생긴다.",
+      "source": "7주차 녹음 2부 01:10:15",
+      "notes": "[V-model · qualification vs validation] (7주차)\n· URS(사용자 요구 규격 – 220 V, 층고 등 최대한 상세히) → DQ(design qualification)/FDS(functional design spec) → FAT(제조사 공장에서 확인) → 배송·설치 → IQ(부속·도면대로 설치)/SAT → OQ(작동 – pH 센서 1~14 여러 포인트) → PQ(실제 공정 조건 – pH 7 ± 범위) → PV(process validation)/CV(cleaning validation) → re-validation.\n· Qualification(장비)이 전제되어야 validation(공정)을 한다 – 차이를 명확히. 변경 시 change control, requalification.\n· 사례: 구제역 센터 – 200 L 배양기 높이 2.5 m vs 천장 2.3 m → URS 누락.\n· HVAC 기류 패턴 확인은 실제 작동이 필요한 OQ/PQ 영역, IQ는 도면·문서·부품·교정 확인.\n(WK07 p.61 · 7주차 녹음 2부 01:10:15–01:20)"
+    }
+  ]
+}

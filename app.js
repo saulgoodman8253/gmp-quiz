@@ -65,6 +65,35 @@
 
   function pct(c, t) { return t ? Math.round((c / t) * 100) : 0; }
 
+  /* ---------- 단답형 채점 ---------- */
+  const isShort = (q) => q.kind === 'short';
+
+  // 띄어쓰기·대소문자·기호(·, -, /, 괄호, 화살표 등) 차이는 무시하고 비교
+  function norm(s) {
+    return String(s).normalize('NFKC').toLowerCase()
+      .replace(/[×✕*]/g, 'x')
+      .replace(/[\s·.,:;'"`()[\]{}/\\_~^\-–—→=]/g, '');
+  }
+
+  // 모범 답안·허용 답안 중 하나와 같거나, 숫자 답(num ± tol)에 맞으면 정답
+  function gradeShort(q, text) {
+    const t = norm(text);
+    if (!t) return false;
+    if ([q.answer, ...(q.accept || [])].some((a) => norm(a) === t)) return true;
+    if (typeof q.num === 'number') {
+      const m = String(text).replace(/,/g, '').match(/\d+(\.\d+)?/);
+      if (m && Math.abs(Number(m[0]) - q.num) <= (q.tol || 0) + 1e-9) return true;
+    }
+    return false;
+  }
+
+  function isCorrect(it, a) { return it.short ? !!(a && a.ok) : a === it.correctIndex; }
+  function correctLabel(it) { return it.short ? it.q.answer : MARKS[it.correctIndex]; }
+  function myLabel(it, a) {
+    if (a == null) return '미응답';
+    return it.short ? a.text : MARKS[a];
+  }
+
   function render(...nodes) {
     app.replaceChildren(...nodes);
     window.scrollTo(0, 0);
@@ -116,6 +145,11 @@
     if (!q || typeof q !== 'object') return `${where}: 문항 형식 오류`;
     if (!q.id) return `${where}: id 가 없습니다`;
     if (!q.question) return `${where}: question 이 없습니다`;
+    if (isShort(q)) {
+      if (typeof q.answer !== 'string' || !q.answer.trim()) return `${where}: 단답형은 answer(모범 답안 문자열)가 필요합니다`;
+      if (q.accept != null && !Array.isArray(q.accept)) return `${where}: accept 는 문자열 배열이어야 합니다`;
+      return null;
+    }
     if (!Array.isArray(q.choices) || q.choices.length < 2) return `${where}: choices 가 2개 이상이어야 합니다`;
     if (!Number.isInteger(q.answer) || q.answer < 1 || q.answer > q.choices.length) {
       return `${where}: answer 는 1~${q.choices.length} 사이 정수여야 합니다`;
@@ -172,6 +206,17 @@
     store.set(KEYS.seen, [...seen]);
   }
 
+  // 단답형에서 자동 채점은 오답이지만 본인이 맞다고 판단한 경우(직접 채점)
+  function overrideShort(q, a) {
+    if (!a || a.ok) return;
+    a.ok = true;
+    a.self = true;
+    wrongNote.remove(q.id);
+    const stats = store.get(KEYS.weekStats, {});
+    const s = stats[q.week];
+    if (s) { s.correct = Math.min(s.total, s.correct + 1); store.set(KEYS.weekStats, stats); }
+  }
+
   function recordAnswer(q, correct) {
     if (correct) wrongNote.remove(q.id);
     else wrongNote.add(q.id);
@@ -201,6 +246,7 @@
 
   // 보기 순서를 섞고, 섞인 위치 기준으로 정답 인덱스를 다시 계산한다.
   function prepareQuestion(q, isNew) {
+    if (isShort(q)) return { q, isNew, short: true };
     const order = shuffle(q.choices.map((_, i) => i));
     return {
       q,
@@ -226,7 +272,8 @@
       weekInputs.push(input);
       const st = weekStats[w.week];
       const unseenN = bank.filter((q) => q.week === w.week && !seen.has(q.id)).length;
-      const meta = [`${w.count}문항`];
+      const shortN = bank.filter((q) => q.week === w.week && isShort(q)).length;
+      const meta = [shortN ? `${w.count}문항(단답 ${shortN})` : `${w.count}문항`];
       if (unseenN) meta.push(`미출제 ${unseenN}`);
       if (st && st.total) meta.push(`정답률 ${pct(st.correct, st.total)}%`);
       return el('label', { class: 'chip week-chip' }, input,
@@ -249,6 +296,18 @@
     });
     if (!countInputs.some((i) => i.checked)) countInputs[1].checked = true;
 
+    const kindDefs = [
+      { v: 'all', t: '섞어서' },
+      { v: 'mc', t: '객관식만' },
+      { v: 'short', t: '단답형만' },
+    ];
+    const kindInputs = kindDefs.map((k) => {
+      const input = el('input', { type: 'radio', name: 'qkind', value: k.v });
+      input.checked = (prefs.kind || 'all') === k.v;
+      return input;
+    });
+    if (!kindInputs.some((i) => i.checked)) kindInputs[0].checked = true;
+
     const modeDefs = [
       { v: 'study', t: '📖 단원별 학습', d: '한 문제씩 풀고 바로 정답·해설 확인' },
       { v: 'exam', t: '📝 단원 시험', d: '시험지 형식으로 끝까지 푼 뒤 한꺼번에 채점' },
@@ -266,10 +325,16 @@
     function selectedWeeks() { return weekInputs.filter((i) => i.checked).map((i) => i.value); }
     function selectedCount() { return Number(countInputs.find((i) => i.checked).value); }
     function selectedMode() { return modeInputs.find((i) => i.checked).value; }
+    function selectedKind() { return kindInputs.find((i) => i.checked).value; }
+    function kindOk(q) {
+      const k = selectedKind();
+      return k === 'all' || (k === 'short') === isShort(q);
+    }
+    function poolOf(ws) { return bank.filter((q) => ws.includes(q.week) && kindOk(q)); }
 
     function update() {
       const ws = selectedWeeks();
-      const pool = bank.filter((q) => ws.includes(q.week));
+      const pool = poolOf(ws);
       const n = selectedCount();
       const actual = n > 0 ? Math.min(n, pool.length) : pool.length;
       info.textContent = ws.length ? `선택 범위 ${pool.length}문항 중 ${actual}문항 출제` : '주차를 하나 이상 선택하세요.';
@@ -277,20 +342,24 @@
     }
 
     function savePrefs() {
-      store.set(KEYS.prefs, { weeks: selectedWeeks(), count: selectedCount(), mode: selectedMode() });
+      store.set(KEYS.prefs, { weeks: selectedWeeks(), count: selectedCount(), mode: selectedMode(), kind: selectedKind() });
+    }
+
+    function kindLabel() {
+      return { all: '', mc: ' · 객관식', short: ' · 단답형' }[selectedKind()];
     }
 
     function start() {
       savePrefs();
       const ws = selectedWeeks();
-      const pool = bank.filter((q) => ws.includes(q.week));
-      const label = ws.length === weeks.length ? '전체 주차' : ws.join(', ');
+      const pool = poolOf(ws);
+      const label = (ws.length === weeks.length ? '전체 주차' : ws.join(', ')) + kindLabel();
       startSession(selectedMode(), pickQuestions(pool, selectedCount()), selectedMode() === 'exam' ? `단원 시험 (${label})` : `단원별 학습 (${label})`);
     }
 
     function startMock() {
       savePrefs();
-      startSession('exam', pickQuestions(bank, selectedCount()), '전범위 모의고사');
+      startSession('exam', pickQuestions(bank.filter(kindOk), selectedCount()), '전범위 모의고사' + kindLabel());
     }
 
     function startWrong() {
@@ -299,7 +368,7 @@
       startSession(selectedMode(), pickQuestions(bank.filter((q) => ws.has(q.id)), 0), '오답 다시 풀기');
     }
 
-    [...weekInputs, ...countInputs, ...modeInputs].forEach((i) => i.addEventListener('change', update));
+    [...weekInputs, ...countInputs, ...kindInputs, ...modeInputs].forEach((i) => i.addEventListener('change', update));
 
     render(
       el('section', { class: 'card' },
@@ -308,7 +377,10 @@
       el('section', { class: 'card' },
         el('h2', null, '② 문제 수'),
         el('div', { class: 'chips' }, countInputs.map((input, i) =>
-          el('label', { class: 'chip' }, input, el('strong', null, COUNT_OPTIONS[i] ? `${COUNT_OPTIONS[i]}문항` : '전체'))))),
+          el('label', { class: 'chip' }, input, el('strong', null, COUNT_OPTIONS[i] ? `${COUNT_OPTIONS[i]}문항` : '전체')))),
+        el('h3', { style: 'margin:14px 0 8px' }, '문제 유형'),
+        el('div', { class: 'chips' }, kindInputs.map((input, i) =>
+          el('label', { class: 'chip' }, input, el('strong', null, kindDefs[i].t))))),
       el('section', { class: 'card' },
         el('h2', null, '③ 모드'),
         el('div', { class: 'chips' }, modeInputs.map((input, i) =>
@@ -318,21 +390,21 @@
       el('section', { class: 'card stack' },
         el('h2', { style: 'margin:0' }, '바로 가기'),
         el('button', { class: 'btn block', type: 'button', onclick: startMock, disabled: bank.length === 0 },
-          `🎯 전범위 모의고사 (${bank.length}문항 중 선택한 문제 수만큼)`),
+          '🎯 전범위 모의고사 (전체 주차에서 선택한 문제 수·유형만큼)'),
         el('button', { class: 'btn secondary block', type: 'button', onclick: startWrong, disabled: wrongCount === 0 },
           `❗ 오답만 다시 풀기 (${wrongCount}문항)`),
         el('button', { class: 'btn secondary block', type: 'button', onclick: () => showRecords() }, '📊 학습 기록 보기'),
         el('button', { class: 'btn secondary block', type: 'button', onclick: () => {
           savePrefs();
-          showPrintSetup(selectedWeeks(), selectedCount());
+          showPrintSetup(poolOf(selectedWeeks()), selectedCount(),
+            (selectedWeeks().length === weeks.length ? '전체 주차' : selectedWeeks().join(', ')) + kindLabel());
         } }, '🖨️ 문제지 PDF로 저장·공유 (선택한 주차 범위)')),
     );
     update();
   }
 
   /* ---------- PDF 저장·공유 (브라우저 인쇄 → PDF로 저장) ---------- */
-  function showPrintSetup(ws, count) {
-    const pool = bank.filter((q) => ws.includes(q.week));
+  function showPrintSetup(pool, count, label) {
     if (!pool.length) { toast('주차를 하나 이상 선택하세요'); return; }
 
     const kinds = [
@@ -355,7 +427,6 @@
       return input;
     });
     const total = count > 0 ? Math.min(count, pool.length) : pool.length;
-    const label = ws.length === weeks.length ? '전체 주차' : ws.join(', ');
 
     function make() {
       const kind = kindInputs.find((i) => i.checked).value;
@@ -363,13 +434,13 @@
       let qs;
       if (order === 'seq') {
         const chosen = new Set(shuffle(pool).slice(0, total).map((q) => q.id));
-        qs = pool.filter((q) => chosen.has(q.id)).map((q) => ({
-          q, choices: q.choices.slice(), correctIndex: q.answer - 1,
-        }));
+        qs = pool.filter((q) => chosen.has(q.id)).map((q) => (isShort(q)
+          ? { q, short: true }
+          : { q, choices: q.choices.slice(), correctIndex: q.answer - 1 }));
       } else {
         qs = shuffle(pool).slice(0, total).map((q) => prepareQuestion(q, false));
       }
-      showPrintDoc(qs, kind, label, () => showPrintSetup(ws, count));
+      showPrintDoc(qs, kind, label, () => showPrintSetup(pool, count, label));
     }
 
     render(
@@ -425,11 +496,13 @@
     const body = items.map((it, i) => el('article', { class: 'print-q' },
       el('p', { class: 'q-text' }, el('span', { class: 'q-num' }, `${i + 1}.`), it.q.question,
         el('span', { class: 'print-tag' }, ` [${it.q.week}${it.q.type ? ' · ' + it.q.type : ''}]`)),
-      el('ol', { class: 'print-choices' }, it.choices.map((c, ci) =>
-        el('li', { class: kind === 'study' && ci === it.correctIndex ? 'ans' : null },
-          el('span', { class: 'mark' }, MARKS[ci]), ' ', c))),
+      it.short
+        ? el('div', { class: 'print-blank' }, '답: ')
+        : el('ol', { class: 'print-choices' }, it.choices.map((c, ci) =>
+          el('li', { class: kind === 'study' && ci === it.correctIndex ? 'ans' : null },
+            el('span', { class: 'mark' }, MARKS[ci]), ' ', c))),
       kind === 'study' ? el('div', { class: 'print-explain' },
-        el('div', null, el('b', null, `정답 ${MARKS[it.correctIndex]}`)),
+        el('div', null, el('b', null, `정답 ${correctLabel(it)}`)),
         it.q.explanation ? el('div', null, it.q.explanation) : null,
         it.q.source ? el('div', { class: 'print-src' }, `출처: ${it.q.source}`) : null,
         noteFor(it.q, i)) : null));
@@ -437,7 +510,7 @@
     const key = kind === 'key' ? el('section', { class: 'print-key' },
       el('h3', null, '정답표'),
       el('div', { class: 'key-grid' }, items.map((it, i) =>
-        el('div', null, el('b', null, `${i + 1}`), ` ${MARKS[it.correctIndex]}`)))) : null;
+        el('div', { class: it.short ? 'wide' : null }, el('b', null, `${i + 1}`), ` ${correctLabel(it)}`)))) : null;
 
     render(toolbar, el('section', { class: 'card print-doc' }, head, body, key));
     window.scrollTo(0, 0);
@@ -484,10 +557,25 @@
       el('div', { class: 'notes-body' }, q.notes));
   }
 
-  function feedbackBox(it, chosen) {
-    const ok = chosen === it.correctIndex;
+  // 단답형: 내 답·모범 답안, 자동 채점이 오답이면 「직접 채점」 버튼
+  function shortAnswerBox(it, a, onOverride) {
+    const ok = isCorrect(it, a);
+    return el('div', { class: 'short-ans' },
+      el('div', null, el('b', null, '내 답: '), el('span', { class: ok ? 'ok' : 'bad' }, myLabel(it, a)),
+        a && a.self ? el('small', { class: 'muted' }, ' (직접 채점으로 정답 처리)') : null),
+      el('div', null, el('b', null, '모범 답안: '), el('span', { class: 'ok' }, it.q.answer)),
+      !ok && a && onOverride
+        ? el('button', { class: 'btn secondary small', type: 'button', onclick: onOverride },
+          '✔ 같은 뜻이면: 내 답도 정답으로 처리')
+        : null);
+  }
+
+  function feedbackBox(it, chosen, onOverride) {
+    const ok = isCorrect(it, chosen);
     return el('div', { class: 'feedback' },
-      el('div', { class: `verdict ${ok ? 'ok' : 'bad'}` }, ok ? '⭕ 정답입니다' : `❌ 오답입니다 — 정답 ${MARKS[it.correctIndex]}`),
+      el('div', { class: `verdict ${ok ? 'ok' : 'bad'}` },
+        ok ? '⭕ 정답입니다' : it.short ? '❌ 자동 채점: 오답' : `❌ 오답입니다 — 정답 ${MARKS[it.correctIndex]}`),
+      it.short ? shortAnswerBox(it, chosen, onOverride) : null,
       it.q.explanation ? el('div', { class: 'explain' }, it.q.explanation) : null,
       it.q.source ? el('div', { class: 'source' }, it.q.source) : null,
       notesBlock(it.q));
@@ -500,10 +588,21 @@
     const answered = s.answers[s.index] != null;
     const total = s.items.length;
 
-    const buttons = it.choices.map((c, i) => el('button', {
+    const buttons = it.short ? [] : it.choices.map((c, i) => el('button', {
       class: 'choice', type: 'button',
       onclick: () => choose(i),
     }, el('span', { class: 'mark' }, MARKS[i]), el('span', { class: 'ctext' }, c)));
+
+    // 단답형 입력칸
+    const input = it.short ? el('input', {
+      class: 'short-input', type: 'text', placeholder: '답을 입력하세요 (용어·숫자)',
+      autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': '답 입력',
+      onkeydown: (e) => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); submitShort(); } },
+    }) : null;
+    const checkBtn = it.short ? el('button', { class: 'btn', type: 'button', onclick: submitShort }, '정답 확인') : null;
+    const answerArea = it.short
+      ? el('div', { class: 'short-row' }, input, checkBtn)
+      : el('div', { class: 'choices' }, buttons);
 
     const fbSlot = el('div');
     const nextBtn = el('button', { class: 'btn', type: 'button', disabled: !answered, onclick: next },
@@ -511,13 +610,23 @@
 
     function paint() {
       const chosen = s.answers[s.index];
-      buttons.forEach((b, i) => {
-        b.disabled = chosen != null;
-        b.classList.toggle('correct', chosen != null && i === it.correctIndex);
-        b.classList.toggle('wrong', chosen != null && i === chosen && chosen !== it.correctIndex);
-      });
+      if (it.short) {
+        if (chosen != null) {
+          input.value = chosen.text;
+          input.disabled = true;
+          checkBtn.disabled = true;
+          input.classList.toggle('correct', chosen.ok);
+          input.classList.toggle('wrong', !chosen.ok);
+        }
+      } else {
+        buttons.forEach((b, i) => {
+          b.disabled = chosen != null;
+          b.classList.toggle('correct', chosen != null && i === it.correctIndex);
+          b.classList.toggle('wrong', chosen != null && i === chosen && chosen !== it.correctIndex);
+        });
+      }
       if (chosen != null) {
-        fbSlot.replaceChildren(feedbackBox(it, chosen));
+        fbSlot.replaceChildren(feedbackBox(it, chosen, () => { overrideShort(it.q, chosen); paint(); }));
         nextBtn.disabled = false;
       }
     }
@@ -526,6 +635,17 @@
       if (s.answers[s.index] != null) return;
       s.answers[s.index] = i;
       recordAnswer(it.q, i === it.correctIndex);
+      paint();
+      fbSlot.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function submitShort() {
+      if (s.answers[s.index] != null) return;
+      const text = input.value.trim();
+      if (!text) { toast('답을 입력하세요'); input.focus(); return; }
+      const a = { text, ok: gradeShort(it.q, text) };
+      s.answers[s.index] = a;
+      recordAnswer(it.q, a.ok);
       paint();
       fbSlot.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
@@ -539,7 +659,7 @@
       el('article', { class: 'card' },
         metaTags(it),
         el('p', { class: 'q-text' }, el('span', { class: 'q-num' }, `${s.index + 1}.`), it.q.question),
-        el('div', { class: 'choices' }, buttons),
+        answerArea,
         fbSlot),
       el('div', { class: 'bottom-bar' }, el('div', { class: 'inner' },
         el('button', { class: 'btn secondary', type: 'button', disabled: s.index === 0, onclick: () => { s.index--; showStudyQuestion(); } }, '← 이전'),
@@ -566,6 +686,21 @@
     }
 
     const questionsEls = s.items.map((it, qi) => {
+      if (it.short) {
+        const input = el('input', {
+          class: 'short-input', type: 'text', placeholder: '답을 입력하세요',
+          autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': `${qi + 1}번 답 입력`,
+          oninput: () => {
+            const text = input.value.trim();
+            s.answers[qi] = text ? { text } : null;
+            paintProgress();
+          },
+        });
+        return el('section', { class: 'paper-q', id: `pq-${qi + 1}` },
+          metaTags(it),
+          el('p', { class: 'q-text' }, el('span', { class: 'q-num' }, `${qi + 1}.`), it.q.question),
+          input);
+      }
       const buttons = it.choices.map((c, ci) => el('button', {
         class: 'choice', type: 'button', 'aria-pressed': 'false',
         onclick: () => {
@@ -593,7 +728,11 @@
     function submit() {
       const left = s.answers.filter((a) => a == null).length;
       if (left && !confirm(`아직 ${left}문항을 풀지 않았습니다. 그래도 제출할까요?\n(안 푼 문항은 오답 처리됩니다)`)) return;
-      s.items.forEach((it, i) => recordAnswer(it.q, s.answers[i] === it.correctIndex));
+      s.items.forEach((it, i) => {
+        const a = s.answers[i];
+        if (it.short && a) a.ok = gradeShort(it.q, a.text);
+        recordAnswer(it.q, isCorrect(it, a));
+      });
       finish();
     }
 
@@ -603,10 +742,15 @@
         el('div', { class: 'sub' }, s.label),
         el('div', { class: 'paper-grid' },
           el('div', null, el('b', null, '범위'), weekSet.join(', ')),
-          el('div', null, el('b', null, '문항 수'), `${total}문항 · 객관식`),
+          el('div', null, el('b', null, '문항 수'), (() => {
+            const shortN = s.items.filter((it) => it.short).length;
+            if (!shortN) return `${total}문항 · 객관식`;
+            if (shortN === total) return `${total}문항 · 단답형`;
+            return `${total}문항 · 객관식 ${total - shortN} + 단답형 ${shortN}`;
+          })()),
           el('div', null, el('b', null, '일자'), now.toLocaleDateString('ko-KR')),
           el('div', null, el('b', null, '미출제'), `${newCount}문항 포함`)),
-        el('div', { class: 'paper-note' }, '※ 각 문항에서 가장 적절한 답 하나를 고르시오. 모든 문항을 푼 뒤 아래 [답안 제출]을 누르면 한꺼번에 채점됩니다.')),
+        el('div', { class: 'paper-note' }, '※ 객관식은 가장 적절한 답 하나를 고르고, 단답형은 용어·숫자를 적으시오. 모든 문항을 푼 뒤 아래 [답안 제출]을 누르면 한꺼번에 채점됩니다.')),
       progressHost,
       el('article', { class: 'card' }, questionsEls),
       el('section', { class: 'card' }, el('h3', null, '답안지 (번호를 누르면 이동)'), el('div', { class: 'omr' }, omrLinks)),
@@ -620,22 +764,41 @@
   function finish() {
     const s = session;
     s.finished = true;
-    const correct = s.items.filter((it, i) => s.answers[i] === it.correctIndex).length;
-    const total = s.items.length;
-
+    s.finishedAt = Date.now();
     const history = store.get(KEYS.history, []);
-    history.push({ at: Date.now(), label: s.label, mode: s.mode, correct, total });
+    history.push({ at: s.finishedAt, label: s.label, mode: s.mode, correct: countCorrect(s), total: s.items.length });
     store.set(KEYS.history, history.slice(-100));
+    showResults();
+  }
+
+  function countCorrect(s) { return s.items.filter((it, i) => isCorrect(it, s.answers[i])).length; }
+
+  // 결과 화면에서 단답형을 직접 채점하면 이번 회차 점수 기록도 고쳐서 다시 그린다
+  function overrideInResults(it, a) {
+    const s = session;
+    overrideShort(it.q, a);
+    const history = store.get(KEYS.history, []);
+    const h = history.find((x) => x.at === s.finishedAt);
+    if (h) { h.correct = countCorrect(s); store.set(KEYS.history, history); }
+    const y = window.scrollY;
+    showResults();
+    window.scrollTo(0, y);
+  }
+
+  function showResults() {
+    const s = session;
+    const correct = countCorrect(s);
+    const total = s.items.length;
 
     // 이번 회차 주차별 성적
     const per = {};
     s.items.forEach((it, i) => {
       const p = per[it.q.week] || (per[it.q.week] = { correct: 0, total: 0 });
       p.total++;
-      if (s.answers[i] === it.correctIndex) p.correct++;
+      if (isCorrect(it, s.answers[i])) p.correct++;
     });
 
-    const wrongNow = s.items.filter((it, i) => s.answers[i] !== it.correctIndex).length;
+    const wrongNow = total - correct;
 
     const resultCard = el('section', { class: 'card' },
       el('div', { class: 'score-sub' }, s.label),
@@ -661,16 +824,18 @@
       el('h2', { style: 'margin:18px 0 10px' }, '문항별 정답과 해설'),
       s.items.map((it, i) => {
         const a = s.answers[i];
-        const ok = a === it.correctIndex;
+        const ok = isCorrect(it, a);
         return el('article', { class: `card review-item ${ok ? 'ok' : 'bad'}` },
           metaTags(it),
           el('p', { class: 'q-text' }, el('span', { class: 'q-num' }, `${i + 1}.`), it.q.question),
-          el('div', { class: 'choices' }, it.choices.map((c, ci) => el('div', {
-            class: `choice${ci === it.correctIndex ? ' correct' : ''}${ci === a && !ok ? ' wrong' : ''}`,
-          }, el('span', { class: 'mark' }, MARKS[ci]), el('span', { class: 'ctext' }, c)))),
-          el('div', { class: 'review-ans' },
-            '내 답: ', el('span', { class: ok ? 'ok' : 'bad' }, a == null ? '미응답' : MARKS[a]),
-            '  ·  정답: ', el('span', { class: 'ok' }, MARKS[it.correctIndex])),
+          it.short
+            ? shortAnswerBox(it, a, () => overrideInResults(it, a))
+            : el('div', { class: 'choices' }, it.choices.map((c, ci) => el('div', {
+              class: `choice${ci === it.correctIndex ? ' correct' : ''}${ci === a && !ok ? ' wrong' : ''}`,
+            }, el('span', { class: 'mark' }, MARKS[ci]), el('span', { class: 'ctext' }, c)))),
+          it.short ? null : el('div', { class: 'review-ans' },
+            '내 답: ', el('span', { class: ok ? 'ok' : 'bad' }, myLabel(it, a)),
+            '  ·  정답: ', el('span', { class: 'ok' }, correctLabel(it))),
           el('div', { class: 'feedback' },
             it.q.explanation ? el('div', { class: 'explain' }, it.q.explanation) : null,
             it.q.source ? el('div', { class: 'source' }, it.q.source) : null,

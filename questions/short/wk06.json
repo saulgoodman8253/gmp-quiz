@@ -1,0 +1,139 @@
+{
+  "week": "WK06",
+  "title": "mAb 공정 설계 · 여과(CFF/TFF) · 공정 계산",
+  "questions": [
+    {
+      "id": "wk06-s01",
+      "kind": "short",
+      "type": "단답",
+      "question": "CFF(cross flow filtration)를 미주·한국에서 부르는 다른 이름의 약어는?",
+      "answer": "TFF",
+      "accept": [
+        "tangential flow filtration",
+        "탄젠셜플로우필트레이션"
+      ],
+      "explanation": "CFF는 유럽식, TFF는 미주·한국식 이름이다. DSP 작업의 약 30%를 차지하고, 모든 바이오의약품에 필수다.",
+      "source": "6주차 녹음 1부 32:46",
+      "notes": "[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
+    },
+    {
+      "id": "wk06-s02",
+      "kind": "short",
+      "type": "단답",
+      "question": "TFF로 formulation할 때 농축(UF)과 버퍼 교환(DF) 중 무엇을 먼저 하는가?",
+      "answer": "농축(UF)",
+      "accept": [
+        "농축",
+        "UF",
+        "concentration",
+        "ultrafiltration",
+        "농축먼저",
+        "UF 먼저"
+      ],
+      "explanation": "부피를 먼저 줄여야 DF에 드는 버퍼(물)·시간·비용이 적다. 면접 기출이기도 하다.",
+      "source": "6주차 녹음 1부 32:46–46:15",
+      "notes": "[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
+    },
+    {
+      "id": "wk06-s03",
+      "kind": "short",
+      "type": "단답",
+      "question": "CWF를 TMP·막면적·온도로 보정해 카세트 막 상태를 판단하는 값의 약어는?",
+      "answer": "NWP",
+      "accept": [
+        "normalized water permeability"
+      ],
+      "explanation": "NWP = water flux × 온도 보정계수 / TMP(LMH/bar). 초기값과 비교해 세정·재사용 여부를 판단한다.",
+      "source": "6주차 녹음 1부 01:12–01:18",
+      "notes": "[TFF 운전·세정·재사용] (6주차, WK04 슬라이드)\n· 순서: installation → flushing(보존용액 제거, WFI) → sanitization(NaOH) → flushing → NWP(기준) → integrity test → buffer conditioning → [1st 농축 → DF → 2nd 농축 → product recovery] → buffer flush → CIP(0.5 M NaOH) → flushing → NWP(초기와 비교) → storage(20% 에탄올 또는 0.1 M NaOH). 8시간 중 공정 3시간, 전후처리 5시간.\n· CWF = 물 flux. NWP = Water flux × 온도 보정계수(Kt) / (TMP × Area). Kt: 0 ℃ 2.003, 4 ℃ 1.751, 25 ℃ 1.000 – 차가우면 점도↑ flux↓. 뜨거운 물로 재면 115%가 나와 막 파손으로 오해한 사례(회복률 UF/DF 전 100%, 후 86.7%, 0.5 N NaOH 후 115.4%).\n· 재사용 기준(슬라이드): 배치 간 NWP(초기 대비 약 80% 표기), integrity, 제품 품질·수율, leachable(TOC) → life cycle 결정. 재사용 소모품 2개 = 크롬 레진, 카세트. 한계: 공정 문제(막힘→시간↑→deviation) + 제품 문제(E&L, ligand leaching → leached Protein A QC). 40회로 정했어도 과막힘이면 즉시 폐기.\n(WK04(여과) 슬라이드 106–113 · 6주차 녹음 1부 50:02–01:36:59)\n\n[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
+    },
+    {
+      "id": "wk06-s04",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "0 ℃ 물로 측정한 water flux가 30 LMH, TMP 1.5 bar였다(0 ℃ 보정계수 Kt = 2.003). NWP는 약 몇 LMH/bar인가?",
+      "answer": "약 40 LMH/bar",
+      "accept": [],
+      "num": 40,
+      "tol": 0.5,
+      "explanation": "NWP = 30 × 2.003 / 1.5 ≈ 40 LMH/bar. 차가운 물은 점도가 높아 flux가 낮게 나오므로 25 ℃ 기준으로 올려 보정한다.",
+      "source": "6주차 녹음 1부 01:12–01:18",
+      "notes": "[TFF 운전·세정·재사용] (6주차, WK04 슬라이드)\n· 순서: installation → flushing(보존용액 제거, WFI) → sanitization(NaOH) → flushing → NWP(기준) → integrity test → buffer conditioning → [1st 농축 → DF → 2nd 농축 → product recovery] → buffer flush → CIP(0.5 M NaOH) → flushing → NWP(초기와 비교) → storage(20% 에탄올 또는 0.1 M NaOH). 8시간 중 공정 3시간, 전후처리 5시간.\n· CWF = 물 flux. NWP = Water flux × 온도 보정계수(Kt) / (TMP × Area). Kt: 0 ℃ 2.003, 4 ℃ 1.751, 25 ℃ 1.000 – 차가우면 점도↑ flux↓. 뜨거운 물로 재면 115%가 나와 막 파손으로 오해한 사례(회복률 UF/DF 전 100%, 후 86.7%, 0.5 N NaOH 후 115.4%).\n· 재사용 기준(슬라이드): 배치 간 NWP(초기 대비 약 80% 표기), integrity, 제품 품질·수율, leachable(TOC) → life cycle 결정. 재사용 소모품 2개 = 크롬 레진, 카세트. 한계: 공정 문제(막힘→시간↑→deviation) + 제품 문제(E&L, ligand leaching → leached Protein A QC). 40회로 정했어도 과막힘이면 즉시 폐기.\n(WK04(여과) 슬라이드 106–113 · 6주차 녹음 1부 50:02–01:36:59)"
+    },
+    {
+      "id": "wk06-s05",
+      "kind": "short",
+      "type": "단답",
+      "question": "'멸균 5총사' – 건열, 습열(수증기), 방사선, 가스, 그리고 나머지 하나는?",
+      "answer": "여과",
+      "accept": [
+        "filtration",
+        "여과멸균",
+        "여과 멸균",
+        "필터",
+        "필터 여과"
+      ],
+      "explanation": "대형 배양기는 습열(스팀)만 현실적이라 SIP를 한다. 동물세포 배지는 여과로 멸균한다.",
+      "source": "6주차 녹음 1부 51:29",
+      "notes": "[멸균 5총사 · CIP/SIP] (6주차 – \"외워라\")\n· 건열, 습열(수증기), 방사선, 독가스(EO·VHP 등), 여과.\n· 대형 스테인리스 배양기는 현실적으로 습열(스팀)만 가능 → SIP(steam/sterilization in place). CIP(clean in place)를 먼저, 그다음 SIP. 조립된 상태로 수행.\n· 배관 CIP는 고속·고압 세척액(난류), 탱크 내부는 spray ball. dead leg 최소화, 배수 기울기. 카세트 세정 0.5 M NaOH, 세정 확인 = 같은 압력에서 물 유속을 초기와 비교(NWP).\n· single-use는 배관이 간소하고 CIP/SIP 없이 일회용.\n(6주차 녹음 1부 50:02–57:57 · 7주차 녹음 2부 07:17)"
+    },
+    {
+      "id": "wk06-s06",
+      "kind": "short",
+      "type": "단답",
+      "question": "대형 배양기·배관을 조립된 상태 그대로 스팀으로 멸균하는 것의 약어는?",
+      "answer": "SIP",
+      "accept": [
+        "steam in place",
+        "sterilization in place",
+        "sterilisation in place"
+      ],
+      "explanation": "CIP(clean in place)를 먼저 하고 SIP를 한다.",
+      "source": "6주차 녹음 1부 51:29",
+      "notes": "[멸균 5총사 · CIP/SIP] (6주차 – \"외워라\")\n· 건열, 습열(수증기), 방사선, 독가스(EO·VHP 등), 여과.\n· 대형 스테인리스 배양기는 현실적으로 습열(스팀)만 가능 → SIP(steam/sterilization in place). CIP(clean in place)를 먼저, 그다음 SIP. 조립된 상태로 수행.\n· 배관 CIP는 고속·고압 세척액(난류), 탱크 내부는 spray ball. dead leg 최소화, 배수 기울기. 카세트 세정 0.5 M NaOH, 세정 확인 = 같은 압력에서 물 유속을 초기와 비교(NWP).\n· single-use는 배관이 간소하고 CIP/SIP 없이 일회용.\n(6주차 녹음 1부 50:02–57:57 · 7주차 녹음 2부 07:17)"
+    },
+    {
+      "id": "wk06-s07",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "직경 1.6 cm, 베드 높이 20 cm 컬럼의 CV는 약 몇 mL인가? (π = 3.14)",
+      "answer": "약 40 mL",
+      "accept": [],
+      "num": 40,
+      "tol": 0.5,
+      "explanation": "CV = πr²h = 3.14 × 0.8² × 20 ≈ 40 mL(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL다.",
+      "source": "6주차 녹음 2부 39:17",
+      "notes": "[크로마토그래피 scale-up – \"같아야 하는 것\"]\n· 고정(fixed): bed height, 선속도(linear flow rate, cm/h), 시료 농도, 시료 부피/레진 부피, gradient 부피/레진 부피. (같은 레진·같은 버퍼 전제)\n· 증가(variable): 시료 로딩량, volumetric flow rate(L/h), 컬럼 직경. → \"높이는 그대로, 직경만 키운다.\" 베드 20 cm 선호.\n· flow rate = 선속도 × 단면적. 컬럼 부피 = πr²h(1 cm³ = 1 mL). 16 mm 컬럼은 1 cm당 약 2 mL. '16/20' = 직경/베드 높이.\n· GF는 wall effect 때문에 높이를 늘리지 않고 20 cm 섹션을 이어 붙인다. fine tuning: gradient·유량·EQ 부피 조정.\n(WK03 p.57–60 · 3주차 녹음 01:57:56, 02:58:38 · 6주차 녹음 2부 25:21–39:17)"
+    },
+    {
+      "id": "wk06-s08",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "titer 0.1 g/L 배양액 10,000 L를 DBC 50 mg/mL 레진으로 정제한다. safety factor 100%를 적용하면 레진은 몇 L 필요한가?",
+      "answer": "40 L",
+      "accept": [],
+      "num": 40,
+      "tol": 0,
+      "explanation": "항체 1 kg ÷ 50 mg/mL = 20 L. 여유 100%를 적용하면 40 L.",
+      "source": "6주차 녹음 2부 46:53",
+      "notes": "[SBC vs DBC] (3·6주차)\n· SBC(static): beaker의 batch mode로 잰 총 용량. DBC(dynamic): 실제 운전 조건(유속)에서 흘리며 잰 '진짜' 용량 – 생산은 DBC로 설계.\n· breakthrough curve에서 C/C0 약 10%(회사에 따라 5~7%) 지점까지 넣은 양. 표기: 레진 1 mL당 mg + 유속 조건(느릴수록 잘 붙음). 공정 개발 끝·scale-up 직전, ≥10 mL 컬럼으로 측정.\n· 실제 로딩은 DBC의 50~70%(슬라이드 50~75%). 실무는 여유(safety factor, 일반 30%, 50~100%도).\n· 6주차 Case: 1 kg, titer 0.1 g/L → 10,000 L, DBC 50 mg/mL, SF 100% → 40 L 레진, 150 cm/h = 200 L/h → 50 h. CFF 20× → 500 L → 2.5 h. 레진 절반(20 L) 3 cycle → 170 L/cycle, 100 L/h → 약 6 h.\n(WK03 p.32 · 3주차 녹음 01:56:01–02:05:09 · 6주차 녹음 2부 44:25–46:53 · WK06 p.26–30)"
+    },
+    {
+      "id": "wk06-s09",
+      "kind": "short",
+      "type": "단답",
+      "question": "PD로 찾은 set point 주변을 흔들어 최적점과 허용 범위(design space)를 정하는 활동은? (영문)",
+      "answer": "process characterization (PC)",
+      "accept": [
+        "process characterization",
+        "process characterisation",
+        "PC",
+        "공정특성화",
+        "공정 특성 분석"
+      ],
+      "explanation": "PD는 되는 조건(pH 7)을 찾는다. PC는 그 주변을 물고 뜯어 최적(7.1)과 허용 범위(±0.1)를 정한다.",
+      "source": "6주차 녹음 2부 00:00–04:20",
+      "notes": "[QbD · DoE · design space · PD vs PC]\n· QbD 사이클: QTPP(목표 제품 프로파일) → CQA(핵심 품질 특성) → 위험평가 → CPP(핵심 공정 변수) → DoE → design space → control strategy. 과거엔 최종 품질만 시험(QbT), 지금은 전 과정을 설계(QbD).\n· 2주차: DoE 소프트웨어(MODDE 등) 결과의 초록 영역 = design space(최적 운영 공간), 십자 점 = set point. \"세포가 살아 있어 pH·DO가 계속 변하므로 점이 아니라 '공간(범위)'이 필요하다.\" Process characterization은 R&D 스케일 배양 후 위험평가와 함께 수행(채용공고 사례).\n· 6주차(김영태): PD = '되는 조건' 찾기(pH 7이 되네), PC = 그 주변을 물고 뜯어 최적(7.1)과 허용범위(±0.1)를 정함 → design space.\n· Scale-down model: 생산 규모에서 생긴 문제·조건을 소형 배양기(2 L)에서 재현해 DoE로 개선 → MS&T가 200 L(임상) → 15,000 L로 scale-up.\n(WK02 p.12, 18, 77, 81, 87 · 2주차 녹음 01:03:49, 02:34:59–02:38 · 6주차 녹음 2부 00:00–04:20)"
+    }
+  ]
+}
