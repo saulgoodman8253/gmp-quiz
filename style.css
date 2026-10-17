@@ -235,6 +235,28 @@ h3 { font-size: 17px; margin: 0 0 8px; }
 .choice.wrong { border-color: var(--bad); background: var(--bad-bg); }
 .choice:disabled { cursor: default; }
 
+/* 단답형 */
+.short-row { display: flex; gap: 8px; align-items: stretch; }
+.short-row .btn { flex: 0 0 auto; }
+.short-input {
+  flex: 1;
+  width: 100%;
+  min-height: 52px;
+  padding: 10px 14px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.short-input:focus { outline: none; border-color: var(--accent); }
+.short-input.correct { border-color: var(--ok); background: var(--ok-bg); }
+.short-input.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.short-ans { display: grid; gap: 6px; margin: 4px 0 8px; font-size: 15px; }
+.short-ans .ok { color: var(--ok); font-weight: 700; }
+.short-ans .bad { color: var(--bad); font-weight: 700; }
+.short-ans .btn { justify-self: start; }
+
 .feedback { margin-top: 14px; padding: 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface-2); }
 .feedback .verdict { font-weight: 800; font-size: 18px; margin-bottom: 6px; }
 .feedback .verdict.ok { color: var(--ok); }
@@ -327,6 +349,8 @@ table.stats td.num, table.stats th.num { text-align: right; white-space: nowrap;
 .print-key h3 { margin: 18px 0 8px; }
 .key-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 4px; }
 .key-grid div { border: 1px solid var(--border); border-radius: 6px; padding: 4px 6px; font-size: 15px; }
+.key-grid div.wide { grid-column: 1 / -1; }
+.print-blank { margin: 6px 0 2px 6px; padding-bottom: 18px; border-bottom: 1px solid var(--border); max-width: 70%; }
 
 @media print {
   :root, :root:not([data-theme="light"]), :root[data-theme="dark"] {
@@ -345,4 +369,5 @@ table.stats td.num, table.stats th.num { text-align: right; white-space: nowrap;
   .print-key { break-before: page; page-break-before: always; }
   .choice { padding: 4px 8px; min-height: 0; }
   .notes { display: none; }
+  .short-ans .btn { display: none; }
 }

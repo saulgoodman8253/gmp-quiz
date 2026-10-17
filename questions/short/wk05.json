@@ -1,0 +1,163 @@
+{
+  "week": "WK05",
+  "title": "완제 · RABS · APS · Isolator",
+  "questions": [
+    {
+      "id": "wk05-s01",
+      "kind": "short",
+      "type": "단답",
+      "question": "제품 대신 미생물 배양 배지를 충전해 무균 공정 전체를 모사하고 검증하는 것은?",
+      "answer": "APS (media fill)",
+      "accept": [
+        "APS",
+        "media fill",
+        "mediafill",
+        "aseptic process simulation",
+        "aseptic processing simulation",
+        "미디어필",
+        "미디어 필",
+        "배지충전"
+      ],
+      "explanation": "RABS가 오염을 막는 설계라면, APS는 그 설계가 실제로 작동함을 증명한다. 다만 무균성을 절대적으로 보증하지는 않는다.",
+      "source": "WK05 RABS·APS p.3, 12, 14",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)"
+    },
+    {
+      "id": "wk05-s02",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "APS 충전 후 배지를 배양하는 총 기간은 최소 며칠인가?",
+      "answer": "14일",
+      "accept": [],
+      "num": 14,
+      "tol": 0,
+      "explanation": "20~25 ℃에서 7일(진균), 이어서 30~35 ℃에서 7일(세균), 총 14일 이상 배양한다.",
+      "source": "WK05 RABS·APS p.13, 16",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)"
+    },
+    {
+      "id": "wk05-s03",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "신규 라인의 최초(initial) APS 검증은 연속 몇 회 성공해야 하는가?",
+      "answer": "3회",
+      "accept": [],
+      "num": 3,
+      "tol": 0,
+      "explanation": "최초 검증은 연속 3회, 정기 APS는 6개월마다(연 2회)다. 무균 작업자는 연 1회 이상 참여한다.",
+      "source": "WK05 RABS·APS p.13, 15",
+      "notes": "[APS – aseptic process simulation] (5주차)\n· 생산 공정 + 무균 배지로 실제 무균 공정 전체(인원·intervention 포함)를 모사해 무균성 검증(EU GMP Annex 1). 스모크 스터디가 필수 선행. RABS는 '막는' 설계, APS는 작동함을 '증명'.\n· 설계: 충전 수량 최소 5,000~10,000 units(소량은 실제 최대 배치), 최초 연속 3회 성공, 정기 6개월마다(연 2회), 작업자 연 1회 이상 참여. 재검증 계기: 설비 변경·중대 일탈·장기 미가동.\n· 충전량은 실제와 무관(용기·마개·밀봉부가 배지에 닿을 만큼), 라인 속도는 오염 위험이 가장 높은 조건, 동일 환경에서 EM.\n· 배양: 뒤집어서 20~25 ℃(22.5) 7일 → 30~35 ℃(32.5) 7일, 총 14일 이상. 배지 SCDM, GPT. 손상품은 제거·비배양.\n· 부적합 시 조사: 원인 규명 → 1회 검증 run, 원인 불명 → 연속 3회 run.\n· worst case 실습: 2R 바이알, 420 VPM, 300,000 vials, 간섭 최다 → 가장 빠른 속도·가장 많은 간섭·가장 큰 배치.\n· APS는 하나의 도구 – 시설 적격성, 청소·소독, EM, 기기 검증이 독립적으로 관리되어야 한다(holistic).\n(WK05 RABS·APS p.3, 12–16, 25–26)"
+    },
+    {
+      "id": "wk05-s04",
+      "kind": "short",
+      "type": "단답",
+      "question": "VHP cycle 4단계(Preparation → Conditioning → Decontamination → ?) 중 잔류 H2O2를 기준 이하로 낮추는 마지막 단계는?",
+      "answer": "aeration",
+      "accept": [
+        "에어레이션",
+        "통기",
+        "폭기"
+      ],
+      "explanation": "작업자 안전을 위해 약 1 ppm 이하로 낮춘다. 최대 적재 기준으로 검증된 시간을 임의로 줄이면 안 된다.",
+      "source": "WK05 Isolator p.7, 11, 17 · 5주차 녹음 2부 01:59",
+      "notes": "[VHP 제염과 BI·CI] (5주차 Isolator)\n· 4단계: Preparation → Conditioning(H2O2 주입, 목표 농도까지) → Decontamination(농도 유지·노출, BI·CI로 확인) → Aeration(잔류 H2O2를 기준 이하, 약 1 ppm 미만 – 작업자 안전·제품 영향).\n· 성공 조건: 목표 농도(H2O2 용액 34~37%)가 모든 표면에 충분한 시간 접촉. 원리: H2O2 → 2·OH 라디칼이 세포막·단백질·핵산 산화. 아포는 침투가 늦어 더 긴 노출 필요.\n· Occluded surface(겹친 적재물, 나사·힌지·개스킷 틈, 튜빙 내강)에는 효과 없음 → worst case BI·CI를 모서리·차폐부·공정 핵심 위치에, main chamber와 airlock을 나눠 번호로 관리.\n· BI = 살아 있는 포자로 사멸 증명(6-log SLR 이상, 모든 BI 불활성화가 합격). CI = 색 변화로 노출·분포 확인(사멸 증명 아님).\n· Cycle development: BI 3개×10 group total kill time, 온·습도 매핑, worst case → load pattern·주입량·dwell·aeration time이 PQ 조건. 흡착성 재질은 농도↓·aeration↑, 적재 감소는 유리한 변경(cycle 유지).\n(WK05 Isolator p.7–17 · 5주차 녹음 2부 00:00–01:59)"
+    },
+    {
+      "id": "wk05-s05",
+      "kind": "short",
+      "type": "단답",
+      "question": "VHP 검증에서 살아 있는 내성 포자로 실제 사멸을 증명하는 지표의 약어는?",
+      "answer": "BI",
+      "accept": [
+        "biological indicator",
+        "생물학적지표",
+        "생물학적 지시체",
+        "바이오인디케이터"
+      ],
+      "explanation": "BI는 사멸을 증명한다. CI(chemical indicator)는 색 변화로 노출·분포만 보여 준다.",
+      "source": "WK05 Isolator p.11, 13, 16",
+      "notes": "[VHP 제염과 BI·CI] (5주차 Isolator)\n· 4단계: Preparation → Conditioning(H2O2 주입, 목표 농도까지) → Decontamination(농도 유지·노출, BI·CI로 확인) → Aeration(잔류 H2O2를 기준 이하, 약 1 ppm 미만 – 작업자 안전·제품 영향).\n· 성공 조건: 목표 농도(H2O2 용액 34~37%)가 모든 표면에 충분한 시간 접촉. 원리: H2O2 → 2·OH 라디칼이 세포막·단백질·핵산 산화. 아포는 침투가 늦어 더 긴 노출 필요.\n· Occluded surface(겹친 적재물, 나사·힌지·개스킷 틈, 튜빙 내강)에는 효과 없음 → worst case BI·CI를 모서리·차폐부·공정 핵심 위치에, main chamber와 airlock을 나눠 번호로 관리.\n· BI = 살아 있는 포자로 사멸 증명(6-log SLR 이상, 모든 BI 불활성화가 합격). CI = 색 변화로 노출·분포 확인(사멸 증명 아님).\n· Cycle development: BI 3개×10 group total kill time, 온·습도 매핑, worst case → load pattern·주입량·dwell·aeration time이 PQ 조건. 흡착성 재질은 농도↓·aeration↑, 적재 감소는 유리한 변경(cycle 유지).\n(WK05 Isolator p.7–17 · 5주차 녹음 2부 00:00–01:59)"
+    },
+    {
+      "id": "wk05-s06",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "BI 합격 기준인 포자 감소량(SLR)은 최소 몇 log인가?",
+      "answer": "6-log",
+      "accept": [],
+      "num": 6,
+      "tol": 0,
+      "explanation": "6-log 이상 포자가 감소해야 하고, 모든 BI가 불활성화되어야 한다.",
+      "source": "WK05 Isolator p.11, 13, 16",
+      "notes": "[VHP 제염과 BI·CI] (5주차 Isolator)\n· 4단계: Preparation → Conditioning(H2O2 주입, 목표 농도까지) → Decontamination(농도 유지·노출, BI·CI로 확인) → Aeration(잔류 H2O2를 기준 이하, 약 1 ppm 미만 – 작업자 안전·제품 영향).\n· 성공 조건: 목표 농도(H2O2 용액 34~37%)가 모든 표면에 충분한 시간 접촉. 원리: H2O2 → 2·OH 라디칼이 세포막·단백질·핵산 산화. 아포는 침투가 늦어 더 긴 노출 필요.\n· Occluded surface(겹친 적재물, 나사·힌지·개스킷 틈, 튜빙 내강)에는 효과 없음 → worst case BI·CI를 모서리·차폐부·공정 핵심 위치에, main chamber와 airlock을 나눠 번호로 관리.\n· BI = 살아 있는 포자로 사멸 증명(6-log SLR 이상, 모든 BI 불활성화가 합격). CI = 색 변화로 노출·분포 확인(사멸 증명 아님).\n· Cycle development: BI 3개×10 group total kill time, 온·습도 매핑, worst case → load pattern·주입량·dwell·aeration time이 PQ 조건. 흡착성 재질은 농도↓·aeration↑, 적재 감소는 유리한 변경(cycle 유지).\n(WK05 Isolator p.7–17 · 5주차 녹음 2부 00:00–01:59)"
+    },
+    {
+      "id": "wk05-s07",
+      "kind": "short",
+      "type": "단답",
+      "question": "아이솔레이터 qualification 단계 중 압력·기류·누출·알람·인터록 '기능'을 확인하는 단계의 약어는?",
+      "answer": "OQ",
+      "accept": [
+        "operational qualification",
+        "operation qualification",
+        "운전적격성평가",
+        "운전 적격성 평가"
+      ],
+      "explanation": "URS → IQ → OQ → CD → MBQ/PQ → PRQ. worst case 적재로 BI 사멸을 입증하는 것은 PQ다.",
+      "source": "WK05 Isolator p.2, 15 · 7주차 녹음 2부 49:16–59:13",
+      "notes": "[아이솔레이터와 qualification] (5주차)\n· 원리 4: 물리적 구조(글러브포트로만 조작), 압력·기류(양압, HEPA 단일방향), 기밀성(leak integrity – 앞의 두 원리의 전제), 표면 제염(VHP). 작업공간이 Grade C여도 내부 Grade A. 압력 계위: main chamber > airlock > 작업공간. Incoming·outgoing airlock까지 하나의 시스템.\n· Qualification: URS → IQ(설치·자재·계기·도면 일치) → OQ(pressure, airflow, leak, alarm, interlock 기능) → CD(cycle development) → MBQ/PQ(worst case load에서 BI 사멸·SLR) → PRQ(매년 주기적 재적격성).\n· 글러브: 작업 전·후 leak test(부풀려 pressure decay, ISO 14644-7), 실패 시 조사, 모든 결과 기록. Annex 1: 빈번한 leak test 요구.\n· 7주차 V-model과 같은 구조: qualification(장비) 전제 위에 validation(공정).\n(WK05 Isolator p.2–6, 15, 18 · 5주차 녹음 2부 00:00–01:59 · 7주차 녹음 2부 01:10:15)"
+    },
+    {
+      "id": "wk05-s08",
+      "kind": "short",
+      "type": "단답",
+      "question": "RABS를 둘러싼 주변실(배경)에 필요한 청정 등급은?",
+      "answer": "Grade B",
+      "accept": [
+        "B",
+        "B등급",
+        "B 등급",
+        "grade b",
+        "그레이드 B"
+      ],
+      "explanation": "기존 클린룸과 RABS는 배경이 Grade B여야 한다. 완전 밀폐형 아이솔레이터만 Grade C/D 배경을 쓸 수 있다.",
+      "source": "WK05 RABS·APS p.9, 11 · WK05 Isolator p.6",
+      "notes": "[RABS] (5주차 + 7주차)\n· Grade A 충전구역을 물리적 차단벽 + 단일방향 HEPA 기류(0.36~0.54 m/s)로 작업자 오염에서 보호. 주변실 Grade B. 글러브포트가 유일한 접근 경로.\n· Open RABS: 예외적 도어 intervention, Grade A 공기를 주변실로 배기, 소독 후 개방 이송 → 위험 상대적↑, 유연. Closed RABS: 글러브포트 전용, 폐쇄 순환·전용 배기, RTP 밀폐 이송 → 아이솔레이터에 근접.\n· 비교: 기존 클린룸(가운만, 배경 B) – RABS(차단벽, B) – 아이솔레이터(완전 밀폐, C/D, VHP 자동 제균). 위험 Cleanroom > RABS > Isolator, 초기 투자·제균 시간은 반대.\n· Intervention: 최소화·표준화·기록·검증. 바이알 쓰러짐 → 라인 정지 → 글러브포트로 제거 → 인접 용기 폐기 → 소독 → 기록. 도어 개방·Grade A 상부로 팔 뻗기(first air 차단) 금지. 최악 조건으로 APS·스모크 스터디에 반영.\n· 7주차: RABS = 밑이 뚫림, 오토클레이브 백에 알코올 분무 후 반입, 저렴 / isolator = 완전 밀봉, 옆 챔버 멸균 후 반입. Annex 1 개정 → '가능하면 isolator' → RABS 감소. 납기 1~2년이라 준공 2년 전 발주.\n(WK05 RABS·APS p.3–11, 22–24 · 7주차 녹음 1부 54:10–58:43)"
+    },
+    {
+      "id": "wk05-s09",
+      "kind": "short",
+      "type": "단답",
+      "question": "원료 뚜껑을 여는 순간부터 다음 공정까지 허용된 시간을 뜻하는 용어는?",
+      "answer": "hold time",
+      "accept": [
+        "홀드타임",
+        "홀드 타임",
+        "holding time",
+        "hold-time"
+      ],
+      "explanation": "hold time은 검증으로 규정한다. 넘기면 bioburden이나 품질 변화 위험이 있다.",
+      "source": "5주차 녹음 1부 56:33",
+      "notes": "[완제의약품 제조] (5주차 J&J 강사진 + 4주차)\n· DP = API(DS) + 부형제 → 제형화, 품질·안전성·유효성 보증 후 출하. 제형: 경구 고형제(정제·캡슐), 액제(시럽·점안제), 외용제(연고·크림·패치), 주사제(앰플·바이알·수액). 주사제는 혈관·근육 직접 투여 → 미생물 오염이 치명적(고형제는 위산이 안전장치).\n· 흐름: 입고·칭량 → 혼합·조제(compounding) → (주사제) sterile filtration → 충전·밀봉 → (동결건조) → 타전·캡핑 → 육안검사·라벨·포장 → 시험·출하. 칭량 오류 = 치사량/무효, 혼합 불량 = 앞부분 과량·뒷부분 무효.\n· 부형제 조건: 무해, 치료 효과·시험에 영향 없음(pH 조절제, 완충제, 보존제, 안정화제). 혼합 KEY: 완전 용해 기준 교반(과교반 = 기포·변성), pH·삼투압·함량 확인, 필터 사용 전후 완전성 시험, hold time(개봉 순간 타이머 시작) 규정. compounding tank 1,000~2,000 L, WFI, jacket(2~8 ℃), CIP.\n· 충전: 바이알(고무마개+알루미늄 캡), 앰플(화염 융착), PFS(플런저), 동결건조(반마개 → 건조 → 완전 밀봉; 액상에서 불안정할 때). KEY: 충전량 정밀도, IPC 중량검사, CCI, 이물·외관 전수검사. 충전은 가장 위험한 구간(Grade A/B, EM, media fill).\n· Formulation 핵심 2가지(김영태) = 버퍼 조성 변경 + 농도 조절 → UF/DF. 고농도 응집 → polysorbate 등 안정제. 주사제는 체액과 삼투압을 맞춤(약전).\n(WK05 완제공정 p.4–21 · 5주차 녹음 1부 42:02–59:46 · 4주차 녹음 02:25–02:31)"
+    },
+    {
+      "id": "wk05-s10",
+      "kind": "short",
+      "type": "단답",
+      "question": "단백질 주사제는 열 멸균을 할 수 없어 '(   ) + 무균 충전'으로 무균성을 확보한다. 빈칸은?",
+      "answer": "sterile filtration",
+      "accept": [
+        "멸균여과",
+        "멸균 여과",
+        "무균여과",
+        "무균 여과",
+        "제균여과",
+        "제균 여과"
+      ],
+      "explanation": "무균의약품을 만드는 방법은 세 가지다.\n- terminal sterilization: 수액\n- sterile filtration: 단백질\n- aseptic process: 세포치료제",
+      "source": "5주차 녹음 1부 49:14 · 4주차 녹음 02:52",
+      "notes": "[무균의약품 만드는 방법 3가지] (4·5주차)\n· Terminal sterilization(최종멸균): 충전·밀봉 후 용기째 가열(수액·생리식염수). 가능하면 원칙, 무균 보증 수준 최고. 멸균 후 생존 확률 10⁻⁶(100만분의 1) 이하 보증.\n· Sterile filtration: 열에 약한 단백질(항체)을 0.2 µm로 여과 멸균 후 무균 충전.\n· Aseptic process: 세포치료제는 세포(10 µm)가 0.2 µm 필터를 통과하지 못해 처음부터 끝까지 무균.\n· 공정별: 배양 = 무균 공정, 항체 정제 = non-aseptic, 완제 = sterile filtration으로 다시 무균. 무균성은 공정 설계와 지속 관리로 보증(감기 걸린 작업자 생산 불참).\n(4주차 녹음 02:52 · WK05 완제공정 p.7 · 5주차 녹음 1부 49:14–51:19)"
+    }
+  ]
+}

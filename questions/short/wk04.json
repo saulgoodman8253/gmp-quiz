@@ -1,0 +1,182 @@
+{
+  "week": "WK04",
+  "title": "바이오공정 개관 · Downstream 2 (여과)",
+  "questions": [
+    {
+      "id": "wk04-s01",
+      "kind": "short",
+      "type": "단답",
+      "question": "세포 안에 생산물이 쌓이는 미생물에서 세포를 '모으는' 공정을 cell harvest라 한다. 분비형 동물세포에서 세포를 '제거'하는 공정은? (실무자가 혼동하는 단어)",
+      "answer": "clarification",
+      "accept": [
+        "cell clarification",
+        "클래리피케이션",
+        "정화"
+      ],
+      "explanation": "동물세포(CHO)는 항체를 밖으로 분비(extracellular)하므로 세포를 제거하고 액체를 쓴다. 이것을 cell harvest라 외우면 헛공부라고 했다.",
+      "source": "4주차 녹음 01:35:56–01:39 · WK04(여과) 슬라이드 13, 14",
+      "notes": "[Cell harvest vs Clarification – 실무자가 잘못 쓰는 단어]\n· 미생물(E. coli): 세포벽이 있고 생산물이 세포 안(intracellular) → 세포를 '모은다' = cell harvest(원심 pellet 또는 CFF retentate) → 파쇄(lysis) → inclusion body 세척·용해·refolding.\n· 동물세포(CHO): 항체를 배양액으로 분비(extracellular) → 세포를 '제거한다' = (cell) clarification(원심→depth→sterile, 또는 CFF permeate, 또는 DEF→depth→sterile).\n· 김영태: \"실무자들이 혼용하지만 cell harvest라고 외우면 헛공부.\"\n· sol/insol 분리 = 원심·여과. 2,000~3,000 L 이상이면 연속식 원심분리기, 이하면 필터만(VCD가 10배면 2,000 L라도 원심). 원심 후 반드시 depth filter(세트). 세포 부피(wet cell weight, 약 20%)만큼 부피 감소, post-flush로 필터 잔류분 회수.\n(4주차 녹음 01:35:56–01:49 · WK04(여과) 슬라이드 13–14 · 6주차 녹음 2부 01:27 · 7주차 녹음 1부 46:48)"
+    },
+    {
+      "id": "wk04-s02",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "강의에서 '외워라'고 한 크기 중 non-enveloped virus는 약 몇 nm인가?",
+      "answer": "약 20 nm",
+      "accept": [],
+      "num": 20,
+      "tol": 0,
+      "explanation": "동물세포 10 µm, 미생물 1 µm, sterile filtration 0.2 µm, enveloped virus 100 nm, non-enveloped virus 20 nm, 항체 150 kDa.",
+      "source": "4주차 녹음 01:40:21",
+      "notes": "[크기 – \"외워라\"] (4주차)\n· 동물세포 약 10 µm > 미생물 약 1 µm > sterile filter 0.2 µm(=200 nm) > enveloped virus 약 100 nm > non-enveloped virus 약 20 nm. 항체는 150 kDa(무게 단위). 머리카락 약 100 µm.\n· 그래서 0.2 µm로 균은 걸러도 바이러스는 통과 → low pH VI, AEX, virus filtration 같은 VCS 단계가 필요. 세포치료제는 세포 자체가 10 µm라 여과 멸균 불가.\n(4주차 녹음 01:40:21)"
+    },
+    {
+      "id": "wk04-s03",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "Protein A 레진에서 항체를 용출하는 pH 범위는?",
+      "answer": "pH 3~3.5",
+      "accept": [],
+      "num": 3.25,
+      "tol": 0.25,
+      "explanation": "binding은 중성에서 Fc로, elution은 low pH 3~3.5로 한다. 이어서 30분~1시간 홀딩하는 low pH VI가 쌍으로 따라온다.",
+      "source": "4주차 녹음 01:56:19 · 6주차 녹음 1부 23:20",
+      "notes": "[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)"
+    },
+    {
+      "id": "wk04-s04",
+      "kind": "short",
+      "type": "단답",
+      "question": "impurity 4총사는 HCP, HCD(host cell DNA), endotoxin, 그리고 무엇인가?",
+      "answer": "virus (바이러스)",
+      "accept": [
+        "virus",
+        "viruses",
+        "바이러스"
+      ],
+      "explanation": "impurity 4총사는 pI가 2~4라서 pH 5~6에서 − 전하를 띤다. 항체(pI 7~8)는 + 전하라 둘이 반대가 된다.",
+      "source": "4주차 녹음 02:06–02:12",
+      "notes": "[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)"
+    },
+    {
+      "id": "wk04-s05",
+      "kind": "short",
+      "type": "단답",
+      "question": "low pH VI 후 pH를 5~6으로 올렸을 때, 항체를 bind & elute로 잡는 이온교환 레진 종류(약어)는?",
+      "answer": "CEX",
+      "accept": [
+        "CIEX",
+        "cation exchange",
+        "양이온교환",
+        "양이온 교환",
+        "cation exchanger",
+        "양이온교환크로마토그래피"
+      ],
+      "explanation": "pH 5~6에서 항체는 + 전하라 CEX에 결합하고, 음전하 불순물은 flow-through로 빠진다. 용출은 high salt(high conductivity)로 한다.",
+      "source": "4주차 녹음 02:06–02:14",
+      "notes": "[Protein A와 low pH VI] (4·6주차)\n· Protein A: Y자 항체의 Fc에 결합하는 affinity 레진(네잎클로버). bind & elute, 용출은 low pH 3~3.5(\"외우세요\" – 레진은 binding·elution 조건을 쌍으로 알 것). 통과 후 순도 90~95%. 레진 1 L 약 2만 유로.\n· Protein A와 VI는 무조건 쌍(VCS): 용출액을 low pH로 30분~1시간(길게 90분) holding → enveloped virus 파괴.\n· 변성·응집으로 '조개탕 국물' 같은 탁도 → depth filter(Millistak)로 제거 → pH 5~6으로 올려 IEX로.\n(4주차 녹음 01:56:19–02:06 · 6주차 녹음 1부 23:20 · 7주차 녹음 2부 16:52)\n\n[pI와 impurity 4총사] (4·6주차)\n· impurity 4총사 = HCP(host cell protein), HCD(host cell DNA), endotoxin, virus. 모두 pI가 낮다(약 2~4).\n· 항체 pI 7~8. pH < pI → + 전하, pH > pI → − 전하.\n· pH 5~6에서 항체 +, 불순물 − → CEX bind & elute(항체 결합) / AEX flow-through(불순물 결합, 항체 통과). pH 5~6은 formulation 직전까지 유지.\n· 거꾸로 묻는 문제 주의: 목적 단백질 pI가 낮고 불순물 pI가 높으면 전하가 반대가 된다.\n(4주차 녹음 02:06–02:14 · 6주차 녹음 1부 27:44 · WK03 p.35–36)"
+    },
+    {
+      "id": "wk04-s06",
+      "kind": "short",
+      "type": "단답",
+      "question": "바이러스 제거 정도를 로그 단위로 나타내는 'log reduction value'의 약어는?",
+      "answer": "LRV",
+      "accept": [
+        "log reduction value",
+        "로그감소값"
+      ],
+      "explanation": "AEX FT 한 스텝에서 5~6 LRV, virus filtration을 더해 총 10 중후반 LRV를 목표로 한다.",
+      "source": "4주차 녹음 02:21:53",
+      "notes": "[크롬 조합과 VCS] (4·6주차)\n· 표준 P-C-A: CEX는 high salt(고전도도, mS/cm)로 용출 → AEX 전에 물 희석(대용량 부담) 또는 UF/DF(TFF)로 탈염 필요. VCS 관점에서 AEX에 여유가 있어 바이러스 제거가 안정적.\n· P-A-C: AEX가 flow-through라 전도도·pH 변화 없음 → 바로 CEX, 연속 공정에 편함.\n· P-C-H: 정제가 진행되며 농도↑로 생긴 dimer·multimer 제거에 HIC가 유리(Protein A·IEX는 monomer/dimer 분리 어려움).\n· IEX 용출은 pH 변경(구조 뒤틀림, 현업 안 씀) 대신 high salt(NaCl).\n· AEX(FT)는 바이러스 결합 제거(VCS 2번째), 한 스텝 5~6 LRV. + virus filtration → 총 10 중후반 LRV 목표. LRV = log₁₀(처리 전/처리 후).\n· 동물 유래 원료는 바이러스 위험을 배제할 수 없어 혈장제제·CHO 항체 모두 VCS(virus clearance study) 법적 요구. VCS는 축소 모델에 바이러스를 spiking해 평가.\n(4주차 녹음 02:00:18–02:22 · 6주차 녹음 1부 27:44–31:21, 2부 15:48–25:12)"
+    },
+    {
+      "id": "wk04-s07",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "바이러스 총량이 10⁷에서 10²로 줄었다면 LRV는?",
+      "answer": "5",
+      "accept": [],
+      "num": 5,
+      "tol": 0,
+      "explanation": "LRV = log(투입 총량) − log(산출 총량) = 7 − 2 = 5.",
+      "source": "4주차 녹음 02:21:53",
+      "notes": "[크롬 조합과 VCS] (4·6주차)\n· 표준 P-C-A: CEX는 high salt(고전도도, mS/cm)로 용출 → AEX 전에 물 희석(대용량 부담) 또는 UF/DF(TFF)로 탈염 필요. VCS 관점에서 AEX에 여유가 있어 바이러스 제거가 안정적.\n· P-A-C: AEX가 flow-through라 전도도·pH 변화 없음 → 바로 CEX, 연속 공정에 편함.\n· P-C-H: 정제가 진행되며 농도↑로 생긴 dimer·multimer 제거에 HIC가 유리(Protein A·IEX는 monomer/dimer 분리 어려움).\n· IEX 용출은 pH 변경(구조 뒤틀림, 현업 안 씀) 대신 high salt(NaCl).\n· AEX(FT)는 바이러스 결합 제거(VCS 2번째), 한 스텝 5~6 LRV. + virus filtration → 총 10 중후반 LRV 목표. LRV = log₁₀(처리 전/처리 후).\n· 동물 유래 원료는 바이러스 위험을 배제할 수 없어 혈장제제·CHO 항체 모두 VCS(virus clearance study) 법적 요구. VCS는 축소 모델에 바이러스를 spiking해 평가.\n(4주차 녹음 02:00:18–02:22 · 6주차 녹음 1부 27:44–31:21, 2부 15:48–25:12)"
+    },
+    {
+      "id": "wk04-s08",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "필터 상류에서 ≥5 µm 입자 2,000개, 하류에서 20개가 검출되었다. β ratio는?",
+      "answer": "100",
+      "accept": [],
+      "num": 100,
+      "tol": 0,
+      "explanation": "β = 상류 입자 수 / 하류 입자 수 = 2,000/20 = 100 → 제거율 99%.",
+      "source": "WK04(여과) 슬라이드 44, 45",
+      "notes": "[필터 크기 결정 · pore size 표기]\n· 막히면: 압력↑, 유량↓(공정 시간↑), particle penetrate(품질↓) → 필터 교체·system stop → 비용↑ → '여과 공정 최적화 중요'.\n· Sizing test: 작은 필터로 실제 공정 막면적 결정(pressure, batch volume, process time, 온도). Vmax = constant pressure, end flow rate까지(주로 membrane) / Pmax·Tmax = constant flow, end pressure·turbidity까지(주로 depth).\n· 결과: Flux(LMH = L/m²/h) – plugging 적은 시료 / Capacity(L/m²) – plugging 많은 시료. 예: Slice 200(0.02 m²) 10 L/h = 500 LMH.\n· Pore size / retention rate / absolute / nominal: β_x = 상류 입자 수 / 하류 입자 수(1000/1 = 1000). 어떤 회사는 99.98% 이상을 absolute grade라 부름.\n(WK04(여과) 슬라이드 44–46, 63–70)"
+    },
+    {
+      "id": "wk04-s09",
+      "kind": "short",
+      "type": "단답",
+      "question": "0.2 µm 멸균 등급 필터의 bacteria challenge test에 쓰는 시험균은?",
+      "answer": "Brevundimonas diminuta",
+      "accept": [
+        "B. diminuta",
+        "B diminuta",
+        "brevundimonas",
+        "diminuta",
+        "디미누타",
+        "브레분디모나스 디미누타"
+      ],
+      "explanation": "B. diminuta를 유효 여과면적 1 cm²당 10⁷ CFU로 challenge했을 때 여과액이 무균이면 멸균 필터로 본다.",
+      "source": "WK04(여과) 슬라이드 118, 121",
+      "notes": "[필터 완전성 시험] (WK04 여과 2부)\n· 파괴검사(제조사 – 재사용 불가, 규격 설정): bacteria challenge(B. diminuta 0.2 µm, Acholeplasma 0.1 µm, Serratia 0.45 µm), particle challenge, 전자현미경. 비파괴검사(end user – 재사용 가능, 간접): pressure decay, diffusion, bubble point, water intrusion, water flow.\n· 멸균 필터 정의(HIMA 1982): B. diminuta 1.0×10⁷ CFU/cm² EFA로 challenge 후 여과액 무균. 제조사는 bubble point limit과 BCT 결과를 종합해 IT limit 설정 → end user는 그 기준으로 시험.\n· Bubble point: P = 2σcosθ/r·K → 표면장력에 비례, 기공 반지름에 반비례(물 0.072, 에탄올 0.022 N/m). 단일 기포 → 연속 기포 = BP. 그 전에는 diffusive flow(N/t = D·L·ΔP·F/d), diffusion test는 BP의 약 80%에서. Min BP = 완전성 판별, Max BP = 시험 종료점(캡슐 4 bar 이하).\n· 친수성(sterile·virus·cassette): BP·diffusion·pressure drop / 소수성: water intrusion·water flow. HEPA는 대상 아님. Pressure drop: p1 − p2 = D·p_atm·t / Vn(같은 필터라도 하우징 부피에 따라 다름). WI ≈ 3.5 × WF.\n· WIT 장점: 스팀 멸균 후 적용, IPA 잔여·오염 위험 없음, 건조 불필요, 소수성 유지, 높은 민감도, 시간 단축.\n· 실패 시(PDA TR26): ① 시스템·누출·교정·파라미터·wetting 확인 후 재시험 → ② 재wetting(대부분 여기서 해결) → ③ IPA 등 낮은 표면장력 용액과 그 기준으로 시험 → 그래도 fail이면 필터 fail.\n· 규제: redundant filtration(2차 멸균 필터 직렬), EMA – 2차 여과는 충전 지점 가까이. Annex 1·PDA TR26: 사용 전·후 모두 integrity test.\n(WK04(여과) 슬라이드 115–158 · 5주차 녹음 1부 56:33)"
+    },
+    {
+      "id": "wk04-s10",
+      "kind": "short",
+      "type": "단답",
+      "question": "멸균 필터를 '멸균한 뒤, 사용하기 전에' 하는 integrity test의 약어는?",
+      "answer": "PUPSIT",
+      "accept": [
+        "pre-use post-sterilization integrity test",
+        "pre use post sterilization integrity test"
+      ],
+      "explanation": "EU GMP Annex 1은 사용 전(PUPSIT)과 사용 후 integrity test를 모두 요구한다.",
+      "source": "WK04(여과) 슬라이드 157, 158",
+      "notes": "[필터 완전성 시험] (WK04 여과 2부)\n· 파괴검사(제조사 – 재사용 불가, 규격 설정): bacteria challenge(B. diminuta 0.2 µm, Acholeplasma 0.1 µm, Serratia 0.45 µm), particle challenge, 전자현미경. 비파괴검사(end user – 재사용 가능, 간접): pressure decay, diffusion, bubble point, water intrusion, water flow.\n· 멸균 필터 정의(HIMA 1982): B. diminuta 1.0×10⁷ CFU/cm² EFA로 challenge 후 여과액 무균. 제조사는 bubble point limit과 BCT 결과를 종합해 IT limit 설정 → end user는 그 기준으로 시험.\n· Bubble point: P = 2σcosθ/r·K → 표면장력에 비례, 기공 반지름에 반비례(물 0.072, 에탄올 0.022 N/m). 단일 기포 → 연속 기포 = BP. 그 전에는 diffusive flow(N/t = D·L·ΔP·F/d), diffusion test는 BP의 약 80%에서. Min BP = 완전성 판별, Max BP = 시험 종료점(캡슐 4 bar 이하).\n· 친수성(sterile·virus·cassette): BP·diffusion·pressure drop / 소수성: water intrusion·water flow. HEPA는 대상 아님. Pressure drop: p1 − p2 = D·p_atm·t / Vn(같은 필터라도 하우징 부피에 따라 다름). WI ≈ 3.5 × WF.\n· WIT 장점: 스팀 멸균 후 적용, IPA 잔여·오염 위험 없음, 건조 불필요, 소수성 유지, 높은 민감도, 시간 단축.\n· 실패 시(PDA TR26): ① 시스템·누출·교정·파라미터·wetting 확인 후 재시험 → ② 재wetting(대부분 여기서 해결) → ③ IPA 등 낮은 표면장력 용액과 그 기준으로 시험 → 그래도 fail이면 필터 fail.\n· 규제: redundant filtration(2차 멸균 필터 직렬), EMA – 2차 여과는 충전 지점 가까이. Annex 1·PDA TR26: 사용 전·후 모두 integrity test.\n(WK04(여과) 슬라이드 115–158 · 5주차 녹음 1부 56:33)"
+    },
+    {
+      "id": "wk04-s11",
+      "kind": "short",
+      "type": "단답",
+      "question": "물로 적셔지지 않는 소수성 vent filter의 integrity test로, 물이 기공에 침투하는 정도를 재는 시험은?",
+      "answer": "water intrusion test (WIT)",
+      "accept": [
+        "WIT",
+        "water intrusion",
+        "water intrusion test",
+        "워터인트루전",
+        "워터 인트루전 테스트"
+      ],
+      "explanation": "친수성 필터는 bubble point·diffusion·pressure drop으로, 소수성 필터는 WIT로 시험한다. WIT는 IPA 잔여물 문제가 없고 스팀 멸균 후에도 할 수 있다.",
+      "source": "WK04(여과) 슬라이드 124, 137, 138, 144",
+      "notes": "[필터 완전성 시험] (WK04 여과 2부)\n· 파괴검사(제조사 – 재사용 불가, 규격 설정): bacteria challenge(B. diminuta 0.2 µm, Acholeplasma 0.1 µm, Serratia 0.45 µm), particle challenge, 전자현미경. 비파괴검사(end user – 재사용 가능, 간접): pressure decay, diffusion, bubble point, water intrusion, water flow.\n· 멸균 필터 정의(HIMA 1982): B. diminuta 1.0×10⁷ CFU/cm² EFA로 challenge 후 여과액 무균. 제조사는 bubble point limit과 BCT 결과를 종합해 IT limit 설정 → end user는 그 기준으로 시험.\n· Bubble point: P = 2σcosθ/r·K → 표면장력에 비례, 기공 반지름에 반비례(물 0.072, 에탄올 0.022 N/m). 단일 기포 → 연속 기포 = BP. 그 전에는 diffusive flow(N/t = D·L·ΔP·F/d), diffusion test는 BP의 약 80%에서. Min BP = 완전성 판별, Max BP = 시험 종료점(캡슐 4 bar 이하).\n· 친수성(sterile·virus·cassette): BP·diffusion·pressure drop / 소수성: water intrusion·water flow. HEPA는 대상 아님. Pressure drop: p1 − p2 = D·p_atm·t / Vn(같은 필터라도 하우징 부피에 따라 다름). WI ≈ 3.5 × WF.\n· WIT 장점: 스팀 멸균 후 적용, IPA 잔여·오염 위험 없음, 건조 불필요, 소수성 유지, 높은 민감도, 시간 단축.\n· 실패 시(PDA TR26): ① 시스템·누출·교정·파라미터·wetting 확인 후 재시험 → ② 재wetting(대부분 여기서 해결) → ③ IPA 등 낮은 표면장력 용액과 그 기준으로 시험 → 그래도 fail이면 필터 fail.\n· 규제: redundant filtration(2차 멸균 필터 직렬), EMA – 2차 여과는 충전 지점 가까이. Annex 1·PDA TR26: 사용 전·후 모두 integrity test.\n(WK04(여과) 슬라이드 115–158 · 5주차 녹음 1부 56:33)"
+    },
+    {
+      "id": "wk04-s12",
+      "kind": "short",
+      "type": "단답·계산",
+      "question": "TFF에서 P_feed 3.0 bar, P_retentate 1.0 bar, P_permeate 0 bar일 때 TMP는 몇 bar인가?",
+      "answer": "2.0 bar",
+      "accept": [],
+      "num": 2,
+      "tol": 0,
+      "explanation": "TMP = (P_feed + P_retentate)/2 − P_permeate = (3.0 + 1.0)/2 − 0 = 2.0 bar. ΔP는 3.0 − 1.0 = 2.0 bar다.",
+      "source": "WK04(여과) 슬라이드 88",
+      "notes": "[TFF(=CFF) · UF/DF] (4·6주차)\n· CFF(유럽식) = TFF(미주·한국). 우유통 비유: 펌프로 순환하며 막과 평행하게 흐르고 물만 투과 → 농축(UF). 희석-농축 반복 = buffer exchange = diafiltration(DF). 신장 투석도 같은 원리. DSP의 약 30%.\n· 구성: feed tank → pump → feed(P) → 막 → retentate(P, 탱크로 복귀) / permeate(P).\n· TMP = (P_feed + P_retentate)/2 − P_permeate, ΔP = P_feed − P_retentate(crossflow 구동). TMP↑ → flux↑ 하다가 gel layer에 지배되어 포화 → flux가 꺾이는 지점이 최적 TMP. ΔP↑ → crossflow↑, gel layer를 씻어 줌(무조건 Best는 아님).\n· 농축(UF) 먼저, DF 나중(면접 기출): 부피를 줄인 뒤 교환해야 버퍼·시간·비용이 적다. 순서: 1st 농축 → DF → 2nd 농축(과농축) → product recovery. continuous DF가 batch DF보다 버퍼 효율이 높음(400 mL→6.25% vs 480 mL→0.4%).\n· 용도별 회수: clarification(MF) – permeate / 농축·DF – retentate / perfusion – retentate(세포).\n· 모듈: cassette(고점도 >200 g/L, 고flux, holder 필요, multiple-use mAb) vs hollow fiber(self-contained, spacer-free, functionally closed, single-use·백신·세포, 펌프 요구 큼).\n(WK04(여과) 슬라이드 85–104 · 6주차 녹음 1부 32:46–46:15)"
+    }
+  ]
+}
