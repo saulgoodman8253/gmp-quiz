@@ -3,14 +3,25 @@
   'use strict';
 
   const MARKS = ['①', '②', '③', '④', '⑤', '⑥', '⑦', '⑧'];
-  const COUNT_OPTIONS = [5, 10, 20, 30, 0]; // 0 = 전체
+
+  // 과목별 설정: 각 과목 페이지의 <body data-*> 로 지정 (없으면 GMP 기본값)
+  const cfg = document.body.dataset;
+  const BASE = cfg.base || 'questions/';
+  const STORE = cfg.store || 'gmpq';
+  const PAPER_TITLE = cfg.paper || '바이오플랜트 GMP 운영';
+  const PRINT_TITLE = cfg.print || 'GMP 복습 문제지';
+  const UNIT = cfg.unit || '주차';
+  const COUNT_OPTIONS = cfg.counts ? cfg.counts.split(',').map(Number) : [5, 10, 20, 30, 0]; // 0 = 전체
+  // 실전 모의고사 출제 비중 예: {"CH1":{"n":5,"short":1}, ...}
+  let BLUEPRINT = null;
+  try { BLUEPRINT = cfg.blueprint ? JSON.parse(cfg.blueprint) : null; } catch (e) { BLUEPRINT = null; }
   const KEYS = {
-    wrong: 'gmpq.wrong',
-    seen: 'gmpq.seen',
-    history: 'gmpq.history',
-    weekStats: 'gmpq.weekStats',
-    prefs: 'gmpq.prefs',
-    theme: 'gmpq.theme',
+    wrong: `${STORE}.wrong`,
+    seen: `${STORE}.seen`,
+    history: `${STORE}.history`,
+    weekStats: `${STORE}.weekStats`,
+    prefs: `${STORE}.prefs`,
+    theme: 'gmpq.theme', // 테마는 과목 공통
   };
 
   const app = document.getElementById('app');
@@ -70,9 +81,13 @@
 
   // 띄어쓰기·대소문자·기호(·, -, /, 괄호, 화살표 등) 차이는 무시하고 비교
   function norm(s) {
+    // 숫자 앞의 음수 기호(−, △, 괄호 표기)는 남겨 '−8,000'과 '8,000'을 구분한다
     return String(s).normalize('NFKC').toLowerCase()
       .replace(/[×✕*]/g, 'x')
-      .replace(/[\s·.,:;'"`()[\]{}/\\_~^\-–—→=]/g, '');
+      .replace(/[−–—△▲]/g, '-')
+      .replace(/\(\s*([\d][\d,.]*)\s*\)/g, '-$1')
+      .replace(/-(?!\d)/g, '')
+      .replace(/[\s·.,:;'"`()[\]{}/\\_~^–—→=]/g, '');
   }
 
   // 모범 답안·허용 답안 중 하나와 같거나, 숫자 답(num ± tol)에 맞으면 정답
@@ -81,8 +96,14 @@
     if (!t) return false;
     if ([q.answer, ...(q.accept || [])].some((a) => norm(a) === t)) return true;
     if (typeof q.num === 'number') {
-      const m = String(text).replace(/,/g, '').match(/\d+(\.\d+)?/);
-      if (m && Math.abs(Number(m[0]) - q.num) <= (q.tol || 0) + 1e-9) return true;
+      // 음수 표기: -8000, −8,000, △8,000, (8,000)
+      const s = String(text).replace(/,/g, '').trim();
+      const paren = /^\(\s*\d/.test(s) && /\d\s*\)\s*\D*$/.test(s);
+      const m = s.match(/([-−–△▲]\s*)?(\d+(?:\.\d+)?)/);
+      if (m) {
+        const v = Number(m[2]) * (m[1] || paren ? -1 : 1);
+        if (Math.abs(v - q.num) <= (q.tol || 0) + 1e-9) return true;
+      }
     }
     return false;
   }
@@ -158,11 +179,11 @@
   }
 
   async function loadBank() {
-    const index = await fetchJSON('questions/index.json');
+    const index = await fetchJSON(`${BASE}index.json`);
     const files = Array.isArray(index) ? index : index.files;
-    if (!Array.isArray(files)) throw new Error('questions/index.json 에 "files" 배열이 필요합니다');
+    if (!Array.isArray(files)) throw new Error(`${BASE}index.json 에 "files" 배열이 필요합니다`);
 
-    const results = await Promise.allSettled(files.map((f) => fetchJSON(`questions/${f}`)));
+    const results = await Promise.allSettled(files.map((f) => fetchJSON(`${BASE}${f}`)));
     const problems = [];
     const ids = new Set();
     bank = [];
@@ -337,7 +358,7 @@
       const pool = poolOf(ws);
       const n = selectedCount();
       const actual = n > 0 ? Math.min(n, pool.length) : pool.length;
-      info.textContent = ws.length ? `선택 범위 ${pool.length}문항 중 ${actual}문항 출제` : '주차를 하나 이상 선택하세요.';
+      info.textContent = ws.length ? `선택 범위 ${pool.length}문항 중 ${actual}문항 출제` : '범위를 하나 이상 선택하세요.';
       startBtn.disabled = actual === 0;
     }
 
@@ -353,13 +374,30 @@
       savePrefs();
       const ws = selectedWeeks();
       const pool = poolOf(ws);
-      const label = (ws.length === weeks.length ? '전체 주차' : ws.join(', ')) + kindLabel();
+      const label = (ws.length === weeks.length ? `전체 ${UNIT}` : ws.join(', ')) + kindLabel();
       startSession(selectedMode(), pickQuestions(pool, selectedCount()), selectedMode() === 'exam' ? `단원 시험 (${label})` : `단원별 학습 (${label})`);
     }
 
     function startMock() {
       savePrefs();
       startSession('exam', pickQuestions(bank.filter(kindOk), selectedCount()), '전범위 모의고사' + kindLabel());
+    }
+
+    // 실전 모의고사: 단원별 출제 비중(BLUEPRINT)대로 뽑고, 단답형은 시험지 끝에 모은다
+    function startReal() {
+      savePrefs();
+      const mcs = [];
+      const shorts = [];
+      for (const [wk, spec] of Object.entries(BLUEPRINT)) {
+        const pool = bank.filter((q) => q.week === wk);
+        const sPool = pool.filter(isShort);
+        const nShort = Math.min(spec.short || 0, sPool.length);
+        const nMc = (spec.n || 0) - nShort;
+        if (nMc > 0) mcs.push(...pickQuestions(pool.filter((q) => !isShort(q)), nMc));
+        if (nShort > 0) shorts.push(...pickQuestions(sPool, nShort));
+      }
+      const items = mcs.concat(shorts);
+      startSession('exam', items, `실전 모의고사 (${items.length}문항)`);
     }
 
     function startWrong() {
@@ -372,7 +410,7 @@
 
     render(
       el('section', { class: 'card' },
-        el('div', { class: 'row between', style: 'margin-bottom:10px' }, el('h2', { style: 'margin:0' }, '① 주차 범위'), allToggle),
+        el('div', { class: 'row between', style: 'margin-bottom:10px' }, el('h2', { style: 'margin:0' }, `① ${UNIT} 범위`), allToggle),
         weeks.length ? el('div', { class: 'chips' }, weekChips) : el('p', { class: 'muted' }, '등록된 문제 파일이 없습니다. questions/index.json 을 확인하세요.')),
       el('section', { class: 'card' },
         el('h2', null, '② 문제 수'),
@@ -389,23 +427,25 @@
         el('div', { style: 'margin-top:12px' }, startBtn)),
       el('section', { class: 'card stack' },
         el('h2', { style: 'margin:0' }, '바로 가기'),
-        el('button', { class: 'btn block', type: 'button', onclick: startMock, disabled: bank.length === 0 },
-          '🎯 전범위 모의고사 (전체 주차에서 선택한 문제 수·유형만큼)'),
+        BLUEPRINT ? el('button', { class: 'btn block', type: 'button', onclick: startReal, disabled: bank.length === 0 },
+          cfg.realLabel || '🏁 실전 모의고사 (출제 비중 반영)') : null,
+        el('button', { class: `btn ${BLUEPRINT ? 'secondary ' : ''}block`, type: 'button', onclick: startMock, disabled: bank.length === 0 },
+          `🎯 전범위 모의고사 (전체 ${UNIT}에서 선택한 문제 수·유형만큼)`),
         el('button', { class: 'btn secondary block', type: 'button', onclick: startWrong, disabled: wrongCount === 0 },
           `❗ 오답만 다시 풀기 (${wrongCount}문항)`),
         el('button', { class: 'btn secondary block', type: 'button', onclick: () => showRecords() }, '📊 학습 기록 보기'),
         el('button', { class: 'btn secondary block', type: 'button', onclick: () => {
           savePrefs();
           showPrintSetup(poolOf(selectedWeeks()), selectedCount(),
-            (selectedWeeks().length === weeks.length ? '전체 주차' : selectedWeeks().join(', ')) + kindLabel());
-        } }, '🖨️ 문제지 PDF로 저장·공유 (선택한 주차 범위)')),
+            (selectedWeeks().length === weeks.length ? `전체 ${UNIT}` : selectedWeeks().join(', ')) + kindLabel());
+        } }, `🖨️ 문제지 PDF로 저장·공유 (선택한 ${UNIT} 범위)`)),
     );
     update();
   }
 
   /* ---------- PDF 저장·공유 (브라우저 인쇄 → PDF로 저장) ---------- */
   function showPrintSetup(pool, count, label) {
-    if (!pool.length) { toast('주차를 하나 이상 선택하세요'); return; }
+    if (!pool.length) { toast('범위를 하나 이상 선택하세요'); return; }
 
     const kinds = [
       { v: 'paper', t: '📝 문제지만', d: '정답 없이 문제만' },
@@ -414,7 +454,7 @@
     ];
     const orders = [
       { v: 'shuffle', t: '🔀 섞기', d: '문항·보기 순서 무작위' },
-      { v: 'seq', t: '🔢 순서대로', d: '주차·번호 순서 그대로' },
+      { v: 'seq', t: '🔢 순서대로', d: `${UNIT}·번호 순서 그대로` },
     ];
     const kindInputs = kinds.map((k, i) => {
       const input = el('input', { type: 'radio', name: 'pkind', value: k.v });
@@ -446,7 +486,7 @@
     render(
       el('section', { class: 'card' },
         el('h2', null, '🖨️ 문제지 PDF로 저장·공유'),
-        el('p', { class: 'muted', style: 'margin:0' }, `범위: ${label} · ${pool.length}문항 중 ${total}문항 (처음 화면에서 고른 주차·문제 수)`)),
+        el('p', { class: 'muted', style: 'margin:0' }, `범위: ${label} · ${pool.length}문항 중 ${total}문항 (처음 화면에서 고른 ${UNIT}·문제 수)`)),
       el('section', { class: 'card' },
         el('h2', null, '형식'),
         el('div', { class: 'chips' }, kindInputs.map((input, i) =>
@@ -477,7 +517,7 @@
         el('button', { class: 'btn secondary', type: 'button', style: 'flex:1', onclick: showHome }, '처음으로')));
 
     const head = el('header', { class: 'paper-head print-head' },
-      el('h2', null, 'GMP 복습 문제지'),
+      el('h2', null, PRINT_TITLE),
       el('div', { class: 'sub' }, kindName),
       el('div', { class: 'paper-grid' },
         el('div', null, el('b', null, '범위'), label),
@@ -738,7 +778,7 @@
 
     render(
       el('div', { class: 'paper-head' },
-        el('h2', null, '바이오플랜트 GMP 운영'),
+        el('h2', null, PAPER_TITLE),
         el('div', { class: 'sub' }, s.label),
         el('div', { class: 'paper-grid' },
           el('div', null, el('b', null, '범위'), weekSet.join(', ')),
@@ -805,7 +845,7 @@
       el('div', { class: 'score-big' }, `${pct(correct, total)}점`),
       el('div', { class: 'score-sub' }, `${total}문항 중 ${correct}문항 정답 · 오답 ${wrongNow}문항은 오답 노트에 저장됨`),
       el('table', { class: 'stats', style: 'margin-top:12px' },
-        el('thead', null, el('tr', null, el('th', null, '이번 회차 주차별'), el('th', { class: 'num' }, '정답'), el('th', { class: 'num' }, '정답률'))),
+        el('thead', null, el('tr', null, el('th', null, `이번 회차 ${UNIT}별`), el('th', { class: 'num' }, '정답'), el('th', { class: 'num' }, '정답률'))),
         el('tbody', null, Object.keys(per).sort((a, b) => a.localeCompare(b, 'ko', { numeric: true })).map((w) =>
           el('tr', null, el('td', null, weekTitle(w)), el('td', { class: 'num' }, `${per[w].correct}/${per[w].total}`), el('td', { class: 'num' }, `${pct(per[w].correct, per[w].total)}%`))))));
 
@@ -852,7 +892,7 @@
     const weekRows = weeks.filter((w) => stats[w.week] && stats[w.week].total);
 
     return el('section', { class: 'card' },
-      el('h2', null, '누적 주차별 정답률'),
+      el('h2', null, `누적 ${UNIT}별 정답률`),
       weekRows.length
         ? el('table', { class: 'stats' }, el('tbody', null, weekRows.map((w) => {
           const st = stats[w.week];
@@ -882,7 +922,7 @@
         el('p', { class: 'muted', style: 'margin:0' }, `오답 노트 ${bank.filter((q) => wrongSet.has(q.id)).length}문항 · 출제 이력 ${store.get(KEYS.seen, []).length}문항`),
         el('button', { class: 'btn secondary block', type: 'button', onclick: showHome }, '처음으로'),
         el('button', { class: 'btn danger block', type: 'button', onclick: () => {
-          if (!confirm('점수 기록, 주차별 정답률, 오답 노트, 출제 이력을 모두 지울까요?')) return;
+          if (!confirm(`점수 기록, ${UNIT}별 정답률, 오답 노트, 출제 이력을 모두 지울까요?`)) return;
           [KEYS.wrong, KEYS.seen, KEYS.history, KEYS.weekStats].forEach((k) => {
             try { localStorage.removeItem(k); } catch (e) { /* 무시 */ }
           });

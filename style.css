@@ -114,6 +114,14 @@ main {
   padding: 16px 16px 120px;
 }
 
+/* 과목 선택 탭 */
+.subject-nav { display: flex; gap: 8px; max-width: 760px; margin: 0 auto; padding: 12px 16px 0; }
+.subject-nav a {
+  flex: 1; text-align: center; padding: 8px 10px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); text-decoration: none; font-weight: 700; font-size: 15px;
+}
+.subject-nav a[aria-current="page"] { background: var(--primary); color: var(--primary-text); border-color: var(--primary); }
+
 h1, h2, h3 { line-height: 1.35; }
 h2 { font-size: 20px; margin: 0 0 12px; }
 h3 { font-size: 17px; margin: 0 0 8px; }
@@ -359,7 +367,7 @@ table.stats td.num, table.stats th.num { text-align: right; white-space: nowrap;
     --ok: #0a6b2f; --ok-bg: #e8f5ec; --bad: #b00020; --bad-bg: #fdecee;
   }
   @page { size: A4; margin: 14mm 12mm; }
-  .topbar, .bottom-bar, .progress-wrap, .no-print { display: none !important; }
+  .topbar, .subject-nav, .bottom-bar, .progress-wrap, .no-print { display: none !important; }
   html, body { background: #fff !important; color: #000; }
   body { font-size: 12.5pt; }
   main { padding: 0; max-width: none; }
