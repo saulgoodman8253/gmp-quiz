@@ -111,10 +111,10 @@
 
 | 파일 | 범위 | 문항 | 근거 |
 | --- | --- | --- | --- |
-| `mgmt/questions/ch1.json` | 1장 경영학의 이해 – 지배구조, 주식회사 vs 유한회사, 주총 vs 이사회, 이윤관(스미스·마르크스·베버·슘페터), 청구 순서, GDP 3면 등가 | 33 (단답 3) | Chapter1 PDF, 시험 안내 녹취, 족보 유형 |
-| `mgmt/questions/ch2.json` | 2장 경영학의 발전 – 테일러·포드·메이요·페이욜 | 9 | Chapter2 PDF |
-| `mgmt/questions/ch3.json` | 3장 회계 – 손익/비손익, 분개, 차변·대변·계정, 발생주의, 감가상각, 현금흐름 부호, 간접법(p.55), 유동·당좌·이자보상·회전율 | 72 (단답 15) | Chapter3 PDF, 시험 안내, 족보·후기 |
-| `mgmt/questions/ch4.json` | 4장 재무관리 – 시간가치, NPV, IRR, WACC (CAPM·Corporate WACC 제외) | 27 (단답 5) | Chapter4 PDF, 시험 안내 녹취 |
+| `mgmt/questions/ch1.json` | 1장 경영학의 이해 – 지배구조, 주식회사 vs 유한회사, 주총 vs 이사회, 이윤관(스미스·마르크스·베버·슘페터), 청구 순서, GDP 3면 등가 | 59 (단답 6) | Chapter1 PDF, 시험 안내 녹취, 족보 유형 |
+| `mgmt/questions/ch2.json` | 2장 경영학의 발전 – 테일러·포드·메이요·페이욜 | 15 | Chapter2 PDF |
+| `mgmt/questions/ch3.json` | 3장 회계 – 손익/비손익, 분개, 차변·대변·계정, 발생주의, 감가상각, 현금흐름 부호, 간접법(p.55), 유동·당좌·이자보상·회전율 | 118 (단답 32) | Chapter3 PDF, 시험 안내, 족보·후기 |
+| `mgmt/questions/ch4.json` | 4장 재무관리 – 시간가치, NPV, IRR, WACC (CAPM·Corporate WACC 제외) | 47 (단답 10) | Chapter4 PDF, 시험 안내 녹취 |
 
 - **🏁 실전 모의고사 25문항**: 시험 안내의 장별 비중(1장 5 · 2장 1 · 3장 15 · 4장 4)대로 뽑고 단답형 5문항(1장 1 · 3장 3 · 4장 1)을 시험지 끝에 둡니다. 비중은 `mgmt/index.html`의 `data-blueprint`로 바꿀 수 있습니다.
 - 족보 문제는 그대로 옮기지 않고, '유형은 같고 숫자·보기만 바뀐다'는 안내에 맞춰 숫자와 보기를 바꿔 출제했습니다.
