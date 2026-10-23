@@ -201,7 +201,8 @@
         if (err) { problems.push(err); continue; }
         if (ids.has(q.id)) { problems.push(`${file}: 중복 id ${q.id} (건너뜀)`); continue; }
         ids.add(q.id);
-        bank.push({ ...q, week, weekTitle: data.title || '' });
+        // 족보처럼 원문 순서를 지켜야 하는 파일: fixedChoices(보기 순서 고정), ordered(문항 번호순 출제)
+        bank.push({ ...q, week, weekTitle: data.title || '', fixed: !!(data.fixedChoices || q.fixed), ordered: !!data.ordered });
         count++;
       }
       const existing = weeks.find((w) => w.week === week);
@@ -262,13 +263,17 @@
     picked = picked.concat(old.slice(0, total - picked.length));
     if (picked.length < total) picked = picked.concat(unseen.slice(wantNew, wantNew + total - picked.length));
     const newIds = new Set(unseen.map((q) => q.id));
-    return shuffle(picked).map((q) => prepareQuestion(q, newIds.has(q.id)));
+    const items = shuffle(picked).map((q) => prepareQuestion(q, newIds.has(q.id)));
+    if (items.length && items.every((it) => it.q.ordered)) {
+      items.sort((a, b) => a.q.id.localeCompare(b.q.id, 'ko', { numeric: true }));
+    }
+    return items;
   }
 
   // 보기 순서를 섞고, 섞인 위치 기준으로 정답 인덱스를 다시 계산한다.
   function prepareQuestion(q, isNew) {
     if (isShort(q)) return { q, isNew, short: true };
-    const order = shuffle(q.choices.map((_, i) => i));
+    const order = q.fixed ? q.choices.map((_, i) => i) : shuffle(q.choices.map((_, i) => i));
     return {
       q,
       isNew,
